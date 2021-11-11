@@ -102,3 +102,19 @@ dist
 
 # TernJS port file
 .tern-port
+
+#expo
+astropedia/node_modules/
+astropedia/.expo/
+astropedia/dist/
+astropedia/npm-debug.*
+*.jks
+*.p8
+*.p12
+*.key
+*.mobileprovision
+*.orig.*
+astropedia/web-build/
+
+# macOS
+astropedia/.DS_Store
