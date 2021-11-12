@@ -15,7 +15,10 @@ export function Welcome() {
     return (
         <SafeAreaView style={styles.container}>
             <View style={styles.wrapper}>
-                <Image source={iconSylva} style={styles.welcomeImage} />
+                <Image
+                    source={iconSylva} style={styles.welcomeImage}
+                    resizeMode='contain'
+                />
                 <Text style={styles.welcomeMessage}>
                     THE EASIER WAY{'\n'}
                     TO USE{'\n'}
