@@ -14,7 +14,11 @@ export const layoutStyle = StyleSheet.create({
     },
     content: {
         flex: 1,
-        alignItems: 'center'
+        alignItems: 'center',
+    },
+    flatList: {
+        width: '110%',
+        paddingLeft: '10%'
     },
     header: {
         width: '90%',

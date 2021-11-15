@@ -4,6 +4,8 @@ import colors from '../styles/colors';
 import { Welcome } from '../pages/Welcome';
 import { UserIdentification } from '../pages/UserIdentification';
 import { Home } from '../pages/Home';
+import { Planets } from '../pages/Planets';
+//import { Planets } from '../pages/Planets';
 
 const Stack = createNativeStackNavigator();
 
@@ -29,6 +31,14 @@ function AppRoutes() {
             <Stack.Screen
                 name='Home'
                 component={Home}
+                options={{
+                    headerShown: false,
+                    animation: 'none'
+                }}
+            />
+            <Stack.Screen
+                name='Planets'
+                component={Planets}
                 options={{
                     headerShown: false,
                     animation: 'none'

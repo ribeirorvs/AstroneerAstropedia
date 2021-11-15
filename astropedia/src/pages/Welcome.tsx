@@ -6,8 +6,7 @@ import {
     Image,
     TouchableOpacity
 } from 'react-native';
-import { images } from '../img/index';
-import f from '../img/f.png';
+import { images } from '../assets/index';
 import { textStyle } from '../styles/textStyles';
 import { layoutStyle } from '../styles/layoutStyles';
 import { imgStyle } from '../styles/imgStyles';

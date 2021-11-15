@@ -11,10 +11,22 @@ export function Home() {
         <SafeAreaView style={layoutStyle.container}>
             <Header />
             <View style={layoutStyle.content} >
-                <Title />
-                <ComponentButton title='planets' icon='sylva' />
-                <ComponentButton title='resources' icon='compound' />
-                <ComponentButton title='favorites' icon='favIcon' />
+                <Title title='astropedia' />
+                <ComponentButton
+                    title='planets'
+                    icon='sylva'
+                    link='Planets'
+                />
+                <ComponentButton
+                    title='resources'
+                    icon='compound'
+                    link='Home'
+                />
+                <ComponentButton
+                    title='favorites'
+                    icon='favIcon'
+                    link='Home'
+                />
             </View>
         </SafeAreaView>
     )

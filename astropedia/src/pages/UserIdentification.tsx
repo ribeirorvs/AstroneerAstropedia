@@ -13,11 +13,9 @@ import {
 import { textStyle } from '../styles/textStyles';
 import { layoutStyle } from '../styles/layoutStyles';
 import { imgStyle } from '../styles/imgStyles';
-import logo from '../img/logo.png';
-import confirm from '../img/confirm.png';
 import colors from '../styles/colors';
 import { useNavigation } from '@react-navigation/core';
-import { images } from '../img';
+import { images } from '../assets';
 
 export function UserIdentification() {
     const [isFocused, setIsFocused] = useState(false);
