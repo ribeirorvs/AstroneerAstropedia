@@ -61,7 +61,7 @@ export function UserIdentification() {
                     />
                     <TouchableOpacity
                         activeOpacity={0.75}
-                        onPress={() => navigation.navigate('a')}
+                        onPress={() => navigation.navigate('Home')}
                     >
                         <Image
                             source={confirm}

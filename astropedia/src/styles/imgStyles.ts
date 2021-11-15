@@ -10,5 +10,14 @@ export const imgStyle = StyleSheet.create({
         height: 88,
         width: 108,
         justifyContent: 'center'
+    },
+    player: {
+        marginHorizontal: 20
+
+    },
+    component: {
+        height: 60,
+        width: 60,
+        marginHorizontal: 10
     }
 })

@@ -3,12 +3,37 @@ import colors from './colors';
 
 export const layoutStyle = StyleSheet.create({
     container: {
-        flex: 1
+        flex: 1,
+        backgroundColor: colors.background
     },
     wrapper: {
         flex: 1,
         backgroundColor: colors.background,
         alignItems: 'center',
         justifyContent: 'space-evenly'
+    },
+    content: {
+        flex: 1,
+        alignItems: 'center'
+    },
+    header: {
+        width: '90%',
+        flexDirection: 'row',
+        alignItems: 'center',
+        backgroundColor: colors.background,
+        paddingVertical: 20,
+        borderBottomWidth: 1,
+        borderBottomColor: colors.white,
+        marginLeft: '5%',
+        marginTop: 0
+    },
+    component: {
+        borderRadius: 20,
+        paddingTop: 5,
+        backgroundColor: colors.blue,
+        flexDirection: 'row',
+        width: '90%',
+        height: 70,
+        marginVertical: 15
     }
 });
