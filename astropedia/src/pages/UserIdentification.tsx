@@ -17,6 +17,7 @@ import logo from '../img/logo.png';
 import confirm from '../img/confirm.png';
 import colors from '../styles/colors';
 import { useNavigation } from '@react-navigation/core';
+import { images } from '../img';
 
 export function UserIdentification() {
     const [isFocused, setIsFocused] = useState(false);
@@ -43,7 +44,7 @@ export function UserIdentification() {
             <TouchableWithoutFeedback onPress={Keyboard.dismiss}>
                 <View style={layoutStyle.wrapper}>
                     <Image
-                        source={logo}
+                        source={images.logo}
                     />
                     <Text style={textStyle.subTitle}>
                         What is your{'\n'}
@@ -64,7 +65,7 @@ export function UserIdentification() {
                         onPress={() => navigation.navigate('Home')}
                     >
                         <Image
-                            source={confirm}
+                            source={images.confirm}
                             style={imgStyle.button}
                         />
                     </TouchableOpacity>

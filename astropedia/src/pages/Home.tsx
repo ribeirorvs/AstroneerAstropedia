@@ -11,7 +11,6 @@ export function Home() {
         <SafeAreaView style={layoutStyle.container}>
             <Header />
             <View style={layoutStyle.content} >
-
                 <Title />
                 <ComponentButton title='planets' icon='sylva' />
                 <ComponentButton title='resources' icon='compound' />

@@ -6,7 +6,7 @@ import {
     Image,
     TouchableOpacity
 } from 'react-native';
-import iconSylva from '../img/iconSylva.png';
+import { images } from '../img/index';
 import f from '../img/f.png';
 import { textStyle } from '../styles/textStyles';
 import { layoutStyle } from '../styles/layoutStyles';
@@ -21,7 +21,7 @@ export function Welcome() {
         <SafeAreaView style={layoutStyle.container}>
             <View style={layoutStyle.wrapper}>
                 <Image
-                    source={iconSylva} style={imgStyle.welcomeImage}
+                    source={images.welcome} style={imgStyle.welcomeImage}
                     resizeMode='contain'
                 />
                 <Text style={textStyle.welcomeMessage}>
@@ -33,7 +33,7 @@ export function Welcome() {
                     activeOpacity={0.75}
                     onPress={() => navigation.navigate('UserIdentification')}
                 >
-                    <Image source={f} style={imgStyle.button} />
+                    <Image source={images.f} style={imgStyle.button} />
                 </TouchableOpacity>
             </View>
         </SafeAreaView>
