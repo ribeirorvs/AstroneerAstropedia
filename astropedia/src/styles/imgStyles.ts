@@ -13,11 +13,20 @@ export const imgStyle = StyleSheet.create({
     },
     player: {
         marginHorizontal: 20
-
     },
     component: {
         height: 60,
         width: 60,
         marginHorizontal: 10
+    },
+    resourceTitleImg: {
+        height: 100,
+        width: 100,
+        marginRight: 20
+    },
+    favIcon: {
+        height: 15,
+        width: 15,
+        marginBottom: 25
     }
 })

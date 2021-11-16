@@ -39,5 +39,13 @@ export const layoutStyle = StyleSheet.create({
         width: '90%',
         height: 70,
         marginVertical: 15
+    },
+    resourceTitle: {
+        flexDirection: 'row',
+        alignItems: 'center',
+        marginLeft: 15,
+        marginTop: 15,
+        marginRight: 20,
+        justifyContent: 'space-between'
     }
 });

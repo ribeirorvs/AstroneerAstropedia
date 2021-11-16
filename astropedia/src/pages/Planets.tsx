@@ -24,7 +24,6 @@ export function Planets() {
                         />
                     )}
                     style={layoutStyle.flatList}
-
                 />
             </View>
         </SafeAreaView>

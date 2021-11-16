@@ -14,5 +14,6 @@ export const images = {
     glacio: require('../img/glacio.png'),
     atrox: require('../img/atrox.png'),
     compound: require('../img/compound.png'),
-    favIcon: require('../img/favIcon.png')
+    favIcon: require('../img/favIcon.png'),
+    iconSylva: require('../img/iconSylva.png')
 }

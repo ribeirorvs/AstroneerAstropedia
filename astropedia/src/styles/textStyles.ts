@@ -32,7 +32,7 @@ export const textStyle = StyleSheet.create({
     text: {
         color: colors.white,
         fontFamily: Fonts.text,
-        fontSize: 18,
+        fontSize: 18
     },
     input: {
         borderBottomWidth: 1,

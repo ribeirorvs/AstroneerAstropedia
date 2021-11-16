@@ -4,41 +4,41 @@ export const PlanetList = [{
     id: 1,
     title: 'Sylva',
     icon: 'sylva',
-    link: 'sylva'
+    link: 'Sylva'
 },
 {
     id: 2,
     title: 'Desolo',
     icon: 'desolo',
-    link: 'desolo'
+    link: 'Desolo'
 },
 {
     id: 3,
     title: 'Calidor',
     icon: 'calidor',
-    link: 'calidor'
+    link: 'Calidor'
 },
 {
     id: 4,
     title: 'Vesania',
     icon: 'vesania',
-    link: 'vesania'
+    link: 'Vesania'
 },
 {
     id: 5,
     title: 'Novus',
     icon: 'novus',
-    link: 'novus'
+    link: 'Novus'
 },
 {
     id: 6,
     title: 'Glacio',
     icon: 'glacio',
-    link: 'glacio'
+    link: 'Glacio'
 },
 {
     id: 7,
     title: 'Atrox',
     icon: 'atrox',
-    link: 'atrox'
+    link: 'Atrox'
 }]
