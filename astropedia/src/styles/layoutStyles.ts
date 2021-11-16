@@ -55,5 +55,9 @@ export const layoutStyle = StyleSheet.create({
         alignItems: 'center',
         backgroundColor: colors.blue,
         justifyContent: 'space-around'
+    },
+    resource: {
+        flexDirection: 'row',
+        marginVertical: 20
     }
 });

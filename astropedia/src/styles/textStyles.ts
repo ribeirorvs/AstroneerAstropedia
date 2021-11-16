@@ -48,5 +48,15 @@ export const textStyle = StyleSheet.create({
         fontFamily: Fonts.heading,
         fontSize: 18,
         textTransform: 'uppercase'
+    },
+    resourceName: {
+        color: colors.gold,
+        backgroundColor: colors.white,
+        fontFamily: Fonts.heading,
+        fontSize: 18,
+        height: 70,
+        width: 180,
+        marginTop: 10,
+        textAlignVertical: 'center'
     }
 });

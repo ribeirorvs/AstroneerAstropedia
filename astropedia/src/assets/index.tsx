@@ -15,5 +15,7 @@ export const images = {
     atrox: require('../img/atrox.png'),
     compound: require('../img/compound.png'),
     favIcon: require('../img/favIcon.png'),
-    iconSylva: require('../img/iconSylva.png')
+    iconSylva: require('../img/iconSylva.png'),
+    nuggetSphalerite: require('../img/nuggetSphalerite.png'),
+    sphalerite: require('../img/sphalerite.png')
 }

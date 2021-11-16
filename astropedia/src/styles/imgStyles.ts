@@ -28,5 +28,19 @@ export const imgStyle = StyleSheet.create({
         height: 15,
         width: 15,
         marginBottom: 25
+    },
+    nugget: {
+        height: 90,
+        width: 90,
+        backgroundColor: colors.blue,
+        borderWidth: 5,
+        borderColor: colors.white,
+        borderRadius: 45
+    },
+    resourceIconImg: {
+        height: 70,
+        width: 70,
+        backgroundColor: colors.blue,
+        marginTop: 10
     }
 })
