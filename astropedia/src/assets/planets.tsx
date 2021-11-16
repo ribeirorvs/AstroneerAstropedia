@@ -1,5 +1,3 @@
-import React from 'react';
-
 export const PlanetList = [{
     id: 1,
     title: 'Sylva',

@@ -15,7 +15,7 @@ export function Vesania() {
                 title='vesania'
                 image='iconVesania'
             />
-            <ScrollView style={{ flex: 1, marginBottom: 12 }} contentContainerStyle={{ alignItems: 'center' }} >
+            <ScrollView style={layoutStyle.resourceContent} contentContainerStyle={{ alignItems: 'center' }} >
                 <ContentTitle title='natural resources' />
                 <PlanetResource nugget='nuggetLithium' icon='lithium' name='lithium' />
                 <PlanetResource nugget='nuggetTitanite' icon='titanite' name='titanite' />

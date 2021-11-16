@@ -1,5 +1,3 @@
-import React from 'react';
-
 export const images = {
     welcome: require('../img/iconSylva.png'),
     f: require('../img/f.png'),
