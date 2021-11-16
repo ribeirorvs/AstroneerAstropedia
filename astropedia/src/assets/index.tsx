@@ -26,5 +26,8 @@ export const images = {
     nitrogen: require('../img/nitrogen.png'),
     iconDesolo: require('../img/iconDesolo.png'),
     wolframite: require('../img/wolframite.png'),
-    nuggetWolframite: require('../img/nuggetWolframite.png')
+    nuggetWolframite: require('../img/nuggetWolframite.png'),
+    iconCalidor: require('../img/iconCalidor.png'),
+    sulfur: require('../img/sulfur.png'),
+    nuggetSulfur: require('../img/nuggetSulfur.png')
 }
