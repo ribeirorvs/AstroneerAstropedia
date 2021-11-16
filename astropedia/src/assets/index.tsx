@@ -39,5 +39,6 @@ export const images = {
     hematite: require('../img/hematite.png'),
     nuggetHematite: require('../img/nuggetHematite.png'),
     methane: require('../img/methane.png'),
-    nuggetMethane: require('../img/nuggetMethane.png')
+    nuggetMethane: require('../img/nuggetMethane.png'),
+    iconGlacio: require('../img/iconGlacio.png')
 }
