@@ -20,7 +20,7 @@ export function Home() {
                 <ComponentButton
                     title='resources'
                     icon='compound'
-                    link='Home'
+                    link='Resources'
                 />
                 <ComponentButton
                     title='favorites'
