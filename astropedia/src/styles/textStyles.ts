@@ -42,5 +42,11 @@ export const textStyle = StyleSheet.create({
         fontFamily: Fonts.text,
         fontSize: 18,
         width: 220
+    },
+    contentTitle: {
+        color: colors.white,
+        fontFamily: Fonts.heading,
+        fontSize: 18,
+        textTransform: 'uppercase'
     }
 });

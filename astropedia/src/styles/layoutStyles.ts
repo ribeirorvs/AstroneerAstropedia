@@ -46,6 +46,14 @@ export const layoutStyle = StyleSheet.create({
         marginLeft: 15,
         marginTop: 15,
         marginRight: 20,
+        marginBottom: 5,
         justifyContent: 'space-between'
+    },
+    contentTitle: {
+        height: 47,
+        width: '100%',
+        alignItems: 'center',
+        backgroundColor: colors.blue,
+        justifyContent: 'space-around'
     }
 });
