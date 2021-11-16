@@ -8,6 +8,7 @@ import { Sylva } from '../pages/Sylva';
 import { Desolo } from '../pages/Desolo';
 import { Calidor } from '../pages/Calidor';
 import { Vesania } from '../pages/Vesania';
+import { Novus } from '../pages/Novus';
 
 
 const Stack = createNativeStackNavigator();
@@ -74,6 +75,14 @@ function AppRoutes() {
             <Stack.Screen
                 name='Vesania'
                 component={Vesania}
+                options={{
+                    headerShown: false,
+                    animation: 'none'
+                }}
+            />
+            <Stack.Screen
+                name='Novus'
+                component={Novus}
                 options={{
                     headerShown: false,
                     animation: 'none'

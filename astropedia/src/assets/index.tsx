@@ -34,5 +34,10 @@ export const images = {
     titanite: require('../img/titanite.png'),
     nuggetTitanite: require('../img/nuggetTitanite.png'),
     lithium: require('../img/lithium.png'),
-    nuggetLithium: require('../img/nuggetLithium.png')
+    nuggetLithium: require('../img/nuggetLithium.png'),
+    iconNovus: require('../img/iconNovus.png'),
+    hematite: require('../img/hematite.png'),
+    nuggetHematite: require('../img/nuggetHematite.png'),
+    methane: require('../img/methane.png'),
+    nuggetMethane: require('../img/nuggetMethane.png')
 }
