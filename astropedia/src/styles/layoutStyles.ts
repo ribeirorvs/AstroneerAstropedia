@@ -59,5 +59,9 @@ export const layoutStyle = StyleSheet.create({
     resource: {
         flexDirection: 'row',
         marginTop: 12
+    },
+    resourceContent: {
+        flex: 1,
+        marginBottom: 12
     }
 });
