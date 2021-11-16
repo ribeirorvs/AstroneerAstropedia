@@ -10,6 +10,7 @@ import { Calidor } from '../pages/Calidor';
 import { Vesania } from '../pages/Vesania';
 import { Novus } from '../pages/Novus';
 import { Glacio } from '../pages/Glacio';
+import { Atrox } from '../pages/Atrox';
 
 
 const Stack = createNativeStackNavigator();
@@ -92,6 +93,14 @@ function AppRoutes() {
             <Stack.Screen
                 name='Glacio'
                 component={Glacio}
+                options={{
+                    headerShown: false,
+                    animation: 'none'
+                }}
+            />
+            <Stack.Screen
+                name='Atrox'
+                component={Atrox}
                 options={{
                     headerShown: false,
                     animation: 'none'
