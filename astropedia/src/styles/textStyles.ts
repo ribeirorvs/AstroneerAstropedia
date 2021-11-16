@@ -57,6 +57,8 @@ export const textStyle = StyleSheet.create({
         height: 70,
         width: 180,
         marginTop: 10,
-        textAlignVertical: 'center'
+        paddingLeft: 15,
+        textAlignVertical: 'center',
+        textTransform: 'uppercase'
     }
 });

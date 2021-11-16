@@ -17,5 +17,11 @@ export const images = {
     favIcon: require('../img/favIcon.png'),
     iconSylva: require('../img/iconSylva.png'),
     nuggetSphalerite: require('../img/nuggetSphalerite.png'),
-    sphalerite: require('../img/sphalerite.png')
+    sphalerite: require('../img/sphalerite.png'),
+    nuggetMalachite: require('../img/nuggetMalachite.png'),
+    malachite: require('../img/malachite.png'),
+    nuggetHydrogen: require('../img/nuggetHydrogen.png'),
+    hydrogen: require('../img/hydrogen.png'),
+    nuggetNitrogen: require('../img/nuggetNitrogen.png'),
+    nitrogen: require('../img/nitrogen.png')
 }
