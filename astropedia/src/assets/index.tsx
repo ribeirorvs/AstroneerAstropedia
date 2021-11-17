@@ -82,6 +82,7 @@ export const images = {
     nuggetOrganic: require('../img/nuggetOrganic.png'),
     nuggetQuartz: require('../img/nuggetQuartz.png'),
     nuggetResin: require('../img/nuggetResin.png'),
+    nuggetAluminum: require('../img/nuggetAluminum.png'),
     soilCentrifuge: require('../img/soilCentrifuge.png'),
     tradePlatform: require('../img/tradePlatform.png'),
     smallPrinter: require('../img/smallPrinter.png'),
@@ -109,5 +110,9 @@ export const images = {
     canister: require('../img/canister.png'),
     oxygenTank: require('../img/oxygenTank.png'),
     storage: require('../img/storage.png'),
-    platform: require('../img/platform.png')
+    platform: require('../img/platform.png'),
+    oxygenator: require('../img/oxygenator.png'),
+    windTurbine: require('../img/windTurbine.png'),
+    shuttle: require('../img/shuttle.png'),
+    landingPad: require('../img/landingPad.png')
 }
