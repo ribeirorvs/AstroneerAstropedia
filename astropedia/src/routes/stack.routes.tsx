@@ -17,6 +17,7 @@ import { Astronium } from '../pages/Astronium';
 import { Clay } from '../pages/Clay';
 import { Compound } from '../pages/Compound';
 import { Graphite } from '../pages/Graphite';
+import { Hematite } from '../pages/Hematite';
 
 
 const Stack = createNativeStackNavigator();
@@ -155,6 +156,14 @@ function AppRoutes() {
             <Stack.Screen
                 name='Graphite'
                 component={Graphite}
+                options={{
+                    headerShown: false,
+                    animation: 'none'
+                }}
+            />
+            <Stack.Screen
+                name='Hematite'
+                component={Hematite}
                 options={{
                     headerShown: false,
                     animation: 'none'
