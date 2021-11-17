@@ -23,6 +23,7 @@ import { Lithium } from '../pages/Lithium';
 import { Malachite } from '../pages/Malachite';
 import { Organic } from '../pages/Organic';
 import { Quartz } from '../pages/Quartz';
+import { Resin } from '../pages/Resin';
 
 
 const Stack = createNativeStackNavigator();
@@ -209,6 +210,14 @@ function AppRoutes() {
             <Stack.Screen
                 name='Quartz'
                 component={Quartz}
+                options={{
+                    headerShown: false,
+                    animation: 'none'
+                }}
+            />
+            <Stack.Screen
+                name='Resin'
+                component={Resin}
                 options={{
                     headerShown: false,
                     animation: 'none'
