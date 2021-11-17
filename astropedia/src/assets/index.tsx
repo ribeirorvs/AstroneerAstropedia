@@ -114,5 +114,6 @@ export const images = {
     oxygenator: require('../img/oxygenator.png'),
     windTurbine: require('../img/windTurbine.png'),
     shuttle: require('../img/shuttle.png'),
-    landingPad: require('../img/landingPad.png')
+    landingPad: require('../img/landingPad.png'),
+    nuggetCarbon: require('../img/nuggetCarbon.png')
 }
