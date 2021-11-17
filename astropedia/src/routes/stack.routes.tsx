@@ -29,6 +29,7 @@ import { Titanite } from '../pages/Titanite';
 import { Wolframite } from '../pages/Wolframite';
 import { Aluminum } from '../pages/Aluminum';
 import { Carbon } from '../pages/Carbon';
+import { Ceramic } from '../pages/Ceramic';
 
 
 const Stack = createNativeStackNavigator();
@@ -263,6 +264,14 @@ function AppRoutes() {
             <Stack.Screen
                 name='Carbon'
                 component={Carbon}
+                options={{
+                    headerShown: false,
+                    animation: 'none'
+                }}
+            />
+            <Stack.Screen
+                name='Ceramic'
+                component={Ceramic}
                 options={{
                     headerShown: false,
                     animation: 'none'

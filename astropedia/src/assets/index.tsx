@@ -83,6 +83,7 @@ export const images = {
     nuggetQuartz: require('../img/nuggetQuartz.png'),
     nuggetResin: require('../img/nuggetResin.png'),
     nuggetAluminum: require('../img/nuggetAluminum.png'),
+    nuggetCeramic: require('../img/nuggetCeramic.png'),
     soilCentrifuge: require('../img/soilCentrifuge.png'),
     tradePlatform: require('../img/tradePlatform.png'),
     smallPrinter: require('../img/smallPrinter.png'),
@@ -115,5 +116,7 @@ export const images = {
     windTurbine: require('../img/windTurbine.png'),
     shuttle: require('../img/shuttle.png'),
     landingPad: require('../img/landingPad.png'),
-    nuggetCarbon: require('../img/nuggetCarbon.png')
+    nuggetCarbon: require('../img/nuggetCarbon.png'),
+    augment: require('../img/augment.png'),
+    drill: require('../img/drill.png')
 }

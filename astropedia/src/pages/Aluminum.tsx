@@ -14,7 +14,7 @@ export function Aluminum() {
         <SafeAreaView style={layoutStyle.container} >
             <Header />
             <ResourceTitle
-                title='Aluminum'
+                title='aluminum'
                 image='nuggetAluminum'
             />
             <ScrollView>
