@@ -18,6 +18,7 @@ import { Clay } from '../pages/Clay';
 import { Compound } from '../pages/Compound';
 import { Graphite } from '../pages/Graphite';
 import { Hematite } from '../pages/Hematite';
+import { Laterite } from '../pages/Laterite';
 
 
 const Stack = createNativeStackNavigator();
@@ -164,6 +165,14 @@ function AppRoutes() {
             <Stack.Screen
                 name='Hematite'
                 component={Hematite}
+                options={{
+                    headerShown: false,
+                    animation: 'none'
+                }}
+            />
+            <Stack.Screen
+                name='Laterite'
+                component={Laterite}
                 options={{
                     headerShown: false,
                     animation: 'none'
