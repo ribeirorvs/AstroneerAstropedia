@@ -74,7 +74,7 @@ export const ResourceList = [{
     id: 13,
     title: 'Sphalerite',
     icon: 'sphalerite',
-    link: 'sphalerite'
+    link: 'Sphalerite'
 },
 {
     id: 14,
