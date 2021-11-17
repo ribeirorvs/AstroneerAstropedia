@@ -3,7 +3,6 @@ import { View } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { ContentTitle } from '../components/contentTitle';
 import { Header } from '../components/header';
-import { PlanetResource } from '../components/planetResource';
 import { ResourceItem } from '../components/resourceItem';
 import { ResourceSubItem1 } from '../components/resourceSubItem1';
 import { ResourceTitle } from '../components/resourceTitle';

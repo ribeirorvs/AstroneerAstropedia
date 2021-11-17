@@ -76,6 +76,7 @@ export const images = {
     nuggetHelium: require('../img/nuggetHelium.png'),
     nuggetAstronium: require('../img/nuggetAstronium.png'),
     nuggetClay: require('../img/nuggetClay.png'),
+    nuggetCompound: require('../img/nuggetCompound.png'),
     soilCentrifuge: require('../img/soilCentrifuge.png'),
     tradePlatform: require('../img/tradePlatform.png'),
     smallPrinter: require('../img/smallPrinter.png'),
@@ -85,5 +86,13 @@ export const images = {
     exoChip: require('../img/exoChip.png'),
     packager: require('../img/packager.png'),
     dynamite: require('../img/dynamite.png'),
-    smeltingFurnace: require('../img/smeltingFurnace.png')
+    smeltingFurnace: require('../img/smeltingFurnace.png'),
+    backpackPrinter: require('../img/backpackPrinter.png'),
+    generator: require('../img/generator.png'),
+    tether: require('../img/tether.png'),
+    roverSeat: require('../img/roverSeat.png'),
+    mediumPrinter: require('../img/mediumPrinter.png'),
+    trailer: require('../img/rover.png'),
+    research: require('../img/research.png'),
+    largePrinter: require('../img/largePrinter.png')
 }
