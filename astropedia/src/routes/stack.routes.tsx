@@ -32,6 +32,7 @@ import { Carbon } from '../pages/Carbon';
 import { Ceramic } from '../pages/Ceramic';
 import { Copper } from '../pages/Copper';
 import { Glass } from '../pages/Glass';
+import { Iron } from '../pages/Iron';
 
 
 const Stack = createNativeStackNavigator();
@@ -290,6 +291,14 @@ function AppRoutes() {
             <Stack.Screen
                 name='Glass'
                 component={Glass}
+                options={{
+                    headerShown: false,
+                    animation: 'none'
+                }}
+            />
+            <Stack.Screen
+                name='Iron'
+                component={Iron}
                 options={{
                     headerShown: false,
                     animation: 'none'
