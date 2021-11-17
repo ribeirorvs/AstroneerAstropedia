@@ -80,6 +80,7 @@ export const images = {
     nuggetGraphite: require('../img/nuggetGraphite.png'),
     nuggetLaterite: require('../img/nuggetLaterite.png'),
     nuggetOrganic: require('../img/nuggetOrganic.png'),
+    nuggetQuartz: require('../img/nuggetQuartz.png'),
     soilCentrifuge: require('../img/soilCentrifuge.png'),
     tradePlatform: require('../img/tradePlatform.png'),
     smallPrinter: require('../img/smallPrinter.png'),
@@ -101,5 +102,7 @@ export const images = {
     splitter: require('../img/splitter.png'),
     crane: require('../img/crane.png'),
     battery: require('../img/battery.png'),
-    worklight: require('../img/worklight.png')
+    worklight: require('../img/worklight.png'),
+    beacon: require('../img/beacon.png'),
+    sensor: require('../img/sensor.png')
 }
