@@ -33,7 +33,7 @@ export function ResourceSubItem1({
             onPress={HandleSubimit}
         >
             <Image source={images.subItem} />
-            <Image source={images[icon]} style={imgStyle.sourceIconImg} />
+            <Image source={images[icon]} style={imgStyle.sourceIconSubItem} />
             <Text style={textStyle.sourceText}>{name}</Text>
         </RectButton>
     )

@@ -74,10 +74,14 @@ export const images = {
     nuggetHematite: require('../img/nuggetHematite.png'),
     nuggetMethane: require('../img/nuggetMethane.png'),
     nuggetHelium: require('../img/nuggetHelium.png'),
+    nuggetAstronium: require('../img/nuggetAstronium.png'),
     soilCentrifuge: require('../img/soilCentrifuge.png'),
     tradePlatform: require('../img/tradePlatform.png'),
     smallPrinter: require('../img/smallPrinter.png'),
     chemistryLab: require('../img/chemistryLab.png'),
     subItem: require('../img/subItem.png'),
-    thruster: require('../img/thruster.png')
+    thruster: require('../img/thruster.png'),
+    exoChip: require('../img/exoChip.png'),
+    packager: require('../img/packager.png'),
+    dynamite: require('../img/dynamite.png')
 }
