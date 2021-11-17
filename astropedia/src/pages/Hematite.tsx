@@ -18,8 +18,8 @@ export function Hematite() {
             />
             <View>
                 <ContentTitle title='source' />
-                <ResourceItem name='all planets' icon='sylva' link='Planets' />
-                <ResourceItem name='soil centrifuge' icon='soilCentrifuge' />
+                <ResourceItem name='novus' icon='novus' link='Novus' />
+                <ResourceItem name='glacio' icon='glacio' link='Glacio' />
                 <ResourceItem name='trade platform' icon='tradePlatform' />
                 <ContentTitle title='uses' />
                 <ResourceItem name='smelting furnace' icon='smeltingFurnace' />
