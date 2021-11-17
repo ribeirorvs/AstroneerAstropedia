@@ -19,6 +19,7 @@ import { Compound } from '../pages/Compound';
 import { Graphite } from '../pages/Graphite';
 import { Hematite } from '../pages/Hematite';
 import { Laterite } from '../pages/Laterite';
+import { Lithium } from '../pages/Lithium';
 
 
 const Stack = createNativeStackNavigator();
@@ -173,6 +174,14 @@ function AppRoutes() {
             <Stack.Screen
                 name='Laterite'
                 component={Laterite}
+                options={{
+                    headerShown: false,
+                    animation: 'none'
+                }}
+            />
+            <Stack.Screen
+                name='Lithium'
+                component={Lithium}
                 options={{
                     headerShown: false,
                     animation: 'none'

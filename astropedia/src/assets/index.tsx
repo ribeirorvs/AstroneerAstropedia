@@ -98,5 +98,6 @@ export const images = {
     research: require('../img/research.png'),
     largePrinter: require('../img/largePrinter.png'),
     splitter: require('../img/splitter.png'),
-    crane: require('../img/crane.png')
+    crane: require('../img/crane.png'),
+    battery: require('../img/battery.png')
 }
