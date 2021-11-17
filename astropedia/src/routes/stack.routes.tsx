@@ -12,6 +12,7 @@ import { Novus } from '../pages/Novus';
 import { Glacio } from '../pages/Glacio';
 import { Atrox } from '../pages/Atrox';
 import { Resources } from '../pages/Resources';
+import { Ammonium } from '../pages/Ammonium';
 
 
 const Stack = createNativeStackNavigator();
@@ -110,6 +111,14 @@ function AppRoutes() {
             <Stack.Screen
                 name='Resources'
                 component={Resources}
+                options={{
+                    headerShown: false,
+                    animation: 'none'
+                }}
+            />
+            <Stack.Screen
+                name='Ammonium'
+                component={Ammonium}
                 options={{
                     headerShown: false,
                     animation: 'none'

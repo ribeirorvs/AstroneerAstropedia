@@ -42,5 +42,9 @@ export const imgStyle = StyleSheet.create({
         width: 70,
         backgroundColor: colors.blue,
         marginTop: 10
+    },
+    sourceIconImg: {
+        height: 30,
+        width: 30
     }
 })

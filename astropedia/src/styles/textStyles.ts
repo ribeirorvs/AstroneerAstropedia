@@ -60,5 +60,13 @@ export const textStyle = StyleSheet.create({
         paddingLeft: 15,
         textAlignVertical: 'center',
         textTransform: 'uppercase'
+    },
+    sourceText: {
+        color: colors.white,
+        fontFamily: Fonts.text,
+        fontSize: 18,
+        textTransform: 'capitalize',
+        marginTop: 3,
+        marginLeft: 10
     }
 });
