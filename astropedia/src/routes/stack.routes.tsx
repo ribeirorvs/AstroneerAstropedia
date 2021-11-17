@@ -26,6 +26,7 @@ import { Quartz } from '../pages/Quartz';
 import { Resin } from '../pages/Resin';
 import { Sphalerite } from '../pages/Sphalerite';
 import { Titanite } from '../pages/Titanite';
+import { Wolframite } from '../pages/Wolframite';
 
 
 const Stack = createNativeStackNavigator();
@@ -236,6 +237,14 @@ function AppRoutes() {
             <Stack.Screen
                 name='Titanite'
                 component={Titanite}
+                options={{
+                    headerShown: false,
+                    animation: 'none'
+                }}
+            />
+            <Stack.Screen
+                name='Wolframite'
+                component={Wolframite}
                 options={{
                     headerShown: false,
                     animation: 'none'
