@@ -94,6 +94,7 @@ export const images = {
     nuggetDiamond: require('../img/nuggetDiamond.png'),
     nuggetHydrazine: require('../img/nuggetHydrazine.png'),
     nuggetGraphene: require('../img/nuggetGraphene.png'),
+    nuggetNanocarbonAlloy: require('../img/nuggetNanocarbonAlloy.png'),
     soilCentrifuge: require('../img/soilCentrifuge.png'),
     tradePlatform: require('../img/tradePlatform.png'),
     smallPrinter: require('../img/smallPrinter.png'),
