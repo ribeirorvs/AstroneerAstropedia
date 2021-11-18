@@ -17,8 +17,18 @@ export function Desolo() {
             />
             <View style={layoutStyle.content} >
                 <ContentTitle title='natural resources' />
-                <PlanetResource nugget='nuggetWolframite' icon='wolframite' name='wolframite' />
-                <PlanetResource nugget='nuggetSphalerite' icon='sphalerite' name='sphalerite' />
+                <PlanetResource
+                    nugget='nuggetWolframite'
+                    icon='wolframite'
+                    name='wolframite'
+                    link='Wolframite'
+                />
+                <PlanetResource
+                    nugget='nuggetSphalerite'
+                    icon='sphalerite'
+                    name='sphalerite'
+                    link='Sphalerite'
+                />
             </View>
         </SafeAreaView>
     )

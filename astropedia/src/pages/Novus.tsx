@@ -17,11 +17,31 @@ export function Novus() {
             />
             <View style={layoutStyle.content} >
                 <ContentTitle title='natural resources' />
-                <PlanetResource nugget='nuggetHematite' icon='hematite' name='hematite' />
-                <PlanetResource nugget='nuggetLithium' icon='lithium' name='lithium' />
+                <PlanetResource
+                    nugget='nuggetHematite'
+                    icon='hematite'
+                    name='hematite'
+                    link='Hematite'
+                />
+                <PlanetResource
+                    nugget='nuggetLithium'
+                    icon='lithium'
+                    name='lithium'
+                    link='Lithium'
+                />
                 <ContentTitle title='atmospheric resources' />
-                <PlanetResource nugget='nuggetHydrogen' icon='hydrogen' name='hydrogen' />
-                <PlanetResource nugget='nuggetMethane' icon='methane' name='methane' />
+                <PlanetResource
+                    nugget='nuggetHydrogen'
+                    icon='hydrogen'
+                    name='hydrogen'
+                    link='Hydrogen'
+                />
+                <PlanetResource
+                    nugget='nuggetMethane'
+                    icon='methane'
+                    name='methane'
+                    link='Methane'
+                />
             </View>
         </SafeAreaView>
     )

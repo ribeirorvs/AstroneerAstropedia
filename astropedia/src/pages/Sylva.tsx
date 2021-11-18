@@ -17,11 +17,31 @@ export function Sylva() {
             />
             <View style={layoutStyle.content} >
                 <ContentTitle title='natural resources' />
-                <PlanetResource nugget='nuggetSphalerite' icon='sphalerite' name='sphalerite' />
-                <PlanetResource nugget='nuggetMalachite' icon='malachite' name='malachite' />
+                <PlanetResource
+                    nugget='nuggetSphalerite'
+                    icon='sphalerite'
+                    name='sphalerite'
+                    link='Sphalerite'
+                />
+                <PlanetResource
+                    nugget='nuggetMalachite'
+                    icon='malachite'
+                    name='malachite'
+                    link='Malachite'
+                />
                 <ContentTitle title='atmospheric resources' />
-                <PlanetResource nugget='nuggetHydrogen' icon='hydrogen' name='hydrogen' />
-                <PlanetResource nugget='nuggetNitrogen' icon='nitrogen' name='nitrogen' />
+                <PlanetResource
+                    nugget='nuggetHydrogen'
+                    icon='hydrogen'
+                    name='hydrogen'
+                    link='Hydrogen'
+                />
+                <PlanetResource
+                    nugget='nuggetNitrogen'
+                    icon='nitrogen'
+                    name='nitrogen'
+                    link='Nitrogen'
+                />
             </View>
         </SafeAreaView>
     )

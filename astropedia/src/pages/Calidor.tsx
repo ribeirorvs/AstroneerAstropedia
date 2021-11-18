@@ -17,11 +17,31 @@ export function Calidor() {
             />
             <View style={layoutStyle.content} >
                 <ContentTitle title='natural resources' />
-                <PlanetResource nugget='nuggetMalachite' icon='malachite' name='malachite' />
-                <PlanetResource nugget='nuggetWolframite' icon='wolframite' name='wolframite' />
+                <PlanetResource
+                    nugget='nuggetMalachite'
+                    icon='malachite'
+                    name='malachite'
+                    link='Malachite'
+                />
+                <PlanetResource
+                    nugget='nuggetWolframite'
+                    icon='wolframite'
+                    name='wolframite'
+                    link='Wolframite'
+                />
                 <ContentTitle title='atmospheric resources' />
-                <PlanetResource nugget='nuggetHydrogen' icon='hydrogen' name='hydrogen' />
-                <PlanetResource nugget='nuggetSulfur' icon='sulfur' name='sulfur' />
+                <PlanetResource
+                    nugget='nuggetHydrogen'
+                    icon='hydrogen'
+                    name='hydrogen'
+                    link='Hydrogen'
+                />
+                <PlanetResource
+                    nugget='nuggetSulfur'
+                    icon='sulfur'
+                    name='sulfur'
+                    link='Sulfur'
+                />
             </View>
         </SafeAreaView>
     )
