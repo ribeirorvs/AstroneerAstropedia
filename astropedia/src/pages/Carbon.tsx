@@ -26,7 +26,7 @@ export function Carbon() {
                 <ResourceItem name='chemistry lab' icon='chemistryLab' />
                 <ResourceSubItem1 name='plastic' icon='plastic' link='Plastic' />
                 <ResourceSubItem1 name='tungsten carbide' icon='tungstenCarbide' link='TungstenCarbide' />
-                <ResourceSubItem1 name='explosive powder' icon='explosivePowder' />
+                <ResourceSubItem1 name='explosive powder' icon='explosivePowder' link='ExplosivePowder' />
                 <ResourceSubItem1 name='steel' icon='steel' link='Steel' />
             </View>
         </SafeAreaView>

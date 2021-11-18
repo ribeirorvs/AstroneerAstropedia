@@ -28,7 +28,7 @@ export const images = {
     laterite: require('../img/laterite.png'),
     lithium: require('../img/lithium.png'),
     malachite: require('../img/malachite.png'),
-    organic: require('../img/malachite.png'),
+    organic: require('../img/organic.png'),
     quartz: require('../img/quartz.png'),
     resin: require('../img/resin.png'),
     sphalerite: require('../img/sphalerite.png'),
@@ -133,5 +133,6 @@ export const images = {
     shredder: require('../img/shredder.png'),
     powerCells: require('../img/powerCells.png'),
     paver: require('../img/paver.png'),
-    recreationalSphere: require('../img/recreationalSphere.png')
+    recreationalSphere: require('../img/recreationalSphere.png'),
+    fireworks: require('../img/fireworks.png')
 }
