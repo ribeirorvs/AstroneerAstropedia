@@ -68,5 +68,12 @@ export const textStyle = StyleSheet.create({
         textTransform: 'capitalize',
         marginTop: 3,
         marginLeft: 10
+    },
+    resourceTitle: {
+        fontSize: 20,
+        textTransform: 'uppercase',
+        fontFamily: Fonts.heading,
+        color: colors.blue,
+        marginVertical: 29
     }
 });

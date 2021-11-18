@@ -22,7 +22,7 @@ export function ResourceTitle({
                     source={images[image]}
                     style={imgStyle.resourceTitleImg}
                 />
-                <Text style={textStyle.title}>
+                <Text style={textStyle.resourceTitle}>
                     {title}
                 </Text>
             </View>

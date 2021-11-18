@@ -39,7 +39,7 @@ export function Aluminum() {
                 <ResourceSubItem1 name='small shuttle' icon='shuttle' />
                 <ResourceSubItem1 name='landing pad' icon='landingPad' />
                 <ResourceItem name='chemistry lab' icon='chemistryLab' />
-                <ResourceSubItem1 name='aluminumAlloy' icon='aluminumAlloy' link='AluminumAlloy' />
+                <ResourceSubItem1 name='aluminum alloy' icon='aluminumAlloy' link='AluminumAlloy' />
             </ScrollView>
         </SafeAreaView>
     )
