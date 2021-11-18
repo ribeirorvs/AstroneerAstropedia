@@ -53,7 +53,7 @@ export function TitaniumAlloy() {
                 <ResourceSubItem1 name='drill strength 2' icon='drill' />
                 <ResourceSubItem1 name='drill strength 3' icon='drill' />
                 <ResourceItem name='large printer' icon='largePrinter' />
-                <ResourceSubItem1 name='extra shuttle' icon='shuttle' />
+                <ResourceSubItem1 name='large shuttle' icon='shuttle' />
                 <ResourceSubItem1 name='auto extractor' icon='autoExtractor' />
                 <ResourceItem name='chemistry lab' icon='chemistryLab' />
                 <ResourceSubItem1 name='nanocarbon alloy' icon='nanocarbonAlloy' link='NanocarbonAlloy' />

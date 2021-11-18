@@ -248,5 +248,5 @@ export const ResourceList = [{
     id: 42,
     title: 'Tungsten C...',
     icon: 'tungstenCarbide',
-    link: 'Tungsten Carbide'
+    link: 'TungstenCarbide'
 }]
