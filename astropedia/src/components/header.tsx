@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import {
     View,
     Text,
@@ -10,10 +10,21 @@ import { textStyle } from '../styles/textStyles';
 import { imgStyle } from '../styles/imgStyles';
 import { images } from '../assets';
 import { useNavigation } from '@react-navigation/core';
+import AsyncStorage from '@react-native-async-storage/async-storage';
 
 
 export function Header() {
     const navigation = useNavigation();
+    const [astroName, setAstroName] = useState<string>();
+
+    useEffect(() => {
+        async function loadAstroName() {
+            const userName = await AsyncStorage.getItem('@astropedia:astroName');
+            setAstroName(userName || 'Astroneer');
+        }
+
+        loadAstroName();
+    })
     return (
 
         <TouchableOpacity
@@ -23,7 +34,7 @@ export function Header() {
             <View style={layoutStyle.header}>
                 <Image source={images.player} style={imgStyle.player} />
                 <View>
-                    <Text style={textStyle.text}>Astroneer</Text>
+                    <Text style={textStyle.text}>{astroName}</Text>
                 </View>
             </View>
         </TouchableOpacity>
