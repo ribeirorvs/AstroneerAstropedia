@@ -52,6 +52,7 @@ import { Plastic } from '../pages/Plastic';
 import { Rubber } from '../pages/Rubber';
 import { Silicone } from '../pages/Silicone';
 import { Steel } from '../pages/Steel';
+import { TitaniumAlloy } from '../pages/TitaniumAlloy';
 
 
 const Stack = createNativeStackNavigator();
@@ -470,6 +471,14 @@ function AppRoutes() {
             <Stack.Screen
                 name='Steel'
                 component={Steel}
+                options={{
+                    headerShown: false,
+                    animation: 'none'
+                }}
+            />
+            <Stack.Screen
+                name='TitaniumAlloy'
+                component={TitaniumAlloy}
                 options={{
                     headerShown: false,
                     animation: 'none'
