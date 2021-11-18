@@ -45,6 +45,7 @@ import { Sulfur } from '../pages/Sulfur';
 import { AluminumAlloy } from '../pages/AluminumAlloy';
 import { Diamond } from '../pages/Diamond';
 import { ExplosivePowder } from '../pages/ExplosivePowder';
+import { Hydrazine } from '../pages/Hydrazine';
 
 
 const Stack = createNativeStackNavigator();
@@ -407,6 +408,14 @@ function AppRoutes() {
             <Stack.Screen
                 name='ExplosivePowder'
                 component={ExplosivePowder}
+                options={{
+                    headerShown: false,
+                    animation: 'none'
+                }}
+            />
+            <Stack.Screen
+                name='Hydrazine'
+                component={Hydrazine}
                 options={{
                     headerShown: false,
                     animation: 'none'
