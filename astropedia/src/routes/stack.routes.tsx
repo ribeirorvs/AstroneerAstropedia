@@ -36,6 +36,7 @@ import { Iron } from '../pages/Iron';
 import { Titanium } from '../pages/Titanium';
 import { Tungsten } from '../pages/Tungsten';
 import { Zinc } from '../pages/Zinc';
+import { Argon } from '../pages/Argon';
 
 
 const Stack = createNativeStackNavigator();
@@ -326,6 +327,14 @@ function AppRoutes() {
             <Stack.Screen
                 name='Zinc'
                 component={Zinc}
+                options={{
+                    headerShown: false,
+                    animation: 'none'
+                }}
+            />
+            <Stack.Screen
+                name='Argon'
+                component={Argon}
                 options={{
                     headerShown: false,
                     animation: 'none'
