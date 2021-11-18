@@ -49,6 +49,7 @@ import { Hydrazine } from '../pages/Hydrazine';
 import { Graphene } from '../pages/Graphene';
 import { NanocarbonAlloy } from '../pages/NanocarbonAlloy';
 import { Plastic } from '../pages/Plastic';
+import { Rubber } from '../pages/Rubber';
 
 
 const Stack = createNativeStackNavigator();
@@ -443,6 +444,14 @@ function AppRoutes() {
             <Stack.Screen
                 name='Plastic'
                 component={Plastic}
+                options={{
+                    headerShown: false,
+                    animation: 'none'
+                }}
+            />
+            <Stack.Screen
+                name='Rubber'
+                component={Rubber}
                 options={{
                     headerShown: false,
                     animation: 'none'
