@@ -54,6 +54,7 @@ import { Silicone } from '../pages/Silicone';
 import { Steel } from '../pages/Steel';
 import { TitaniumAlloy } from '../pages/TitaniumAlloy';
 import { tungstenCarbide } from '../pages/TungstenCarbide';
+import { Favorites } from '../pages/Favorites';
 
 
 const Stack = createNativeStackNavigator();
@@ -488,6 +489,14 @@ function AppRoutes() {
             <Stack.Screen
                 name='TungstenCarbide'
                 component={tungstenCarbide}
+                options={{
+                    headerShown: false,
+                    animation: 'none'
+                }}
+            />
+            <Stack.Screen
+                name='Favorites'
+                component={Favorites}
                 options={{
                     headerShown: false,
                     animation: 'none'

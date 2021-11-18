@@ -25,7 +25,7 @@ export function Home() {
                 <ComponentButton
                     title='favorites'
                     icon='favIcon'
-                    link='Home'
+                    link='Favorites'
                 />
             </View>
         </SafeAreaView>
