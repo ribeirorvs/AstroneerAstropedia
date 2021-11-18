@@ -41,6 +41,7 @@ import { Helium } from '../pages/Helium';
 import { Hydrogen } from '../pages/Hydrogen';
 import { Methane } from '../pages/Methane';
 import { Nitrogen } from '../pages/Nitrogen';
+import { Sulfur } from '../pages/Sulfur';
 
 
 const Stack = createNativeStackNavigator();
@@ -371,6 +372,14 @@ function AppRoutes() {
             <Stack.Screen
                 name='Nitrogen'
                 component={Nitrogen}
+                options={{
+                    headerShown: false,
+                    animation: 'none'
+                }}
+            />
+            <Stack.Screen
+                name='Sulfur'
+                component={Sulfur}
                 options={{
                     headerShown: false,
                     animation: 'none'
