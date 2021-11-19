@@ -16,6 +16,7 @@ export function Copper() {
             <ResourceTitle
                 title='copper'
                 image='nuggetCopper'
+                link='Copper'
             />
             <ScrollView>
                 <ContentTitle title='source' />

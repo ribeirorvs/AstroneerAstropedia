@@ -17,6 +17,7 @@ export function Rubber() {
             <ResourceTitle
                 title='rubber'
                 image='nuggetRubber'
+                link='Rubber'
             />
             <ScrollView>
                 <ContentTitle title='source' />

@@ -14,6 +14,7 @@ export function Vesania() {
             <ResourceTitle
                 title='vesania'
                 image='iconVesania'
+                link='Vesania'
             />
             <ScrollView style={layoutStyle.resourceContent} contentContainerStyle={{ alignItems: 'center' }} >
                 <ContentTitle title='natural resources' />

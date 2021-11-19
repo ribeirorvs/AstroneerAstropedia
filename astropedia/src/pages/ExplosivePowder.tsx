@@ -18,6 +18,7 @@ export function ExplosivePowder() {
             <ResourceTitle
                 title='explosive powder'
                 image='explosivePowder'
+                link='ExplosivePowder'
             />
             <ScrollView>
                 <ContentTitle title='source' />

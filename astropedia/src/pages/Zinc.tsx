@@ -16,6 +16,7 @@ export function Zinc() {
             <ResourceTitle
                 title='zinc'
                 image='nuggetZinc'
+                link='Zinc'
             />
             <ScrollView>
                 <ContentTitle title='source' />

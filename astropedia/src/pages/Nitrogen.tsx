@@ -15,6 +15,7 @@ export function Nitrogen() {
             <ResourceTitle
                 title='nitrogen'
                 image='nuggetNitrogen'
+                link='Nitrogen'
             />
             <View>
                 <ContentTitle title='source' />

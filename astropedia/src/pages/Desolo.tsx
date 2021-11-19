@@ -14,6 +14,7 @@ export function Desolo() {
             <ResourceTitle
                 title='desolo'
                 image='iconDesolo'
+                link='Desolo'
             />
             <View style={layoutStyle.content} >
                 <ContentTitle title='natural resources' />

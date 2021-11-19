@@ -25,8 +25,8 @@ export const imgStyle = StyleSheet.create({
         marginRight: 20
     },
     favIcon: {
-        height: 15,
-        width: 15,
+        height: 25,
+        width: 25,
         marginBottom: 25
     },
     nugget: {

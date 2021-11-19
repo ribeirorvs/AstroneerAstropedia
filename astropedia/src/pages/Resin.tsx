@@ -16,6 +16,7 @@ export function Resin() {
             <ResourceTitle
                 title='resin'
                 image='nuggetResin'
+                link='Resin'
             />
             <ScrollView>
                 <ContentTitle title='source' />

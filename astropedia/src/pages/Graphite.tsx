@@ -16,6 +16,7 @@ export function Graphite() {
             <ResourceTitle
                 title='graphite'
                 image='nuggetGraphite'
+                link='Graphite'
             />
             <ScrollView>
                 <ContentTitle title='source' />

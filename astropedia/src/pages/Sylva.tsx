@@ -14,6 +14,7 @@ export function Sylva() {
             <ResourceTitle
                 title='sylva'
                 image='iconSylva'
+                link='Sylva'
             />
             <View style={layoutStyle.content} >
                 <ContentTitle title='natural resources' />

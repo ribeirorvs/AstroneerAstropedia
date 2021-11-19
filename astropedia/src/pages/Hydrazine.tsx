@@ -17,6 +17,7 @@ export function Hydrazine() {
             <ResourceTitle
                 title='hydrazine'
                 image='nuggetHydrazine'
+                link='Hydrazine'
             />
             <ScrollView>
                 <ContentTitle title='source' />

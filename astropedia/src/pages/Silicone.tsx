@@ -16,6 +16,7 @@ export function Silicone() {
             <ResourceTitle
                 title='silicone'
                 image='nuggetSilicone'
+                link='Silicone'
             />
             <ScrollView>
                 <ContentTitle title='source' />

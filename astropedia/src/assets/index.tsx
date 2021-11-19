@@ -12,6 +12,7 @@ export const images = {
     glacio: require('../img/glacio.png'),
     atrox: require('../img/atrox.png'),
     favIcon: require('../img/favIcon.png'),
+    favIconActive: require('../img/favIconActive.png'),
     iconSylva: require('../img/iconSylva.png'),
     iconDesolo: require('../img/iconDesolo.png'),
     iconCalidor: require('../img/iconCalidor.png'),

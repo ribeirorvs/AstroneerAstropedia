@@ -16,6 +16,7 @@ export function Tungsten() {
             <ResourceTitle
                 title='tungsten'
                 image='nuggetTungsten'
+                link='Tungsten'
             />
             <ScrollView>
                 <ContentTitle title='source' />

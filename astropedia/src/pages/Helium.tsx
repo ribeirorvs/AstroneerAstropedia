@@ -15,6 +15,7 @@ export function Helium() {
             <ResourceTitle
                 title='helium'
                 image='nuggetHelium'
+                link='Helium'
             />
             <View>
                 <ContentTitle title='source' />

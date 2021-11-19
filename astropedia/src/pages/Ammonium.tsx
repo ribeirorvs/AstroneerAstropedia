@@ -15,6 +15,7 @@ export function Ammonium() {
             <ResourceTitle
                 title='ammonium'
                 image='nuggetAmmonium'
+                link='Ammonium'
             />
             <View>
                 <ContentTitle title='source' />

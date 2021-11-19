@@ -15,6 +15,7 @@ export function Wolframite() {
             <ResourceTitle
                 title='wolframite'
                 image='nuggetWolframite'
+                link='Wolframite'
             />
             <View>
                 <ContentTitle title='source' />

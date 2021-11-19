@@ -14,6 +14,7 @@ export function Atrox() {
             <ResourceTitle
                 title='atrox'
                 image='iconAtrox'
+                link='Atrox'
             />
             <View style={layoutStyle.content} >
                 <ContentTitle title='atmospheric resources' />

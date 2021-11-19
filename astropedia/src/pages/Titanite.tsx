@@ -15,6 +15,7 @@ export function Titanite() {
             <ResourceTitle
                 title='titanite'
                 image='nuggetTitanite'
+                link='Titanite'
             />
             <View>
                 <ContentTitle title='source' />

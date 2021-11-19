@@ -15,6 +15,7 @@ export function Argon() {
             <ResourceTitle
                 title='argon'
                 image='nuggetArgon'
+                link='Argon'
             />
             <View>
                 <ContentTitle title='source' />

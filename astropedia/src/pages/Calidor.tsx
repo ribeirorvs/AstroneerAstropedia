@@ -14,6 +14,7 @@ export function Calidor() {
             <ResourceTitle
                 title='calidor'
                 image='iconCalidor'
+                link='Calidor'
             />
             <View style={layoutStyle.content} >
                 <ContentTitle title='natural resources' />

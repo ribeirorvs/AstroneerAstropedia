@@ -17,6 +17,7 @@ export function Plastic() {
             <ResourceTitle
                 title='plastic'
                 image='nuggetPlastic'
+                link='Plastic'
             />
             <ScrollView>
                 <ContentTitle title='source' />

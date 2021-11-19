@@ -15,6 +15,7 @@ export function Malachite() {
             <ResourceTitle
                 title='Malachite'
                 image='nuggetMalachite'
+                link='Malachite'
             />
             <View>
                 <ContentTitle title='source' />

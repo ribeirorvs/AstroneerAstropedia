@@ -15,6 +15,7 @@ export function Sphalerite() {
             <ResourceTitle
                 title='sphalerite'
                 image='nuggetSphalerite'
+                link='Sphalerite'
             />
             <View>
                 <ContentTitle title='source' />

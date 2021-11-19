@@ -16,6 +16,7 @@ export function Titanium() {
             <ResourceTitle
                 title='titanium'
                 image='nuggetTitanium'
+                link='Titanium'
             />
             <ScrollView>
                 <ContentTitle title='source' />

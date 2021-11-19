@@ -14,6 +14,7 @@ export function Novus() {
             <ResourceTitle
                 title='novus'
                 image='iconNovus'
+                link='Novus'
             />
             <View style={layoutStyle.content} >
                 <ContentTitle title='natural resources' />

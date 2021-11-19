@@ -16,6 +16,7 @@ export function Glass() {
             <ResourceTitle
                 title='glass'
                 image='nuggetGlass'
+                link='Glass'
             />
             <ScrollView>
                 <ContentTitle title='source' />

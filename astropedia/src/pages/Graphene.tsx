@@ -17,6 +17,7 @@ export function Graphene() {
             <ResourceTitle
                 title='graphene'
                 image='nuggetGraphene'
+                link='Graphene'
             />
             <ScrollView>
                 <ContentTitle title='source' />

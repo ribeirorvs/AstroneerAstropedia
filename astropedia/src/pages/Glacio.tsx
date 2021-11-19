@@ -14,6 +14,7 @@ export function Glacio() {
             <ResourceTitle
                 title='glacio'
                 image='iconGlacio'
+                link='Glacio'
             />
             <View style={layoutStyle.content} >
                 <ContentTitle title='natural resources' />

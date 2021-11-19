@@ -15,6 +15,7 @@ export function Lithium() {
             <ResourceTitle
                 title='lithium'
                 image='nuggetLithium'
+                link='Lithium'
             />
             <View>
                 <ContentTitle title='source' />

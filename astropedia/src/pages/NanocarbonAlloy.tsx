@@ -18,6 +18,7 @@ export function NanocarbonAlloy() {
             <ResourceTitle
                 title='nanocarbon alloy'
                 image='nuggetNanocarbonAlloy'
+                link='NanocarbonAlloy'
             />
             <ScrollView>
                 <ContentTitle title='source' />

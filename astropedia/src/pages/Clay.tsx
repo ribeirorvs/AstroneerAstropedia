@@ -15,6 +15,7 @@ export function Clay() {
             <ResourceTitle
                 title='clay'
                 image='nuggetClay'
+                link='Clay'
             />
             <View>
                 <ContentTitle title='source' />

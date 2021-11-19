@@ -16,6 +16,7 @@ export function Compound() {
             <ResourceTitle
                 title='compound'
                 image='nuggetCompound'
+                link='Compound'
             />
             <ScrollView>
                 <ContentTitle title='source' />

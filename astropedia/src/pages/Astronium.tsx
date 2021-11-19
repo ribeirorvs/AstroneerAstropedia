@@ -15,6 +15,7 @@ export function Astronium() {
             <ResourceTitle
                 title='astronium'
                 image='nuggetAstronium'
+                link='Astronium'
             />
             <View>
                 <ContentTitle title='source' />

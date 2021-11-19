@@ -15,6 +15,7 @@ export function Carbon() {
             <ResourceTitle
                 title='carbon'
                 image='nuggetCarbon'
+                link='Carbon'
             />
             <View>
                 <ContentTitle title='source' />

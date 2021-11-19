@@ -15,6 +15,7 @@ export function Organic() {
             <ResourceTitle
                 title='Organic'
                 image='nuggetOrganic'
+                link='Organic'
             />
             <View>
                 <ContentTitle title='source' />
