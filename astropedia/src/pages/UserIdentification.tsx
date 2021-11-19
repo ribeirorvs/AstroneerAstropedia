@@ -7,8 +7,7 @@ import {
     TextInput,
     TouchableWithoutFeedback,
     Keyboard,
-    KeyboardAvoidingView,
-    Alert
+    KeyboardAvoidingView
 } from 'react-native';
 import { textStyle } from '../styles/textStyles';
 import { layoutStyle } from '../styles/layoutStyles';
