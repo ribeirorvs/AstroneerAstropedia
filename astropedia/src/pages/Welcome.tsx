@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import {
     SafeAreaView,
     View,
@@ -16,7 +16,20 @@ import AsyncStorage from '@react-native-async-storage/async-storage';
 
 export function Welcome() {
     const navigation = useNavigation();
-    AsyncStorage.clear()
+    useEffect(() => {
+        const key = '@stropedia:flow';
+        async function defineAppFlow() {
+            const data = JSON.parse(JSON.stringify(await AsyncStorage.getItem(key)));
+            const flow = data ? (data as string) : {};
+            if (flow != 'Home') {
+                await AsyncStorage.setItem(key, 'Home')
+            } else {
+                navigation.navigate(flow)
+            }
+        }
+        defineAppFlow();
+    }, [])
+    //AsyncStorage.clear()
     return (
         <SafeAreaView style={layoutStyle.container}>
             <View style={layoutStyle.wrapper}>
