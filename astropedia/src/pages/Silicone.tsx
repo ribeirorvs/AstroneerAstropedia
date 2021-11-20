@@ -15,7 +15,8 @@ export function Silicone() {
             <Header />
             <ResourceTitle
                 title='silicone'
-                image='nuggetSilicone'
+                icon='silicone'
+                nugget='nuggetSilicone'
                 link='Silicone'
             />
             <ScrollView>

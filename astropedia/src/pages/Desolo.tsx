@@ -13,7 +13,8 @@ export function Desolo() {
             <Header />
             <ResourceTitle
                 title='desolo'
-                image='iconDesolo'
+                icon='desolo'
+                nugget='nuggetDesolo'
                 link='Desolo'
             />
             <View style={layoutStyle.content} >

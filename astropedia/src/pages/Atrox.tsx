@@ -13,7 +13,8 @@ export function Atrox() {
             <Header />
             <ResourceTitle
                 title='atrox'
-                image='iconAtrox'
+                icon='atrox'
+                nugget='nuggetAtrox'
                 link='Atrox'
             />
             <View style={layoutStyle.content} >

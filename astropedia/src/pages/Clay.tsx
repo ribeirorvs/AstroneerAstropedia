@@ -14,7 +14,8 @@ export function Clay() {
             <Header />
             <ResourceTitle
                 title='clay'
-                image='nuggetClay'
+                icon='clay'
+                nugget='nuggetClay'
                 link='Clay'
             />
             <View>

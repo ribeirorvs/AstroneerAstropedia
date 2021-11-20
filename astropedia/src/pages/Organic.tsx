@@ -14,7 +14,8 @@ export function Organic() {
             <Header />
             <ResourceTitle
                 title='Organic'
-                image='nuggetOrganic'
+                icon='organic'
+                nugget='nuggetOrganic'
                 link='Organic'
             />
             <View>

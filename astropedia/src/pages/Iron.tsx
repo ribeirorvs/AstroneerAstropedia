@@ -15,7 +15,8 @@ export function Iron() {
             <Header />
             <ResourceTitle
                 title='iron'
-                image='nuggetIron'
+                icon='iron'
+                nugget='nuggetIron'
                 link='Iron'
             />
             <ScrollView>

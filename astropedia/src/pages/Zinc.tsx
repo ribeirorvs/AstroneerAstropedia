@@ -15,7 +15,8 @@ export function Zinc() {
             <Header />
             <ResourceTitle
                 title='zinc'
-                image='nuggetZinc'
+                icon='zinc'
+                nugget='nuggetZinc'
                 link='Zinc'
             />
             <ScrollView>

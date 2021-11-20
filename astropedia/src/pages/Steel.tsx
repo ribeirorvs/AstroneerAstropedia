@@ -16,7 +16,8 @@ export function Steel() {
             <Header />
             <ResourceTitle
                 title='steel'
-                image='nuggetSteel'
+                icon='steel'
+                nugget='nuggetSteel'
                 link='Steel'
             />
             <ScrollView>

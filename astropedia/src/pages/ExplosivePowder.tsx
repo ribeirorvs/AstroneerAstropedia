@@ -17,7 +17,8 @@ export function ExplosivePowder() {
             <Header />
             <ResourceTitle
                 title='explosive powder'
-                image='explosivePowder'
+                icon='explosivePowder'
+                nugget='nuggetExplosivePowder'
                 link='ExplosivePowder'
             />
             <ScrollView>

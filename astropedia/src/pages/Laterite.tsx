@@ -14,7 +14,8 @@ export function Laterite() {
             <Header />
             <ResourceTitle
                 title='laterite'
-                image='nuggetLaterite'
+                icon='laterite'
+                nugget='nuggetLaterite'
                 link='Laterite'
             />
             <View>

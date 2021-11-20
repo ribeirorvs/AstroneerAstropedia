@@ -14,7 +14,8 @@ export function Sulfur() {
             <Header />
             <ResourceTitle
                 title='sulfur'
-                image='nuggetSulfur'
+                icon='sulfur'
+                nugget='nuggetSulfur'
                 link='Sulfur'
             />
             <View>

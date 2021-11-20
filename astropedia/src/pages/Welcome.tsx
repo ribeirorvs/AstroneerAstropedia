@@ -11,11 +11,12 @@ import { textStyle } from '../styles/textStyles';
 import { layoutStyle } from '../styles/layoutStyles';
 import { imgStyle } from '../styles/imgStyles';
 import { useNavigation } from '@react-navigation/core';
+import AsyncStorage from '@react-native-async-storage/async-storage';
 
 
 export function Welcome() {
     const navigation = useNavigation();
-
+    AsyncStorage.clear()
     return (
         <SafeAreaView style={layoutStyle.container}>
             <View style={layoutStyle.wrapper}>

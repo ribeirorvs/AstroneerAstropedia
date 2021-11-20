@@ -13,7 +13,8 @@ export function Novus() {
             <Header />
             <ResourceTitle
                 title='novus'
-                image='iconNovus'
+                icon='novus'
+                nugget='nuggetNovus'
                 link='Novus'
             />
             <View style={layoutStyle.content} >

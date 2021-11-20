@@ -13,7 +13,8 @@ export function Calidor() {
             <Header />
             <ResourceTitle
                 title='calidor'
-                image='iconCalidor'
+                icon='calidor'
+                nugget='nuggetCalidor'
                 link='Calidor'
             />
             <View style={layoutStyle.content} >

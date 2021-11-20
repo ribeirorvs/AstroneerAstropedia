@@ -21,7 +21,6 @@ export function ComponentButton({
 }: ComponentButtonProps) {
     const navigation = useNavigation();
 
-
     return (
         <RectButton
             onPress={() => navigation.navigate(link)}

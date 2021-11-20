@@ -14,7 +14,8 @@ export function Argon() {
             <Header />
             <ResourceTitle
                 title='argon'
-                image='nuggetArgon'
+                icon='argon'
+                nugget='nuggetArgon'
                 link='Argon'
             />
             <View>

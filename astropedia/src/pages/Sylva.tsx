@@ -13,7 +13,8 @@ export function Sylva() {
             <Header />
             <ResourceTitle
                 title='sylva'
-                image='iconSylva'
+                icon='sylva'
+                nugget='nuggetSylva'
                 link='Sylva'
             />
             <View style={layoutStyle.content} >

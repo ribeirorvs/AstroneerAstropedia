@@ -14,7 +14,8 @@ export function Hematite() {
             <Header />
             <ResourceTitle
                 title='hematite'
-                image='nuggetHematite'
+                icon='hematite'
+                nugget='nuggetHematite'
                 link='Hematite'
             />
             <View>

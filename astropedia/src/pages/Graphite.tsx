@@ -15,7 +15,8 @@ export function Graphite() {
             <Header />
             <ResourceTitle
                 title='graphite'
-                image='nuggetGraphite'
+                icon='graphite'
+                nugget='nuggetGraphite'
                 link='Graphite'
             />
             <ScrollView>

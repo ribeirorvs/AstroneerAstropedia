@@ -14,7 +14,8 @@ export function Methane() {
             <Header />
             <ResourceTitle
                 title='methane'
-                image='nuggetMethane'
+                icon='methane'
+                nugget='nuggetMethane'
                 link='Methane'
             />
             <View>

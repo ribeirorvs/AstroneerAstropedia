@@ -14,7 +14,8 @@ export function Titanite() {
             <Header />
             <ResourceTitle
                 title='titanite'
-                image='nuggetTitanite'
+                icon='titanie'
+                nugget='nuggetTitanite'
                 link='Titanite'
             />
             <View>

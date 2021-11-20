@@ -13,7 +13,8 @@ export function Vesania() {
             <Header />
             <ResourceTitle
                 title='vesania'
-                image='iconVesania'
+                icon='vesania'
+                nugget='nuggetVesania'
                 link='Vesania'
             />
             <ScrollView style={layoutStyle.resourceContent} contentContainerStyle={{ alignItems: 'center' }} >

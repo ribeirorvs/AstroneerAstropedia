@@ -16,7 +16,8 @@ export function tungstenCarbide() {
             <Header />
             <ResourceTitle
                 title='tungsten carbide'
-                image='nuggetTungstenCarbide'
+                icon='tungstenCarbide'
+                nugget='nuggetTungstenCarbide'
                 link='TungstenCarbide'
             />
             <ScrollView>

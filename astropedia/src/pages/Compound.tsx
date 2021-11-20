@@ -15,7 +15,8 @@ export function Compound() {
             <Header />
             <ResourceTitle
                 title='compound'
-                image='nuggetCompound'
+                icon='compound'
+                nugget='nuggetCompound'
                 link='Compound'
             />
             <ScrollView>

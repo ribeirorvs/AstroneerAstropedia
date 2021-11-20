@@ -14,7 +14,8 @@ export function Nitrogen() {
             <Header />
             <ResourceTitle
                 title='nitrogen'
-                image='nuggetNitrogen'
+                icon='nitrogen'
+                nugget='nuggetNitrogen'
                 link='Nitrogen'
             />
             <View>

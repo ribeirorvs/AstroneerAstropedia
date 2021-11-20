@@ -15,7 +15,8 @@ export function Glass() {
             <Header />
             <ResourceTitle
                 title='glass'
-                image='nuggetGlass'
+                icon='glass'
+                nugget='nuggetGlass'
                 link='Glass'
             />
             <ScrollView>

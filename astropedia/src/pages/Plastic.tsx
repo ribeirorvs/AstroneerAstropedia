@@ -16,7 +16,8 @@ export function Plastic() {
             <Header />
             <ResourceTitle
                 title='plastic'
-                image='nuggetPlastic'
+                icon='plastic'
+                nugget='nuggetPlastic'
                 link='Plastic'
             />
             <ScrollView>

@@ -14,7 +14,8 @@ export function Sphalerite() {
             <Header />
             <ResourceTitle
                 title='sphalerite'
-                image='nuggetSphalerite'
+                icon='sphalerite'
+                nugget='nuggetSphalerite'
                 link='Sphalerite'
             />
             <View>

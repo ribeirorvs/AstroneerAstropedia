@@ -15,7 +15,8 @@ export function Quartz() {
             <Header />
             <ResourceTitle
                 title='quartz'
-                image='nuggetQuartz'
+                icon='quartz'
+                nugget='nuggetQuartz'
                 link='Quartz'
             />
             <ScrollView>

@@ -15,7 +15,8 @@ export function Ceramic() {
             <Header />
             <ResourceTitle
                 title='ceramic'
-                image='nuggetCeramic'
+                icon='ceramic'
+                nugget='nuggetCeramic'
                 link='Ceramic'
             />
             <ScrollView>

@@ -14,7 +14,8 @@ export function Aluminum() {
             <Header />
             <ResourceTitle
                 title='aluminum'
-                image='nuggetAluminum'
+                icon='aluminum'
+                nugget='nuggetAluminum'
                 link='Aluminum'
             />
             <ScrollView>

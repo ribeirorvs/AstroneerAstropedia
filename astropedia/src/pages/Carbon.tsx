@@ -14,7 +14,8 @@ export function Carbon() {
             <Header />
             <ResourceTitle
                 title='carbon'
-                image='nuggetCarbon'
+                icon='carbon'
+                nugget='nuggetCarbon'
                 link='Carbon'
             />
             <View>

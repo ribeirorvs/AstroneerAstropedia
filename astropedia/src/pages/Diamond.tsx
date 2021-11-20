@@ -16,7 +16,8 @@ export function Diamond() {
             <Header />
             <ResourceTitle
                 title='diamond'
-                image='nuggetDiamond'
+                icon='diamond'
+                nugget='nuggetDiamond'
                 link='Diamond'
             />
             <View>

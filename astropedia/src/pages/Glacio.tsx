@@ -13,7 +13,8 @@ export function Glacio() {
             <Header />
             <ResourceTitle
                 title='glacio'
-                image='iconGlacio'
+                icon='glacio'
+                nugget='nuggetGlacio'
                 link='Glacio'
             />
             <View style={layoutStyle.content} >
