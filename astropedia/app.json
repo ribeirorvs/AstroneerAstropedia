@@ -1,6 +1,6 @@
 {
   "expo": {
-    "name": "astropedia",
+    "name": "Astropedia",
     "slug": "astropedia",
     "version": "1.0.0",
     "orientation": "portrait",
@@ -24,8 +24,8 @@
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#FFFFFF"
       },
-      "package": "",
-      "versionCode": 0.77
+      "package": "com.middlewaredev.astropedia",
+      "versionCode": 0.8
     },
     "web": {
       "favicon": "./assets/favicon.png"
