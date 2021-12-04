@@ -25,3 +25,5 @@ The prototype of the app was created at this [Figma](https://www.figma.com/file/
 The app privacy policy can be found here: [Astropedia APP Privacy Policy](https://middlewaredev.home.blog/2021/11/20/astropedia-app-privacy-policy/)
 
 The app is available in the Google Play Store here: [Astropedia](https://play.google.com/store/apps/details?id=com.middlewaredev.astropedia)
+
+Trello of this project: [Astropedia Trello](https://trello.com/b/9738AS16)
