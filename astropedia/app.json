@@ -25,7 +25,7 @@
         "backgroundColor": "#FFFFFF"
       },
       "package": "com.middlewaredev.astropedia",
-      "versionCode": 0.8
+      "versionCode": 1
     },
     "web": {
       "favicon": "./assets/favicon.png"
