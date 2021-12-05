@@ -8,6 +8,7 @@ import { ResourceSubItem1 } from '../components/resourceSubItem1';
 import { ResourceSubItem2 } from '../components/resourceSubItem2';
 import { ResourceSubItem3 } from '../components/resourceSubItem3';
 import { ResourceSubItem4 } from '../components/resourceSubItem4';
+import { ResourceSubItem5 } from '../components/resourceSubItem5';
 import { ResourceTitle } from '../components/resourceTitle';
 import { layoutStyle } from '../styles/layoutStyles';
 
@@ -55,16 +56,16 @@ export function NanocarbonAlloy() {
                 <ResourceSubItem4 name='all planets' icon='sylva' link='Planets' />
                 <ResourceSubItem4 name='soil centrifuge' icon='soilCentrifuge' />
                 <ResourceSubItem4 name='trade platform' icon='tradePlatform' />
-                <ResourceSubItem2 name='hydrazine' icon='hydrazine' link='Hydrazine' />
-                <ResourceSubItem3 name='ammonium' icon='ammonium' link='Ammonium' />
-                <ResourceSubItem4 name='all planets' icon='sylva' link='Planets' />
-                <ResourceSubItem4 name='soil centrifuge' icon='soilCentrifuge' />
-                <ResourceSubItem4 name='trade platform' icon='tradePlatform' />
-                <ResourceSubItem3 name='hydrogen' icon='hydrogen' link='Hydrogen' />
-                <ResourceSubItem4 name='sylva' icon='sylva' link='Sylva' />
-                <ResourceSubItem4 name='calidor' icon='calidor' link='Calidor' />
-                <ResourceSubItem4 name='vesania' icon='vesania' link='Vesania' />
-                <ResourceSubItem4 name='novus' icon='novus' link='Novus' />
+                <ResourceSubItem3 name='hydrazine' icon='hydrazine' link='Hydrazine' />
+                <ResourceSubItem4 name='ammonium' icon='ammonium' link='Ammonium' />
+                <ResourceSubItem5 name='all planets' icon='sylva' link='Planets' />
+                <ResourceSubItem5 name='soil centrifuge' icon='soilCentrifuge' />
+                <ResourceSubItem5 name='trade platform' icon='tradePlatform' />
+                <ResourceSubItem4 name='hydrogen' icon='hydrogen' link='Hydrogen' />
+                <ResourceSubItem5 name='sylva' icon='sylva' link='Sylva' />
+                <ResourceSubItem5 name='calidor' icon='calidor' link='Calidor' />
+                <ResourceSubItem5 name='vesania' icon='vesania' link='Vesania' />
+                <ResourceSubItem5 name='novus' icon='novus' link='Novus' />
                 <ContentTitle title='uses' />
                 <ResourceItem name='backpack printer' icon='backpackPrinter' />
                 <ResourceSubItem1 name='portable oxygenator' icon='oxygenator' />
