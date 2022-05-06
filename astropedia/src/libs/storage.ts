@@ -1,37 +1,37 @@
 import AsyncStorage from '@react-native-async-storage/async-storage';
 
-export interface pageDetails {
+export interface PageDetails {
     pageTitle: string,
     pageIcon: string,
     pageNugget?: string,
     pageLink: string
 }
 
-export interface storedFavorite {
+export interface StoredFavorite {
     [id: string]: {
-        favorite: pageDetails
+        favorite: PageDetails
     }
 }
 
-export interface favIcon {
+export interface FavIcon {
     pageTitle: string,
     favorited: boolean
 }
 
-export interface storedFavIcon {
+export interface StoredFavIcon {
     [id: string]: {
-        favIcon: favIcon
+        favIcon: FavIcon
     }
 }
 
-export async function saveFavorite(page: pageDetails): Promise<void> {
+export async function saveFavorite(page: PageDetails): Promise<void> {
     try {
         const data = JSON.parse(JSON.stringify(await AsyncStorage.getItem('@astropedia:pages')));
         const favDetails = {
             pageTitle: page.pageTitle,
             favorited: true
         }
-        const oldFavorites = data ? (JSON.parse(data) as storedFavorite) : {};
+        const oldFavorites = data ? (JSON.parse(data) as StoredFavorite) : {};
         const newFavorite = {
             [page.pageTitle]: {
                 pageTitle: page.pageTitle,
@@ -51,10 +51,10 @@ export async function saveFavorite(page: pageDetails): Promise<void> {
     }
 }
 
-export async function loadFavorites(): Promise<pageDetails[]> {
+export async function loadFavorites(): Promise<PageDetails[]> {
     const data = await AsyncStorage.getItem('@astropedia:pages');
-    const favorites = data ? (JSON.parse(data) as storedFavorite) : {};
-    const favoritesStored = Object
+    const favorites = data ? (JSON.parse(data) as StoredFavorite) : {};
+    return favoritesStored = Object
         .keys(favorites)
         .map(favorite => {
             return {
@@ -62,17 +62,16 @@ export async function loadFavorites(): Promise<pageDetails[]> {
             }
         })
         .sort();
-    return favoritesStored;
 }
 
-export async function deleteFavorite(page: pageDetails): Promise<void> {
+export async function deleteFavorite(page: PageDetails): Promise<void> {
     try {
         const favDetails = {
             pageTitle: page.pageTitle,
             favorited: false
         }
         const data = JSON.parse(JSON.stringify(await AsyncStorage.getItem('@astropedia:pages')));
-        const favorites = data ? (JSON.parse(data) as storedFavorite) : {};
+        const favorites = data ? (JSON.parse(data) as StoredFavorite) : {};
 
         delete favorites[page.pageTitle]
 
@@ -85,10 +84,10 @@ export async function deleteFavorite(page: pageDetails): Promise<void> {
     }
 }
 
-export async function loadFavoriteIcon(favorited: favIcon): Promise<String> {
+export async function loadFavoriteIcon(favorited: FavIcon): Promise<string> {
     const key = '@stropedia:favIcon';
     const data = JSON.parse(JSON.stringify(await AsyncStorage.getItem(key)));
-    const favorites = data ? (JSON.parse(data) as storedFavIcon) : {};
+    const favorites = data ? (JSON.parse(data) as StoredFavIcon) : {};
     if (JSON.stringify(favorites) != '{}') {
         if (favorites[favorited.pageTitle].favIcon.favorited) {
             return ('favIconActive')
@@ -100,10 +99,10 @@ export async function loadFavoriteIcon(favorited: favIcon): Promise<String> {
     }
 }
 
-async function saveFavIcon(page: favIcon) {
+async function saveFavIcon(page: FavIcon) {
     const key = '@stropedia:favIcon';
     const data = JSON.parse(JSON.stringify(await AsyncStorage.getItem(key)));
-    const favorites = data ? (JSON.parse(data) as storedFavIcon) : {};
+    const favorites = data ? (JSON.parse(data) as StoredFavIcon) : {};
     const newFavorite = {
         [page.pageTitle]: {
             favIcon: page
@@ -117,10 +116,10 @@ async function saveFavIcon(page: favIcon) {
     );
 }
 
-async function reomveFavIcon(page: favIcon) {
+async function reomveFavIcon(page: FavIcon) {
     const key = '@stropedia:favIcon';
     const data = JSON.parse(JSON.stringify(await AsyncStorage.getItem(key)));
-    const favorites = data ? (JSON.parse(data) as storedFavIcon) : {};
+    const favorites = data ? (JSON.parse(data) as StoredFavIcon) : {};
 
     delete favorites[page.pageTitle]
 

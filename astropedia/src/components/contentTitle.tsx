@@ -8,8 +8,7 @@ interface ContentTitleProps {
 }
 
 export function ContentTitle({
-    title,
-    ...rest
+    title
 }: ContentTitleProps) {
     return (
         <View style={layoutStyle.contentTitle}>

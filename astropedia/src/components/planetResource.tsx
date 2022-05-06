@@ -2,8 +2,7 @@ import { useNavigation } from '@react-navigation/core';
 import React from 'react';
 import {
     Image,
-    Text,
-    View
+    Text
 } from 'react-native';
 import { RectButton, RectButtonProps } from 'react-native-gesture-handler';
 import { images } from '../assets';
@@ -22,8 +21,7 @@ export function PlanetResource({
     nugget,
     icon,
     name,
-    link,
-    ...rest
+    link
 }: PlanetResourceProps) {
     const navigation = useNavigation();
     return (

@@ -6,7 +6,6 @@ import { Header } from '../components/header';
 import { ResourceItem } from '../components/resourceItem';
 import { ResourceSubItem1 } from '../components/resourceSubItem1';
 import { ResourceSubItem2 } from '../components/resourceSubItem2';
-import { ResourceSubItem3 } from '../components/resourceSubItem3';
 import { ResourceTitle } from '../components/resourceTitle';
 import { layoutStyle } from '../styles/layoutStyles';
 

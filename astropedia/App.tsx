@@ -1,5 +1,4 @@
 import React from 'react';
-import { UserIdentification } from './src/pages/UserIdentification';
 import {
   useFonts,
   Roboto_400Regular

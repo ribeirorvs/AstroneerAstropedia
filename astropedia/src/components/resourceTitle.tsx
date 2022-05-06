@@ -18,17 +18,16 @@ export function ResourceTitle({
     title,
     icon,
     nugget,
-    link,
-    ...rest
+    link
 }: ResourceTitleProps) {
-    const [page, setPage] = useState<pageDetails>({
+    const [page] = useState<pageDetails>({
         pageTitle: title,
         pageIcon: icon,
         pageNugget: nugget,
         pageLink: link
     });
     const [favIcon, setFavIcon] = useState('favIcon');
-    const [favorited, setFavorited] = useState<favIcon>({
+    const [favorited] = useState<favIcon>({
         pageTitle: title,
         favorited: false
     });

@@ -1,6 +1,6 @@
 import { useNavigation } from '@react-navigation/core';
 import React from 'react';
-import { Text, View, Image } from 'react-native';
+import { Text, Image } from 'react-native';
 import { RectButton, RectButtonProps } from 'react-native-gesture-handler';
 import { images } from '../assets';
 import { imgStyle } from '../styles/imgStyles';
@@ -16,8 +16,7 @@ interface ResourceItemProps extends RectButtonProps {
 export function ResourceItem({
     name,
     icon,
-    link,
-    ...rest
+    link
 }: ResourceItemProps) {
     const navigation = useNavigation();
 

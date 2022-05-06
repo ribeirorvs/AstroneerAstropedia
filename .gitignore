@@ -118,3 +118,6 @@ astropedia/web-build/
 
 # macOS
 astropedia/.DS_Store
+
+# SonarQube
+.scannerwork

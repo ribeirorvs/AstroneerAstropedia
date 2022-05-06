@@ -9,8 +9,7 @@ interface TitleProps {
 }
 
 export function Title({
-    title,
-    ...rest
+    title
 }: TitleProps) {
     return (
         <Text style={textStyle.title}>
