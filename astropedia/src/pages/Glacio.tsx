@@ -5,6 +5,7 @@ import { ContentTitle } from '../components/contentTitle';
 import { Header } from '../components/header';
 import { PlanetResource } from '../components/planetResource';
 import { ResourceTitle } from '../components/resourceTitle';
+import { translate } from '../libs/localization';
 import { layoutStyle } from '../styles/layoutStyles';
 
 export function Glacio() {
@@ -12,30 +13,30 @@ export function Glacio() {
         <SafeAreaView style={layoutStyle.container} >
             <Header />
             <ResourceTitle
-                title='glacio'
+                title={translate('glacio')}
                 icon='glacio'
                 nugget='nuggetGlacio'
                 link='Glacio'
             />
             <View style={layoutStyle.content} >
-                <ContentTitle title='natural resources' />
+                <ContentTitle title={translate('naturalResourcesTitle')} />
                 <PlanetResource
                     nugget='nuggetHematite'
                     icon='hematite'
-                    name='hematite'
+                    name={translate('hematite')}
                     link='Hematite'
                 />
                 <PlanetResource
                     nugget='nuggetTitanite'
                     icon='titanite'
-                    name='titanite'
+                    name={translate('titanite')}
                     link='Titanite'
                 />
-                <ContentTitle title='atmospheric resources' />
+                <ContentTitle title={translate('atmosphericResourcesTitle')} />
                 <PlanetResource
                     nugget='nuggetArgon'
                     icon='argon'
-                    name='argon'
+                    name={translate('argon')}
                     link='Argon'
                 />
             </View>

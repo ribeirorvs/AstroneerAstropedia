@@ -6,6 +6,7 @@ import { Header } from '../components/header';
 import { ResourceItem } from '../components/resourceItem';
 import { ResourceSubItem1 } from '../components/resourceSubItem1';
 import { ResourceTitle } from '../components/resourceTitle';
+import { translate } from '../libs/localization';
 import { layoutStyle } from '../styles/layoutStyles';
 
 export function Lithium() {
@@ -13,20 +14,20 @@ export function Lithium() {
         <SafeAreaView style={layoutStyle.container} >
             <Header />
             <ResourceTitle
-                title='lithium'
+                title={translate('lithium')}
                 icon='lithium'
                 nugget='nuggetLithium'
                 link='Lithium'
             />
             <View>
-                <ContentTitle title='source' />
-                <ResourceItem name='vesania' icon='vesania' link='Vesania' />
-                <ResourceItem name='novus' icon='novus' link='Novus' />
-                <ResourceItem name='trade platform' icon='tradePlatform' />
-                <ContentTitle title='uses' />
-                <ResourceItem name='small printer' icon='smallPrinter' />
-                <ResourceSubItem1 name='medium battery' icon='battery' />
-                <ResourceSubItem1 name='RTG' icon='generator' />
+                <ContentTitle title={translate('sourceTitle')} />
+                <ResourceItem name={translate('vesania')} icon='vesania' link='Vesania' />
+                <ResourceItem name={translate('novus')} icon='novus' link='Novus' />
+                <ResourceItem name={translate('tradePlatform')} icon='tradePlatform' />
+                <ContentTitle title={translate('usesTitle')} />
+                <ResourceItem name={translate('smallPrinter')} icon='smallPrinter' />
+                <ResourceSubItem1 name={translate('mediumBattery')} icon='battery' />
+                <ResourceSubItem1 name={translate('rtg')} icon='generator' />
             </View>
         </SafeAreaView>
     )

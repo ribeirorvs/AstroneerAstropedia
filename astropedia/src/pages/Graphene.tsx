@@ -8,6 +8,7 @@ import { ResourceSubItem1 } from '../components/resourceSubItem1';
 import { ResourceSubItem2 } from '../components/resourceSubItem2';
 import { ResourceSubItem3 } from '../components/resourceSubItem3';
 import { ResourceTitle } from '../components/resourceTitle';
+import { translate } from '../libs/localization';
 import { layoutStyle } from '../styles/layoutStyles';
 
 export function Graphene() {
@@ -15,37 +16,37 @@ export function Graphene() {
         <SafeAreaView style={layoutStyle.container} >
             <Header />
             <ResourceTitle
-                title='graphene'
+                title={translate('graphene')}
                 icon='graphene'
                 nugget='nuggetGraphene'
                 link='Graphene'
             />
             <ScrollView>
-                <ContentTitle title='source' />
-                <ResourceItem name='chemistry lab' icon='chemistryLab' />
-                <ResourceSubItem1 name='graphite' icon='graphite' link='Graphite' />
-                <ResourceSubItem2 name='all planets' icon='sylva' link='Planets' />
-                <ResourceSubItem2 name='soil centrifuge' icon='soilCentrifuge' />
-                <ResourceSubItem2 name='trade platform' icon='tradePlatform' />
-                <ResourceSubItem1 name='hydrazine' icon='hydrazine' link='Hydrazine' />
-                <ResourceSubItem2 name='ammonium' icon='ammonium' link='Ammonium' />
-                <ResourceSubItem3 name='all planets' icon='sylva' link='Planets' />
-                <ResourceSubItem3 name='soil centrifuge' icon='soilCentrifuge' />
-                <ResourceSubItem3 name='trade platform' icon='tradePlatform' />
-                <ResourceSubItem1 name='hydrogen' icon='hydrogen' link='Hydrogen' />
-                <ResourceSubItem2 name='sylva' icon='sylva' link='Sylva' />
-                <ResourceSubItem2 name='calidor' icon='calidor' link='Calidor' />
-                <ResourceSubItem2 name='vesania' icon='vesania' link='Vesania' />
-                <ResourceSubItem2 name='novus' icon='novus' link='Novus' />
-                <ContentTitle title='uses' />
-                <ResourceItem name='small printer' icon='smallPrinter' />
-                <ResourceSubItem1 name='field shelter' icon='shelter' />
-                <ResourceItem name='large printer' icon='largePrinter' />
-                <ResourceSubItem1 name='solar array' icon='solar' />
-                <ResourceSubItem1 name='xl wind turbine' icon='windTurbine' />
-                <ResourceItem name='chemistry lab' icon='chemistryLab' />
-                <ResourceSubItem1 name='diamond' icon='diamond' link='Diamond' />
-                <ResourceSubItem1 name='titanium alloy' icon='titaniumAlloy' link='TitaniumAlloy' />
+                <ContentTitle title={translate('sourceTitle')} />
+                <ResourceItem name={translate('chemistryLab')} icon='chemistryLab' />
+                <ResourceSubItem1 name={translate('graphite')} icon='graphite' link='Graphite' />
+                <ResourceSubItem2 name={translate('sourceAllPlanets')} icon='sylva' link='Planets' />
+                <ResourceSubItem2 name={translate('soilCentrifuge')} icon='soilCentrifuge' />
+                <ResourceSubItem2 name={translate('tradePlatform')} icon='tradePlatform' />
+                <ResourceSubItem1 name={translate('hydrazine')} icon='hydrazine' link='Hydrazine' />
+                <ResourceSubItem2 name={translate('ammonium')} icon='ammonium' link='Ammonium' />
+                <ResourceSubItem3 name={translate('sourceAllPlanets')} icon='sylva' link='Planets' />
+                <ResourceSubItem3 name={translate('soilCentrifuge')} icon='soilCentrifuge' />
+                <ResourceSubItem3 name={translate('tradePlatform')} icon='tradePlatform' />
+                <ResourceSubItem1 name={translate('hydrogen')} icon='hydrogen' link='Hydrogen' />
+                <ResourceSubItem2 name={translate('sylva')} icon='sylva' link='Sylva' />
+                <ResourceSubItem2 name={translate('calidor')} icon='calidor' link='Calidor' />
+                <ResourceSubItem2 name={translate('vesania')} icon='vesania' link='Vesania' />
+                <ResourceSubItem2 name={translate('novus')} icon='novus' link='Novus' />
+                <ContentTitle title={translate('usesTitle')} />
+                <ResourceItem name={translate('smallPrinter')} icon='smallPrinter' />
+                <ResourceSubItem1 name={translate('fieldShelter')} icon='shelter' />
+                <ResourceItem name={translate('largePrinter')} icon='largePrinter' />
+                <ResourceSubItem1 name={translate('solarArray')} icon='solar' />
+                <ResourceSubItem1 name={translate('xlWindTurbine')} icon='windTurbine' />
+                <ResourceItem name={translate('chemistryLab')} icon='chemistryLab' />
+                <ResourceSubItem1 name={translate('diamond')} icon='diamond' link='Diamond' />
+                <ResourceSubItem1 name={translate('titaniumAlloy')} icon='titaniumAlloy' link='TitaniumAlloy' />
             </ScrollView>
         </SafeAreaView>
     )

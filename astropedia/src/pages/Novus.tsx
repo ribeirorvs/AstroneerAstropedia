@@ -5,6 +5,7 @@ import { ContentTitle } from '../components/contentTitle';
 import { Header } from '../components/header';
 import { PlanetResource } from '../components/planetResource';
 import { ResourceTitle } from '../components/resourceTitle';
+import { translate } from '../libs/localization';
 import { layoutStyle } from '../styles/layoutStyles';
 
 export function Novus() {
@@ -12,36 +13,36 @@ export function Novus() {
         <SafeAreaView style={layoutStyle.container} >
             <Header />
             <ResourceTitle
-                title='novus'
+                title={translate('novus')}
                 icon='novus'
                 nugget='nuggetNovus'
                 link='Novus'
             />
             <View style={layoutStyle.content} >
-                <ContentTitle title='natural resources' />
+                <ContentTitle title={translate('naturalResourcesTitle')} />
                 <PlanetResource
                     nugget='nuggetHematite'
                     icon='hematite'
-                    name='hematite'
+                    name={translate('hematite')}
                     link='Hematite'
                 />
                 <PlanetResource
                     nugget='nuggetLithium'
                     icon='lithium'
-                    name='lithium'
+                    name={translate('lithium')}
                     link='Lithium'
                 />
-                <ContentTitle title='atmospheric resources' />
+                <ContentTitle title={translate('atmosphericResourcesTitle')} />
                 <PlanetResource
                     nugget='nuggetHydrogen'
                     icon='hydrogen'
-                    name='hydrogen'
+                    name={translate('hydrogen')}
                     link='Hydrogen'
                 />
                 <PlanetResource
                     nugget='nuggetMethane'
                     icon='methane'
-                    name='methane'
+                    name={translate('methane')}
                     link='Methane'
                 />
             </View>

@@ -6,6 +6,7 @@ import { Header } from '../components/header';
 import { ResourceItem } from '../components/resourceItem';
 import { ResourceSubItem1 } from '../components/resourceSubItem1';
 import { ResourceTitle } from '../components/resourceTitle';
+import { translate } from '../libs/localization';
 import { layoutStyle } from '../styles/layoutStyles';
 
 export function Copper() {
@@ -13,30 +14,30 @@ export function Copper() {
         <SafeAreaView style={layoutStyle.container} >
             <Header />
             <ResourceTitle
-                title='copper'
+                title={translate('copper')}
                 icon='copper'
                 nugget='nuggetCopper'
                 link='Copper'
             />
             <ScrollView>
-                <ContentTitle title='source' />
-                <ResourceItem name='malachite' icon='malachite' link='Malachite' />
-                <ResourceSubItem1 name='sylva' icon='sylva' link='Sylva' />
-                <ResourceSubItem1 name='calidor' icon='calidor' link='Calidor' />
-                <ResourceSubItem1 name='trade platform' icon='tradePlatform' />
-                <ContentTitle title='uses' />
-                <ResourceItem name='backpack printer' icon='backpackPrinter' />
-                <ResourceSubItem1 name='worklight' icon='worklight' />
-                <ResourceSubItem1 name='small solar panel' icon='solar' />
-                <ResourceSubItem1 name='extenders' icon='extenders' />
-                <ResourceItem name='small printer' icon='smallPrinter' />
-                <ResourceSubItem1 name='medium solar panel' icon='solar' />
-                <ResourceSubItem1 name='splitter' icon='splitter' />
-                <ResourceSubItem1 name='power sensor' icon='sensor' />
-                <ResourceItem name='medium printer' icon='mediumPrinter' />
-                <ResourceSubItem1 name='solar array' icon='solar' />
-                <ResourceItem name='chemistry lab' icon='chemistryLab' />
-                <ResourceSubItem1 name='aluminum alloy' icon='aluminumAlloy' link='AluminumAlloy' />
+                <ContentTitle title={translate('sourceTitle')} />
+                <ResourceItem name={translate('malachite')} icon='malachite' link='Malachite' />
+                <ResourceSubItem1 name={translate('sylva')} icon='sylva' link='Sylva' />
+                <ResourceSubItem1 name={translate('calidor')} icon='calidor' link='Calidor' />
+                <ResourceSubItem1 name={translate('trade platform')} icon='tradePlatform' />
+                <ContentTitle title={('usesTitle')} />
+                <ResourceItem name={translate('backpackPrinter')} icon='backpackPrinter' />
+                <ResourceSubItem1 name={translate('worklight')} icon='worklight' />
+                <ResourceSubItem1 name={translate('smallSolarPanel')} icon='solar' />
+                <ResourceSubItem1 name={translate('extenders')} icon='extenders' />
+                <ResourceItem name={translate('smallPrinter')} icon='smallPrinter' />
+                <ResourceSubItem1 name={translate('mediumSolarPanel')} icon='solar' />
+                <ResourceSubItem1 name={translate('splitter')} icon='splitter' />
+                <ResourceSubItem1 name={translate('powerSensor')} icon='sensor' />
+                <ResourceItem name={translate('mediumPrinter')} icon='mediumPrinter' />
+                <ResourceSubItem1 name={translate('solarArray')} icon='solar' />
+                <ResourceItem name={translate('chemistryLab')} icon='chemistryLab' />
+                <ResourceSubItem1 name={translate('sourceAluminumAlloy')} icon='aluminumAlloy' link='AluminumAlloy' />
             </ScrollView>
         </SafeAreaView>
     )

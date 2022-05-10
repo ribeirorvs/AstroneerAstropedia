@@ -5,25 +5,26 @@ import { ComponentButton } from '../components/component';
 import { Header } from '../components/header';
 import { Title } from '../components/title';
 import { layoutStyle } from '../styles/layoutStyles';
+import { translate } from '../libs/localization';
 
 export function Home() {
     return (
         <SafeAreaView style={layoutStyle.container}>
             <Header />
             <View style={layoutStyle.content} >
-                <Title title='astropedia' />
+                <Title title={translate('mainTitle')} />
                 <ComponentButton
-                    title='planets'
+                    title={translate('planetsTitle')}
                     icon='sylva'
                     link='Planets'
                 />
                 <ComponentButton
-                    title='resources'
+                    title={translate('resourcesTitle')}
                     icon='compound'
                     link='Resources'
                 />
                 <ComponentButton
-                    title='favorites'
+                    title={translate('favoritesTitle')}
                     icon='favIcon'
                     link='Favorites'
                 />

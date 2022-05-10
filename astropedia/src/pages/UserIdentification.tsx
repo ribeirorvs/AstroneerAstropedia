@@ -16,11 +16,12 @@ import colors from '../styles/colors';
 import { useNavigation } from '@react-navigation/core';
 import { images } from '../assets';
 import AsyncStorage from '@react-native-async-storage/async-storage';
+import { translate } from '../libs/localization';
 
 export function UserIdentification() {
     const [isFocused, setIsFocused] = useState(false);
     const [isFilled, setIsFilled] = useState(false);
-    const [name, setName] = useState<string>();
+    const [name, setName] = useState<string>('Astroneer');
     const navigation = useNavigation();
 
     function handleInputBlur() {
@@ -50,8 +51,7 @@ export function UserIdentification() {
                         source={images.logo}
                     />
                     <Text style={textStyle.subTitle}>
-                        What is your{'\n'}
-                        Astroneer name?
+                        {translate('userIdentification')}
                     </Text>
                     <TextInput
                         style={[

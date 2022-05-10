@@ -6,6 +6,7 @@ import { Header } from '../components/header';
 import { ResourceItem } from '../components/resourceItem';
 import { ResourceSubItem1 } from '../components/resourceSubItem1';
 import { ResourceTitle } from '../components/resourceTitle';
+import { translate } from '../libs/localization';
 import { layoutStyle } from '../styles/layoutStyles';
 
 export function Glass() {
@@ -13,33 +14,33 @@ export function Glass() {
         <SafeAreaView style={layoutStyle.container} >
             <Header />
             <ResourceTitle
-                title='glass'
+                title={translate('glass')}
                 icon='glass'
                 nugget='nuggetGlass'
                 link='Glass'
             />
             <ScrollView>
-                <ContentTitle title='source' />
-                <ResourceItem name='quartz' icon='quartz' link='Quartz' />
-                <ResourceSubItem1 name='all planets' icon='sylva' link='Planets' />
-                <ResourceSubItem1 name='soil centifuge' icon='soilCentrifuge' />
-                <ResourceSubItem1 name='trade platform' icon='tradePlatform' />
-                <ContentTitle title='uses' />
-                <ResourceItem name='backpack printer' icon='backpackPrinter' />
-                <ResourceSubItem1 name='oxygen tank' icon='oxygenTank' />
-                <ResourceItem name='small printer' icon='smallPrinter' />
-                <ResourceSubItem1 name='medium solar panel' icon='solar' />
-                <ResourceSubItem1 name='medium resource canister' icon='canister' />
-                <ResourceSubItem1 name='medium fluid & soil canister' icon='canister' />
-                <ResourceSubItem1 name='medium gas canister' icon='canister' />
-                <ResourceItem name='medium printer' icon='mediumPrinter' />
-                <ResourceSubItem1 name='chemistry lab' icon='chemistryLab' />
-                <ResourceSubItem1 name='atmospheric condenser' icon='atmosphericCondenser' />
-                <ResourceSubItem1 name='large resource caniester' icon='canister' />
-                <ResourceSubItem1 name='large solar panel' icon='solar' />
-                <ResourceSubItem1 name='large wind turbine' icon='windTurbine' />
-                <ResourceItem name='large printer' icon='largePrinter' />
-                <ResourceSubItem1 name='solar array' icon='solar' />
+                <ContentTitle title={translate('sourceTitle')} />
+                <ResourceItem name={translate('quartz')} icon='quartz' link='Quartz' />
+                <ResourceSubItem1 name={translate('souceAllPlanets')} icon='sylva' link='Planets' />
+                <ResourceSubItem1 name={translate('soilCentifuge')} icon='soilCentrifuge' />
+                <ResourceSubItem1 name={translate('tradePlatform')} icon='tradePlatform' />
+                <ContentTitle title={translate('usesTitle')} />
+                <ResourceItem name={translate('backpackPrinter')} icon='backpackPrinter' />
+                <ResourceSubItem1 name={translate('oxygenTank')} icon='oxygenTank' />
+                <ResourceItem name={translate('smallPrinter')} icon='smallPrinter' />
+                <ResourceSubItem1 name={translate('mediumSolarPanel')} icon='solar' />
+                <ResourceSubItem1 name={translate('mediumResourceCanister')} icon='canister' />
+                <ResourceSubItem1 name={translate('mediumFluidSoilCanister')} icon='canister' />
+                <ResourceSubItem1 name={translate('mediumGasCanister')} icon='canister' />
+                <ResourceItem name={translate('mediumPrinter')} icon='mediumPrinter' />
+                <ResourceSubItem1 name={translate('chemistryLab')} icon='chemistryLab' />
+                <ResourceSubItem1 name={translate('atmosphericCondenser')} icon='atmosphericCondenser' />
+                <ResourceSubItem1 name={translate('largeResourceCaniester')} icon='canister' />
+                <ResourceSubItem1 name={translate('largeSolarPanel')} icon='solar' />
+                <ResourceSubItem1 name={translate('largeWindTurbine')} icon='windTurbine' />
+                <ResourceItem name={translate('largePrinter')} icon='largePrinter' />
+                <ResourceSubItem1 name={translate('solarArray')} icon='solar' />
             </ScrollView>
         </SafeAreaView>
     )

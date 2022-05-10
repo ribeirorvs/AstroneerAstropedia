@@ -6,6 +6,7 @@ import { Header } from '../components/header';
 import { ResourceItem } from '../components/resourceItem';
 import { ResourceSubItem1 } from '../components/resourceSubItem1';
 import { ResourceTitle } from '../components/resourceTitle';
+import { translate } from '../libs/localization';
 import { layoutStyle } from '../styles/layoutStyles';
 
 export function Nitrogen() {
@@ -13,20 +14,20 @@ export function Nitrogen() {
         <SafeAreaView style={layoutStyle.container} >
             <Header />
             <ResourceTitle
-                title='nitrogen'
+                title={translate('nitrogen')}
                 icon='nitrogen'
                 nugget='nuggetNitrogen'
                 link='Nitrogen'
             />
             <View>
-                <ContentTitle title='source' />
-                <ResourceItem name='atmospheric condenser' icon='atmosphericCondenser' />
-                <ResourceSubItem1 name='sylva' icon='sylva' link='Sylva' />
-                <ResourceSubItem1 name='vesania' icon='vesania' link='Vesania' />
-                <ResourceSubItem1 name='atrox' icon='atrox' link='Atrox' />
-                <ContentTitle title='uses' />
-                <ResourceItem name='chemistry lab' icon='chemistryLab' />
-                <ResourceSubItem1 name='titanium alloy' icon='titaniumAlloy' link='TitaniumAlloy' />
+                <ContentTitle title={translate('sourceTitle')} />
+                <ResourceItem name={translate('atmosphericCondenser')} icon='atmosphericCondenser' />
+                <ResourceSubItem1 name={translate('sylva')} icon='sylva' link='Sylva' />
+                <ResourceSubItem1 name={translate('vesania')} icon='vesania' link='Vesania' />
+                <ResourceSubItem1 name={translate('atrox')} icon='atrox' link='Atrox' />
+                <ContentTitle title={translate('usesTitle')} />
+                <ResourceItem name={translate('chemistryLab')} icon='chemistryLab' />
+                <ResourceSubItem1 name={translate('titaniumAlloy')} icon='titaniumAlloy' link='TitaniumAlloy' />
             </View>
         </SafeAreaView>
     )

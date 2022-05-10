@@ -7,6 +7,7 @@ import { ResourceItem } from '../components/resourceItem';
 import { ResourceSubItem1 } from '../components/resourceSubItem1';
 import { ResourceSubItem2 } from '../components/resourceSubItem2';
 import { ResourceTitle } from '../components/resourceTitle';
+import { translate } from '../libs/localization';
 import { layoutStyle } from '../styles/layoutStyles';
 
 export function Rubber() {
@@ -14,31 +15,31 @@ export function Rubber() {
         <SafeAreaView style={layoutStyle.container} >
             <Header />
             <ResourceTitle
-                title='rubber'
+                title={translate('rubber')}
                 icon='rubber'
                 nugget='nuggetRubber'
                 link='Rubber'
             />
             <ScrollView>
-                <ContentTitle title='source' />
-                <ResourceItem name='chemistry lab' icon='chemistryLab' />
-                <ResourceSubItem1 name='organic' icon='organic' link='Organic' />
-                <ResourceSubItem2 name='all planets' icon='sylva' link='Planets' />
-                <ResourceSubItem2 name='soil centrifuge' icon='soilCentrifuge' />
-                <ResourceSubItem2 name='trade platform' icon='tradePlatform' />
-                <ResourceSubItem1 name='resin' icon='resin' link='Resin' />
-                <ResourceSubItem2 name='all planets' icon='sylva' link='Planets' />
-                <ResourceSubItem2 name='soil centrifuge' icon='soilCentrifuge' />
-                <ResourceSubItem2 name='trade platform' icon='tradePlatform' />
-                <ContentTitle title='uses' />
-                <ResourceItem name='small printer' icon='smallPrinter' />
-                <ResourceSubItem1 name='winch' icon='winch' />
-                <ResourceItem name='medium printer' icon='mediumPrinter' />
-                <ResourceSubItem1 name='medium rover' icon='trailer' />
-                <ResourceSubItem1 name='recreational sphere' icon='recreationalSphere' />
-                <ResourceItem name='large printer' icon='largePrinter' />
-                <ResourceSubItem1 name='large rover' icon='trailer' />
-                <ResourceSubItem1 name='auto extractor' icon='autoExtractor' />
+                <ContentTitle title={translate('sourceTitle')} />
+                <ResourceItem name={translate('chemistryLab')} icon='chemistryLab' />
+                <ResourceSubItem1 name={translate('organic')} icon='organic' link='Organic' />
+                <ResourceSubItem2 name={translate('sourceAllPlanets')} icon='sylva' link='Planets' />
+                <ResourceSubItem2 name={translate('soilCentrifuge')} icon='soilCentrifuge' />
+                <ResourceSubItem2 name={translate('tradePlatform')} icon='tradePlatform' />
+                <ResourceSubItem1 name={translate('resin')} icon='resin' link='Resin' />
+                <ResourceSubItem2 name={translate('sourceAllPlanets')} icon='sylva' link='Planets' />
+                <ResourceSubItem2 name={translate('soilCentrifuge')} icon='soilCentrifuge' />
+                <ResourceSubItem2 name={translate('tradePlatform')} icon='tradePlatform' />
+                <ContentTitle title={translate('usesTitle')} />
+                <ResourceItem name={translate('smallPrinter')} icon='smallPrinter' />
+                <ResourceSubItem1 name={translate('winch')} icon='winch' />
+                <ResourceItem name={translate('mediumPrinter')} icon='mediumPrinter' />
+                <ResourceSubItem1 name={translate('mediumRover')} icon='trailer' />
+                <ResourceSubItem1 name={translate('recreationalSphere')} icon='recreationalSphere' />
+                <ResourceItem name={translate('largePrinter')} icon='largePrinter' />
+                <ResourceSubItem1 name={translate('largeRover')} icon='trailer' />
+                <ResourceSubItem1 name={translate('autoExtractor')} icon='autoExtractor' />
             </ScrollView>
         </SafeAreaView>
     )

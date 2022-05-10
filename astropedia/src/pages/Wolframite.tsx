@@ -6,6 +6,7 @@ import { Header } from '../components/header';
 import { ResourceItem } from '../components/resourceItem';
 import { ResourceSubItem1 } from '../components/resourceSubItem1';
 import { ResourceTitle } from '../components/resourceTitle';
+import { translate } from '../libs/localization';
 import { layoutStyle } from '../styles/layoutStyles';
 
 export function Wolframite() {
@@ -13,19 +14,19 @@ export function Wolframite() {
         <SafeAreaView style={layoutStyle.container} >
             <Header />
             <ResourceTitle
-                title='wolframite'
+                title={translate('wolframite')}
                 icon='wolframite'
                 nugget='nuggetWolframite'
                 link='Wolframite'
             />
             <View>
-                <ContentTitle title='source' />
-                <ResourceItem name='desolo' icon='desolo' link='Desolo' />
-                <ResourceItem name='calidor' icon='calidor' link='Calidor' />
-                <ResourceItem name='trade platform' icon='tradePlatform' />
-                <ContentTitle title='uses' />
-                <ResourceItem name='smelting furnace' icon='smeltingFurnace' />
-                <ResourceSubItem1 name='tungsten' icon='tungsten' link='Tungsten' />
+                <ContentTitle title={translate('sourceTitle')} />
+                <ResourceItem name={translate('desolo')} icon='desolo' link='Desolo' />
+                <ResourceItem name={translate('calidor')} icon='calidor' link='Calidor' />
+                <ResourceItem name={translate('tradePlatform')} icon='tradePlatform' />
+                <ContentTitle title={translate('usesTitle')} />
+                <ResourceItem name={translate('smeltingFurnace')} icon='smeltingFurnace' />
+                <ResourceSubItem1 name={translate('tungsten')} icon='tungsten' link='Tungsten' />
             </View>
         </SafeAreaView>
     )

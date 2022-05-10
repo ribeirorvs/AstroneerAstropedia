@@ -12,7 +12,7 @@ import { layoutStyle } from '../styles/layoutStyles';
 import { imgStyle } from '../styles/imgStyles';
 import { useNavigation } from '@react-navigation/core';
 import AsyncStorage from '@react-native-async-storage/async-storage';
-
+import { translate } from '../libs/localization';
 
 export function Welcome() {
     const navigation = useNavigation();
@@ -38,9 +38,7 @@ export function Welcome() {
                     resizeMode='contain'
                 />
                 <Text style={textStyle.welcomeMessage}>
-                    THE EASIER WAY{'\n'}
-                    TO USE{'\n'}
-                    THE ASTROPEDIA
+                    {translate('welcome')}
                 </Text>
                 <TouchableOpacity
                     activeOpacity={0.75}

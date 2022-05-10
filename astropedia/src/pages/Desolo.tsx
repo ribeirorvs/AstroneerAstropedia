@@ -5,6 +5,7 @@ import { ContentTitle } from '../components/contentTitle';
 import { Header } from '../components/header';
 import { PlanetResource } from '../components/planetResource';
 import { ResourceTitle } from '../components/resourceTitle';
+import { translate } from '../libs/localization';
 import { layoutStyle } from '../styles/layoutStyles';
 
 export function Desolo() {
@@ -12,23 +13,23 @@ export function Desolo() {
         <SafeAreaView style={layoutStyle.container} >
             <Header />
             <ResourceTitle
-                title='desolo'
+                title={translate('desolo')}
                 icon='desolo'
                 nugget='nuggetDesolo'
                 link='Desolo'
             />
             <View style={layoutStyle.content} >
-                <ContentTitle title='natural resources' />
+                <ContentTitle title={translate('naturalResourcesTitle')} />
                 <PlanetResource
                     nugget='nuggetWolframite'
                     icon='wolframite'
-                    name='wolframite'
+                    name={translate('wolframite')}
                     link='Wolframite'
                 />
                 <PlanetResource
                     nugget='nuggetSphalerite'
                     icon='sphalerite'
-                    name='sphalerite'
+                    name={translate('sphalerite')}
                     link='Sphalerite'
                 />
             </View>

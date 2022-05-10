@@ -5,6 +5,7 @@ import { ContentTitle } from '../components/contentTitle';
 import { Header } from '../components/header';
 import { PlanetResource } from '../components/planetResource';
 import { ResourceTitle } from '../components/resourceTitle';
+import { translate } from '../libs/localization';
 import { layoutStyle } from '../styles/layoutStyles';
 
 export function Calidor() {
@@ -12,36 +13,36 @@ export function Calidor() {
         <SafeAreaView style={layoutStyle.container} >
             <Header />
             <ResourceTitle
-                title='calidor'
+                title={translate('calidor')}
                 icon='calidor'
                 nugget='nuggetCalidor'
                 link='Calidor'
             />
             <View style={layoutStyle.content} >
-                <ContentTitle title='natural resources' />
+                <ContentTitle title={translate('naturalResourcesTitle')} />
                 <PlanetResource
                     nugget='nuggetMalachite'
                     icon='malachite'
-                    name='malachite'
+                    name={translate('malachite')}
                     link='Malachite'
                 />
                 <PlanetResource
                     nugget='nuggetWolframite'
                     icon='wolframite'
-                    name='wolframite'
+                    name={translate('wolframite')}
                     link='Wolframite'
                 />
-                <ContentTitle title='atmospheric resources' />
+                <ContentTitle title={translate('atmosphericResourcesTitle')} />
                 <PlanetResource
                     nugget='nuggetHydrogen'
                     icon='hydrogen'
-                    name='hydrogen'
+                    name={translate('hydrogen')}
                     link='Hydrogen'
                 />
                 <PlanetResource
                     nugget='nuggetSulfur'
                     icon='sulfur'
-                    name='sulfur'
+                    name={translate('sulfur')}
                     link='Sulfur'
                 />
             </View>

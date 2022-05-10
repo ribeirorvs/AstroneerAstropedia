@@ -6,6 +6,7 @@ import { Header } from '../components/header';
 import { ResourceItem } from '../components/resourceItem';
 import { ResourceSubItem1 } from '../components/resourceSubItem1';
 import { ResourceTitle } from '../components/resourceTitle';
+import { translate } from '../libs/localization';
 import { layoutStyle } from '../styles/layoutStyles';
 
 export function Clay() {
@@ -13,19 +14,19 @@ export function Clay() {
         <SafeAreaView style={layoutStyle.container} >
             <Header />
             <ResourceTitle
-                title='clay'
+                title={translate('clay')}
                 icon='clay'
                 nugget='nuggetClay'
                 link='Clay'
             />
             <View>
-                <ContentTitle title='source' />
-                <ResourceItem name='all planets' icon='sylva' link='Planets' />
-                <ResourceItem name='soil centrifuge' icon='soilCentrifuge' />
-                <ResourceItem name='trade platform' icon='tradePlatform' />
-                <ContentTitle title='uses' />
-                <ResourceItem name='smelting furnace' icon='smeltingFurnace' />
-                <ResourceSubItem1 name='ceramic' icon='ceramic' link='Ceramic' />
+                <ContentTitle title={translate('sourceTitle')} />
+                <ResourceItem name={translate('sourceAllPlanets')} icon='sylva' link='Planets' />
+                <ResourceItem name={translate('soilCentrifuge')} icon='soilCentrifuge' />
+                <ResourceItem name={translate('tradePlatform')} icon='tradePlatform' />
+                <ContentTitle title={translate('usesTitle')} />
+                <ResourceItem name={translate('smeltingFurnace')} icon='smeltingFurnace' />
+                <ResourceSubItem1 name={translate('ceramic')} icon='ceramic' link='Ceramic' />
             </View>
         </SafeAreaView>
     )

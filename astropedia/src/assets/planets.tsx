@@ -1,42 +1,44 @@
+import { translate } from "../libs/localization"
+
 export const PlanetList = [{
     id: 1,
-    title: 'Sylva',
+    title: translate('sylva'),
     icon: 'sylva',
     link: 'Sylva'
 },
 {
     id: 2,
-    title: 'Desolo',
+    title: translate('desolo'),
     icon: 'desolo',
     link: 'Desolo'
 },
 {
     id: 3,
-    title: 'Calidor',
+    title: translate('calidor'),
     icon: 'calidor',
     link: 'Calidor'
 },
 {
     id: 4,
-    title: 'Vesania',
+    title: translate('vesania'),
     icon: 'vesania',
     link: 'Vesania'
 },
 {
     id: 5,
-    title: 'Novus',
+    title: translate('novus'),
     icon: 'novus',
     link: 'Novus'
 },
 {
     id: 6,
-    title: 'Glacio',
+    title: translate('glacio'),
     icon: 'glacio',
     link: 'Glacio'
 },
 {
     id: 7,
-    title: 'Atrox',
+    title: translate('atrox'),
     icon: 'atrox',
     link: 'Atrox'
 }]

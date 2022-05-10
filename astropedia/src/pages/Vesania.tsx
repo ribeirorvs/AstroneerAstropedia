@@ -5,6 +5,7 @@ import { ContentTitle } from '../components/contentTitle';
 import { Header } from '../components/header';
 import { PlanetResource } from '../components/planetResource';
 import { ResourceTitle } from '../components/resourceTitle';
+import { translate } from '../libs/localization';
 import { layoutStyle } from '../styles/layoutStyles';
 
 export function Vesania() {
@@ -12,7 +13,7 @@ export function Vesania() {
         <SafeAreaView style={layoutStyle.container} >
             <Header />
             <ResourceTitle
-                title='vesania'
+                title={translate('vesania')}
                 icon='vesania'
                 nugget='nuggetVesania'
                 link='Vesania'
@@ -22,32 +23,32 @@ export function Vesania() {
                 <PlanetResource
                     nugget='nuggetLithium'
                     icon='lithium'
-                    name='lithium'
+                    name={translate('lithium')}
                     link='Lithium'
                 />
                 <PlanetResource
                     nugget='nuggetTitanite'
                     icon='titanite'
-                    name='titanite'
+                    name={translate('titanite')}
                     link='Titanite'
                 />
                 <ContentTitle title='atmospheric resources' />
                 <PlanetResource
                     nugget='nuggetHydrogen'
                     icon='hydrogen'
-                    name='hydrogen'
+                    name={translate('hydrogen')}
                     link='Hydrogen'
                 />
                 <PlanetResource
                     nugget='nuggetNitrogen'
                     icon='nitrogen'
-                    name='nitrogen'
+                    name={translate('nitrogen')}
                     link='Nitrogen'
                 />
                 <PlanetResource
                     nugget='nuggetArgon'
                     icon='argon'
-                    name='argon'
+                    name={translate('argon')}
                     link='Argon'
                 />
             </ScrollView>

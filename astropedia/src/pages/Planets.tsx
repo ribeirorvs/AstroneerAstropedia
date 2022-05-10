@@ -6,13 +6,14 @@ import { Header } from '../components/header';
 import { Title } from '../components/title';
 import { layoutStyle } from '../styles/layoutStyles';
 import { PlanetList } from '../assets/planets';
+import { translate } from '../libs/localization';
 
 export function Planets() {
     return (
         <SafeAreaView style={layoutStyle.container}>
             <Header />
             <View style={layoutStyle.content} >
-                <Title title='planets' />
+                <Title title={translate('planetsTitle')} />
                 <FlatList
                     data={PlanetList}
                     keyExtractor={(item) => String(item.id)}

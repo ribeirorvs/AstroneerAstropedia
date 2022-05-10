@@ -6,6 +6,7 @@ import { Header } from '../components/header';
 import { ResourceItem } from '../components/resourceItem';
 import { ResourceSubItem1 } from '../components/resourceSubItem1';
 import { ResourceTitle } from '../components/resourceTitle';
+import { translate } from '../libs/localization';
 import { layoutStyle } from '../styles/layoutStyles';
 
 export function Hematite() {
@@ -13,19 +14,19 @@ export function Hematite() {
         <SafeAreaView style={layoutStyle.container} >
             <Header />
             <ResourceTitle
-                title='hematite'
+                title={translate('hematite')}
                 icon='hematite'
                 nugget='nuggetHematite'
                 link='Hematite'
             />
             <View>
-                <ContentTitle title='source' />
-                <ResourceItem name='novus' icon='novus' link='Novus' />
-                <ResourceItem name='glacio' icon='glacio' link='Glacio' />
-                <ResourceItem name='trade platform' icon='tradePlatform' />
-                <ContentTitle title='uses' />
-                <ResourceItem name='smelting furnace' icon='smeltingFurnace' />
-                <ResourceSubItem1 name='iron' icon='iron' link='Iron' />
+                <ContentTitle title={translate('sourceTitle')} />
+                <ResourceItem name={translate('novus')} icon='novus' link='Novus' />
+                <ResourceItem name={translate('glacio')} icon='glacio' link='Glacio' />
+                <ResourceItem name={translate('tradePlatform')} icon='tradePlatform' />
+                <ContentTitle title={translate('usesTitle')} />
+                <ResourceItem name={translate('smeltingFurnace')} icon='smeltingFurnace' />
+                <ResourceSubItem1 name={translate('iron')} icon='iron' link='Iron' />
             </View>
         </SafeAreaView>
     )

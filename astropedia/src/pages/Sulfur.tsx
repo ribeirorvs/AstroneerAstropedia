@@ -6,6 +6,7 @@ import { Header } from '../components/header';
 import { ResourceItem } from '../components/resourceItem';
 import { ResourceSubItem1 } from '../components/resourceSubItem1';
 import { ResourceTitle } from '../components/resourceTitle';
+import { translate } from '../libs/localization';
 import { layoutStyle } from '../styles/layoutStyles';
 
 export function Sulfur() {
@@ -13,19 +14,19 @@ export function Sulfur() {
         <SafeAreaView style={layoutStyle.container} >
             <Header />
             <ResourceTitle
-                title='sulfur'
+                title={translate('sulfur')}
                 icon='sulfur'
                 nugget='nuggetSulfur'
                 link='Sulfur'
             />
             <View>
-                <ContentTitle title='source' />
-                <ResourceItem name='atmospheric condenser' icon='atmosphericCondenser' />
-                <ResourceSubItem1 name='calidor' icon='calidor' link='Calidor' />
-                <ResourceSubItem1 name='atrox' icon='atrox' link='Atrox' />
-                <ContentTitle title='uses' />
-                <ResourceItem name='chemistry lab' icon='chemistryLab' />
-                <ResourceSubItem1 name='explosivePowder' icon='explosivePowder' />
+                <ContentTitle title={translate('sourceTitle')} />
+                <ResourceItem name={translate('atmosphericCondenser')} icon='atmosphericCondenser' />
+                <ResourceSubItem1 name={translate('calidor')} icon='calidor' link='Calidor' />
+                <ResourceSubItem1 name={translate('atrox')} icon='atrox' link='Atrox' />
+                <ContentTitle title={translate('usesTitle')} />
+                <ResourceItem name={translate('chemistryLab')} icon='chemistryLab' />
+                <ResourceSubItem1 name={translate('sourceExplosivePowder')} icon='explosivePowder' />
             </View>
         </SafeAreaView>
     )

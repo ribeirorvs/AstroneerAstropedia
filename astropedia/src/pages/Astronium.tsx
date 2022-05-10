@@ -6,6 +6,7 @@ import { Header } from '../components/header';
 import { ResourceItem } from '../components/resourceItem';
 import { ResourceSubItem1 } from '../components/resourceSubItem1';
 import { ResourceTitle } from '../components/resourceTitle';
+import { translate } from '../libs/localization';
 import { layoutStyle } from '../styles/layoutStyles';
 
 export function Astronium() {
@@ -13,21 +14,21 @@ export function Astronium() {
         <SafeAreaView style={layoutStyle.container} >
             <Header />
             <ResourceTitle
-                title='astronium'
+                title={translate('astronium')}
                 icon='astronium'
                 nugget='nuggetAstronium'
                 link='Astronium'
             />
             <View>
-                <ContentTitle title='source' />
-                <ResourceItem name='all planets' icon='sylva' link='Planets' />
-                <ContentTitle title='uses' />
-                <ResourceItem name='trade platform' icon='tradePlatform' />
-                <ResourceSubItem1 name='exo chip' icon='exoChip' />
-                <ResourceSubItem1 name='packager' icon='packager' />
-                <ResourceSubItem1 name='solid-fuel jump jet' icon='thruster' />
-                <ResourceSubItem1 name='dynamite' icon='dynamite' />
-                <ResourceSubItem1 name='hydrazine' icon='hydrazine' link='Hydrazine' />
+                <ContentTitle title={translate('sourceTitle')} />
+                <ResourceItem name={translate('sourceAllPlanets')} icon='sylva' link='Planets' />
+                <ContentTitle title={translate('usesTitle')} />
+                <ResourceItem name={translate('tradePlatform')} icon='tradePlatform' />
+                <ResourceSubItem1 name={translate('exoChip')} icon='exoChip' />
+                <ResourceSubItem1 name={translate('packager')} icon='packager' />
+                <ResourceSubItem1 name={translate('solidFuelJumpJet')} icon='thruster' />
+                <ResourceSubItem1 name={translate('dynamite')} icon='dynamite' />
+                <ResourceSubItem1 name={translate('hydrazine')} icon='hydrazine' link='Hydrazine' />
             </View>
         </SafeAreaView>
     )

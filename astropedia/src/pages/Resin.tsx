@@ -6,6 +6,7 @@ import { Header } from '../components/header';
 import { ResourceItem } from '../components/resourceItem';
 import { ResourceSubItem1 } from '../components/resourceSubItem1';
 import { ResourceTitle } from '../components/resourceTitle';
+import { translate } from '../libs/localization';
 import { layoutStyle } from '../styles/layoutStyles';
 
 export function Resin() {
@@ -13,33 +14,33 @@ export function Resin() {
         <SafeAreaView style={layoutStyle.container} >
             <Header />
             <ResourceTitle
-                title='resin'
+                title={translate('resin')}
                 icon='resin'
                 nugget='nuggetResin'
                 link='Resin'
             />
             <ScrollView>
-                <ContentTitle title='source' />
-                <ResourceItem name='all planets' icon='sylva' link='Planets' />
-                <ResourceItem name='soil centrifuge' icon='soilCentrifuge' />
-                <ResourceItem name='trade platform' icon='tradePlatform' />
-                <ContentTitle title='uses' />
-                <ResourceItem name='backpack printer' icon='backpackPrinter' />
-                <ResourceSubItem1 name='canister' icon='canister' />
-                <ResourceSubItem1 name='oxygen filter' icon='oxygenTank' />
-                <ResourceItem name='small printer' icon='smallPrinter' />
-                <ResourceSubItem1 name='medium storage' icon='storage' />
-                <ResourceSubItem1 name='medium platfomr a' icon='platform' />
-                <ResourceSubItem1 name='medium platform b' icon='platform' />
-                <ResourceSubItem1 name='medium platform c' icon='platform' />
-                <ResourceItem name='medium printer' icon='mediumPrinter' />
-                <ResourceSubItem1 name='large platform a' icon='platform' />
-                <ResourceSubItem1 name='large platform b' icon='platform' />
-                <ResourceSubItem1 name='smelting furnace' icon='smeltingFurnace' />
-                <ResourceSubItem1 name='research chamber' icon='research' />
-                <ResourceItem name='chemistry lab' icon='chemistryLab' />
-                <ResourceSubItem1 name='silicone' icon='silicone' link='Silicone' />
-                <ResourceSubItem1 name='rubber' icon='rubber' link='Rubber' />
+                <ContentTitle title={translate('sourceTitle')} />
+                <ResourceItem name={translate('sourceAllPlanets')} icon='sylva' link='Planets' />
+                <ResourceItem name={translate('soilCentrifuge')} icon='soilCentrifuge' />
+                <ResourceItem name={translate('tradePlatform')} icon='tradePlatform' />
+                <ContentTitle title={translate('usesTitle')} />
+                <ResourceItem name={translate('backpackPrinter')} icon='backpackPrinter' />
+                <ResourceSubItem1 name={translate('canister')} icon='canister' />
+                <ResourceSubItem1 name={translate('oxygenFilter')} icon='oxygenTank' />
+                <ResourceItem name={translate('smallPrinter')} icon='smallPrinter' />
+                <ResourceSubItem1 name={translate('mediumStorage')} icon='storage' />
+                <ResourceSubItem1 name={translate('mediumPlatformA')} icon='platform' />
+                <ResourceSubItem1 name={translate('mediumPlatformB')} icon='platform' />
+                <ResourceSubItem1 name={translate('mediumPlatformC')} icon='platform' />
+                <ResourceItem name={translate('mediumPrinter')} icon='mediumPrinter' />
+                <ResourceSubItem1 name={translate('largePlatformA')} icon='platform' />
+                <ResourceSubItem1 name={translate('largePlatformB')} icon='platform' />
+                <ResourceSubItem1 name={translate('smeltingFurnace')} icon='smeltingFurnace' />
+                <ResourceSubItem1 name={translate('researchChamber')} icon='research' />
+                <ResourceItem name={translate('chemistryLab')} icon='chemistryLab' />
+                <ResourceSubItem1 name={translate('silicone')} icon='silicone' link='Silicone' />
+                <ResourceSubItem1 name={translate('rubber')} icon='rubber' link='Rubber' />
             </ScrollView>
         </SafeAreaView>
     )

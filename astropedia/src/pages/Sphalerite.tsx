@@ -6,6 +6,7 @@ import { Header } from '../components/header';
 import { ResourceItem } from '../components/resourceItem';
 import { ResourceSubItem1 } from '../components/resourceSubItem1';
 import { ResourceTitle } from '../components/resourceTitle';
+import { translate } from '../libs/localization';
 import { layoutStyle } from '../styles/layoutStyles';
 
 export function Sphalerite() {
@@ -13,19 +14,19 @@ export function Sphalerite() {
         <SafeAreaView style={layoutStyle.container} >
             <Header />
             <ResourceTitle
-                title='sphalerite'
+                title={translate('sphalerite')}
                 icon='sphalerite'
                 nugget='nuggetSphalerite'
                 link='Sphalerite'
             />
             <View>
-                <ContentTitle title='source' />
-                <ResourceItem name='sylva' icon='sylva' link='Sylva' />
-                <ResourceItem name='desolo' icon='desolo' link='Desolo' />
-                <ResourceItem name='trade platform' icon='tradePlatform' />
-                <ContentTitle title='uses' />
-                <ResourceItem name='smelting furnace' icon='smeltingFurnace' />
-                <ResourceSubItem1 name='zinc' icon='zinc' link='Zinc' />
+                <ContentTitle title={translate('sourceTitle')} />
+                <ResourceItem name={translate('sylva')} icon='sylva' link='Sylva' />
+                <ResourceItem name={translate('desolo')} icon='desolo' link='Desolo' />
+                <ResourceItem name={translate('tradePlatform')} icon='tradePlatform' />
+                <ContentTitle title={translate('usesTitle')} />
+                <ResourceItem name={translate('smeltingFurnace')} icon='smeltingFurnace' />
+                <ResourceSubItem1 name={translate('zinc')} icon='zinc' link='Zinc' />
             </View>
         </SafeAreaView>
     )

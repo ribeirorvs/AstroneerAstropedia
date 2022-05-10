@@ -6,13 +6,14 @@ import { Header } from '../components/header';
 import { Title } from '../components/title';
 import { layoutStyle } from '../styles/layoutStyles';
 import { ResourceList } from '../assets/resources';
+import { translate } from '../libs/localization';
 
 export function Resources() {
     return (
         <SafeAreaView style={layoutStyle.container}>
             <Header />
             <View style={layoutStyle.content} >
-                <Title title='resources' />
+                <Title title={translate('resourcesTitle')} />
                 <FlatList
                     data={ResourceList}
                     keyExtractor={(item) => String(item.id)}
