@@ -24,17 +24,19 @@ export function Copper() {
                 <ResourceItem name={translate('malachite')} icon='malachite' link='Malachite' />
                 <ResourceSubItem1 name={translate('sylva')} icon='sylva' link='Sylva' />
                 <ResourceSubItem1 name={translate('calidor')} icon='calidor' link='Calidor' />
-                <ResourceSubItem1 name={translate('trade platform')} icon='tradePlatform' />
+                <ResourceSubItem1 name={translate('tradePlatform')} icon='tradePlatform' />
                 <ContentTitle title={('usesTitle')} />
                 <ResourceItem name={translate('backpackPrinter')} icon='backpackPrinter' />
                 <ResourceSubItem1 name={translate('worklight')} icon='worklight' />
                 <ResourceSubItem1 name={translate('smallSolarPanel')} icon='solar' />
-                <ResourceSubItem1 name={translate('extenders')} icon='extenders' />
                 <ResourceItem name={translate('smallPrinter')} icon='smallPrinter' />
                 <ResourceSubItem1 name={translate('mediumSolarPanel')} icon='solar' />
                 <ResourceSubItem1 name={translate('splitter')} icon='splitter' />
                 <ResourceSubItem1 name={translate('powerSensor')} icon='sensor' />
+                <ResourceSubItem1 name={translate('extenders')} icon='extenders' />
                 <ResourceItem name={translate('mediumPrinter')} icon='mediumPrinter' />
+                <ResourceSubItem1 name={translate('largeSolarPanel')} icon='solar' />
+                <ResourceItem name={translate('largePrinter')} icon='largePrinter' />
                 <ResourceSubItem1 name={translate('solarArray')} icon='solar' />
                 <ResourceItem name={translate('chemistryLab')} icon='chemistryLab' />
                 <ResourceSubItem1 name={translate('sourceAluminumAlloy')} icon='aluminumAlloy' link='AluminumAlloy' />

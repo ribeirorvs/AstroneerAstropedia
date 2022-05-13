@@ -22,8 +22,8 @@ export function Glass() {
             <ScrollView>
                 <ContentTitle title={translate('sourceTitle')} />
                 <ResourceItem name={translate('quartz')} icon='quartz' link='Quartz' />
-                <ResourceSubItem1 name={translate('souceAllPlanets')} icon='sylva' link='Planets' />
-                <ResourceSubItem1 name={translate('soilCentifuge')} icon='soilCentrifuge' />
+                <ResourceSubItem1 name={translate('sourceAllPlanets')} icon='sylva' link='Planets' />
+                <ResourceSubItem1 name={translate('soilCentrifuge')} icon='soilCentrifuge' />
                 <ResourceSubItem1 name={translate('tradePlatform')} icon='tradePlatform' />
                 <ContentTitle title={translate('usesTitle')} />
                 <ResourceItem name={translate('backpackPrinter')} icon='backpackPrinter' />
