@@ -121,3 +121,6 @@ astropedia/.DS_Store
 
 # SonarQube
 .scannerwork
+
+# Others
+*.txt
