@@ -122,7 +122,7 @@ export default {
         sourceExplosivePowder: 'Explosive Powder',
         sourceNanocarbonAlloy: 'Nanocarbon Alloy',
         sourceTungstenCarbide: 'Tungsten Carbide',
-        drillMod1: 'Drill Mod1',
+        drillMod1: 'Drill Mod 1',
         smallWindTurbine: 'Small Wind Turbine',
         tallPlatform: 'Tall Platform',
         tallStorage: 'Tall Storage',

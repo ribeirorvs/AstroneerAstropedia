@@ -1,13 +1,15 @@
 import i18n from 'i18n-js';
 import enUS from './en-US';
 import ptBR from './pt-BR';
+import plpl from './pl';
 
 i18n.translations = {
     en: enUS,
-    pt: ptBR
+    pt: ptBR,
+    pl: plpl
 }
 
-i18n.locale = 'en';
+i18n.locale = 'pl';
 
 //console.log(i18n.locale);
 
