@@ -9,6 +9,7 @@ import { deleteFavorite, favIcon, loadFavoriteIcon, pageDetails, saveFavorite } 
 
 interface ResourceTitleProps {
     title: string;
+    favTitle?: string;
     icon: string;
     nugget: string;
     link: string;
@@ -16,19 +17,20 @@ interface ResourceTitleProps {
 
 export function ResourceTitle({
     title,
+    favTitle,
     icon,
     nugget,
     link
 }: ResourceTitleProps) {
     const [page] = useState<pageDetails>({
-        pageTitle: title,
+        pageTitle: favTitle ? favTitle : title,
         pageIcon: icon,
         pageNugget: nugget,
         pageLink: link
     });
     const [favIcon, setFavIcon] = useState('favIcon');
     const [favorited] = useState<favIcon>({
-        pageTitle: title,
+        pageTitle: page.pageTitle,
         favorited: false
     });
 

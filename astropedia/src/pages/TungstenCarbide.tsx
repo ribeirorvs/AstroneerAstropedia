@@ -17,6 +17,7 @@ export function tungstenCarbide() {
             <Header />
             <ResourceTitle
                 title={translate('sourceTungstenCarbide')}
+                favTitle={translate('tungstenCarbide')}
                 icon='tungstenCarbide'
                 nugget='nuggetTungstenCarbide'
                 link='TungstenCarbide'

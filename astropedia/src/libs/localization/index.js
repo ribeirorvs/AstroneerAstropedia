@@ -11,7 +11,7 @@ i18n.translations = {
     ru: ruru
 }
 
-i18n.locale = 'ru';
+i18n.locale = 'en';
 
 //console.log(i18n.locale);
 

@@ -19,6 +19,7 @@ export function NanocarbonAlloy() {
             <Header />
             <ResourceTitle
                 title={translate('sourceNanocarbonAlloy')}
+                favTitle={translate('nanocarbonAlloy')}
                 icon='nanocarbonAlloy'
                 nugget='nuggetNanocarbonAlloy'
                 link='NanocarbonAlloy'

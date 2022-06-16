@@ -17,6 +17,7 @@ export function ExplosivePowder() {
             <Header />
             <ResourceTitle
                 title={translate('sourceExplosivePowder')}
+                favTitle={translate('explosivePowder')}
                 icon='explosivePowder'
                 nugget='nuggetExplosivePowder'
                 link='ExplosivePowder'

@@ -17,6 +17,7 @@ export function AluminumAlloy() {
             <Header />
             <ResourceTitle
                 title={translate('sourceAluminumAlloy')}
+                favTitle={translate('aluminumAlloy')}
                 icon='aluminumAlloy'
                 nugget='nuggetAluminumAlloy'
                 link='AluminumAlloy'
