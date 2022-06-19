@@ -29,7 +29,6 @@ export function Welcome() {
         }
         defineAppFlow();
     }, [])
-    //AsyncStorage.clear()
     return (
         <SafeAreaView style={layoutStyle.container}>
             <View style={layoutStyle.wrapper}>

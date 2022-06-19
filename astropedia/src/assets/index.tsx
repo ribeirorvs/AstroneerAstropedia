@@ -4,6 +4,7 @@ export const images = {
     logo: require('../img/logo.png'),
     confirm: require('../img/confirm.png'),
     player: require('../img/player.png'),
+    config: require('../img/iconConfig.png'),
     sylva: require('../img/sylva.png'),
     desolo: require('../img/desolo.png'),
     calidor: require('../img/calidor.png'),

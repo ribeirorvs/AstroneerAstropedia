@@ -26,17 +26,24 @@ export function Header() {
         loadAstroName();
     })
     return (
-
+        <View  style={layoutStyle.header}>
         <TouchableOpacity
             activeOpacity={0.75}
             onPress={() => navigation.navigate('Home')}
         >
-            <View style={layoutStyle.header}>
+            <View style={layoutStyle.headerHome}>
                 <Image source={images.player} style={imgStyle.player} />
                 <View>
                     <Text style={textStyle.text}>{astroName}</Text>
                 </View>
             </View>
         </TouchableOpacity>
+        <TouchableOpacity
+            activeOpacity={0.75}
+            onPress={() => navigation.navigate('Configuration')}
+        >
+            <Image source={images.config} />
+        </TouchableOpacity>
+        </View>
     )
 }

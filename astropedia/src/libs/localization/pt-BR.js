@@ -2,6 +2,10 @@ export default {
     //App commun texts
     welcome: 'O JEITO MAIS FACIL\nDE USAR\nA ASTROPÉDIA',
     userIdentification: 'Qual o nome do seu\nAstronauta?',
+    language: 'Idioma',
+    whatYouWant: 'Não encontrou o que procura?',
+    contactUs: 'Contate-nos',
+    aboutUs: 'Quem somos',
 
     //Titles
     mainTitle: 'Astropédia',

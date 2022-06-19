@@ -55,6 +55,7 @@ import { Steel } from '../pages/Steel';
 import { TitaniumAlloy } from '../pages/TitaniumAlloy';
 import { tungstenCarbide } from '../pages/TungstenCarbide';
 import { Favorites } from '../pages/Favorites';
+import { Configuration } from '../pages/Configuration';
 
 
 const Stack = createNativeStackNavigator();
@@ -497,6 +498,14 @@ function AppRoutes() {
             <Stack.Screen
                 name='Favorites'
                 component={Favorites}
+                options={{
+                    headerShown: false,
+                    animation: 'none'
+                }}
+            />
+            <Stack.Screen
+                name='Configuration'
+                component={Configuration}
                 options={{
                     headerShown: false,
                     animation: 'none'

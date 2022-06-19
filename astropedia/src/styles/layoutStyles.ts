@@ -24,12 +24,18 @@ export const layoutStyle = StyleSheet.create({
         width: '90%',
         flexDirection: 'row',
         alignItems: 'center',
+        justifyContent: 'space-between',
         backgroundColor: colors.background,
         paddingVertical: 20,
         borderBottomWidth: 1,
         borderBottomColor: colors.white,
         marginLeft: '5%',
-        marginTop: 0
+        marginTop: 0,
+        paddingRight: 20
+    },
+    headerHome: {
+        flexDirection: 'row',
+        alignItems: 'center',
     },
     component: {
         borderRadius: 20,
@@ -93,5 +99,10 @@ export const layoutStyle = StyleSheet.create({
         flexDirection: 'row',
         marginTop: 10,
         marginLeft: 170
+    },
+    configItem: {
+        flexDirection: 'row',
+        width: '85%',
+        marginTop: 20
     }
 });

@@ -1,4 +1,5 @@
 import { StyleSheet } from 'react-native';
+import { Colors } from 'react-native/Libraries/NewAppScreen';
 import colors from './colors';
 import Fonts from './fonts'
 
@@ -75,5 +76,8 @@ export const textStyle = StyleSheet.create({
         fontFamily: Fonts.heading,
         color: colors.blue,
         marginVertical: 29
+    },
+    link: {
+        color: colors.blue
     }
 });
