@@ -16,6 +16,7 @@ import AsyncStorage from '@react-native-async-storage/async-storage';
 export function Header() {
     const navigation = useNavigation();
     const [astroName, setAstroName] = useState<string>();
+    const [astroSuit, setAstroSuit] = useState<string>(images.classicSuit);
 
     useEffect(() => {
         async function loadAstroName() {
@@ -25,6 +26,15 @@ export function Header() {
 
         loadAstroName();
     })
+
+    useEffect(() => {
+        async function loadAstroSuit() {
+            const suit = await AsyncStorage.getItem('@astropedia:astroSuit');
+            setAstroSuit(suit || astroSuit);
+        }
+        loadAstroSuit();
+    })
+
     return (
         <View  style={layoutStyle.header}>
         <TouchableOpacity
@@ -32,7 +42,7 @@ export function Header() {
             onPress={() => navigation.navigate('Home')}
         >
             <View style={layoutStyle.headerHome}>
-                <Image source={images.player} style={imgStyle.player} />
+                <Image source={images[astroSuit]} style={imgStyle.player} />
                 <View>
                     <Text style={textStyle.text}>{astroName}</Text>
                 </View>

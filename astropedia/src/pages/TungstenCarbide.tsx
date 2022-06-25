@@ -11,7 +11,7 @@ import { ResourceTitle } from '../components/resourceTitle';
 import { translate } from '../libs/localization';
 import { layoutStyle } from '../styles/layoutStyles';
 
-export function tungstenCarbide() {
+export function TungstenCarbide() {
     return (
         <SafeAreaView style={layoutStyle.container} >
             <Header />

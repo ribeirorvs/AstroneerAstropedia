@@ -53,7 +53,7 @@ import { Rubber } from '../pages/Rubber';
 import { Silicone } from '../pages/Silicone';
 import { Steel } from '../pages/Steel';
 import { TitaniumAlloy } from '../pages/TitaniumAlloy';
-import { tungstenCarbide } from '../pages/TungstenCarbide';
+import { TungstenCarbide } from '../pages/TungstenCarbide';
 import { Favorites } from '../pages/Favorites';
 import { Configuration } from '../pages/Configuration';
 
@@ -489,7 +489,7 @@ function AppRoutes() {
             />
             <Stack.Screen
                 name='TungstenCarbide'
-                component={tungstenCarbide}
+                component={TungstenCarbide}
                 options={{
                     headerShown: false,
                     animation: 'none'

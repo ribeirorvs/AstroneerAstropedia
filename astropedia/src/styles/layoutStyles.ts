@@ -103,6 +103,18 @@ export const layoutStyle = StyleSheet.create({
     configItem: {
         flexDirection: 'row',
         width: '85%',
-        marginTop: 20
+        marginTop: 20,
+        alignItems: 'center'
+    },
+    dropdown: {
+        borderRadius: 15,
+        backgroundColor: colors.background
+    },
+    dropdownItem: {
+        flexDirection: 'row',
+        alignItems: 'center'
+    },
+    flag: {
+        marginRight: 10
     }
 });

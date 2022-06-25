@@ -2,10 +2,15 @@ export default {
         //App commun texts
         welcome: 'THE EASIER WAY\nTO USE\nTHE ASTROPEDIA',
         userIdentification: 'What is your\nAstroneer name?',
-        language: 'Language',
-        whatYouWant: 'Don\'t see what you want?',
-        contactUs: '  Contact Us',
+        language: 'Language: ',
+        whatYouWant: 'Don\'t see what you want? ',
+        contactUs: 'Contact Us',
         aboutUs: 'About Us',
+        avatar: 'Avatar: ',
+        name: 'Name: ',
+        warningTitle: 'Warning',
+        warningMessage: 'The changes only be effective after you restart the Astropedia',
+        warningButton: 'Ok',
 
         //Titles
         mainTitle: 'Astropedia',

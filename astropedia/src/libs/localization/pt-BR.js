@@ -2,10 +2,15 @@ export default {
     //App commun texts
     welcome: 'O JEITO MAIS FACIL\nDE USAR\nA ASTROPÉDIA',
     userIdentification: 'Qual o nome do seu\nAstronauta?',
-    language: 'Idioma',
-    whatYouWant: 'Não encontrou o que procura?',
+    language: 'Idioma: ',
+    whatYouWant: 'Não encontrou o que procura? ',
     contactUs: 'Contate-nos',
     aboutUs: 'Quem somos',
+    avatar: 'Avatar: ',
+    name: 'Nome: ',
+    warningTitle: 'Atenção',
+    warningMessage: 'A alteração de idioma só terá efeito após você reiniciar a Astropédia',
+    warningButton: 'Ok',
 
     //Titles
     mainTitle: 'Astropédia',

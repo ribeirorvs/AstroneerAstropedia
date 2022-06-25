@@ -78,6 +78,7 @@ export const textStyle = StyleSheet.create({
         marginVertical: 29
     },
     link: {
-        color: colors.blue
+        color: colors.blue,
+        fontSize: 18
     }
 });

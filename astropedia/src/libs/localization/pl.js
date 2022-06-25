@@ -2,10 +2,15 @@ export default {
         //App commun texts
         welcome: 'ŁATWIEJSZY SPOSÓB\nUŻYWAĆ\nASTROPEDIA',
         userIdentification: 'Jaki jest Twój\nImię Astroneera?',
-        language: 'Język',
-        whatYouWant: 'Nie widzisz tego, czego chcesz?',
+        language: 'Język: ',
+        whatYouWant: 'Nie widzisz tego, czego chcesz? ',
         contactUs: 'Skontaktuj się z nami',
         aboutUs: 'O nas',
+        avatar: 'Awatara: ',
+        name: 'Nazwa: ',
+        warningTitle: 'Ostrzeżenie',
+        warningMessage: 'Zmiana języka będzie skuteczna dopiero po ponownym uruchomieniu',
+        warningButton: 'Ok',
 
         //Titles
         mainTitle: 'Astropedia',

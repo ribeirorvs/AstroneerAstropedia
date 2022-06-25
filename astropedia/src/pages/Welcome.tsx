@@ -15,6 +15,7 @@ import AsyncStorage from '@react-native-async-storage/async-storage';
 import { translate } from '../libs/localization';
 
 export function Welcome() {
+    //AsyncStorage.clear();
     const navigation = useNavigation();
     useEffect(() => {
         const key = '@stropedia:flow';
@@ -28,6 +29,15 @@ export function Welcome() {
             }
         }
         defineAppFlow();
+    }, [])
+    useEffect(() => {
+        const key = '@astropedia:lang';
+        async function defineLanguage() {
+            const data = JSON.parse(JSON.stringify(await AsyncStorage.getItem(key)));
+            const language = data ? (data as string) : 'en';
+            await AsyncStorage.setItem(key, language);
+        }
+        defineLanguage();
     }, [])
     return (
         <SafeAreaView style={layoutStyle.container}>
