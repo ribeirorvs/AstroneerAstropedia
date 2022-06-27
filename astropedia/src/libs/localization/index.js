@@ -14,10 +14,7 @@ i18n.translations = {
 
 export async function handleLocale(){
     const data = JSON.parse(JSON.stringify(await AsyncStorage.getItem('@astropedia:lang')));
-    
-    console.log(data)
     i18n.locale = data
-    console.log(i18n.locale)
 }
 
 

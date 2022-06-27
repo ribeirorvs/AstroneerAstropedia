@@ -1,13 +1,12 @@
 import React from 'react';
-import { Text, Image } from 'react-native';
-import { RectButton, RectButtonProps } from 'react-native-gesture-handler'
+import { Text, Image, TouchableOpacity } from 'react-native';
 import { textStyle } from '../styles/textStyles';
 import { layoutStyle } from '../styles/layoutStyles';
 import { imgStyle } from '../styles/imgStyles';
 import { images } from '../assets/index';
 import { useNavigation } from '@react-navigation/core';
 
-interface ComponentButtonProps extends RectButtonProps {
+interface ComponentButtonProps {
     title: string;
     icon: string;
     link: string;
@@ -22,15 +21,14 @@ export function ComponentButton({
     const navigation = useNavigation();
 
     return (
-        <RectButton
+        <TouchableOpacity
             onPress={() => navigation.navigate(link)}
             style={layoutStyle.component}
-            {...rest}
         >
             <Image source={images[icon]} style={imgStyle.component} />
             <Text style={textStyle.component}>
                 {title}
             </Text>
-        </RectButton>
+        </TouchableOpacity>
     )
 }

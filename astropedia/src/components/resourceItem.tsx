@@ -1,13 +1,12 @@
 import { useNavigation } from '@react-navigation/core';
 import React from 'react';
-import { Text, Image } from 'react-native';
-import { RectButton, RectButtonProps } from 'react-native-gesture-handler';
+import { Text, Image, TouchableOpacity } from 'react-native';
 import { images } from '../assets';
 import { imgStyle } from '../styles/imgStyles';
 import { layoutStyle } from '../styles/layoutStyles';
 import { textStyle } from '../styles/textStyles';
 
-interface ResourceItemProps extends RectButtonProps {
+interface ResourceItemProps {
     name: string,
     icon: string,
     link?: string
@@ -27,12 +26,12 @@ export function ResourceItem({
     }
 
     return (
-        <RectButton
+        <TouchableOpacity
             style={layoutStyle.source}
             onPress={HandleSubimit}
         >
             <Image source={images[icon]} style={imgStyle.sourceIconImg} />
             <Text style={textStyle.sourceText}>{name}</Text>
-        </RectButton>
+        </TouchableOpacity>
     )
 }
