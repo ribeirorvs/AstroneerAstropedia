@@ -1,11 +1,10 @@
 import React, { useEffect, useState } from 'react';
-import { Text, Image, View } from 'react-native';
-import { RectButton } from 'react-native-gesture-handler';
+import { Text, Image, View, TouchableOpacity } from 'react-native';
 import { images } from '../assets';
 import { imgStyle } from '../styles/imgStyles';
 import { layoutStyle } from '../styles/layoutStyles';
 import { textStyle } from '../styles/textStyles';
-import { deleteFavorite, favIcon, loadFavoriteIcon, pageDetails, saveFavorite } from '../libs/storage';
+import { deleteFavorite, FavIcon, loadFavoriteIcon, PageDetails, saveFavorite } from '../libs/storage';
 
 interface ResourceTitleProps {
     title: string;
@@ -22,21 +21,22 @@ export function ResourceTitle({
     nugget,
     link
 }: ResourceTitleProps) {
-    const [page] = useState<pageDetails>({
+    const [page] = useState<PageDetails>({
         pageTitle: favTitle ? favTitle : title,
         pageIcon: icon,
         pageNugget: nugget,
         pageLink: link
     });
     const [favIcon, setFavIcon] = useState('favIcon');
-    const [favorited] = useState<favIcon>({
+    const [favorited] = useState<FavIcon>({
         pageTitle: page.pageTitle,
         favorited: false
     });
 
     useEffect(() => {
         async function loadFavIcon() {
-            setFavIcon(await loadFavoriteIcon(favorited) as string)
+            const data = await loadFavoriteIcon(favorited);
+            setFavIcon(data)
         }
         loadFavIcon()
     })
@@ -61,11 +61,11 @@ export function ResourceTitle({
                     {title}
                 </Text>
             </View>
-            <RectButton
+            <TouchableOpacity
                 onPress={handleFavorite}
             >
                 <Image style={imgStyle.favIcon} source={images[favIcon]} />
-            </RectButton>
+            </TouchableOpacity>
         </View>
     )
 }

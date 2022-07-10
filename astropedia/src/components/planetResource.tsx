@@ -2,15 +2,15 @@ import { useNavigation } from '@react-navigation/core';
 import React from 'react';
 import {
     Image,
-    Text
+    Text,
+    TouchableOpacity
 } from 'react-native';
-import { RectButton, RectButtonProps } from 'react-native-gesture-handler';
 import { images } from '../assets';
 import { imgStyle } from '../styles/imgStyles';
 import { layoutStyle } from '../styles/layoutStyles';
 import { textStyle } from '../styles/textStyles';
 
-interface PlanetResourceProps extends RectButtonProps {
+interface PlanetResourceProps {
     nugget: string,
     icon: string,
     name: string,
@@ -25,7 +25,7 @@ export function PlanetResource({
 }: PlanetResourceProps) {
     const navigation = useNavigation();
     return (
-        <RectButton
+        <TouchableOpacity
             style={layoutStyle.resource}
             onPress={() => { navigation.navigate(link) }}
         >
@@ -38,6 +38,6 @@ export function PlanetResource({
                 style={imgStyle.resourceIconImg}
             />
             < Text style={textStyle.resourceName}>{name}</Text>
-        </RectButton>
+        </TouchableOpacity>
     )
 }

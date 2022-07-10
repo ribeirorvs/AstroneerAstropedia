@@ -1,6 +1,5 @@
 import React from 'react';
-import { ScrollView } from 'react-native-gesture-handler';
-import { SafeAreaView } from 'react-native-safe-area-context';
+import { SafeAreaView, ScrollView } from 'react-native';
 import { ContentTitle } from '../components/contentTitle';
 import { Header } from '../components/header';
 import { ResourceItem } from '../components/resourceItem';

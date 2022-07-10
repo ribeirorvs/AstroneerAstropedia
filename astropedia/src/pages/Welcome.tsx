@@ -28,6 +28,16 @@ export function Welcome() {
     }, [])
 
     useEffect(() => {
+        const key = '@astropedia:lang';
+        async function defineLanguage() {
+            const data = await AsyncStorage.getItem(key);
+            const language = data ? (data as string) : 'en';
+            await AsyncStorage.setItem(key, language);
+        }
+        defineLanguage();
+    }, [])
+
+    useEffect(() => {
         const key = '@stropedia:flow';
         async function defineAppFlow() {
             const data = JSON.parse(JSON.stringify(await AsyncStorage.getItem(key)));
@@ -39,15 +49,6 @@ export function Welcome() {
             }
         }
         defineAppFlow();
-    }, [])
-    useEffect(() => {
-        const key = '@astropedia:lang';
-        async function defineLanguage() {
-            const data = JSON.parse(JSON.stringify(await AsyncStorage.getItem(key)));
-            const language = data ? (data as string) : 'en';
-            await AsyncStorage.setItem(key, language);
-        }
-        defineLanguage();
     }, [])
     return (
         <SafeAreaView style={layoutStyle.container}>
