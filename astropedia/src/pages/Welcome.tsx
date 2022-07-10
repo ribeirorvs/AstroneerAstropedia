@@ -15,8 +15,18 @@ import AsyncStorage from '@react-native-async-storage/async-storage';
 import { translate } from '../libs/localization';
 
 export function Welcome() {
-    //AsyncStorage.clear();
     const navigation = useNavigation();
+
+    useEffect(() => {
+        const key = '@astropedia:astroSuit';
+        async function defineSuit(){
+            const data = await AsyncStorage.getItem(key);
+            const suit = data ? (data as string) : 'classicSuit';
+            await AsyncStorage.setItem(key, suit);
+        }
+        defineSuit();
+    }, [])
+
     useEffect(() => {
         const key = '@stropedia:flow';
         async function defineAppFlow() {
