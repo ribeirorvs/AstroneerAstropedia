@@ -116,5 +116,17 @@ export const layoutStyle = StyleSheet.create({
     },
     flag: {
         marginRight: 10
+    },
+    modal: {
+        backgroundColor: colors.gray,
+        marginHorizontal: '5%',
+        marginTop: '10%',
+        alignItems: 'center',
+        paddingBottom: '5%'
+    },
+    modalCreditName: {
+        width: '95%',
+        marginTop: 6,
+        marginBottom: 20
     }
 });

@@ -3,6 +3,7 @@ export const images = {
     f: require('../img/f.png'),
     logo: require('../img/logo.png'),
     confirm: require('../img/confirm.png'),
+    close: require('../img/close.png'),
     classicSuit: require('../img/classicSuit.png'),
     exoSuit: require('../img/exoSuit.png'),
     flightSuit: require('../img/flightSuit.png'),

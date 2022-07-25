@@ -1,12 +1,15 @@
 import React, { useEffect, useState } from 'react';
-import { View, Text, TextInput, Image, Alert, TouchableOpacity } from 'react-native';
+import { View, Text, TextInput, Image, Alert, TouchableOpacity, Modal } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { Header } from '../components/header';
 import { layoutStyle } from '../styles/layoutStyles';
 import { translate } from '../libs/localization';
 import { textStyle } from '../styles/textStyles';
 import { images } from '../assets';
+import { Title } from '../components/title';
 import { useNavigation } from '@react-navigation/core';
+import { ContentTitle } from '../components/contentTitle';
+import { CreditNames } from '../components/creditNames';
 import FontAwesome5 from '@expo/vector-icons/FontAwesome5';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import colors from '../styles/colors';
@@ -21,6 +24,7 @@ export function Configuration() {
     const [astroName, setAstroName] = useState<string>();
     const [isFocused, setIsFocused] = useState(false);
     const [messageShowed, SetMessageShowed] = useState(false);
+    const [modalVisible, setModalVisible] = useState(false);
     const languages = [
         { name: 'English', flag: 'US', lang: 'en'},
         { name: 'Polski', flag: 'PL', lang: 'pl'},
@@ -115,6 +119,41 @@ export function Configuration() {
 
     return (
         <SafeAreaView style={layoutStyle.container}>
+            <Modal
+                animationType='fade'
+                transparent={true}
+                visible={modalVisible}
+                
+                onRequestClose={() => {
+                    setModalVisible(!modalVisible)
+                }}
+            >
+                <View style={layoutStyle.modal}>
+                    <Title title={translate('aboutUsCredit')} />
+                    <ContentTitle title={translate('aboutUsDeveloped')} />
+                    <View style={layoutStyle.modalCreditName}>
+                        <CreditNames name='Rodrigo Vitor Ribeiro' />
+                    </View>
+                    <ContentTitle title={translate('aboutUsDesign')} />
+                    <View style={layoutStyle.modalCreditName}>
+                        <CreditNames name='Rodrigo Vitor Ribeiro' />
+                        <CreditNames name='Matheus Cosiello' />
+                    </View>
+                    <ContentTitle title={translate('aboutUsThanks')} />
+                    <View style={layoutStyle.modalCreditName}>
+                        <CreditNames name='Anderson Nudes Souza' />
+                        <CreditNames name='Maycon dos Santos Rodrigues' />
+                    </View>
+                    <TouchableOpacity
+                        onPress={() => setModalVisible(!modalVisible)}
+                        activeOpacity={0.10}
+                    >
+                        <Image
+                            source={images.close}
+                        />
+                    </TouchableOpacity>
+                </View>
+            </Modal>
             <Header />
             <View style={layoutStyle.content} >
                 <View style={layoutStyle.configItem}>
@@ -247,7 +286,7 @@ export function Configuration() {
                 </View>
                 <View style={layoutStyle.configItem}>
                     <TouchableOpacity
-                        onPress={() => navigation.navigate('Home')}
+                        onPress={() => setModalVisible(!modalVisible)}
                         activeOpacity={0.10}
                     >
                         <Text style={[textStyle.text, textStyle.link]}>{translate('aboutUs')}</Text>

@@ -80,5 +80,10 @@ export const textStyle = StyleSheet.create({
     link: {
         color: colors.blue,
         fontSize: 18
+    },
+    creditName:{
+        color: colors.black,
+        textTransform: 'uppercase',
+        fontSize: 18
     }
 });
