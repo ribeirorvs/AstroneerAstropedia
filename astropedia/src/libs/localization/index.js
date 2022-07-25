@@ -12,11 +12,12 @@ i18n.translations = {
     ru: ruru
 }
 
+i18n.locale = 'en';
+
 export async function handleLocale(){
     const data = JSON.parse(JSON.stringify(await AsyncStorage.getItem('@astropedia:lang')));
-    i18n.locale = data
+    i18n.locale = (data? data : 'en')
 }
-
 
 handleLocale()
 

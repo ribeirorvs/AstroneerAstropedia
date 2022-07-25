@@ -2,253 +2,253 @@ import { translate } from "../libs/localization"
 
 export const ResourceList = [{
     id: 1,
-    title: translate('ammonium'),
+    title: 'ammonium',
     icon: 'ammonium',
     link: 'Ammonium'
 },
 {
     id: 2,
-    title: translate('astronium'),
+    title: 'astronium',
     icon: 'astronium',
     link: 'Astronium'
 },
 {
     id: 3,
-    title: translate('clay'),
+    title: 'clay',
     icon: 'clay',
     link: 'Clay'
 },
 {
     id: 4,
-    title: translate('compound'),
+    title: 'compound',
     icon: 'compound',
     link: 'Compound'
 },
 {
     id: 5,
-    title: translate('graphite'),
+    title: 'graphite',
     icon: 'graphite',
     link: 'Graphite'
 },
 {
     id: 6,
-    title: translate('hematite'),
+    title: 'hematite',
     icon: 'hematite',
     link: 'Hematite'
 },
 {
     id: 7,
-    title: translate('laterite'),
+    title: 'laterite',
     icon: 'laterite',
     link: 'Laterite'
 },
 {
     id: 8,
-    title: translate('lithium'),
+    title: 'lithium',
     icon: 'lithium',
     link: 'Lithium'
 },
 {
     id: 9,
-    title: translate('malachite'),
+    title: 'malachite',
     icon: 'malachite',
     link: 'Malachite'
 },
 {
     id: 10,
-    title: translate('organic'),
+    title: 'organic',
     icon: 'organic',
     link: 'Organic'
 },
 {
     id: 11,
-    title: translate('quartz'),
+    title: 'quartz',
     icon: 'quartz',
     link: 'Quartz'
 },
 {
     id: 12,
-    title: translate('resin'),
+    title: 'resin',
     icon: 'resin',
     link: 'Resin'
 },
 {
     id: 13,
-    title: translate('sphalerite'),
+    title: 'sphalerite',
     icon: 'sphalerite',
     link: 'Sphalerite'
 },
 {
     id: 14,
-    title: translate('titanite'),
+    title: 'titanite',
     icon: 'titanite',
     link: 'Titanite'
 },
 {
     id: 15,
-    title: translate('wolframite'),
+    title: 'wolframite',
     icon: 'wolframite',
     link: 'Wolframite'
 },
 {
     id: 16,
-    title: translate('aluminum'),
+    title: 'aluminum',
     icon: 'aluminum',
     link: 'Aluminum'
 },
 {
     id: 17,
-    title: translate('carbon'),
+    title: 'carbon',
     icon: 'carbon',
     link: 'Carbon'
 },
 {
     id: 18,
-    title: translate('ceramic'),
+    title: 'ceramic',
     icon: 'ceramic',
     link: 'Ceramic'
 },
 {
     id: 19,
-    title: translate('copper'),
+    title: 'copper',
     icon: 'copper',
     link: 'Copper'
 },
 {
     id: 20,
-    title: translate('glass'),
+    title: 'glass',
     icon: 'glass',
     link: 'Glass'
 },
 {
     id: 21,
-    title: translate('iron'),
+    title: 'iron',
     icon: 'iron',
     link: 'Iron'
 },
 {
     id: 22,
-    title: translate('titanium'),
+    title: 'titanium',
     icon: 'titanium',
     link: 'Titanium'
 },
 {
     id: 23,
-    title: translate('tungsten'),
+    title: 'tungsten',
     icon: 'tungsten',
     link: 'Tungsten'
 },
 {
     id: 24,
-    title: translate('zinc'),
+    title: 'zinc',
     icon: 'zinc',
     link: 'Zinc'
 },
 {
     id: 25,
-    title: translate('argon'),
+    title: 'argon',
     icon: 'argon',
     link: 'Argon'
 },
 {
     id: 26,
-    title: translate('helium'),
+    title: 'helium',
     icon: 'helium',
     link: 'Helium'
 },
 {
     id: 27,
-    title: translate('hydrogen'),
+    title: 'hydrogen',
     icon: 'hydrogen',
     link: 'Hydrogen'
 },
 {
     id: 28,
-    title: translate('methane'),
+    title: 'methane',
     icon: 'methane',
     link: 'Methane'
 },
 {
     id: 29,
-    title: translate('nitrogen'),
+    title: 'nitrogen',
     icon: 'nitrogen',
     link: 'Nitrogen'
 },
 {
     id: 30,
-    title: translate('sulfur'),
+    title: 'sulfur',
     icon: 'sulfur',
     link: 'Sulfur'
 },
 {
     id: 31,
-    title: translate('aluminumAlloy'),
+    title: 'aluminumAlloy',
     icon: 'aluminumAlloy',
     link: 'AluminumAlloy'
 },
 {
     id: 32,
-    title: translate('diamond'),
+    title: 'diamond',
     icon: 'diamond',
     link: 'Diamond'
 },
 {
     id: 33,
-    title: translate('explosivePowder'),
+    title: 'explosivePowder',
     icon: 'explosivePowder',
     link: 'ExplosivePowder'
 },
 {
     id: 34,
-    title: translate('hydrazine'),
+    title: 'hydrazine',
     icon: 'hydrazine',
     link: 'Hydrazine'
 },
 {
     id: 35,
-    title: translate('graphene'),
+    title: 'graphene',
     icon: 'graphene',
     link: 'Graphene'
 },
 {
     id: 36,
-    title: translate('nanocarbonAlloy'),
+    title: 'nanocarbonAlloy',
     icon: 'nanocarbonAlloy',
     link: 'NanocarbonAlloy'
 },
 {
     id: 37,
-    title: translate('plastic'),
+    title: 'plastic',
     icon: 'plastic',
     link: 'Plastic'
 },
 {
     id: 38,
-    title: translate('rubber'),
+    title: 'rubber',
     icon: 'rubber',
     link: 'Rubber'
 },
 {
     id: 39,
-    title: translate('silicone'),
+    title: 'silicone',
     icon: 'silicone',
     link: 'Silicone'
 },
 {
     id: 40,
-    title: translate('steel'),
+    title: 'steel',
     icon: 'steel',
     link: 'Steel'
 },
 {
     id: 41,
-    title: translate('titaniumAlloy'),
+    title: 'titaniumAlloy',
     icon: 'titaniumAlloy',
     link: 'TitaniumAlloy'
 },
 {
     id: 42,
-    title: translate('tungstenCarbide'),
+    title: 'tungstenCarbide',
     icon: 'tungstenCarbide',
     link: 'TungstenCarbide'
 }]

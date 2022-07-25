@@ -1,7 +1,6 @@
 import React from 'react';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import { Welcome } from '../pages/Welcome';
-import { UserIdentification } from '../pages/UserIdentification';
 import { Home } from '../pages/Home';
 import { Planets } from '../pages/Planets';
 import { Sylva } from '../pages/Sylva';
@@ -66,14 +65,6 @@ function AppRoutes() {
             <Stack.Screen
                 name='Welcome'
                 component={Welcome}
-                options={{
-                    headerShown: false,
-                    animation: 'none'
-                }}
-            />
-            <Stack.Screen
-                name='UserIdentification'
-                component={UserIdentification}
                 options={{
                     headerShown: false,
                     animation: 'none'

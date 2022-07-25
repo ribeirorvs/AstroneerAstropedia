@@ -19,7 +19,7 @@ export function Resources() {
                     keyExtractor={(item) => String(item.id)}
                     renderItem={({ item }) => (
                         <ComponentButton
-                            title={item.title}
+                            title={translate(item.title)}
                             icon={item.icon}
                             link={item.link}
                         />

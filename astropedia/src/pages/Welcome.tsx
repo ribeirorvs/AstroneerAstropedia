@@ -28,13 +28,11 @@ export function Welcome() {
     }, [])
 
     useEffect(() => {
-        const key = '@astropedia:lang';
-        async function defineLanguage() {
-            const data = await AsyncStorage.getItem(key);
-            const language = data ? (data as string) : 'en';
-            await AsyncStorage.setItem(key, language);
+        const key = '@astropedia:astroName'
+        async function defineAstroName() {
+            await AsyncStorage.setItem(key, 'Astroneer');
         }
-        defineLanguage();
+        defineAstroName()
     }, [])
 
     useEffect(() => {
@@ -62,7 +60,7 @@ export function Welcome() {
                 </Text>
                 <TouchableOpacity
                     activeOpacity={0.75}
-                    onPress={() => navigation.navigate('UserIdentification')}
+                    onPress={() => navigation.navigate('Home')}
                 >
                     <Image source={images.f} style={imgStyle.button} />
                 </TouchableOpacity>
