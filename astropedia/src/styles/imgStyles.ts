@@ -51,5 +51,8 @@ export const imgStyle = StyleSheet.create({
         height: 30,
         width: 30,
         marginLeft: 5
+    },
+    input: {
+        marginTop: 23
     }
 })

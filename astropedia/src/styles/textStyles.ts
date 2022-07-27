@@ -85,5 +85,10 @@ export const textStyle = StyleSheet.create({
         color: colors.black,
         textTransform: 'uppercase',
         fontSize: 18
+    },
+    contactInput: {
+        fontSize: 18,
+        color: colors.black,
+        width: '80%'
     }
 });

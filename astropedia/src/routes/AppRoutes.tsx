@@ -55,7 +55,7 @@ import { TitaniumAlloy } from '../pages/TitaniumAlloy';
 import { TungstenCarbide } from '../pages/TungstenCarbide';
 import { Favorites } from '../pages/Favorites';
 import { Configuration } from '../pages/Configuration';
-
+import { ContactUs } from '../pages/ContactUs';
 
 const Stack = createNativeStackNavigator();
 
@@ -497,6 +497,14 @@ function AppRoutes() {
             <Stack.Screen
                 name='Configuration'
                 component={Configuration}
+                options={{
+                    headerShown: false,
+                    animation: 'none'
+                }}
+            />
+            <Stack.Screen
+                name='ContactUs'
+                component={ContactUs}
                 options={{
                     headerShown: false,
                     animation: 'none'

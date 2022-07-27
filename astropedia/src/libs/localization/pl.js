@@ -12,6 +12,8 @@ export default {
         aboutUsThanks: 'Specjalne podziękowania dla',
         avatar: 'Awatara: ',
         name: 'Nazwa: ',
+        email: 'Email',
+        message: 'Wiadomość',
         warningTitle: 'Ostrzeżenie',
         warningMessage: 'Zmiana języka będzie skuteczna dopiero po ponownym uruchomieniu',
         warningButton: 'Ok',

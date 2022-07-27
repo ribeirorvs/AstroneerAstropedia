@@ -128,5 +128,29 @@ export const layoutStyle = StyleSheet.create({
         width: '95%',
         marginTop: 6,
         marginBottom: 20
+    },
+    contactInput: {
+        backgroundColor: colors.gray,
+        borderRadius: 20,
+        paddingLeft: 15,
+        width: '90%',
+        height: 70,
+        marginVertical: 15,
+        flexDirection: 'row',
+        justifyContent: 'space-around'
+    },
+    contactMessage: {
+        backgroundColor: colors.gray,
+        borderRadius: 20,
+        paddingLeft: 30,
+        width: '90%',
+        height: '40%',
+        marginVertical: 15,
+        paddingTop: 23
+    },
+    contactButtons: {
+        flexDirection: 'row',
+        justifyContent: 'space-around',
+        width: '90%'
     }
 });

@@ -12,6 +12,8 @@ export default {
         aboutUsThanks: 'With Special Thanks to',
         avatar: 'Avatar: ',
         name: 'Name: ',
+        email: 'Email',
+        message: 'Message',
         warningTitle: 'Warning',
         warningMessage: 'The changes only be effective after you restart the Astropedia',
         warningButton: 'Ok',

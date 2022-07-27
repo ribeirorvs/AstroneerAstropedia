@@ -278,7 +278,7 @@ export function Configuration() {
                 <View style={layoutStyle.configItem}>
                     <Text style={textStyle.text}>{translate('whatYouWant')}</Text>
                     <TouchableOpacity
-                        onPress={() => navigation.navigate('Home')}
+                        onPress={() => navigation.navigate('ContactUs')}
                         activeOpacity={0.10}
                     >
                         <Text style={[textStyle.text, textStyle.link]}>{translate('contactUs')}</Text>

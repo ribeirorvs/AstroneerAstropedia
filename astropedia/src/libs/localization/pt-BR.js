@@ -12,6 +12,8 @@ export default {
     aboutUsThanks: 'Agradecimentos Especiais',
     avatar: 'Avatar: ',
     name: 'Nome: ',
+    email: 'Email',
+    message: 'Mensagem',
     warningTitle: 'Atenção',
     warningMessage: 'A alteração de idioma só terá efeito após você reiniciar a Astropédia',
     warningButton: 'Ok',
