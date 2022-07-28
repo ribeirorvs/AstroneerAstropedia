@@ -6,7 +6,7 @@ export default {
         whatYouWant: 'Don\'t see what you want? ',
         contactUs: 'Contact Us',
         contactUsDefaultName: 'Astroneer Player',
-        contactUsMail: 'roreply',
+        contactUsMail: 'noreply',
         contactUsMessageFrom: '\n\n\nMessage from: ',
         contactUsMessageReply: '\nReply to: ',
         contactUsWarnning: 'You need to include a message!',
