@@ -28,7 +28,8 @@ export function Configuration() {
     const languages = [
         { name: 'English', flag: 'US', lang: 'en'},
         { name: 'Polski', flag: 'PL', lang: 'pl'},
-        { name: 'Português', flag: 'BR', lang: 'pt'}
+        { name: 'Português', flag: 'BR', lang: 'pt'},
+        { name: 'Pусский', flag: 'RU', lang: 'ru'}
     ];
     const avatars = [
         {name: 'Classic', image: 'classicSuit'},
@@ -87,6 +88,9 @@ export function Configuration() {
                 break;
             case 'pt':
                 lang = { name: 'Português', flag: 'BR'};
+                break;
+            case 'ru':
+                lang = {name: 'Pусский', flag: 'RU'}
                 break;
         }
         return lang;

@@ -9,6 +9,7 @@ import { PlanetList } from '../assets/planets';
 import { translate } from '../libs/localization';
 
 export function Planets() {
+    console.log(translate('sylva'))
     return (
         <SafeAreaView style={layoutStyle.container}>
             <Header />
@@ -19,7 +20,7 @@ export function Planets() {
                     keyExtractor={(item) => String(item.id)}
                     renderItem={({ item }) => (
                         <ComponentButton
-                            title={item.title}
+                            title={translate(item.title)}
                             icon={item.icon}
                             link={item.link}
                         />
