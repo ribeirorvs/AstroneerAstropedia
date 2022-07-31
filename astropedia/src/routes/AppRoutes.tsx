@@ -56,6 +56,8 @@ import { TungstenCarbide } from '../pages/TungstenCarbide';
 import { Favorites } from '../pages/Favorites';
 import { Configuration } from '../pages/Configuration';
 import { ContactUs } from '../pages/ContactUs';
+import { Printables } from '../pages/Printables';
+import { SmallPrinter } from '../pages/SmallPrinter';
 
 const Stack = createNativeStackNavigator();
 
@@ -505,6 +507,22 @@ function AppRoutes() {
             <Stack.Screen
                 name='ContactUs'
                 component={ContactUs}
+                options={{
+                    headerShown: false,
+                    animation: 'none'
+                }}
+            />
+            <Stack.Screen
+                name='Printables'
+                component={Printables}
+                options={{
+                    headerShown: false,
+                    animation: 'none'
+                }}
+            />
+            <Stack.Screen
+                name='SmallPrinter'
+                component={SmallPrinter}
                 options={{
                     headerShown: false,
                     animation: 'none'

@@ -1,5 +1,3 @@
-import { translate } from "../libs/localization"
-
 export const ResourceList = [{
     id: 1,
     title: 'ammonium',

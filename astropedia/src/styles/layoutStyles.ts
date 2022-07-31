@@ -152,5 +152,20 @@ export const layoutStyle = StyleSheet.create({
         flexDirection: 'row',
         justifyContent: 'space-around',
         width: '90%'
+    },
+    sourceTableContainer: {
+        backgroundColor: colors.blue,
+        borderRadius: 10,
+        width: '90%',
+        marginHorizontal: "5%",
+        marginTop: 10,
+        alignItems: 'center',
+        paddingVertical: 3
+    },
+    sourceTable: {
+        width: '95%',
+    },
+    sourceTableHeader: {
+        backgroundColor: colors.background
     }
 });

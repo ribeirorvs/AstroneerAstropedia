@@ -156,5 +156,7 @@ export const images = {
     shelter: require('../img/shelter.png'),
     figurine: require('../img/figurine.png'),
     winch: require('../img/winch.png'),
-    autoExtractor: require('../img/autoExtractor.png')
+    autoExtractor: require('../img/autoExtractor.png'),
+    iconSmallPrint: require('../img/iconSmallPrint.png'),
+    printables: require('../img/printables.png')
 }
