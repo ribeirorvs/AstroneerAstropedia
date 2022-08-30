@@ -9,7 +9,6 @@ import { PlanetList } from '../assets/planets';
 import { translate } from '../libs/localization';
 
 export function Planets() {
-    console.log(translate('sylva'))
     return (
         <SafeAreaView style={layoutStyle.container}>
             <Header />

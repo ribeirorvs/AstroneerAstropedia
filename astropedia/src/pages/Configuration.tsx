@@ -29,7 +29,8 @@ export function Configuration() {
         { name: 'English', flag: 'US', lang: 'en'},
         { name: 'Polski', flag: 'PL', lang: 'pl'},
         { name: 'Português', flag: 'BR', lang: 'pt'},
-        { name: 'Pусский', flag: 'RU', lang: 'ru'}
+        { name: 'Pусский', flag: 'RU', lang: 'ru'},
+        { name: 'Español', flag: 'ES', lang: 'es'}
     ];
     const avatars = [
         {name: 'Classic', image: 'classicSuit'},
@@ -92,6 +93,9 @@ export function Configuration() {
             case 'ru':
                 lang = {name: 'Pусский', flag: 'RU'}
                 break;
+            case 'es':
+                lang = {name: 'Español', flag: 'ES'}
+                break;
         }
         return lang;
     }
@@ -114,7 +118,6 @@ export function Configuration() {
     }
 
     function showMessage(){
-        console.log(messageShowed);
         if(!messageShowed){
             Alert.alert(translate('warningTitle'), translate('warningMessage'));
             SetMessageShowed(true);
