@@ -54,5 +54,9 @@ export const imgStyle = StyleSheet.create({
     },
     input: {
         marginTop: 23
+    },
+    printerIcon: {
+        height: 20,
+        width: 20
     }
 })

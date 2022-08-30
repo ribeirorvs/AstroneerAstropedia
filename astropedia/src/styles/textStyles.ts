@@ -92,8 +92,21 @@ export const textStyle = StyleSheet.create({
         width: '80%'
     },
     sourceTableHeader:{
+        fontSize: 16,
+        color: colors.white,
+        fontWeight: 'bold',
+        textAlign: 'center'
+    },
+    sourceTableContent1: {
         fontSize: 14,
         color: colors.white,
-        fontWeight: 'bold'
+        textAlign: 'center',
+        backgroundColor: colors.background
+    },
+    sourceTableContent2: {
+        fontSize: 14,
+        color: colors.blue,
+        textAlign: 'center',
+        width: '100%'
     }
 });

@@ -28,7 +28,7 @@ export function SmallPrinter() {
             <ScrollView>
                 <ContentTitle title={translate('sourceTitle')} />
                 <PrintableDetails 
-                
+                 
                 />
                 <ContentTitle title='Print the Items' />
             </ScrollView>

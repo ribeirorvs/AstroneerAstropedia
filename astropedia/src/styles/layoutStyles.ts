@@ -156,16 +156,21 @@ export const layoutStyle = StyleSheet.create({
     sourceTableContainer: {
         backgroundColor: colors.blue,
         borderRadius: 10,
-        width: '90%',
-        marginHorizontal: "5%",
+        width: '96%',
+        marginLeft: "2%",
         marginTop: 10,
         alignItems: 'center',
         paddingVertical: 3
     },
     sourceTable: {
-        width: '95%',
+        width: '98%',
+        backgroundColor: colors.background
     },
     sourceTableHeader: {
-        backgroundColor: colors.background
+        backgroundColor: colors.blue
+    },
+    printer:{
+        flexDirection: 'row',
+        alignItems: 'center'
     }
 });
