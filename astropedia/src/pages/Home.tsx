@@ -24,6 +24,11 @@ export function Home() {
                     link='Resources'
                 />
                 <ComponentButton
+                    title='Printables'
+                    icon='printables'
+                    link='Printables'
+                />
+                <ComponentButton
                     title={translate('favoritesTitle')}
                     icon='favIcon'
                     link='Favorites'

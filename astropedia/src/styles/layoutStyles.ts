@@ -152,5 +152,25 @@ export const layoutStyle = StyleSheet.create({
         flexDirection: 'row',
         justifyContent: 'space-around',
         width: '90%'
+    },
+    sourceTableContainer: {
+        backgroundColor: colors.blue,
+        borderRadius: 10,
+        width: '96%',
+        marginLeft: "2%",
+        marginTop: 10,
+        alignItems: 'center',
+        paddingVertical: 3
+    },
+    sourceTable: {
+        width: '98%',
+        backgroundColor: colors.background
+    },
+    sourceTableHeader: {
+        backgroundColor: colors.blue
+    },
+    printer:{
+        flexDirection: 'row',
+        alignItems: 'center'
     }
 });
