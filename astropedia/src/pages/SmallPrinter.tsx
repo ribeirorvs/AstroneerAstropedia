@@ -1,9 +1,9 @@
 import React from 'react';
-import { ScrollView } from 'react-native';
+import { ScrollView, Text } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { ContentTitle } from '../components/contentTitle';
 import { Header } from '../components/header';
-import { PrintableDetails } from '../components/printableDetails';
+import { PrintableSource } from '../components/printableSource';
 import { ResourceItem } from '../components/resourceItem';
 import { ResourceSubItem1 } from '../components/resourceSubItem1';
 import { ResourceSubItem2 } from '../components/resourceSubItem2';
@@ -15,6 +15,12 @@ import { translate } from '../libs/localization';
 import { layoutStyle } from '../styles/layoutStyles';
 
 export function SmallPrinter() {
+    const table = {
+        craftAt: 'Backpack Printer',
+        recipte: '1x Compound',
+        unlockCost: 'Unlocked',
+        powerConsumption: '1 U/s'
+    }
     return (
         <SafeAreaView style={layoutStyle.container} >
             <Header />
@@ -25,10 +31,13 @@ export function SmallPrinter() {
                 nugget='iconSmallPrint'
                 link='SmallPrinter'
             />
+            <Text>
+                {table.craftAt}
+            </Text>
             <ScrollView>
                 <ContentTitle title={translate('sourceTitle')} />
-                <PrintableDetails 
-                 
+                <PrintableSource
+                    table={table}
                 />
                 <ContentTitle title='Print the Items' />
             </ScrollView>
