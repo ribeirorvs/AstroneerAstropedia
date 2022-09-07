@@ -4,22 +4,21 @@ import { SafeAreaView } from 'react-native-safe-area-context';
 import { ContentTitle } from '../components/contentTitle';
 import { Header } from '../components/header';
 import { PrintableSource } from '../components/printableSource';
-import { ResourceItem } from '../components/resourceItem';
-import { ResourceSubItem1 } from '../components/resourceSubItem1';
-import { ResourceSubItem2 } from '../components/resourceSubItem2';
-import { ResourceSubItem3 } from '../components/resourceSubItem3';
-import { ResourceSubItem4 } from '../components/resourceSubItem4';
-import { ResourceSubItem5 } from '../components/resourceSubItem5';
+import { PrintableOutput } from '../components/printableOutput';
 import { ResourceTitle } from '../components/resourceTitle';
 import { translate } from '../libs/localization';
 import { layoutStyle } from '../styles/layoutStyles';
 
 export function SmallPrinter() {
-    const table = {
+    const source = {
         craftAt: 'Backpack Printer',
         recipte: '1x Compound',
         unlockCost: 'Unlocked',
         powerConsumption: '1 U/s'
+    }
+    const output ={
+        input: '2x Compound',
+        output: 'Medium Printer'
     }
     return (
         <SafeAreaView style={layoutStyle.container} >
@@ -31,15 +30,15 @@ export function SmallPrinter() {
                 nugget='iconSmallPrint'
                 link='SmallPrinter'
             />
-            <Text>
-                {table.craftAt}
-            </Text>
             <ScrollView>
                 <ContentTitle title={translate('sourceTitle')} />
                 <PrintableSource
-                    table={table}
+                    table={source}
                 />
                 <ContentTitle title='Print the Items' />
+                <PrintableOutput
+                    table={output}
+                />
             </ScrollView>
         </SafeAreaView>
     )
