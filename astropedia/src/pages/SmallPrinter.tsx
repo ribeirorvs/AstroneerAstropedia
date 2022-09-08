@@ -8,6 +8,7 @@ import { PrintableOutput } from '../components/printableOutput';
 import { ResourceTitle } from '../components/resourceTitle';
 import { translate } from '../libs/localization';
 import { layoutStyle } from '../styles/layoutStyles';
+import { SmallPrinterList } from '../assets/smallPrinterList';
 
 export function SmallPrinter() {
     const source = {
@@ -16,10 +17,7 @@ export function SmallPrinter() {
         unlockCost: 'Unlocked',
         powerConsumption: '1 U/s'
     }
-    const output ={
-        input: '2x Compound',
-        output: 'Medium Printer'
-    }
+    
     return (
         <SafeAreaView style={layoutStyle.container} >
             <Header />
@@ -37,7 +35,7 @@ export function SmallPrinter() {
                 />
                 <ContentTitle title='Print the Items' />
                 <PrintableOutput
-                    table={output}
+                    table={SmallPrinterList}
                 />
             </ScrollView>
         </SafeAreaView>
