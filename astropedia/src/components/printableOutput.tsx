@@ -13,22 +13,17 @@ interface printableOutputProps {
 interface printableTableOutput {
     input: [];
     output: string;
+    cost: string;
 }
 
 export function PrintableOutput({
     table
 }: printableOutputProps) {
-    const tableHead = ['Input', 'Output']
+    const tableHead = ['Input', 'Output', 'Unlock Cost']
     const tableContent = []
     table?.forEach(element => {
-        tableContent.push([element.input, element.output])
+        tableContent.push([element.input, element.output, element.cost])
     });
-    /*{
-        tableContent.map((row, ind) => (
-            console.log(ind),
-            console.log(row)
-        ))
-    }*/
     return (
         <View style={layoutStyle.sourceTableContainer}>
             <Table 
@@ -39,7 +34,11 @@ export function PrintableOutput({
                 }}
             >
                 <Row data={tableHead} style={layoutStyle.sourceTableHeader} textStyle={textStyle.sourceTableHeader}/>
-                <Rows data={tableContent} style={{backgroundColor: colors.background}} textStyle={textStyle.sourceTableContent1} />
+                {
+                    tableContent.map((data, index) =>(
+                        <Row key={index} data={data} style={index%2 ? {backgroundColor: colors.gray} : {backgroundColor: colors.background}} textStyle={index%2 ? textStyle.sourceTableContent2 : textStyle.sourceTableContent1 } />
+                    ))
+                }
             </Table>
         </View>
     )
