@@ -1,262 +1,264 @@
+import { translate } from '../libs/localization';
+
 export const SmallPrinterList = [
     {
-        input: ['2x Compound'],
-        output: 'Medium Printer',
+        input: ['2x ' + translate('compound')],
+        output: translate('mediumPrinter'),
         cost: 'Unlocked'
     },
     {
-        input: ['Ceramic\n', 'Aluminum'],
-        output: 'Oxygenator',
+        input: [translate('ceramic'), '\n', translate('aluminum')],
+        output: translate('oxygenator'),
         cost: '1.800 Bytes'
     },
     {
-        input: ['2x Iron'],
-        output: 'Medium Shredder',
+        input: ['2x ' + translate('iron')],
+        output: translate('mediumShredder'),
         cost: '1.250 Bytes'
     },
     {
-        input: ['Graphene\n', 'Silicone'],
-        output: 'Field Shelter',
+        input: [translate('graphene'), '\n', translate('silicone')],
+        output: translate('fieldShelter'),
         cost: '8.000 Bytes'
     },
     {
-        input: ['Graphite\n', 'Aluminum'],
-        output: 'Auto Arm',
+        input: [translate('graphite'), '\n', translate('aluminum')],
+        output: translate('autoArm'),
         cost: '1.500 Bytes'
     },
     {
-        input: ['Glass\n', 'Plastic'],
-        output: 'Medium Resource Canister',
+        input: [translate('glass'),'\n', translate('plastic')],
+        output: translate('mediumResourceCanister'),
         cost: '2.000 Bytes'
     },
     {
-        input: ['Glass\n', 'Plastic'],
-        output: 'Medium Fluid & Soil Canister',
+        input: [translate('glass'), '\n', translate('plastic')],
+        output: translate('mediumFluidSoilCanister'),
         cost: '2.500 Bytes'
     },
     {
-        input: ['Glass\n', 'Silicone'],
-        output: 'Medium Gas Canister',
+        input: [translate('glass'), '\n', translate('silicone')],
+        output: translate('mediumGasCanister'),
         cost: '4.000 Bytes'
     },
     {
-        input: ['Copper\n', 'Zinc'],
-        output: 'Power Sensor',
+        input: [translate('copper'), '\n', translate('zinc')],
+        output: translate('powerSensor'),
         cost: '500 Bytes'
     },
     {
-        input: ['Quartz\n', 'Zinc'],
-        output: 'Storage Sensor',
+        input: [translate('quartz'), '\n', translate('zinc')],
+        output: translate('storageSensor'),
         cost: '750 Bytes'
     },
     {
-        input: ['Graphite\n', 'Zinc'],
-        output: 'Battery Sensor',
+        input: [translate('graphite'), '\n', translate('zinc')],
+        output: translate('batterySensor'),
         cost: '750 Bytes'
     },
     {
-        input: ['Zinc'],
-        output: 'Button Repeater',
+        input: [translate('zinc')],
+        output: translate('buttonRepeater'),
         cost: '300 Bytes'
     },
     {
-        input: ['Zinc'],
-        output: 'Delay Repeater',
+        input: [translate('zinc')],
+        output: translate('delayRepeater'),
         cost: '1.000 Bytes'
     },
     {
-        input: ['Zinc'],
-        output: 'Count Repeater',
+        input: [translate('zinc')],
+        output: translate('countRepeater'),
         cost: '1.000 Bytes'
     },
     {
-        input: ['Copper'],
-        output: 'Extenders',
+        input: [translate('copper')],
+        output: translate('extenders'),
         cost: '500 Bytes'
     },
     {
-        input: ['Copper'],
-        output: 'Power Switch',
+        input: [translate('copper')],
+        output: translate('powerSwitch'),
         cost: '750 Bytes'
     },
     {
-        input: ['Graphite\n', 'Copper'],
-        output: 'Splitter',
+        input: [translate('graphite'), '\n', translate('copper')],
+        output: translate('splitter'),
         cost: '1.000 Bytes'
     },
     {
-        input: ['Tungsten\n', 'Aluminum'],
-        output: 'Medium Generator',
+        input: [translate('tungsten'), '\n', translate('aluminum')],
+        output: translate('mediumGenerator'),
         cost: '2.000 Bytes'
     },
     {
-        input: ['Glass\n', 'Copper'],
-        output: 'Medium Solar Panel',
+        input: [translate('glass'), '\n', translate('copper')],
+        output: translate('mediumSolarPanel'),
         cost: '2.000 Bytes'
     },
     {
-        input: ['Ceramic\n', 'Aluminum'],
-        output: 'Medium Wind Turbine',
+        input: [translate('ceramic'), '\n', translate('aluminum')],
+        output: translate('mediumWindTurbine'),
         cost: '2.500 Bytes'
     },
     {
-        input: ['Zinc\n', 'Lithium'],
-        output: 'Medium Battery',
+        input: [translate('zinc'), '\n', translate('lithium')],
+        output: translate('mediumBattery'),
         cost: '3.750 Bytes'
     },
     {
-        input: ['Lithium\n', 'Nanocarbon Alloy'],
-        output: 'RTG',
+        input: [translate('lithium'), '\n', translate('sourceNanocarbonAlloy')],
+        output: translate('rtg'),
         cost: '12.500 Bytes'
     },
     {
-        input: ['Resin'],
-        output: 'Medium Platform A',
+        input: [translate('resin')],
+        output: translate('mediumPlatformA'),
         cost: 'Unlocked'
     },
     {
-        input: ['2x Resin'],
-        output: 'Medium Platform B',
+        input: ['2x ' + translate('resin')],
+        output: translate('mediumPlatformB'),
         cost: '250 Bytes'
     },
     {
-        input: ['Resin'],
-        output: 'Medium Platform C',
+        input: [translate('resin')],
+        output: translate('mediumPlatformC'),
         cost: '400 Bytes'
     },
     {
-        input: ['Ceramic'],
-        output: 'Tall Platform',
+        input: [translate('ceramic')],
+        output: translate('tallPlatform'),
         cost: '750 Bytes'
     },
     {
-        input: ['2x Resin'],
-        output: 'Medium T-Platform',
+        input: ['2x ' + translate('resin')],
+        output: translate('mediumTPlatform'),
         cost: '400 Bytes'
     },
     {
-        input: ['2x Resin'],
-        output: 'Medium Storage',
+        input: ['2x ' + translate('resin')],
+        output: translate('mediumStorage'),
         cost: 'Unlocked'
     },
     {
-        input: ['2x Titanium'],
-        output: 'Medium Storage Silo',
+        input: ['2x ' + translate('titanium')],
+        output: translate('mediumStorageSilo'),
         cost: '3.000 Bytes'
     },
     {
-        input: ['Ceramic'],
-        output: 'Tall Storage',
+        input: [translate('ceramic')],
+        output: translate('tallStorage'),
         cost: '400 Bytes'
     },
     {
-        input: ['2x Compound'],
-        output: 'Rover Seat',
+        input: ['2x ' + translate('compound')],
+        output: translate('roverSeat'),
         cost: 'Unlocked'
     },
     {
-        input: ['2x Aluminum'],
-        output: 'Tractor',
+        input: ['2x ' + translate('aluminum')],
+        output: translate('tractor'),
         cost: '1.000 Bytes'
     },
     {
-        input: ['Aluminum\n', 'Compound'],
-        output: 'Trailer',
+        input: [translate('aluminum'), '\n', translate('compound')],
+        output: translate('trailer'),
         cost: '1.500 Bytes'
     },
     {
-        input: ['Rubber\n', 'Plastic'],
-        output: 'Medium Buggy Horn',
+        input: [translate('rubber'), '\n', translate('plastic')],
+        output: translate('mediumBuggyHorn'),
         cost: '2.000 Bytes'
     },
     {
-        input: ['Rubber\n', 'EXO Chip'],
-        output: 'Winch',
+        input: [translate('rubber'), '\n', translate('exoChip')],
+        output: translate('winch'),
         cost: '3.750 Bytes'
     },
     {
-        input: ['Silicone\n', 'Aluminum Alloy'],
-        output: 'Paver',
+        input: [translate('silicone'), '\n', translate('sourceAluminumAlloy')],
+        output: translate('paver'),
         cost: '5.000 Bytes'
     },
     {
-        input: ['Ceramic\n', 'Tungsten Carbide'],
-        output: 'Drill Strength 1',
+        input: [translate('ceramic'), '\n', translate('sourceTungstenCarbide')],
+        output: translate('drillStrength1'),
         cost: '2.500 Bytes'
     },
     {
-        input: ['Tungsten Carbide\n', 'Titanium Alloy'],
-        output: 'Drill Strength 2',
+        input: [translate('sourceTungstenCarbide'), '\n', translate('titaniumAlloy')],
+        output: translate('drillStrength2'),
         cost: '5.000 Bytes'
     },
     {
-        input: ['Titanium Alloy\n', 'Diamond'],
-        output: 'Drill Strength 3',
+        input: [translate('titaniumAlloy'), '\n', translate('diamond')],
+        output: translate('drillStrength3'),
         cost: '7.500 Bytes'
     },
     {
-        input: ['Ammonium\n', 'Aluminum'],
-        output: 'Solid-Fuel Thruster',
+        input: [translate('ammonium'), '\n', translate('aluminum')],
+        output: translate('solidFuelThruster'),
         cost: '500 Bytes'
     },
     {
-        input: ['Steel\n', 'EXO Chip'],
-        output: 'Hydrazine Thruster',
+        input: [translate('steel'), '\n', translate('exoChip')],
+        output: translate('hydrazineThruster'),
         cost: '3.750 Bytes'
     },
     {
-        input: ['Graphite'],
-        output: 'Packager',
+        input: [translate('graphite')],
+        output: translate('packager'),
         cost: '1.000 Bytes'
     },
     {
-        input: ['Resin'],
-        output: 'Small Canister',
+        input: [translate('resin')],
+        output: translate('smallCanister'),
         cost: 'Unlocked'
     },
     {
-        input: ['Explosive Powder'],
-        output: 'Dynamite',
+        input: [translate('sourceExplosivePowder')],
+        output: translate('dynamite'),
         cost: '3.750 Bytes'
     },
     {
-        input: ['Explosive Powder'],
-        output: 'Fireworks',
+        input: [translate('sourceExplosivePowder')],
+        output: translate('fireworks'),
         cost: '3.750 Bytes'
     },
     {
-        input: ['Copper'],
-        output: 'Worklight',
+        input: [translate('copper')],
+        output: translate('worklight'),
         cost: 'Unlocked'
     },
     {
-        input: ['Tungsten'],
-        output: 'Floodlight',
+        input: [translate('tungsten')],
+        output: translate('floodlight'),
         cost: '2.000 Bytes'
     },
     {
-        input: ['Scrap'],
-        output: 'Automoton 001',
-        cost: 'Event'
+        input: [translate('scrap')],
+        output: translate('automoton001'),
+        cost: translate('event')
     },
     {
-        input: ['Scrap'],
-        output: 'Automoton 002',
-        cost: 'Event'
+        input: [translate('scrap')],
+        output: translate('automoton002'),
+        cost: translate('event')
     },
     {
-        input: ['Carbon\n', 'Scrap'],
-        output: 'Cubic Object',
-        cost: 'Event'
+        input: [translate('carbon'), '\n', translate('scrap')],
+        output: translate('cubicObject'),
+        cost: translate('event')
     },
     {
-        input: ['Glass\n', 'Scrap'],
-        output: 'Stellar Object',
-        cost: 'Event'
+        input: [translate('glass'), '\n', translate('scrap')],
+        output: translate('stellarObject'),
+        cost: translate('event')
     },
     {
-        input: ['Astronium\n', 'Scrap'],
-        output: 'Cosmig Bauble',
-        cost: 'Event'
+        input: [translate('astronium'), '\n', translate('scrap')],
+        output: translate('cosmigBauble'),
+        cost: translate('event')
     }
 ]

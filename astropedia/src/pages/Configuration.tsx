@@ -72,8 +72,8 @@ export function Configuration() {
         showMessage();
     }
 
-    function handleInput(name: string){
-        AsyncStorage.setItem('@astropedia:astroName', name);
+    async function handleInput(name: string){
+        await AsyncStorage.setItem('@astropedia:astroName', name);
         showMessage();
     }
 
