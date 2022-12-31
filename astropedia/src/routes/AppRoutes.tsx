@@ -58,6 +58,7 @@ import { Configuration } from '../pages/Configuration';
 import { ContactUs } from '../pages/ContactUs';
 import { Printables } from '../pages/Printables';
 import { SmallPrinter } from '../pages/SmallPrinter';
+import { Backpack } from '../pages/Backpack';
 
 const Stack = createNativeStackNavigator();
 
@@ -528,6 +529,14 @@ function AppRoutes() {
                     animation: 'none'
                 }}
             />
+            <Stack.Screen
+            name='Backpack'
+            component={Backpack}
+            options={{
+                headerShown: false,
+                animation: 'none'
+            }}
+        />
         </Stack.Navigator>
     )
 }
