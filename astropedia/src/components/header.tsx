@@ -15,13 +15,13 @@ import AsyncStorage from '@react-native-async-storage/async-storage';
 
 export function Header() {
     const navigation = useNavigation();
-    const [astroName, setAstroName] = useState<string>();
+    const [astroName, setAstroName] = useState<string>('Astroneer');
     const [astroSuit, setAstroSuit] = useState<string>(images.classicSuit);
 
     useEffect(() => {
         async function loadAstroName() {
             const userName = await AsyncStorage.getItem('@astropedia:astroName');
-            setAstroName(userName || 'Astroneer');
+            setAstroName(userName || astroName);
         }
 
         loadAstroName();

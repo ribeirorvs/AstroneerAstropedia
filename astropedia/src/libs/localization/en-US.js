@@ -33,6 +33,7 @@ export default {
         atmosphericResourcesTitle: 'atmospheric resources',
         sourceTitle: 'Source',
         usesTitle: 'Uses',
+        printables: 'Printables',
 
         //Planet's names
         sylva: 'Sylva',
@@ -99,7 +100,7 @@ export default {
         solidFuelJumpJet: 'Solid-Fuel Jump Jet',
         dynamite: 'Dynamite',
         smeltingFurnace: 'Smelting Furnace',
-        backpackPrinter: 'Backpack Printer',
+        backpackPrinter: 'Backpack',
         smallGenerator: 'Small Generator',
         tether: 'Tether',
         roverSeat: 'Rover Seat',
@@ -225,6 +226,12 @@ export default {
         stellarObject: 'Stellar Object',
         cosmigBauble: 'Cosmig Bauble',
         scrap: 'Scrap',
-        event: 'Event'
+        event: 'Event',
+        full: 'Full',
+        levelingBlock: 'Leveling Block',
+        unlocked: 'Unlocked',
+        smallCamera: 'Small Camera',
+        smallTrumpetHorn: 'Small Trumpet Horn',
+        hoverboard: 'Hoverboard'
 
 }

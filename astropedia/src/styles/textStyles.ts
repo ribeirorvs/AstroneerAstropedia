@@ -100,7 +100,8 @@ export const textStyle = StyleSheet.create({
         fontSize: 14,
         color: colors.white,
         textAlign: 'center',
-        backgroundColor: colors.background
+        backgroundColor: colors.background,
+        marginVertical: 5
     },
     sourceTableContent2: {
         fontSize: 14,

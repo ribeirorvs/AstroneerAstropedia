@@ -13,7 +13,7 @@ export function Printables() {
         <SafeAreaView style={layoutStyle.container}>
             <Header />
             <View style={layoutStyle.content} >
-                <Title title='Printables' />
+                <Title title={translate('printables')} />
                 <FlatList
                     data={PrintableList}
                     keyExtractor={(item) => String(item.id)}

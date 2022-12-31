@@ -1,5 +1,5 @@
 import React, {createRef, useState} from 'react';
-import { TextInput, View, Image, TouchableOpacity, Alert, } from 'react-native';
+import { TextInput, View, Image, TouchableOpacity, Alert, KeyboardAvoidingView, Keyboard, TouchableWithoutFeedback} from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { Header } from '../components/header';
 import { Title } from '../components/title';
@@ -40,74 +40,78 @@ export function ContactUs() {
     const [mailAddress, setMailAddress] = useState('noreply');
     const [message, setMessage] = useState('');
     return (
-        <SafeAreaView style={layoutStyle.container}>
-            <Header />
-            <View style={layoutStyle.content} >
-                <Title title={translate('contactUs')} />
-                <View style={layoutStyle.contactInput}>
-                    <Image 
-                        source={images.user}
-                        style={imgStyle.input}
-                    />
-                    <TextInput
-                        ref={nameRef}
-                        style={textStyle.contactInput}
-                        placeholder={translate('contactUsPlaceholderName')}
-                        onChangeText={setName}
-                    />
-                </View>
-                <View style={layoutStyle.contactInput}>
-                    <Image 
-                        source={images.mail}
-                        style={imgStyle.input}
-                    />
-                    <TextInput
-                        ref={mailRef}
-                        style={textStyle.contactInput}
-                        placeholder={translate('contactUsPlaceholderEmail')}
-                        onChangeText={setMailAddress}
-                    />
-                </View>
-                <TouchableOpacity
-                        onPress={() => {
-                            messageRef.current.focus()
-                        }}
-                        activeOpacity={1}
-                        style={layoutStyle.contactMessage}
-                >
-                    <TextInput 
-                        multiline
-                        ref={messageRef}
-                        style={textStyle.contactInput}
-                        placeholder={translate('contactUsPlaceholderMessage')}
-                        onChangeText={setMessage}
-                    />
-                
-                </TouchableOpacity>
-                <View style={layoutStyle.contactButtons}>
-                    <TouchableOpacity
-                        onPress={() => {
-                            nameRef.current.clear();
-                            mailRef.current.clear();
-                            messageRef.current.clear();
-                        }}
-                        activeOpacity={0.10}
-                    >
-                    <Image
-                        source={images.close}
-                    />
-                    </TouchableOpacity>
-                    <TouchableOpacity
-                        onPress={() => {
-                            handleEmail(name, mailAddress, message)
-                        }}
-                    >
-                    <Image
-                        source={images.submit}
-                    />
-                    </TouchableOpacity>
-                </View>
-            </View>
-        </SafeAreaView>
+        <KeyboardAvoidingView behavior='padding'  style={layoutStyle.container}>
+            <TouchableWithoutFeedback onPress={Keyboard.dismiss}>
+                <SafeAreaView style={layoutStyle.container}>
+                    <Header />
+                    <View style={layoutStyle.content} >
+                        <Title title={translate('contactUs')} />
+                        <View style={layoutStyle.contactInput}>
+                            <Image 
+                                source={images.user}
+                                style={imgStyle.input}
+                            />
+                            <TextInput
+                                ref={nameRef}
+                                style={textStyle.contactInput}
+                                placeholder={translate('contactUsPlaceholderName')}
+                                onChangeText={setName}
+                            />
+                        </View>
+                        <View style={layoutStyle.contactInput}>
+                            <Image 
+                                source={images.mail}
+                                style={imgStyle.input}
+                            />
+                            <TextInput
+                                ref={mailRef}
+                                style={textStyle.contactInput}
+                                placeholder={translate('contactUsPlaceholderEmail')}
+                                onChangeText={setMailAddress}
+                            />
+                        </View>
+                        <TouchableOpacity
+                                onPress={() => {
+                                    messageRef.current.focus()
+                                }}
+                                activeOpacity={1}
+                                style={layoutStyle.contactMessage}
+                        >
+                            <TextInput 
+                                multiline
+                                ref={messageRef}
+                                style={textStyle.contactInput}
+                                placeholder={translate('contactUsPlaceholderMessage')}
+                                onChangeText={setMessage}
+                            />
+                        
+                        </TouchableOpacity>
+                        <View style={layoutStyle.contactButtons}>
+                            <TouchableOpacity
+                                onPress={() => {
+                                    nameRef.current.clear();
+                                    mailRef.current.clear();
+                                    messageRef.current.clear();
+                                }}
+                                activeOpacity={0.10}
+                            >
+                            <Image
+                                source={images.close}
+                            />
+                            </TouchableOpacity>
+                            <TouchableOpacity
+                                onPress={() => {
+                                    handleEmail(name, mailAddress, message)
+                                }}
+                            >
+                            <Image
+                                source={images.submit}
+                            />
+                            </TouchableOpacity>
+                        </View>
+                    </View>
+                </SafeAreaView>
+            </TouchableWithoutFeedback>
+        </KeyboardAvoidingView>
     )
 }
