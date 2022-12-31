@@ -232,6 +232,11 @@ export default {
         unlocked: 'Unlocked',
         smallCamera: 'Small Camera',
         smallTrumpetHorn: 'Small Trumpet Horn',
-        hoverboard: 'Hoverboard'
+        hoverboard: 'Hoverboard',
+        largeExtendedPlatform: 'Large Extended Platform',
+        largeActiveStorage: 'Large Active Storage',
+        largeFogHorn: 'Large Fog Horn',
+        vtol: 'VTOL',
+        sourceVtol: 'Vertical Take-Off and Landing (VTOL)'
 
 }

@@ -158,6 +158,6 @@ export const images = {
     winch: require('../img/winch.png'),
     autoExtractor: require('../img/autoExtractor.png'),
     iconSmallPrint: require('../img/iconSmallPrint.png'),
-    //printables: require('../img/printables.png'),
-    backpack: require('../img/iconBackpack.png')
+    backpack: require('../img/iconBackpack.png'),
+    iconMediumPrint: require('../img/iconMediumPrint.png')
 }

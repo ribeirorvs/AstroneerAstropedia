@@ -59,6 +59,7 @@ import { ContactUs } from '../pages/ContactUs';
 import { Printables } from '../pages/Printables';
 import { SmallPrinter } from '../pages/SmallPrinter';
 import { Backpack } from '../pages/Backpack';
+import { MediumPrint } from '../pages/MadiumPrinter';
 
 const Stack = createNativeStackNavigator();
 
@@ -530,13 +531,21 @@ function AppRoutes() {
                 }}
             />
             <Stack.Screen
-            name='Backpack'
-            component={Backpack}
-            options={{
-                headerShown: false,
-                animation: 'none'
-            }}
-        />
+                name='Backpack'
+                component={Backpack}
+                options={{
+                    headerShown: false,
+                    animation: 'none'
+                }}
+            />
+            <Stack.Screen
+                name='MediumPrinter'
+                component={MediumPrint}
+                options={{
+                    headerShown: false,
+                    animation: 'none'
+                }}
+            />
         </Stack.Navigator>
     )
 }
