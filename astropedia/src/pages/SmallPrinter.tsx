@@ -12,9 +12,9 @@ import { SmallPrinterList } from '../assets/smallPrinterList';
 
 export function SmallPrinter() {
     const source = {
-        craftAt: 'Backpack Printer',
-        recipte: '1x Compound',
-        unlockCost: 'Unlocked',
+        craftAt: translate('backpackPrinter'),
+        recipte: translate('compound'),
+        unlockCost: translate('unlocked'),
         powerConsumption: '1 U/s'
     }
     
@@ -22,8 +22,8 @@ export function SmallPrinter() {
         <SafeAreaView style={layoutStyle.container} >
             <Header />
             <ResourceTitle
-                title='Small Printer'
-                favTitle='Small Printer'
+                title={translate('smallPrinter')}
+                favTitle={translate('smallPrinter')}
                 icon='smallPrinter'
                 nugget='iconSmallPrint'
                 link='SmallPrinter'
@@ -33,7 +33,7 @@ export function SmallPrinter() {
                 <PrintableSource
                     table={source}
                 />
-                <ContentTitle title='Print the Items' />
+                <ContentTitle title={translate('printTitle')} />
                 <PrintableOutput
                     table={SmallPrinterList}
                 />

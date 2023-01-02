@@ -12,9 +12,9 @@ import { mediumPrinterList } from '../assets/mediumPrinterList';
 
 export function MediumPrint() {
     const source = {
-        craftAt: 'Small Printer',
-        recipte: '2x Compound',
-        unlockCost: 'Unlocked',
+        craftAt: translate('smallPrinter'),
+        recipte: '2x ' + translate('compound'),
+        unlockCost: translate('unlocked'),
         powerConsumption: 'Unknow'
     }
     
@@ -22,8 +22,8 @@ export function MediumPrint() {
         <SafeAreaView style={layoutStyle.container} >
             <Header />
             <ResourceTitle
-                title='Medium Printer'
-                favTitle='Medium Printer'
+                title={translate('mediumPrinter')}
+                favTitle={translate('mediumPrinter')}
                 icon='mediumPrint'
                 nugget='iconMediumPrint'
                 link='MediumPrint'
@@ -33,7 +33,7 @@ export function MediumPrint() {
                 <PrintableSource
                     table={source}
                 />
-                <ContentTitle title='Print the Items' />
+                <ContentTitle title={translate('printTitle')} />
                 <PrintableOutput
                     table={mediumPrinterList}
                 />

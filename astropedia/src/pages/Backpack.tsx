@@ -22,8 +22,8 @@ export function Backpack() {
         <SafeAreaView style={layoutStyle.container} >
             <Header />
             <ResourceTitle
-                title='Backpack'
-                favTitle='Backpack'
+                title={translate('backpackPrinter')}
+                favTitle={translate('backpackPrinter')}
                 icon='backpack'
                 nugget='backpack'
                 link='Backpack'
@@ -33,7 +33,7 @@ export function Backpack() {
                 <PrintableSource
                     table={source}
                 />
-                <ContentTitle title='Print the Items' />
+                <ContentTitle title={translate('printTitle')} />
                 <PrintableOutput
                     table={backpackList}
                 />
