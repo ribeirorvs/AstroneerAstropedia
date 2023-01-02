@@ -237,6 +237,8 @@ export default {
         largeActiveStorage: 'Large Active Storage',
         largeFogHorn: 'Large Fog Horn',
         vtol: 'VTOL',
-        sourceVtol: 'Vertical Take-Off and Landing (VTOL)'
+        sourceVtol: 'Vertical Take-Off and Landing (VTOL)',
+        printTitle: 'Print the Items',
+        xlExtendedPlatform: 'XL Extended Platform'
 
 }

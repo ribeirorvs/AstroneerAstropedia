@@ -16,5 +16,11 @@ export const PrintableList = [
         title: 'mediumPrinter',
         icon: 'mediumPrinter',
         link: 'MediumPrinter'
+    },
+    {
+        id: 4,
+        title: 'largePrinter',
+        icon: 'largePrinter',
+        link: 'LargePrinter'
     }
 ]

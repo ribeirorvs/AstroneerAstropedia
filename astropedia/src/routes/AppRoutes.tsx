@@ -60,6 +60,7 @@ import { Printables } from '../pages/Printables';
 import { SmallPrinter } from '../pages/SmallPrinter';
 import { Backpack } from '../pages/Backpack';
 import { MediumPrint } from '../pages/MadiumPrinter';
+import { LargePrint } from '../pages/LargePrinter';
 
 const Stack = createNativeStackNavigator();
 
@@ -541,6 +542,14 @@ function AppRoutes() {
             <Stack.Screen
                 name='MediumPrinter'
                 component={MediumPrint}
+                options={{
+                    headerShown: false,
+                    animation: 'none'
+                }}
+            />
+            <Stack.Screen
+                name='LargePrinter'
+                component={LargePrint}
                 options={{
                     headerShown: false,
                     animation: 'none'

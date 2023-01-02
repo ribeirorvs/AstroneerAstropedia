@@ -159,5 +159,6 @@ export const images = {
     autoExtractor: require('../img/autoExtractor.png'),
     iconSmallPrint: require('../img/iconSmallPrint.png'),
     backpack: require('../img/iconBackpack.png'),
-    iconMediumPrint: require('../img/iconMediumPrint.png')
+    iconMediumPrint: require('../img/iconMediumPrint.png'),
+    iconLargePrint: require('../img/iconLargePrint.png')
 }
