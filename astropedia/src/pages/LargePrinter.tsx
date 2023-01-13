@@ -24,7 +24,7 @@ export function LargePrint() {
             <ResourceTitle
                 title={translate('largePrinter')}
                 favTitle={translate('largePrinter')}
-                icon='largePrint'
+                icon='largePrinter'
                 nugget='iconLargePrint'
                 link='LargePrinter'
             />
