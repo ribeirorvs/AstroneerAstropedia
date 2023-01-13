@@ -61,6 +61,7 @@ import { SmallPrinter } from '../pages/SmallPrinter';
 import { Backpack } from '../pages/Backpack';
 import { MediumPrint } from '../pages/MadiumPrinter';
 import { LargePrint } from '../pages/LargePrinter';
+import { SmeltingFurnace } from '../pages/SmeltingFurnace';
 
 const Stack = createNativeStackNavigator();
 
@@ -550,6 +551,14 @@ function AppRoutes() {
             <Stack.Screen
                 name='LargePrinter'
                 component={LargePrint}
+                options={{
+                    headerShown: false,
+                    animation: 'none'
+                }}
+            />
+            <Stack.Screen
+                name='SmeltingFurnace'
+                component={SmeltingFurnace}
                 options={{
                     headerShown: false,
                     animation: 'none'
