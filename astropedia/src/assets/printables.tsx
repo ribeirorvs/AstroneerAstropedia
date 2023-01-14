@@ -34,5 +34,11 @@ export const PrintableList = [
         title: 'soilCentrifuge',
         icon: 'soilCentrifuge',
         link: 'SoilCentrifuge'
-    }
+    },
+    {
+        id: 7,
+        title: 'chemistryLab',
+        icon: 'chemistryLab',
+        link: 'ChemistryLab'
+    },
 ]
