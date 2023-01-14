@@ -62,6 +62,7 @@ import { Backpack } from '../pages/Backpack';
 import { MediumPrint } from '../pages/MadiumPrinter';
 import { LargePrint } from '../pages/LargePrinter';
 import { SmeltingFurnace } from '../pages/SmeltingFurnace';
+import { SoilCentrifuge } from '../pages/SoilCentrifuge';
 
 const Stack = createNativeStackNavigator();
 
@@ -559,6 +560,14 @@ function AppRoutes() {
             <Stack.Screen
                 name='SmeltingFurnace'
                 component={SmeltingFurnace}
+                options={{
+                    headerShown: false,
+                    animation: 'none'
+                }}
+            />
+            <Stack.Screen
+                name='SoilCentrifuge'
+                component={SoilCentrifuge}
                 options={{
                     headerShown: false,
                     animation: 'none'

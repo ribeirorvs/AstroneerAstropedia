@@ -28,5 +28,11 @@ export const PrintableList = [
         title: 'sourceSmeltingFurnace',
         icon: 'smeltingFurnace',
         link: 'SmeltingFurnace'
+    },
+    {
+        id: 6,
+        title: 'soilCentrifuge',
+        icon: 'soilCentrifuge',
+        link: 'SoilCentrifuge'
     }
 ]

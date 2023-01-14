@@ -161,5 +161,6 @@ export const images = {
     backpack: require('../img/iconBackpack.png'),
     iconMediumPrint: require('../img/iconMediumPrint.png'),
     iconLargePrint: require('../img/iconLargePrint.png'),
-    iconSmeltingFurnace: require('../img/iconSmeltingFurnace.png')
+    iconSmeltingFurnace: require('../img/iconSmeltingFurnace.png'),
+    iconSoilCentrifuge: require('../img/iconSoilCentrifuge.png')
 }
