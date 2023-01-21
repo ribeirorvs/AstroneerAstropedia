@@ -240,6 +240,7 @@ export default {
         vtol: 'VTOL',
         sourceVtol: 'Vertical Take-Off and Landing (VTOL)',
         printTitle: 'Print the Items',
-        xlExtendedPlatform: 'XL Extended Platform'
+        xlExtendedPlatform: 'XL Extended Platform',
+        sourceAtmosphericCondenser: 'Atm... Conden...'
 
 }

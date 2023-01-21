@@ -64,6 +64,7 @@ import { LargePrint } from '../pages/LargePrinter';
 import { SmeltingFurnace } from '../pages/SmeltingFurnace';
 import { SoilCentrifuge } from '../pages/SoilCentrifuge';
 import { ChemistryLab } from '../pages/ChemistryLab';
+import { AtmosphericCondenser } from '../pages/AtmosphericCondenser';
 
 const Stack = createNativeStackNavigator();
 
@@ -577,6 +578,14 @@ function AppRoutes() {
             <Stack.Screen
                 name='ChemistryLab'
                 component={ChemistryLab}
+                options={{
+                    headerShown: false,
+                    animation: 'none'
+                }}
+            />
+            <Stack.Screen
+                name='AtmosphericCondenser'
+                component={AtmosphericCondenser}
                 options={{
                     headerShown: false,
                     animation: 'none'

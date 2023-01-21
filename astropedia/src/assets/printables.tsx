@@ -41,4 +41,10 @@ export const PrintableList = [
         icon: 'chemistryLab',
         link: 'ChemistryLab'
     },
+    {
+        id: 7,
+        title: 'sourceAtmosphericCondenser',
+        icon: 'atmosphericCondenser',
+        link: 'AtmosphericCondenser'
+    },
 ]
