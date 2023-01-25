@@ -1,5 +1,5 @@
 import React from 'react';
-import { View } from 'react-native';
+import { ScrollView, View } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { ContentTitle } from '../components/contentTitle';
 import { Header } from '../components/header';
@@ -21,8 +21,8 @@ export function Diamond() {
                 nugget='nuggetDiamond'
                 link='Diamond'
             />
-            <View>
-                <ContentTitle title={translate('source')} />
+            <ScrollView>
+                <ContentTitle title={translate('sourceTitle')} />
                 <ResourceItem name={translate('chemistryLab')} icon='chemistryLab' />
                 <ResourceSubItem1 name={translate('graphene')} icon='graphene' link='Graphene' />
                 <ResourceSubItem2 name={translate('graphite')} icon='graphite' link='Graphite' />
@@ -34,7 +34,7 @@ export function Diamond() {
                 <ResourceSubItem1 name={translate('drillMod3')} icon='augment' />
                 <ResourceItem name={translate('smallPrinter')} icon='smallPrinter' />
                 <ResourceSubItem1 name={translate('drillStrength3')} icon='drill' />
-            </View>
+            </ScrollView>
         </SafeAreaView>
     )
 }

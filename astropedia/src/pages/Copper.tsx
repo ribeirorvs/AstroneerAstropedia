@@ -25,7 +25,7 @@ export function Copper() {
                 <ResourceSubItem1 name={translate('sylva')} icon='sylva' link='Sylva' />
                 <ResourceSubItem1 name={translate('calidor')} icon='calidor' link='Calidor' />
                 <ResourceSubItem1 name={translate('tradePlatform')} icon='tradePlatform' />
-                <ContentTitle title={('usesTitle')} />
+                <ContentTitle title={translate('usesTitle')} />
                 <ResourceItem name={translate('backpackPrinter')} icon='backpackPrinter' />
                 <ResourceSubItem1 name={translate('worklight')} icon='worklight' />
                 <ResourceSubItem1 name={translate('smallSolarPanel')} icon='solar' />

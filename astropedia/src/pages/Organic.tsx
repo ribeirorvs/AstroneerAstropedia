@@ -1,5 +1,5 @@
 import React from 'react';
-import { View } from 'react-native';
+import { ScrollView, View } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { ContentTitle } from '../components/contentTitle';
 import { Header } from '../components/header';
@@ -19,7 +19,7 @@ export function Organic() {
                 nugget='nuggetOrganic'
                 link='Organic'
             />
-            <View>
+            <ScrollView>
                 <ContentTitle title={translate('sourceTitle')} />
                 <ResourceItem name={translate('sourceAllPlanets')} icon='sylva' link='Planets' />
                 <ResourceItem name={translate('soilCentrifuge')} icon='soilCentrifuge' />
@@ -31,7 +31,7 @@ export function Organic() {
                 <ResourceSubItem1 name={translate('carbon')} icon='carbon' link='Carbon' />
                 <ResourceItem name={translate('chemistryLab')} icon='chemistryLab' />
                 <ResourceSubItem1 name={translate('rubber')} icon='rubber' link='Rubber' />
-            </View>
+            </ScrollView>
         </SafeAreaView>
     )
 }

@@ -1,5 +1,5 @@
 import React from 'react';
-import { View } from 'react-native';
+import { ScrollView, View } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { ContentTitle } from '../components/contentTitle';
 import { Header } from '../components/header';
@@ -19,7 +19,7 @@ export function Titanite() {
                 nugget='nuggetTitanite'
                 link='Titanite'
             />
-            <View>
+            <ScrollView>
                 <ContentTitle title={translate('sourceTitle')} />
                 <ResourceItem name={translate('vesania')} icon='vesania' link='Vesania' />
                 <ResourceItem name={translate('glacio')} icon='glacio' link='Glacio' />
@@ -27,7 +27,7 @@ export function Titanite() {
                 <ContentTitle title={translate('usesTitle')} />
                 <ResourceItem name={translate('smeltingFurnace')} icon='smeltingFurnace' />
                 <ResourceSubItem1 name={translate('titanium')} icon='titanium' link='Titanium' />
-            </View>
+            </ScrollView>
         </SafeAreaView>
     )
 }

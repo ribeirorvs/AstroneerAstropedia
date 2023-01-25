@@ -1,5 +1,5 @@
 import React from 'react';
-import { View } from 'react-native';
+import { ScrollView, View } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { ContentTitle } from '../components/contentTitle';
 import { Header } from '../components/header';
@@ -19,7 +19,7 @@ export function Clay() {
                 nugget='nuggetClay'
                 link='Clay'
             />
-            <View>
+            <ScrollView>
                 <ContentTitle title={translate('sourceTitle')} />
                 <ResourceItem name={translate('sourceAllPlanets')} icon='sylva' link='Planets' />
                 <ResourceItem name={translate('soilCentrifuge')} icon='soilCentrifuge' />
@@ -27,7 +27,7 @@ export function Clay() {
                 <ContentTitle title={translate('usesTitle')} />
                 <ResourceItem name={translate('smeltingFurnace')} icon='smeltingFurnace' />
                 <ResourceSubItem1 name={translate('ceramic')} icon='ceramic' link='Ceramic' />
-            </View>
+            </ScrollView>
         </SafeAreaView>
     )
 }

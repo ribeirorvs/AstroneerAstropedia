@@ -1,5 +1,5 @@
 import React from 'react';
-import { View } from 'react-native';
+import { ScrollView, View } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { ContentTitle } from '../components/contentTitle';
 import { Header } from '../components/header';
@@ -19,7 +19,7 @@ export function Astronium() {
                 nugget='nuggetAstronium'
                 link='Astronium'
             />
-            <View>
+            <ScrollView>
                 <ContentTitle title={translate('sourceTitle')} />
                 <ResourceItem name={translate('sourceAllPlanets')} icon='sylva' link='Planets' />
                 <ContentTitle title={translate('usesTitle')} />
@@ -29,7 +29,7 @@ export function Astronium() {
                 <ResourceSubItem1 name={translate('solidFuelJumpJet')} icon='thruster' />
                 <ResourceSubItem1 name={translate('dynamite')} icon='dynamite' />
                 <ResourceSubItem1 name={translate('hydrazine')} icon='hydrazine' link='Hydrazine' />
-            </View>
+            </ScrollView>
         </SafeAreaView>
     )
 }

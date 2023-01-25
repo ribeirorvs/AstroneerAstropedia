@@ -1,5 +1,5 @@
 import React from 'react';
-import { View } from 'react-native';
+import { ScrollView, View } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { ContentTitle } from '../components/contentTitle';
 import { Header } from '../components/header';
@@ -18,7 +18,7 @@ export function Atrox() {
                 nugget='nuggetAtrox'
                 link='Atrox'
             />
-            <View style={layoutStyle.content} >
+            <ScrollView style={layoutStyle.resourceContent} contentContainerStyle={{ alignItems: 'center' }} >
                 <ContentTitle title={translate('atmosphericResourcesTitle')} />
                 <PlanetResource
                     nugget='nuggetHelium'
@@ -44,7 +44,7 @@ export function Atrox() {
                     name={translate('sulfur')}
                     link='Sulfur'
                 />
-            </View>
+            </ScrollView>
         </SafeAreaView>
     )
 }

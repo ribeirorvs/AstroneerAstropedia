@@ -1,5 +1,5 @@
 import React from 'react';
-import { View } from 'react-native';
+import { ScrollView, View } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { ContentTitle } from '../components/contentTitle';
 import { Header } from '../components/header';
@@ -19,7 +19,7 @@ export function Wolframite() {
                 nugget='nuggetWolframite'
                 link='Wolframite'
             />
-            <View>
+            <ScrollView>
                 <ContentTitle title={translate('sourceTitle')} />
                 <ResourceItem name={translate('desolo')} icon='desolo' link='Desolo' />
                 <ResourceItem name={translate('calidor')} icon='calidor' link='Calidor' />
@@ -27,7 +27,7 @@ export function Wolframite() {
                 <ContentTitle title={translate('usesTitle')} />
                 <ResourceItem name={translate('smeltingFurnace')} icon='smeltingFurnace' />
                 <ResourceSubItem1 name={translate('tungsten')} icon='tungsten' link='Tungsten' />
-            </View>
+            </ScrollView>
         </SafeAreaView>
     )
 }

@@ -1,5 +1,5 @@
 import React from 'react';
-import { View } from 'react-native';
+import { ScrollView, View } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { ContentTitle } from '../components/contentTitle';
 import { Header } from '../components/header';
@@ -19,19 +19,19 @@ export function Carbon() {
                 nugget='nuggetCarbon'
                 link='Carbon'
             />
-            <View>
-                <ContentTitle title={translate('source')} />
+            <ScrollView>
+                <ContentTitle title={translate('sourceTitle')} />
                 <ResourceItem name={translate('organic')} icon='organic' link='Organic' />
                 <ResourceSubItem1 name={translate('sourceAllPlanets')} icon='sylva' link='Planets' />
                 <ResourceSubItem1 name={translate('soilCentrifuge')} icon='soilCentrifuge' />
                 <ResourceSubItem1 name={translate('tradePlatform')} icon='tradePlatform' />
-                <ContentTitle title={('usesTitle')} />
+                <ContentTitle title={translate('usesTitle')} />
                 <ResourceItem name={translate('chemistryLab')} icon='chemistryLab' />
                 <ResourceSubItem1 name={translate('plastic')} icon='plastic' link='Plastic' />
                 <ResourceSubItem1 name={translate('sourceTungstenCarbide')} icon='tungstenCarbide' link='TungstenCarbide' />
                 <ResourceSubItem1 name={translate('sourceExplosivePowder')} icon='explosivePowder' link='ExplosivePowder' />
                 <ResourceSubItem1 name={translate('steel')} icon='steel' link='Steel' />
-            </View>
+            </ScrollView>
         </SafeAreaView>
     )
 }

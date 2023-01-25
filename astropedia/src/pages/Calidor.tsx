@@ -1,5 +1,5 @@
 import React from 'react';
-import { View } from 'react-native';
+import { ScrollView, View } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { ContentTitle } from '../components/contentTitle';
 import { Header } from '../components/header';
@@ -18,7 +18,7 @@ export function Calidor() {
                 nugget='nuggetCalidor'
                 link='Calidor'
             />
-            <View style={layoutStyle.content} >
+            <ScrollView style={layoutStyle.resourceContent} contentContainerStyle={{ alignItems: 'center' }} >
                 <ContentTitle title={translate('naturalResourcesTitle')} />
                 <PlanetResource
                     nugget='nuggetMalachite'
@@ -45,7 +45,7 @@ export function Calidor() {
                     name={translate('sulfur')}
                     link='Sulfur'
                 />
-            </View>
+            </ScrollView>
         </SafeAreaView>
     )
 }

@@ -1,5 +1,5 @@
 import React from 'react';
-import { View } from 'react-native';
+import { ScrollView, View } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { ContentTitle } from '../components/contentTitle';
 import { Header } from '../components/header';
@@ -19,14 +19,14 @@ export function Helium() {
                 nugget='nuggetHelium'
                 link='Helium'
             />
-            <View>
+            <ScrollView>
                 <ContentTitle title={translate('sourceTitle')} />
                 <ResourceItem name={translate('atmosphericCondenser')} icon='atmosphericCondenser' />
                 <ResourceSubItem1 name={translate('atrox')} icon='atrox' link='Atrox' />
                 <ContentTitle title={translate('usesTitle')} />
                 <ResourceItem name={translate('chemistryLab')} icon='chemistryLab' />
                 <ResourceSubItem1 name={translate('sourceNanocarbonAlloy')} icon='nanocarbonAlloy' link='NanocarbonAlloy' />
-            </View>
+            </ScrollView>
         </SafeAreaView>
     )
 }

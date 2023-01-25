@@ -1,5 +1,5 @@
 import React from 'react';
-import { View } from 'react-native';
+import { ScrollView, View } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { ContentTitle } from '../components/contentTitle';
 import { Header } from '../components/header';
@@ -18,7 +18,7 @@ export function Desolo() {
                 nugget='nuggetDesolo'
                 link='Desolo'
             />
-            <View style={layoutStyle.content} >
+            <ScrollView style={layoutStyle.resourceContent} contentContainerStyle={{ alignItems: 'center' }} >
                 <ContentTitle title={translate('naturalResourcesTitle')} />
                 <PlanetResource
                     nugget='nuggetWolframite'
@@ -32,7 +32,7 @@ export function Desolo() {
                     name={translate('sphalerite')}
                     link='Sphalerite'
                 />
-            </View>
+            </ScrollView>
         </SafeAreaView>
     )
 }

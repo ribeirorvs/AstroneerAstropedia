@@ -1,5 +1,5 @@
 import React from 'react';
-import { View } from 'react-native';
+import { ScrollView, View } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { ContentTitle } from '../components/contentTitle';
 import { Header } from '../components/header';
@@ -19,7 +19,7 @@ export function Ammonium() {
                 nugget='nuggetAmmonium'
                 link='Ammonium'
             />
-            <View>
+            <ScrollView>
                 <ContentTitle title={translate('sourceTitle')} />
                 <ResourceItem name={translate('sourceAllPlanets')} icon='sylva' link='Planets' />
                 <ResourceItem name={translate('soilCentrifuge')} icon='soilCentrifuge' />
@@ -29,7 +29,7 @@ export function Ammonium() {
                 <ResourceSubItem1 name={translate('solidFuelThruster')} icon='thruster' />
                 <ResourceItem name={translate('chemistryLab')} icon='chemistryLab' />
                 <ResourceSubItem1 name={translate('hydrazine')} icon='hydrazine' link='Hydrazine' />
-            </View>
+            </ScrollView>
         </SafeAreaView>
     )
 }

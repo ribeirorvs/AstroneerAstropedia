@@ -1,5 +1,5 @@
 import React from 'react';
-import { View } from 'react-native';
+import { ScrollView, View } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { ContentTitle } from '../components/contentTitle';
 import { Header } from '../components/header';
@@ -19,15 +19,15 @@ export function Argon() {
                 nugget='nuggetArgon'
                 link='Argon'
             />
-            <View>
-                <ContentTitle title={translate('source')} />
+            <ScrollView>
+                <ContentTitle title={translate('sourceTitle')} />
                 <ResourceItem name={translate('atmosphericCondenser')} icon='atmosphericCondenser' />
                 <ResourceSubItem1 name={translate('vesania')} icon='vesania' link='Vesania' />
                 <ResourceSubItem1 name={translate('glacio')} icon='glacio' link='Glacio' />
                 <ContentTitle title={translate('usesTitle')} />
                 <ResourceItem name={translate('chemistryLab')} icon='chemistryLab' />
                 <ResourceSubItem1 name={translate('steel')} icon='steel' link='Steel' />
-            </View>
+            </ScrollView>
         </SafeAreaView>
     )
 }
