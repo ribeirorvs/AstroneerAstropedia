@@ -65,6 +65,7 @@ import { SmeltingFurnace } from '../pages/SmeltingFurnace';
 import { SoilCentrifuge } from '../pages/SoilCentrifuge';
 import { ChemistryLab } from '../pages/ChemistryLab';
 import { AtmosphericCondenser } from '../pages/AtmosphericCondenser';
+import { TradePlatform } from '../pages/TradePlatform';
 
 const Stack = createNativeStackNavigator();
 
@@ -586,6 +587,14 @@ function AppRoutes() {
             <Stack.Screen
                 name='AtmosphericCondenser'
                 component={AtmosphericCondenser}
+                options={{
+                    headerShown: false,
+                    animation: 'none'
+                }}
+            />
+            <Stack.Screen
+                name='TradePlatform'
+                component={TradePlatform}
                 options={{
                     headerShown: false,
                     animation: 'none'

@@ -241,6 +241,8 @@ export default {
         sourceVtol: 'Vertical Take-Off and Landing (VTOL)',
         printTitle: 'Print the Items',
         xlExtendedPlatform: 'XL Extended Platform',
-        sourceAtmosphericCondenser: 'Atm... Conden...'
+        sourceAtmosphericCondenser: 'Atm... Conden...',
+        sourcePortableSmeltingFurnace: 'Portable Smelting Furnace',
+        gravityGlobe: 'Gravity Globe'
 
 }

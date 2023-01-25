@@ -42,9 +42,15 @@ export const PrintableList = [
         link: 'ChemistryLab'
     },
     {
-        id: 7,
+        id: 8,
         title: 'sourceAtmosphericCondenser',
         icon: 'atmosphericCondenser',
         link: 'AtmosphericCondenser'
+    },
+    {
+        id: 9,
+        title: 'tradePlatform',
+        icon: 'tradePlatform',
+        link: 'TradePlatform'
     },
 ]

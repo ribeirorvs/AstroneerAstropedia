@@ -164,5 +164,6 @@ export const images = {
     iconSmeltingFurnace: require('../img/iconSmeltingFurnace.png'),
     iconSoilCentrifuge: require('../img/iconSoilCentrifuge.png'),
     iconChemistryLab: require('../img/iconChemistryLab.png'),
-    iconAthmospheticCondenserLab: require('../img/iconAthmospheticCondenserLab.png')
+    iconAthmospheticCondenserLab: require('../img/iconAthmospheticCondenserLab.png'),
+    iconTradePlatform: require('../img/iconTradePlatform.png')
 }
