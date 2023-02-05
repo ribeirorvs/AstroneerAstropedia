@@ -25,9 +25,9 @@ export function Desolo() {
                     size={translate('small')}
                     difficulty={translate('easy')}
                     cycle='1.55'
-                    sun='high'
+                    sun={translate('high')}
                     sunValue='150%'
-                    wind='low'
+                    wind={translate('veryLow')}
                     windValue='25%'
                 />
                 <ContentTitle title={translate('naturalResourcesTitle')} />
