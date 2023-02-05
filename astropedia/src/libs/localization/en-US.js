@@ -263,5 +263,6 @@ export default {
         orangeMesas: 'Orange Mesas',
         high: 'High',
         veryLow: 'Very Low',
-        purpleHills: 'Purple Hills'
+        purpleHills: 'Purple Hills',
+        mountains: 'Mountains'
 }
