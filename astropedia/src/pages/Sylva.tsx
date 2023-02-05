@@ -25,9 +25,9 @@ export function Sylva() {
                     size={translate('medium')}
                     difficulty={translate('easy')}
                     cycle='12'
-                    sun='medium'
+                    sun={translate('medium')}
                     sunValue='100%'
-                    wind='medium'
+                    wind={translate('medium')}
                     windValue='48%'
                 />
                 <ContentTitle title={translate('naturalResourcesTitle')} />
@@ -36,14 +36,14 @@ export function Sylva() {
                     icon='sphalerite'
                     name={translate('sphalerite')}
                     link='Sphalerite'
-                    location={translate('cave')}
+                    location={translate('caveLayer')}
                 />
                 <PlanetResource
                     nugget='nuggetMalachite'
                     icon='malachite'
                     name={translate('malachite')}
                     link='Malachite'
-                    location={translate('cave') + ', ' + translate('mantle')} 
+                    location={translate('caveLayer') + ', ' + translate('mantleLayer')} 
                 />
                 <ContentTitle title={translate('atmosphericResourcesTitle')} />
                 <PlanetResource

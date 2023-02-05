@@ -36,14 +36,14 @@ export function Desolo() {
                     icon='wolframite'
                     name={translate('wolframite')}
                     link='Wolframite'
-                    location={translate('cave')}
+                    location={translate('caveLayer')}
                 />
                 <PlanetResource
                     nugget='nuggetSphalerite'
                     icon='sphalerite'
                     name={translate('sphalerite')}
                     link='Sphalerite'
-                    location={translate('gray') + ', ' + translate('mantle')}
+                    location={translate('grayPlains') + ', ' + translate('mantleLayer')}
                 />
             </ScrollView>
         </SafeAreaView>

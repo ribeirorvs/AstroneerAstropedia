@@ -254,8 +254,11 @@ export default {
         sunPower: 'Sun Power',
         windPower: 'Wind Power',
         location: 'Location: ',
-        cave: 'Cave Layer',
-        mantle: 'Mantle Layer',
+        caveLayer: 'Cave Layer',
+        mantleLayer: 'Mantle Layer',
         small: 'Small',
-        gray: 'Gray Plains'
+        grayPlains: 'Gray Plains',
+        veryHigh: 'Very High',
+        low: 'Low',
+        orangeMesas: 'Orange Mesas'
 }
