@@ -70,6 +70,15 @@ export const layoutStyle = StyleSheet.create({
         flex: 1,
         marginBottom: 12
     },
+    resourceDetails: {
+        flex: 1,
+        backgroundColor: colors.white,
+        justifyContent: 'center',
+        paddingLeft: 15,
+        height: 70,
+        marginTop: 10,
+        width: '30%'
+    },
     source: {
         flexDirection: 'row',
         marginTop: 10,

@@ -1,5 +1,6 @@
 import { StyleSheet } from 'react-native';
 import colors from './colors';
+import fonts from './fonts';
 import Fonts from './fonts'
 
 export const textStyle = StyleSheet.create({
@@ -51,15 +52,20 @@ export const textStyle = StyleSheet.create({
     },
     resourceName: {
         color: colors.gold,
-        backgroundColor: colors.white,
         fontFamily: Fonts.heading,
         fontSize: 18,
-        height: 70,
-        width: 180,
-        marginTop: 10,
-        paddingLeft: 15,
-        textAlignVertical: 'center',
         textTransform: 'uppercase'
+    },
+    resourceDetails: {
+        color: colors.black,
+        fontFamily: Fonts.heading,
+        fontSize: 12,
+        textTransform: 'uppercase'
+    },
+    resourceDescription: {
+        color: colors.black,
+        fontFamily: Fonts.text,
+        fontSize: 12,
     },
     sourceText: {
         color: colors.white,

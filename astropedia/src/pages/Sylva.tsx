@@ -7,6 +7,7 @@ import { PlanetResource } from '../components/planetResource';
 import { ResourceTitle } from '../components/resourceTitle';
 import { layoutStyle } from '../styles/layoutStyles';
 import { translate } from '../libs/localization';
+import { PlanetDetails } from '../components/planetDetails';
 
 export function Sylva() {
     return (
@@ -19,18 +20,30 @@ export function Sylva() {
                 link='Sylva'
             />
             <ScrollView style={layoutStyle.resourceContent} contentContainerStyle={{ alignItems: 'center' }} >
+                <ContentTitle title={translate('planetDetails')} />
+                <PlanetDetails
+                    size={translate('medium')}
+                    difficulty={translate('easy')}
+                    cycle='12'
+                    sun='medium'
+                    sunValue='100%'
+                    wind='medium'
+                    windValue='48%'
+                />
                 <ContentTitle title={translate('naturalResourcesTitle')} />
                 <PlanetResource
                     nugget='nuggetSphalerite'
                     icon='sphalerite'
                     name={translate('sphalerite')}
                     link='Sphalerite'
+                    location={translate('cave')}
                 />
                 <PlanetResource
                     nugget='nuggetMalachite'
                     icon='malachite'
                     name={translate('malachite')}
                     link='Malachite'
+                    location={translate('cave') + ', ' + translate('mantle')} 
                 />
                 <ContentTitle title={translate('atmosphericResourcesTitle')} />
                 <PlanetResource

@@ -243,6 +243,17 @@ export default {
         xlExtendedPlatform: 'XL Extended Platform',
         sourceAtmosphericCondenser: 'Atm... Conden...',
         sourcePortableSmeltingFurnace: 'Portable Smelting Furnace',
-        gravityGlobe: 'Gravity Globe'
-
+        gravityGlobe: 'Gravity Globe',
+        easy: 'Easy',
+        planetDetails: 'Planet Details',
+        size: 'Size',
+        medium: 'Medium',
+        difficulty: 'Difficulty',
+        dayNigthCycle: 'Day/Nigth cycle',
+        minutes: 'Minutes',
+        sunPower: 'Sun Power',
+        windPower: 'Wind Power',
+        location: 'Location: ',
+        cave: 'Cave Layer',
+        mantle: 'Mantle Layer'
 }
