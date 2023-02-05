@@ -264,5 +264,6 @@ export default {
         high: 'High',
         veryLow: 'Very Low',
         purpleHills: 'Purple Hills',
-        mountains: 'Mountains'
+        mountains: 'Mountains',
+        icePlains: 'Ice Plains'
 }
