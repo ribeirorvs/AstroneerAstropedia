@@ -255,5 +255,7 @@ export default {
         windPower: 'Wind Power',
         location: 'Location: ',
         cave: 'Cave Layer',
-        mantle: 'Mantle Layer'
+        mantle: 'Mantle Layer',
+        small: 'Small',
+        gray: 'Gray Plains'
 }
