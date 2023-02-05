@@ -3,6 +3,7 @@ import { ScrollView } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { ContentTitle } from '../components/contentTitle';
 import { Header } from '../components/header';
+import { PlanetDetails } from '../components/planetDetails';
 import { PlanetResource } from '../components/planetResource';
 import { ResourceTitle } from '../components/resourceTitle';
 import { translate } from '../libs/localization';
@@ -19,18 +20,30 @@ export function Vesania() {
                 link='Vesania'
             />
             <ScrollView style={layoutStyle.resourceContent} contentContainerStyle={{ alignItems: 'center' }} >
+                <ContentTitle title={translate('planetDetails')} />
+                <PlanetDetails
+                    size={translate('medium')}
+                    difficulty={translate('medium')}
+                    cycle='13.5'
+                    sun={translate('low')}
+                    sunValue='50%'
+                    wind={translate('high')}
+                    windValue='56%'
+                />
                 <ContentTitle title='natural resources' />
                 <PlanetResource
                     nugget='nuggetLithium'
                     icon='lithium'
                     name={translate('lithium')}
                     link='Lithium'
+                    location={translate('caveLayer')}
                 />
                 <PlanetResource
                     nugget='nuggetTitanite'
                     icon='titanite'
                     name={translate('titanite')}
                     link='Titanite'
+                    location={translate('purpleHills') + ', ' + translate('mantleLayer')}
                 />
                 <ContentTitle title='atmospheric resources' />
                 <PlanetResource

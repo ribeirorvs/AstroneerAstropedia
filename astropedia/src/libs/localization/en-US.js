@@ -260,5 +260,8 @@ export default {
         grayPlains: 'Gray Plains',
         veryHigh: 'Very High',
         low: 'Low',
-        orangeMesas: 'Orange Mesas'
+        orangeMesas: 'Orange Mesas',
+        high: 'High',
+        veryLow: 'Very Low',
+        purpleHills: 'Purple Hills'
 }
