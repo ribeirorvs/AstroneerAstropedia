@@ -3,6 +3,7 @@ import { ScrollView, View } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { ContentTitle } from '../components/contentTitle';
 import { Header } from '../components/header';
+import { PlanetDetails } from '../components/planetDetails';
 import { PlanetResource } from '../components/planetResource';
 import { ResourceTitle } from '../components/resourceTitle';
 import { translate } from '../libs/localization';
@@ -19,6 +20,16 @@ export function Atrox() {
                 link='Atrox'
             />
             <ScrollView style={layoutStyle.resourceContent} contentContainerStyle={{ alignItems: 'center' }} >
+                <ContentTitle title={translate('planetDetails')} />
+                <PlanetDetails
+                    size={translate('medium')}
+                    difficulty={translate('veryHard')}
+                    cycle='~20'
+                    sun={translate('low')}
+                    sunValue='50%'
+                    wind={translate('veryLow')}
+                    windValue='25%'
+                />
                 <ContentTitle title={translate('atmosphericResourcesTitle')} />
                 <PlanetResource
                     nugget='nuggetHelium'
