@@ -24,7 +24,7 @@ export function Backpack() {
             <ResourceTitle
                 title={translate('backpackPrinter')}
                 favTitle={translate('backpackPrinter')}
-                icon='backpack'
+                icon='backpackPrinter'
                 nugget='backpack'
                 link='Backpack'
             />

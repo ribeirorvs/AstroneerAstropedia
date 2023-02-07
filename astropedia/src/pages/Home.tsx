@@ -24,9 +24,9 @@ export function Home() {
                     link='Resources'
                 />
                 <ComponentButton
-                    title={translate('printables')}
+                    title={translate('printers')}
                     icon='backpackPrinter'
-                    link='Printables'
+                    link='Printers'
                 />
                 <ComponentButton
                     title={translate('favoritesTitle')}

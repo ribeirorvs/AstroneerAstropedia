@@ -28,10 +28,10 @@ export function AtmosphericCondenser() {
             <Header />
             <ResourceTitle
                 title={translate('atmosphericCondenser')}
-                favTitle={translate('atmosphericCondenser')}
+                favTitle={translate('sourceAtmosphericCondenser')}
                 icon='atmosphericCondenser'
                 nugget='iconAthmospheticCondenserLab'
-                link='AthmosphericCondenser'
+                link='AtmosphericCondenser'
             />
             <ScrollView>
                 <ContentTitle title={translate('sourceTitle')} />

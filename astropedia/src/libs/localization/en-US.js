@@ -34,7 +34,7 @@ export default {
         atmosphericResourcesTitle: 'atmospheric resources',
         sourceTitle: 'Source',
         usesTitle: 'Uses',
-        printables: 'Printables',
+        printers: 'Printers',
 
         //Planet's names
         sylva: 'Sylva',

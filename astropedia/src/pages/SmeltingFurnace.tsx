@@ -23,7 +23,7 @@ export function SmeltingFurnace() {
             <Header />
             <ResourceTitle
                 title={translate('smeltingFurnace')}
-                favTitle={translate('smeltingFurnace')}
+                favTitle={translate('sourceSmeltingFurnace')}
                 icon='smeltingFurnace'
                 nugget='iconSmeltingFurnace'
                 link='SmeltingFurnace'

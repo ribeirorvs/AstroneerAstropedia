@@ -5,17 +5,17 @@ import { ComponentButton } from '../components/component';
 import { Header } from '../components/header';
 import { Title } from '../components/title';
 import { layoutStyle } from '../styles/layoutStyles';
-import { PrintableList } from '../assets/printables';
+import { PrintersList } from '../assets/printers';
 import { translate } from '../libs/localization';
 
-export function Printables() {
+export function Printers() {
     return (
         <SafeAreaView style={layoutStyle.container}>
             <Header />
             <View style={layoutStyle.content} >
-                <Title title={translate('printables')} />
+                <Title title={translate('printers')} />
                 <FlatList
-                    data={PrintableList}
+                    data={PrintersList}
                     keyExtractor={(item) => String(item.id)}
                     renderItem={({ item }) => (
                         <ComponentButton

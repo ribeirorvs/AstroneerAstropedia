@@ -56,7 +56,7 @@ import { TungstenCarbide } from '../pages/TungstenCarbide';
 import { Favorites } from '../pages/Favorites';
 import { Configuration } from '../pages/Configuration';
 import { ContactUs } from '../pages/ContactUs';
-import { Printables } from '../pages/Printables';
+import { Printers } from '../pages/Printers';
 import { SmallPrinter } from '../pages/SmallPrinter';
 import { Backpack } from '../pages/Backpack';
 import { MediumPrint } from '../pages/MadiumPrinter';
@@ -521,8 +521,8 @@ function AppRoutes() {
                 }}
             />
             <Stack.Screen
-                name='Printables'
-                component={Printables}
+                name='Printers'
+                component={Printers}
                 options={{
                     headerShown: false,
                     animation: 'none'

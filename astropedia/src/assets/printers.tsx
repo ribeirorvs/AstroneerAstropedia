@@ -1,4 +1,4 @@
-export const PrintableList = [
+export const PrintersList = [
     {
         id: 1,
         title: 'backpackPrinter',

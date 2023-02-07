@@ -24,9 +24,9 @@ export function MediumPrint() {
             <ResourceTitle
                 title={translate('mediumPrinter')}
                 favTitle={translate('mediumPrinter')}
-                icon='mediumPrint'
+                icon='mediumPrinter'
                 nugget='iconMediumPrint'
-                link='MediumPrint'
+                link='MediumPrinter'
             />
             <ScrollView>
                 <ContentTitle title={translate('sourceTitle')} />
