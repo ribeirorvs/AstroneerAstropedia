@@ -146,6 +146,11 @@ export function Configuration() {
                         <CreditNames name='Rodrigo Vitor Ribeiro' />
                         <CreditNames name='Matheus Cosiello' />
                     </View>
+                    <ContentTitle title={translate('aboutUsTranslation')} />
+                    <View style={layoutStyle.modalCreditName}>
+                        <CreditNames name='Rodrigo Vitor Ribeiro' />
+                        <CreditNames name='John Monteiro' />
+                    </View>
                     <ContentTitle title={translate('aboutUsThanks')} />
                     <View style={layoutStyle.modalCreditName}>
                         <CreditNames name='Anderson Nudes Souza' />

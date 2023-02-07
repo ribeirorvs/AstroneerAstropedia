@@ -20,6 +20,7 @@ export default {
         aboutUsDeveloped: 'Developed by MIDDLEWARE DEV',
         aboutUsDesign: 'Design',
         aboutUsThanks: 'With Special Thanks to',
+        aboutUsTranslation: 'Translations',
         warningTitle: 'Warning',
         warningMessage: 'The changes only be effective after you restart the Astropedia',
         warningButton: 'Ok',
@@ -265,5 +266,7 @@ export default {
         veryLow: 'Very Low',
         purpleHills: 'Purple Hills',
         mountains: 'Mountains',
-        icePlains: 'Ice Plains'
+        icePlains: 'Ice Plains',
+        hard: 'Hard',
+        veryHard: 'Very Hard'
 }
