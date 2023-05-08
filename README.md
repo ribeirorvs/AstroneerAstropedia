@@ -27,3 +27,72 @@ The app privacy policy can be found here: [Astropedia APP Privacy Policy](https:
 The app is available in the Google Play Store here: [Astropedia](https://play.google.com/store/apps/details?id=com.middlewaredev.astropedia)
 
 Trello of this project: [Astropedia Trello](https://trello.com/b/9738AS16)
+
+## Run on your machine (for Windows)
+
+### Install NPX
+
+1. Go to [https://nodejs.org/en](https://nodejs.org/en) and download the latest version of Node
+2. Install the Node
+3. Open the terminal and test the command
+
+~~~shell
+$ npx -v
+9.5.0
+~~~
+
+### Install yarn
+
+1. Use the NPM to install yarn
+
+~~~shell
+$ npm install --global yarn
+added 1 package in 306ms
+~~~
+
+2. Use the yarn to install the expo module
+
+~~~shell
+$ yarn add expo
+yarn add v1.22.19
+[1/4] Resolving packages...
+[2/4] Fetching packages...
+info There appears to be trouble with your network connection. Retrying...
+[3/4] Linking dependencies...
+.
+.
+.
+└─ regenerator-transform@0.15.1
+Done in 202.09s.
+~~~
+
+### Use the Expo CLI with NPX 
+
+1. Use the NPX command in terminal to run and install the Expo CLI
+
+~~~shell
+$ npx expo -h
+Need to install the following packages:
+  expo@48.0.9
+Ok to proceed? (y) y
+npm WARN deprecated @npmcli/move-file@1.1.2: This functionality has been moved to @npmcli/fs
+npm WARN deprecated uuid@3.4.0: Please upgrade  to version 7 or higher.  Older versions may use Math.random() in certain circumstances, which is known to be problematic.  See https://v8.dev/blog/math-random for details.
+
+  Usage
+    $ npx expo <command>
+
+  Commands
+    start, export, export:web
+    run:ios, run:android, prebuild
+    install, customize, config
+    login, logout, whoami, register
+
+  Options
+    --version, -v   Version number
+    --help, -h      Usage info
+
+  For more info run a command with the --help flag
+    $ npx expo start --help
+~~~
+
+2. 
