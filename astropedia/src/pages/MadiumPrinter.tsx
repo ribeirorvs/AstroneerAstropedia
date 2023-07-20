@@ -23,7 +23,7 @@ export function MediumPrint() {
             <Header />
             <ResourceTitle
                 title={translate('mediumPrinter')}
-                favTitle={translate('mediumPrinter')}
+                favTitle={translate('sourceMediumPrinter')}
                 icon='mediumPrinter'
                 nugget='iconMediumPrint'
                 link='MediumPrinter'

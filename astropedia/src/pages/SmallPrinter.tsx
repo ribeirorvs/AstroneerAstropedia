@@ -23,7 +23,7 @@ export function SmallPrinter() {
             <Header />
             <ResourceTitle
                 title={translate('smallPrinter')}
-                favTitle={translate('smallPrinter')}
+                favTitle={translate('sourceSmallPrinter')}
                 icon='smallPrinter'
                 nugget='iconSmallPrint'
                 link='SmallPrinter'

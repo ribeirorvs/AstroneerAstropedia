@@ -43,7 +43,7 @@ export function Calidor() {
                     icon='wolframite'
                     name={translate('wolframite')}
                     link='Wolframite'
-                    location={translate('orangeMesas') + ', ' + translate('mantleLayer')}
+                    location={translate('mountains') + ', ' + translate('mantleLayer')}
                 />
                 <ContentTitle title={translate('atmosphericResourcesTitle')} />
                 <PlanetResource

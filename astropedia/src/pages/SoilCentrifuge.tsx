@@ -23,7 +23,7 @@ export function SoilCentrifuge() {
             <Header />
             <ResourceTitle
                 title={translate('soilCentrifuge')}
-                favTitle={translate('soilCentrifuge')}
+                favTitle={translate('sourceSoilCentrifuge')}
                 icon='soilCentrifuge'
                 nugget='iconSoilCentrifuge'
                 link='SoilCentrifuge'

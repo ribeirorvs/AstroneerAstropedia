@@ -1,25 +1,25 @@
 export const PrintersList = [
     {
         id: 1,
-        title: 'backpackPrinter',
+        title: 'backpack',
         icon: 'backpackPrinter',
         link: 'Backpack'
     },
     {
         id: 2,
-        title: 'smallPrinter',
+        title: 'sourceSmallPrinter',
         icon: 'smallPrinter',
         link: 'SmallPrinter'
     },
     {
         id: 3,
-        title: 'mediumPrinter',
+        title: 'sourceMediumPrinter',
         icon: 'mediumPrinter',
         link: 'MediumPrinter'
     },
     {
         id: 4,
-        title: 'largePrinter',
+        title: 'sourceLargePrinter',
         icon: 'largePrinter',
         link: 'LargePrinter'
     },
@@ -31,13 +31,13 @@ export const PrintersList = [
     },
     {
         id: 6,
-        title: 'soilCentrifuge',
+        title: 'sourceSoilCentrifuge',
         icon: 'soilCentrifuge',
         link: 'SoilCentrifuge'
     },
     {
         id: 7,
-        title: 'chemistryLab',
+        title: 'sourceChemistryLab',
         icon: 'chemistryLab',
         link: 'ChemistryLab'
     },
@@ -49,7 +49,7 @@ export const PrintersList = [
     },
     {
         id: 9,
-        title: 'tradePlatform',
+        title: 'sourceTradePlatform',
         icon: 'tradePlatform',
         link: 'TradePlatform'
     },

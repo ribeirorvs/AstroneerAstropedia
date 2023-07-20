@@ -28,7 +28,7 @@ export function TradePlatform() {
             <Header />
             <ResourceTitle
                 title={translate('tradePlatform')}
-                favTitle={translate('tradePlatform')}
+                favTitle={translate('sourceTradePlatform')}
                 icon='tradePlatform'
                 nugget='iconTradePlatform'
                 link='TradePlatform'

@@ -23,7 +23,7 @@ export function Backpack() {
             <Header />
             <ResourceTitle
                 title={translate('backpackPrinter')}
-                favTitle={translate('backpackPrinter')}
+                favTitle={translate('backpack')}
                 icon='backpackPrinter'
                 nugget='backpack'
                 link='Backpack'

@@ -28,7 +28,7 @@ export function ChemistryLab() {
             <Header />
             <ResourceTitle
                 title={translate('chemistryLab')}
-                favTitle={translate('chemistryLab')}
+                favTitle={translate('sourceChemistryLab')}
                 icon='chemistryLab'
                 nugget='iconChemistryLab'
                 link='ChemistryLab'
