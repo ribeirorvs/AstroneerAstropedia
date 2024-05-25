@@ -11,7 +11,5 @@ export const imgStyle = StyleSheet.create({
         width: 108,
         justifyContent: 'center'
     },
-    player: {
-        marginRight: 20
-    },
+    
 })

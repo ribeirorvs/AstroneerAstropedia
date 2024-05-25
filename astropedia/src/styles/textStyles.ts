@@ -10,9 +10,5 @@ export const textStyle = StyleSheet.create({
         textAlign: 'center',
         fontFamily: Fonts.heading
     },
-    text: {
-        color: colors.white,
-        fontFamily: Fonts.text,
-        fontSize: 18
-    },
+    
 });
