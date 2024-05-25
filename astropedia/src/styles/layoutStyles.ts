@@ -17,4 +17,8 @@ export const layoutStyle = StyleSheet.create({
         flex: 1,
         alignItems: 'center',
     },
+    flatList: {
+        width: '110%',
+        paddingLeft: '10%'
+    },
 });
