@@ -3,8 +3,7 @@ import { ComponentButton } from '@/components/componentButton';
 import { Title } from '@/components/title';
 import { translate } from '@/libs/localization';
 import { layoutStyle } from '@/styles/layoutStyles';
-import { View, FlatList } from 'react-native';
-import { SafeAreaView } from 'react-native-safe-area-context';
+import { View, FlatList, SafeAreaView } from 'react-native';
 
 export default function Resources() {
     return (
