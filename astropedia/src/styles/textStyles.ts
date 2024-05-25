@@ -10,5 +10,22 @@ export const textStyle = StyleSheet.create({
         textAlign: 'center',
         fontFamily: Fonts.heading
     },
-    
+    text: {
+        color: colors.white,
+        fontFamily: Fonts.text,
+        fontSize: 18
+    },
+    link: {
+        color: colors.blue,
+        fontSize: 18
+    },
+    input: {
+        borderBottomWidth: 1,
+        borderBottomColor: colors.white,
+        color: colors.white,
+        textAlign: 'center',
+        fontFamily: Fonts.text,
+        fontSize: 18,
+        width: 220
+    },
 });
