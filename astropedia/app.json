@@ -2,6 +2,7 @@
   "expo": {
     "name": "Astropedia",
     "slug": "astropedia",
+    "scheme": "astropedia",
     "version": "1.9.2",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -37,7 +38,8 @@
       }
     },
     "plugins": [
-      "expo-localization"
+      "expo-localization",
+      "expo-router"
     ]
   }
 }

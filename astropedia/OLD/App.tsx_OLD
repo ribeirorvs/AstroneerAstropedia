@@ -6,10 +6,10 @@ import {
   useFonts,
   Roboto_400Regular
 } from '@expo-google-fonts/roboto';
-import { handleLocale } from './src/libs/localization';
+import { handleLocale } from './src_OLD/libs/localization';
 import * as SplashScreen from 'expo-splash-screen';
 import AsyncStorage from '@react-native-async-storage/async-storage';
-import Routes from './src/routes';
+import Routes from './src_OLD/routes';
 
 export default function app() {
 

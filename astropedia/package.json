@@ -1,5 +1,5 @@
 {
-  "main": "node_modules/expo/AppEntry.js",
+    "main": "expo-router/entry",
   "scripts": {
     "start": "expo start",
     "android": "expo start --android",
@@ -31,7 +31,10 @@
     "react-native-screens": "3.31.1",
     "react-native-select-dropdown": "^2.0.3",
     "react-native-table-component": "^1.2.2",
-    "react-native-web": "~0.19.10"
+    "react-native-web": "~0.19.10",
+    "expo-router": "~3.5.14",
+    "expo-linking": "~6.3.1",
+    "expo-constants": "~16.0.1"
   },
   "devDependencies": {
     "@babel/core": "^7.24.0",
