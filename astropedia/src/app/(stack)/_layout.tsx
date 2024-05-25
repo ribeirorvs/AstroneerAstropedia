@@ -1,3 +1,4 @@
+import { layoutStyle } from "@/styles/layoutStyles";
 import { Stack } from "expo-router";
 
 

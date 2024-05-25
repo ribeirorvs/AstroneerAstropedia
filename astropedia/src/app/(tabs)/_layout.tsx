@@ -2,13 +2,14 @@ import { Tabs } from "expo-router";
 import { MaterialIcons } from "@expo/vector-icons";
 import { Image } from "react-native";
 import { images } from "@/assets";
+import { Header } from "@/components/header";
 
 
 export default function TabsLayout(){
     return (
         <Tabs
             screenOptions={{
-                headerShown: false
+                header: () => <Header />,
             }}
         >
             <Tabs.Screen 
