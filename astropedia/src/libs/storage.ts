@@ -1,4 +1,9 @@
+import { FavoriteType } from '@/assets/enums';
+import { PlanetList } from '@/assets/planets';
+import { PrintersList } from '@/assets/printers';
+import { ResourceList } from '@/assets/resources';
 import AsyncStorage from '@react-native-async-storage/async-storage';
+import { useState } from 'react';
 
 export interface PageDetails {
     pageTitle: string,
@@ -24,7 +29,7 @@ export interface StoredFavIcon {
     }
 }
 
-export async function saveFavorite(page: PageDetails): Promise<void> {
+export async function saveFavorites(page: PageDetails): Promise<void> {
     try {
         const data = JSON.parse(JSON.stringify(await AsyncStorage.getItem('@astropedia:pages')));
         const favDetails = {
@@ -64,7 +69,7 @@ export async function loadFavorites(): Promise<PageDetails[]> {
         .sort();
 }
 
-export async function deleteFavorite(page: PageDetails): Promise<void> {
+export async function deleteFavorites(page: PageDetails): Promise<void> {
     try {
         const favDetails = {
             pageTitle: page.pageTitle,
@@ -127,4 +132,74 @@ async function reomveFavIcon(page: FavIcon) {
         JSON.stringify(favorites)
     );
 
+}
+
+
+
+//New way to store favorites
+
+//define the interface of intems favorited
+export interface FavoriteDetails {
+    id: number,
+    type: FavoriteType
+}
+
+//check if an item is favorite or no
+export async function cehckFavorited(item: FavoriteDetails): Promise<boolean>{
+    try{
+        const data = await AsyncStorage.getItem('@astropedia:itemsFavorited');
+
+        if(data !== null) {
+            const items: FavoriteDetails[] = JSON.parse(data)
+            const foundItem = items.find(favorite =>  favorite.id === item.id && favorite.type === item.type);
+            return !!foundItem;
+        }
+
+        return false;
+
+    } catch (error) {
+        console.error("Error: ", error)
+        return false;
+    }
+
+}
+
+export async function saveFavorite(item: FavoriteDetails){
+    try{
+        const data = await AsyncStorage.getItem('@astropedia:itemsFavorited');
+        let items: FavoriteDetails[] = [];
+        if(data !== null) {
+            items = JSON.parse(data);
+        }
+        const itemExist = items.some(favorite =>  favorite.id === item.id && favorite.type === item.type);
+
+        if(!itemExist){
+            items.push(item);
+            await AsyncStorage.setItem('@astropedia:itemsFavorited', JSON.stringify(items));
+        } 
+        
+    } catch (error) {
+        console.error("Error: ", error);
+    }
+}
+
+export async function deleteFavorite(item: FavoriteDetails){
+    try{
+        const data = await AsyncStorage.getItem('@astropedia:itemsFavorited');
+        let items: FavoriteDetails[] = [];
+        if(data !== null){
+            items = JSON.parse(data);
+            
+            const itemExist = items.some(favorite =>  favorite.id === item.id && favorite.type === item.type);
+
+            if(itemExist){
+                items = items.filter(favorite =>  !(favorite.id === item.id && favorite.type === item.type))
+                await AsyncStorage.setItem('@astropedia:itemsFavorited', JSON.stringify(items));
+            } 
+
+        } 
+
+    } catch (error) {
+        console.error("Error: ", error)
+    }
 }

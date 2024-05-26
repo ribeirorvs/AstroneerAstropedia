@@ -1,4 +1,3 @@
-import { FavIcon, PageDetails, deleteFavorite, loadFavoriteIcon, saveFavorite } from '@/libs/storage';
 import { useEffect, useState } from 'react';
 import { Text, Image, View, TouchableOpacity } from 'react-native';
 import { resourceTitleStyle } from './style';
@@ -6,64 +5,61 @@ import { images } from '@/assets';
 import { PlanetList } from '@/assets/planets';
 import { MaterialIcons } from "@expo/vector-icons";
 import colors from '@/styles/colors';
+import { FavoriteType } from '@/assets/enums';
+import { FavoriteDetails, cehckFavorited, deleteFavorite, saveFavorite } from '@/libs/storage';
 
 export interface ResourceTitleProps {
-    favTitle?: string;
     id: number;
 }
 
+
 export function ResourceTitle({
-    favTitle,
     id
 }: ResourceTitleProps) {
     const planet = PlanetList.find(planet => planet.id === Number(id))
-    const [page] = useState<PageDetails>({
-        pageTitle: favTitle ? favTitle : planet ? planet.title : "Sylva",
-        pageIcon: planet ? planet.icon : "sylva",
-        pageNugget: planet ? planet.nugget : "nuggetSylva",
-        pageLink: planet ? planet.link : "planetsDetails"
-    });
-    const [favIcon, setFavIcon] = useState(false);
-    const [favorited] = useState<FavIcon>({
-        pageTitle: page.pageTitle,
-        favorited: false
-    });
+    const favorite: FavoriteDetails = {
+        id: planet ? planet.id : 1,
+        type: FavoriteType.Planet
+    };
+    const [exist, setExist] = useState(false);
 
+    //Check if the planet is favorite when the page open
     useEffect(() => {
-        async function loadFavIcon() {
-            const data = await loadFavoriteIcon(favorited);
-            setFavIcon(data? true: false)
-        }
-        loadFavIcon()
-    })
+        async function checkIfExist() {
+            setExist(await cehckFavorited(favorite))
+        };
+        checkIfExist();
+    }, []);
 
-    async function handleFavorite() {
-        if (!favIcon) {
-            await saveFavorite(page);
-            setFavIcon(true)
+    //Change the favorite status of the planet
+    async function handleFavorite(){
+        if(exist){
+            await deleteFavorite(favorite)
+            setExist(false)
         } else {
-            await deleteFavorite(page)
-            setFavIcon(false)
+            await saveFavorite(favorite)
+            setExist(true)
         }
     }
+
     return (
         <View style={resourceTitleStyle.resourceTitle}>
             <View style={{ flexDirection: 'row', alignItems: 'center' }}>
                 <Image
-                    source={images[planet?.nugget]}
+                    source={images[planet ? planet.nugget : "nuggetSylva"]}
                     style={resourceTitleStyle.resourceTitleImg}
                 />
                 <Text style={resourceTitleStyle.txtResourceTitle}>
-                    {planet?.title}
+                    {planet ? planet.title : "Sylva"}
                 </Text>
             </View>
             <TouchableOpacity
                 onPress={handleFavorite}
             >
                 <MaterialIcons 
-                    name={favIcon ? "star-outline" : "star"}
+                    name={ exist ? "star" : "star-outline"}
                     size={22}
-                    color={favIcon ? colors.white : colors.gold}
+                    color={ exist ? colors.gold : colors.white}
                 />
             </TouchableOpacity>
         </View>
