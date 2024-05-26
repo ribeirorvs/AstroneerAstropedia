@@ -11,5 +11,12 @@ export const imgStyle = StyleSheet.create({
         width: 108,
         justifyContent: 'center'
     },
+    input: {
+        marginTop: 23
+    },
+    printerIcon: {
+        height: 20,
+        width: 20
+    },
     
 })

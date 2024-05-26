@@ -28,4 +28,9 @@ export const textStyle = StyleSheet.create({
         fontSize: 18,
         width: 220
     },
+    contactInput: {
+        fontSize: 18,
+        color: colors.black,
+        width: '80%'
+    },
 });

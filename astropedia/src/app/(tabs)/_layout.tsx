@@ -86,6 +86,12 @@ export default function TabsLayout(){
                     )
                 }}
             />
+            <Tabs.Screen 
+                name="contactUs"
+                options={{
+                    href: null
+                }}
+            />
         </Tabs>
     )
 }
