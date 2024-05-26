@@ -2,42 +2,32 @@ import React from 'react';
 import { Text, View } from 'react-native';
 import { planetDetailsStyle } from './style';
 import { translate } from '@/libs/localization';
+import { PlanetList } from '@/assets/planets';
 
 interface PlanetDetailsProps {
-    size: string,
-    difficulty: string,
-    cycle: string,
-    sun: string,
-    sunValue: string,
-    wind: string
-    windValue: string
+    id: number
 }
 
 export function PlanetDetails({
-    size,
-    difficulty,
-    cycle,
-    sun,
-    sunValue,
-    wind,
-    windValue
+    id
 }: PlanetDetailsProps){
+    const planet = PlanetList.find(planet => planet.id === Number(id))
     return (
         <View style={{width: '80%'}}>
             <Text style={planetDetailsStyle.sourceText}>
-                {translate('size')}: {size}
+                {translate('size')}: {translate(planet?.size || "medium")}
             </Text>
             <Text style={planetDetailsStyle.sourceText}>
-                {translate('difficulty')}: {difficulty}
+                {translate('difficulty')}: {translate(planet?.difficulty || "easy")}
             </Text>
             <Text style={planetDetailsStyle.sourceText}>
-                {translate('dayNigthCycle')}: {cycle} {translate('minutes')}
+                {translate('dayNigthCycle')}: {planet?.cycle || 12} {translate('minutes')}
             </Text>
             <Text style={planetDetailsStyle.sourceText}>
-                {translate('sunPower')}: {sun} ({sunValue})
+                {translate('sunPower')}: {translate(planet?.sun || "medium")} ({planet?.sunValue || "100%"})
             </Text>
             <Text style={planetDetailsStyle.sourceText}>
-                {translate('windPower')}: {wind} ({windValue})
+                {translate('windPower')}: {translate(planet?.wind || "medium")} ({planet?.windValue || "100%"})
             </Text>
         </View>
     )

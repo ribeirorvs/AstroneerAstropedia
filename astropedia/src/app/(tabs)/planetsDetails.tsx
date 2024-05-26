@@ -11,6 +11,10 @@ import { PlanetList } from '@/assets/planets';
 export default function PlanetsDetails() {
     const { id } = useLocalSearchParams();
     const planet = PlanetList.find(planet => planet.id === Number(id));
+    const hasNaturalResources = planet ? planet.hasNaturalResources : false;
+    const hasAtmosphericResources = planet ? planet.hasAtmosphericResources : false;
+    const naturalResources = planet?.naturalResources || [];
+    const atmosphericResources = planet?.atmosphericResources || [];
     return (
         <SafeAreaView style={layoutStyle.container} >
             <ResourceTitle
@@ -19,42 +23,34 @@ export default function PlanetsDetails() {
             <ScrollView style={layoutStyle.resourceContent} contentContainerStyle={{ alignItems: 'center' }} >
                 <ContentTitle title={translate('planetDetails')} />
                 <PlanetDetails
-                    size={translate('medium')}
-                    difficulty={translate('easy')}
-                    cycle='12'
-                    sun={translate('medium')}
-                    sunValue='100%'
-                    wind={translate('medium')}
-                    windValue='48%'
+                    id={planet?.id || 1}
                 />
-                <ContentTitle title={translate('naturalResourcesTitle')} />
-                <PlanetResource
-                    nugget='nuggetSphalerite'
-                    icon='sphalerite'
-                    name={translate('sphalerite')}
-                    link='Sphalerite'
-                    location={translate('caveLayer')}
-                />
-                <PlanetResource
-                    nugget='nuggetMalachite'
-                    icon='malachite'
-                    name={translate('malachite')}
-                    link='Malachite'
-                    location={translate('caveLayer') + ', ' + translate('mantleLayer')} 
-                />
-                <ContentTitle title={translate('atmosphericResourcesTitle')} />
-                <PlanetResource
-                    nugget='nuggetHydrogen'
-                    icon='hydrogen'
-                    name={translate('hydrogen')}
-                    link='Hydrogen'
-                />
-                <PlanetResource
-                    nugget='nuggetNitrogen'
-                    icon='nitrogen'
-                    name={translate('nitrogen')}
-                    link='Nitrogen'
-                />
+                {
+                    hasNaturalResources && 
+                    (<>
+                        <ContentTitle title={translate('naturalResourcesTitle')} />
+                        {
+                            naturalResources.map(resource => {
+                                return (<PlanetResource
+                                    resource={resource}
+                                />)
+                            })
+                        }
+                    </>)
+                }
+                {
+                    hasAtmosphericResources && 
+                (<>
+                    <ContentTitle title={translate('atmosphericResourcesTitle')} />
+                    {
+                        atmosphericResources.map(resource => {
+                            return (<PlanetResource
+                                resource={resource}
+                            />)
+                        })
+                    }
+                </>)
+                }
             </ScrollView>
         </SafeAreaView>
     )
