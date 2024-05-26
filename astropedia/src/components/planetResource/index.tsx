@@ -45,7 +45,7 @@ export function PlanetResource({
                             <Text style={planetResourceStyle.txtResourceDetails}>{translate('location')}</Text>
                             {
                                 resource.location.map((location, index) => (
-                                    <Text key={index} style={planetResourceStyle.txtResourceDescription}>{location}</Text>                        
+                                    <Text key={index} style={planetResourceStyle.txtResourceDescription}>{translate(location)}, </Text>                        
                                 ))
                             }
                         </View>
