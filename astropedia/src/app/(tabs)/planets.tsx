@@ -3,7 +3,7 @@ import { ComponentButton } from "@/components/componentButton";
 import { Title } from "@/components/title";
 import { translate } from "@/libs/localization";
 import { layoutStyle } from "@/styles/layoutStyles";
-import { FlatList, SafeAreaView, View } from "react-native";
+import { FlatList, SafeAreaView, Text, View } from "react-native";
 
 export default function Planets(){
     return (
@@ -15,11 +15,12 @@ export default function Planets(){
                     data={PlanetList}
                     keyExtractor={(item) => String(item.id)}
                     renderItem={({ item }) => (
+                        <View>
                         <ComponentButton
-                            title={translate(item.title)}
-                            icon={item.icon}
-                            link={item.link}
+                            id={item.id}
                         />
+                        <Text>{item.id}</Text>
+                        </View>
                     )}
                     style={layoutStyle.flatList}
                 />

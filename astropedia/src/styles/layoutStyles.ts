@@ -71,4 +71,8 @@ export const layoutStyle = StyleSheet.create({
         justifyContent: 'space-around',
         width: '90%'
     },
+    resourceContent: {
+        flex: 1,
+        marginBottom: 12
+    },
 });

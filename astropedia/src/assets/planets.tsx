@@ -2,9 +2,10 @@ import { translate } from "../libs/localization"
 
 export const PlanetList = [{
     id: 1,
-    title: 'sylva',
+    title: 'Sylva',
     icon: 'sylva',
-    link: 'Sylva'
+    link: 'planetsDetails',
+    nugget: 'nuggetSylva'
 },
 {
     id: 2,
