@@ -7,19 +7,28 @@ import { MaterialIcons } from "@expo/vector-icons";
 import colors from '@/styles/colors';
 import { FavoriteType } from '@/assets/enums';
 import { FavoriteDetails, cehckFavorited, deleteFavorite, saveFavorite } from '@/libs/storage';
+import { HandleList, ListOptions } from '@/assets/utils';
 
 export interface ResourceTitleProps {
     id: number;
+    type: FavoriteType
 }
 
 
 export function ResourceTitle({
-    id
+    id,
+    type
 }: ResourceTitleProps) {
-    const planet = PlanetList.find(planet => planet.id === Number(id))
+    const [list, setList] = useState<ListOptions | null>(null);
+
+    useEffect(() => {
+        setList(HandleList(type, id));
+        console.log(list?.id, list?.link)
+    },[]);
+
     const favorite: FavoriteDetails = {
-        id: planet ? planet.id : 1,
-        type: FavoriteType.Planet
+        id: list ? list.id : 1,
+        type: type
     };
     const [exist, setExist] = useState(false);
 
@@ -46,11 +55,11 @@ export function ResourceTitle({
         <View style={resourceTitleStyle.resourceTitle}>
             <View style={{ flexDirection: 'row', alignItems: 'center' }}>
                 <Image
-                    source={images[planet ? planet.nugget : "nuggetSylva"]}
+                    source={images[list ? list.nugget : "nuggetSylva"]}
                     style={resourceTitleStyle.resourceTitleImg}
                 />
                 <Text style={resourceTitleStyle.txtResourceTitle}>
-                    {planet ? planet.title : "Sylva"}
+                    {list ? list.title : "Sylva"}
                 </Text>
             </View>
             <TouchableOpacity

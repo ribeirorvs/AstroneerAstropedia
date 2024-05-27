@@ -7,6 +7,7 @@ import { layoutStyle } from '@/styles/layoutStyles';
 import { SafeAreaView, ScrollView, Text, View } from 'react-native';
 import { useLocalSearchParams } from "expo-router";
 import { PlanetList } from '@/assets/planets';
+import { FavoriteType } from '@/assets/enums';
 
 export default function PlanetsDetails() {
     const { id } = useLocalSearchParams();
@@ -19,6 +20,7 @@ export default function PlanetsDetails() {
         <SafeAreaView style={layoutStyle.container} >
             <ResourceTitle
                 id={planet ? planet.id: 1}
+                type={FavoriteType.Planet}
             />
             <ScrollView style={layoutStyle.resourceContent} contentContainerStyle={{ alignItems: 'center' }} >
                 <ContentTitle title={translate('planetDetails')} />

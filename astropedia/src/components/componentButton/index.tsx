@@ -2,17 +2,28 @@ import { Text, Image, TouchableOpacity } from 'react-native';
 import { images } from '@/assets/index';
 import { componentButtonStyle } from './style';
 import { Link } from 'expo-router';
-import { PlanetList } from '@/assets/planets';
+import { FavoriteType } from '@/assets/enums';
+import { useEffect, useState } from 'react';
+import { HandleList, ListOptions } from '@/assets/utils';
 
 type ComponentButtonProps = {
-    id: number
+    id: number,
+    type: FavoriteType
 }
 
-export function ComponentButton({id}: ComponentButtonProps) {
-    const planet = PlanetList.find(planet => planet.id === id);
+export function ComponentButton({id, type}: ComponentButtonProps) {
+
+    const [list, setList] = useState<ListOptions | null>(null);
+    
+    useEffect(() => {
+        setList(HandleList(type, id));
+        console.log(list?.id, list?.link)
+    },[]);
+
+    
     return (
         <Link href={{
-            pathname: planet ? planet.link : "sylva",
+            pathname: list ? list.link : "sylva",
             params: {
                 id: id
             }
@@ -20,9 +31,9 @@ export function ComponentButton({id}: ComponentButtonProps) {
             <TouchableOpacity
                 style={componentButtonStyle.component}
             >
-                <Image source={images[planet?.icon]} style={componentButtonStyle.imgComponent} />
+                <Image source={images[list?.icon]} style={componentButtonStyle.imgComponent} />
                 <Text style={componentButtonStyle.txtComponent}>
-                    {planet ? planet.title : "err"}
+                    {list ? list.title : "err"}
                 </Text>
             </TouchableOpacity>
         </Link>

@@ -1,3 +1,4 @@
+import { FavoriteType } from "@/assets/enums";
 import { PlanetList } from "@/assets/planets";
 import { ComponentButton } from "@/components/componentButton";
 import { Title } from "@/components/title";
@@ -15,12 +16,10 @@ export default function Planets(){
                     data={PlanetList}
                     keyExtractor={(item) => String(item.id)}
                     renderItem={({ item }) => (
-                        <View>
                         <ComponentButton
                             id={item.id}
+                            type={FavoriteType.Planet}
                         />
-                        <Text>{item.id}</Text>
-                        </View>
                     )}
                     style={layoutStyle.flatList}
                 />

@@ -1,3 +1,4 @@
+import { FavoriteType } from '@/assets/enums';
 import { ResourceList } from '@/assets/resources';
 import { ComponentButton } from '@/components/componentButton';
 import { Title } from '@/components/title';
@@ -16,9 +17,8 @@ export default function Resources() {
                     keyExtractor={(item) => String(item.id)}
                     renderItem={({ item }) => (
                         <ComponentButton
-                            title={translate(item.title)}
-                            icon={item.icon}
-                            link={item.link}
+                            id={item.id}
+                            type={FavoriteType.Resource}
                         />
                     )}
                     style={layoutStyle.flatList}

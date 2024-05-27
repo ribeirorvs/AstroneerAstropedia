@@ -8,7 +8,6 @@ import { planetResourceStyle } from './style';
 import { Link } from 'expo-router';
 import { images } from '@/assets';
 import { translate } from '@/libs/localization';
-import { PlanetList } from '@/assets/planets';
 
 export type PlanetResourceProps = {
     resource: {

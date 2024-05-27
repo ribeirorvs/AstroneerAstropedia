@@ -1,4 +1,5 @@
-import { translate } from "../libs/localization"
+
+export type PlanetDataProps = (typeof PlanetList)[0]
 
 export const PlanetList = [{
     id: 1,
