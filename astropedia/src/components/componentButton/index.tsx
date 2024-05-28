@@ -5,6 +5,7 @@ import { Link } from 'expo-router';
 import { FavoriteType } from '@/assets/enums';
 import { useEffect, useState } from 'react';
 import { HandleList, ListOptions } from '@/assets/utils';
+import { translate } from '@/libs/localization';
 
 type ComponentButtonProps = {
     id: number,
@@ -17,23 +18,19 @@ export function ComponentButton({id, type}: ComponentButtonProps) {
     
     useEffect(() => {
         setList(HandleList(type, id));
-        console.log(list?.id, list?.link)
     },[]);
 
     
     return (
         <Link href={{
-            pathname: list ? list.link : "sylva",
-            params: {
-                id: id
-            }
+            pathname: list ? list.link : "/planet/1",
         }}  asChild>
             <TouchableOpacity
                 style={componentButtonStyle.component}
             >
                 <Image source={images[list?.icon]} style={componentButtonStyle.imgComponent} />
                 <Text style={componentButtonStyle.txtComponent}>
-                    {list ? list.title : "err"}
+                    {translate( list ? list.title : "err")}
                 </Text>
             </TouchableOpacity>
         </Link>

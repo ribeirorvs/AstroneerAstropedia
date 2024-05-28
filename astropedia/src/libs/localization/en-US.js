@@ -37,7 +37,7 @@ export default {
         printers: 'Printers',
 
         //Planet's names
-        Sylva: 'Sylva',
+        sylva: 'Sylva',
         desolo: 'Desolo',
         calidor: 'Calidor',
         vesania: 'Vesania',

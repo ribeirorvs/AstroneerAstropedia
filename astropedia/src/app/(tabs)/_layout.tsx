@@ -3,6 +3,7 @@ import { MaterialIcons } from "@expo/vector-icons";
 import { Image } from "react-native";
 import { images } from "@/assets";
 import { Header } from "@/components/header";
+import colors from "@/styles/colors";
 
 
 export default function TabsLayout(){
@@ -10,6 +11,11 @@ export default function TabsLayout(){
         <Tabs
             screenOptions={{
                 header: () => <Header />,
+                tabBarActiveTintColor: colors.blue,
+                tabBarInactiveTintColor: colors.white,
+                tabBarStyle: {
+                    backgroundColor: colors.background
+                }
             }}
         >
             <Tabs.Screen 
@@ -93,13 +99,19 @@ export default function TabsLayout(){
                 }}
             />
             <Tabs.Screen 
-                name="planetsDetails"
+                name="resourcesDetails"
                 options={{
                     href: null
                 }}
             />
             <Tabs.Screen 
-                name="resourcesDetails"
+                name="planet/[id]"
+                options={{
+                    href: null
+                }}
+            />
+            <Tabs.Screen 
+                name="resource/[id]"
                 options={{
                     href: null
                 }}

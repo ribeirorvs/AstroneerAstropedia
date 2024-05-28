@@ -1,11 +1,12 @@
 
 export type PlanetDataProps = (typeof PlanetList)[0]
 
-export const PlanetList = [{
+export const PlanetList = [
+{
     id: 1,
-    title: 'Sylva',
+    title: 'sylva',
     icon: 'sylva',
-    link: 'planetsDetails',
+    link: '/planet/1',
     nugget: 'nuggetSylva',
     size: "medium",
     difficulty: "easy",
@@ -21,7 +22,7 @@ export const PlanetList = [{
             nugget: "nuggetSphalerite",
             icon: "sphalerite",
             name: "sphalerite",
-            link: "Sphalerite",
+            link: "/resource/13",
             location: ["caveLayer"]
         },
         {
@@ -29,7 +30,7 @@ export const PlanetList = [{
             nugget: "nuggetMalachite",
             icon: "malachite",
             name: "malachite",
-            link: "Malachite",
+            link: "/resource/9",
             location: [
                 "caveLayer",
                 "mantleLayer"
@@ -43,22 +44,22 @@ export const PlanetList = [{
             nugget: "nuggetHydrogen",
             icon: "hydrogen",
             name: "hydrogen",
-            link: "Hydrogen"
+            link: "/resource/27"
         },
         {
             id: 2,
             nugget: "nuggetNitrogen",
             icon: "nitrogen",
             name: "nitrogen",
-            link: "Nitrogen"
+            link: "/resource/29"
         }
     ]
 },
 {
     id: 2,
-    title: 'Desolo',
+    title: 'desolo',
     icon: 'desolo',
-    link: 'planetsDetails',
+    link: '/planet/2',
     nugget: 'nuggetDesolo',
     size: "small",
     difficulty: "easy",
@@ -74,7 +75,7 @@ export const PlanetList = [{
             nugget: "nuggetWolframite",
             icon: "wolframite",
             name: "wolframite",
-            link: "Wolframite",
+            link: "/resource/15",
             location: ["caveLayer"]
         },
         {
@@ -82,7 +83,7 @@ export const PlanetList = [{
             nugget: "nuggetSphalerite",
             icon: "sphalerite",
             name: "sphalerite",
-            link: "Sphalerite",
+            link: "/resource/13",
             location: [
                 "grayPlains",
                 "mantleLayer"
@@ -94,9 +95,9 @@ export const PlanetList = [{
 },
 {
     id: 3,
-    title: 'Calidor',
+    title: 'calidor',
     icon: 'calidor',
-    link: 'planetsDetails',
+    link: '/planet/3',
     nugget: 'nuggetCalidor',
     size: "medium",
     difficulty: "medium",
@@ -112,7 +113,7 @@ export const PlanetList = [{
             nugget: "nuggetMalachite",
             icon: "malachite",
             name: "malachite",
-            link: "Malachite",
+            link: "/resource/9",
             location: ["caveLayer"]
         },
         {
@@ -120,7 +121,7 @@ export const PlanetList = [{
             nugget: "nuggetWolframite",
             icon: "wolframite",
             name: "wolframite",
-            link: "Wolframite",
+            link: "/resource/15",
             location: [
                 "mountains",
                 "mantleLayer"
@@ -134,22 +135,22 @@ export const PlanetList = [{
             nugget: "nuggetHydrogen",
             icon: "hydrogen",
             name: "hydrogen",
-            link: "Hydrogen"
+            link: "resource/27"
         },
         {
             id: 2,
             nugget: "nuggetSulfur",
             icon: "sulfur",
             name: "sulfur",
-            link: "Sulfur"
+            link: "/resource/30"
         }
     ]
 },
 {
     id: 4,
-    title: 'Vesania',
+    title: 'vesania',
     icon: 'vesania',
-    link: 'planetsDetails',
+    link: '/planet/4',
     nugget: 'nuggetVesania',
     size: "medium",
     difficulty: "medium",
@@ -165,7 +166,7 @@ export const PlanetList = [{
             nugget: "nuggetLithium",
             icon: "lithium",
             name: "lithium",
-            link: "Lithium",
+            link: "/resource/8",
             location: ["caveLayer"]
         },
         {
@@ -173,7 +174,7 @@ export const PlanetList = [{
             nugget: "nuggetTitanite",
             icon: "titanite",
             name: "titanite",
-            link: "Titanite",
+            link: "/resource/14",
             location: [
                 "purpleHills",
                 "mantleLayer"
@@ -187,29 +188,29 @@ export const PlanetList = [{
             nugget: "nuggetHydrogen",
             icon: "hydrogen",
             name: "hydrogen",
-            link: "Hydrogen"
+            link: "/resource/27"
         },
         {
             id: 2,
             nugget: "nuggetNitrogen",
             icon: "nitrogen",
             name: "nitrogen",
-            link: "Nitrogen"
+            link: "/resource/29"
         },
         {
             id: 3,
             nugget: "nuggetArgon",
             icon: "argon",
             name: "argon",
-            link: "Argon"
+            link: "/resource/25"
         }
     ]
 },
 {
     id: 5,
-    title: 'Novus',
+    title: 'novus',
     icon: 'novus',
-    link: 'planetsDetails',
+    link: '/planet/5',
     nugget: 'nuggetNovus',
     size: "small",
     difficulty: "medium",
@@ -225,7 +226,7 @@ export const PlanetList = [{
             nugget: "nuggetHematite",
             icon: "hematite",
             name: "hematite",
-            link: "Hematite",
+            link: "/resource/6",
             location: ["caveLayer"]
         },
         {
@@ -233,7 +234,7 @@ export const PlanetList = [{
             nugget: "nuggetLithium",
             icon: "lithium",
             name: "lithium",
-            link: "Lithium",
+            link: "/resource/8",
             location: [
                 "mountains",
                 "mantleLayer"
@@ -247,22 +248,22 @@ export const PlanetList = [{
             nugget: "nuggetHydrogen",
             icon: "hydrogen",
             name: "hydrogen",
-            link: "Hydrogen"
+            link: "/resource/27"
         },
         {
             id: 2,
             nugget: "nuggetMethane",
             icon: "methane",
             name: "methane",
-            link: "Methane"
+            link: "/resource/28"
         }
     ]
 },
 {
     id: 6,
-    title: 'Glacio',
+    title: 'glacio',
     icon: 'glacio',
-    link: 'planetsDetails',
+    link: '/planet/6',
     nugget: 'nuggetGlacio',
     size: "medium",
     difficulty: "hard",
@@ -278,7 +279,7 @@ export const PlanetList = [{
             nugget: "nuggetHematite",
             icon: "hematite",
             name: "hematite",
-            link: "Hematite",
+            link: "/resource/6",
             location: ["caveLayer"]
         },
         {
@@ -286,7 +287,7 @@ export const PlanetList = [{
             nugget: "nuggetTitanite",
             icon: "titanite",
             name: "titanite",
-            link: "Titanite",
+            link: "/resource/14",
             location: [
                 "icePlains",
                 "mantleLayer"
@@ -300,15 +301,15 @@ export const PlanetList = [{
             nugget: "nuggetArgon",
             icon: "argon",
             name: "argon",
-            link: "Argon"
+            link: "/resource/25"
         }
     ]
 },
 {
     id: 7,
-    title: 'Atrox',
+    title: 'atrox',
     icon: 'atrox',
-    link: 'planetsDetails',
+    link: '/planet/7',
     nugget: 'nuggetAtrox',
     size: "medium",
     difficulty: "veryHard",
@@ -326,28 +327,28 @@ export const PlanetList = [{
             nugget: "nuggetHelium",
             icon: "helium",
             name: "helium",
-            link: "Helium"
+            link: "/resource/26"
         },
         {
             id: 2,
             nugget: "nuggetMethane",
             icon: "methane",
             name: "methane",
-            link: "Methane"
+            link: "/resource/28"
         },
         {
             id: 3,
             nugget: "nuggetNitrogen",
             icon: "nitrogen",
             name: "nitrogen",
-            link: "Nitrogen"
+            link: "/resource/29"
         },
         {
             id: 4,
             nugget: "nuggetSulfur",
             icon: "sulfur",
             name: "sulfur",
-            link: "Sulfur"
+            link: "/resource/30"
         }
     ]
 }]

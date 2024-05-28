@@ -2,7 +2,6 @@ import { useEffect, useState } from 'react';
 import { Text, Image, View, TouchableOpacity } from 'react-native';
 import { resourceTitleStyle } from './style';
 import { images } from '@/assets';
-import { PlanetList } from '@/assets/planets';
 import { MaterialIcons } from "@expo/vector-icons";
 import colors from '@/styles/colors';
 import { FavoriteType } from '@/assets/enums';
@@ -19,12 +18,12 @@ export function ResourceTitle({
     id,
     type
 }: ResourceTitleProps) {
+
     const [list, setList] = useState<ListOptions | null>(null);
 
     useEffect(() => {
         setList(HandleList(type, id));
-        console.log(list?.id, list?.link)
-    },[]);
+    });
 
     const favorite: FavoriteDetails = {
         id: list ? list.id : 1,
