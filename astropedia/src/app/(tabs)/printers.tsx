@@ -1,3 +1,4 @@
+import { FavoriteType } from '@/assets/enums';
 import { PrintersList } from '@/assets/printers';
 import { ComponentButton } from '@/components/componentButton';
 import { Title } from '@/components/title';
@@ -17,9 +18,8 @@ export default function Printers() {
                     keyExtractor={(item) => String(item.id)}
                     renderItem={({ item }) => (
                         <ComponentButton
-                            title={translate(item.title)}
-                            icon={item.icon}
-                            link={item.link}
+                            id={item.id}
+                            type={FavoriteType.Printer}
                         />
                     )}
                     style={layoutStyle.flatList}

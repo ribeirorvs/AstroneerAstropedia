@@ -1,8 +1,10 @@
+import { useState } from "react";
 import { FavoriteType } from "./enums";
 import { PlanetDataProps, PlanetList } from "./planets";
+import { PrinterDataProps, PrintersList } from "./printers";
 import { ResourceDataProps, ResourceList } from "./resources";
 
-export type ListOptions = PlanetDataProps | ResourceDataProps;
+export type ListOptions = PlanetDataProps | ResourceDataProps | PrinterDataProps;
 
 export function HandleList( type: FavoriteType, id: number) {
     if(type === FavoriteType.Planet){
@@ -11,5 +13,8 @@ export function HandleList( type: FavoriteType, id: number) {
     } else if(type === FavoriteType.Resource){
         const resource = ResourceList.find(resource => resource.id === id)
         return resource || null
+    } else if(type === FavoriteType.Printer){
+        const printer = PrintersList.find(printer => printer.id === id)
+        return printer || null
     }
 }

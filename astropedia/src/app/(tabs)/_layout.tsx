@@ -116,6 +116,12 @@ export default function TabsLayout(){
                     href: null
                 }}
             />
+            <Tabs.Screen 
+                name="printer/[id]"
+                options={{
+                    href: null
+                }}
+            />
         </Tabs>
     )
 }

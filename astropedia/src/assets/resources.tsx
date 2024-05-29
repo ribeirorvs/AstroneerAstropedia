@@ -1363,7 +1363,7 @@ export const ResourceList = [
         {
             id: 13,
             useId: 4,
-            name: 'sourceAluminumAlloy',
+            name: 'aluminumAlloy',
             icon: 'aluminumAlloy',
             link: '/resource/31'
         }
@@ -1435,14 +1435,14 @@ export const ResourceList = [
         {
             id: 2,
             useId: 1,
-            name: 'sourceTungstenCarbide',
+            name: 'tungstenCarbide',
             icon: 'tungstenCarbide',
             link: '/resource/42'
         },
         {
             id: 3,
             useId: 1,
-            name: 'sourceExplosivePowder',
+            name: 'explosivePowder',
             icon: 'explosivePowder',
             link: '/resource/33'
         },
@@ -1521,14 +1521,14 @@ export const ResourceList = [
         {
             id: 2,
             useId: 1,
-            name: 'sourceTungstenCarbide',
+            name: 'tungstenCarbide',
             icon: 'tungstenCarbide',
             link: '/resource/42'
         },
         {
             id: 3,
             useId: 1,
-            name: 'sourceExplosivePowder',
+            name: 'explosivePowder',
             icon: 'explosivePowder',
             link: '/resource/33'
         },
@@ -1680,7 +1680,7 @@ export const ResourceList = [
         {
             id: 9,
             useId: 5,
-            name: 'sourceAluminumAlloy',
+            name: 'aluminumAlloy',
             icon: 'aluminumAlloy',
             link: '/resource/31'
         }
@@ -2188,7 +2188,7 @@ export const ResourceList = [
         {
             id: 5,
             useId: 4,
-            name: 'sourceTungstenCarbide',
+            name: 'tungstenCarbide',
             icon: 'tungstenCarbide',
             link: '/resource/42'
         }
@@ -2535,7 +2535,7 @@ export const ResourceList = [
         {
             id: 1,
             useId: 1,
-            name: 'sourceNanocarbonAlloy',
+            name: 'nanocarbonAlloy',
             icon: 'nanocarbonAlloy',
             link: '/resource/36'
         }
@@ -2788,7 +2788,7 @@ export const ResourceList = [
         {
             id: 1,
             useId: 1,
-            name: 'sourceExplosivePowder',
+            name: 'explosivePowder',
             icon: 'explosivePowder',
             link: '/resource/33'
         }
@@ -2800,7 +2800,7 @@ export const ResourceList = [
 },
 {
     id: 31,
-    title: 'sourceAluminumAlloy',
+    title: 'aluminumAlloy',
     icon: 'aluminumAlloy',
     link: '/resource/31',
     nugget: 'nuggetAluminumAlloy',
@@ -2897,7 +2897,7 @@ export const ResourceList = [
         {
             id: 1,
             useId: 1,
-            name: 'sourceExplosivePowder',
+            name: 'explosivePowder',
             icon: 'explosivePowder',
             link: '/resource/33'
         }
@@ -4703,7 +4703,7 @@ export const ResourceList = [
         {
             id: 5,
             useId: 4,
-            name: 'sourceNanocarbonAlloy',
+            name: 'nanocarbonAlloy',
             icon: 'nanocarbonAlloy',
             link: '/resource/36'
         }
@@ -4715,7 +4715,7 @@ export const ResourceList = [
 },
 {
     id: 42,
-    title: 'sourceTungstenCarbide',
+    title: 'tungstenCarbide',
     icon: 'tungstenCarbide',
     link: '/resource/42',
     nugget: 'nuggetTungstenCarbide',

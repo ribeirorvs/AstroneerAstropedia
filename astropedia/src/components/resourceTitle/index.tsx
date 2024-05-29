@@ -7,6 +7,7 @@ import colors from '@/styles/colors';
 import { FavoriteType } from '@/assets/enums';
 import { FavoriteDetails, cehckFavorited, deleteFavorite, saveFavorite } from '@/libs/storage';
 import { HandleList, ListOptions } from '@/assets/utils';
+import { translate } from '@/libs/localization';
 
 export interface ResourceTitleProps {
     id: number;
@@ -58,7 +59,7 @@ export function ResourceTitle({
                     style={resourceTitleStyle.resourceTitleImg}
                 />
                 <Text style={resourceTitleStyle.txtResourceTitle}>
-                    {list ? list.title : "Sylva"}
+                    {translate(list ? list.title : "Sylva")}
                 </Text>
             </View>
             <TouchableOpacity

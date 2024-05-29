@@ -22,6 +22,7 @@ export const componentButtonStyle = StyleSheet.create({
         fontFamily: fonts.heading,
         color: colors.white,
         textTransform: 'uppercase',
-        paddingTop: 5
+        paddingTop: 5,
+        maxWidth: "76%"
     },
 });

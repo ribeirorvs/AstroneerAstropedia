@@ -1,56 +1,68 @@
+export type PrinterDataProps = (typeof PrintersList)[0];
+
 export const PrintersList = [
     {
         id: 1,
-        title: 'backpack',
+        title: 'backpackPrinter',
         icon: 'backpackPrinter',
-        link: 'Backpack'
+        link: '/printer/1',
+        nugget: "backpack",
+        source: [
+            {
+                id: 1,
+                craftAt: "-",
+                recipte: "-",
+                unlockCost: "-",
+                powerConsumption: "3 U/s"
+            }
+        ]
     },
     {
         id: 2,
-        title: 'sourceSmallPrinter',
+        title: 'smallPrinter',
         icon: 'smallPrinter',
-        link: 'SmallPrinter'
+        link: '/printer/2'
     },
     {
         id: 3,
-        title: 'sourceMediumPrinter',
+        title: 'mediumPrinter',
         icon: 'mediumPrinter',
-        link: 'MediumPrinter'
+        link: '/printer/3'
     },
     {
         id: 4,
-        title: 'sourceLargePrinter',
+        title: 'largePrinter',
         icon: 'largePrinter',
-        link: 'LargePrinter'
+        link: '/printer/4'
     },
     {
         id: 5,
-        title: 'sourceSmeltingFurnace',
+        title: 'smeltingFurnace',
         icon: 'smeltingFurnace',
-        link: 'SmeltingFurnace'
+        link: '/printer/5'
     },
     {
         id: 6,
-        title: 'sourceSoilCentrifuge',
+        title: 'soilCentrifuge',
         icon: 'soilCentrifuge',
-        link: 'SoilCentrifuge'
+        link: '/printer/6'
     },
     {
         id: 7,
-        title: 'sourceChemistryLab',
+        title: 'chemistryLab',
         icon: 'chemistryLab',
-        link: 'ChemistryLab'
+        link: '/printer/7'
     },
     {
         id: 8,
-        title: 'sourceAtmosphericCondenser',
+        title: 'atmosphericCondenser',
         icon: 'atmosphericCondenser',
-        link: 'AtmosphericCondenser'
+        link: '/printer/8'
     },
     {
         id: 9,
-        title: 'sourceTradePlatform',
+        title: 'tradePlatform',
         icon: 'tradePlatform',
-        link: 'TradePlatform'
+        link: '/printer/9'
     },
 ]

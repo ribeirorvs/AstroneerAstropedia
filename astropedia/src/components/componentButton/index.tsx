@@ -20,7 +20,6 @@ export function ComponentButton({id, type}: ComponentButtonProps) {
         setList(HandleList(type, id));
     },[]);
 
-    
     return (
         <Link href={{
             pathname: list ? list.link : "/planet/1",
@@ -29,7 +28,10 @@ export function ComponentButton({id, type}: ComponentButtonProps) {
                 style={componentButtonStyle.component}
             >
                 <Image source={images[list?.icon]} style={componentButtonStyle.imgComponent} />
-                <Text style={componentButtonStyle.txtComponent}>
+                <Text 
+                    style={componentButtonStyle.txtComponent}
+                    numberOfLines={1}
+                >
                     {translate( list ? list.title : "err")}
                 </Text>
             </TouchableOpacity>
