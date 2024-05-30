@@ -52,7 +52,7 @@ export function PrintableOutput({
                                 <DataTable.Cell>
                                     {output.output}
                                 </DataTable.Cell>
-                                <DataTable.Cell>
+                                <DataTable.Cell numeric>
                                     {output.cost}
                                 </DataTable.Cell>
                             </DataTable.Row>
