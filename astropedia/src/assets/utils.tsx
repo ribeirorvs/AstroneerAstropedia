@@ -1,9 +1,9 @@
-import { useState } from "react";
 import { FavoriteType } from "./enums";
 import { PlanetDataProps, PlanetList } from "./planets";
 import { PrinterDataProps, PrintersList } from "./printers";
 import { ResourceDataProps, ResourceList } from "./resources";
 
+//Define the types that has a list of items to be rendered in the app
 export type ListOptions = PlanetDataProps | ResourceDataProps | PrinterDataProps;
 
 export function HandleList( type: FavoriteType, id: number) {

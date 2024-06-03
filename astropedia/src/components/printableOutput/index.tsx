@@ -1,8 +1,9 @@
 import { PrinterOutputList } from "@/assets/printerOutputList";
-import { View } from "react-native";
+import { Text, View } from "react-native";
 import { DataTable } from "react-native-paper";
 import { printableOutputStyle } from "./style";
 import { useEffect, useState } from "react";
+import { PrinterInput } from "../printerInput";
 
 interface printableTableOutput {
     id: number;
@@ -47,7 +48,16 @@ export function PrintableOutput({
                         .map((output, index) => (
                             <DataTable.Row key={index} >
                                 <DataTable.Cell>
-                                    {output.input}
+                                    <View key={index} style={{flex: 1, flexDirection: "column"}}>
+                                        {output.input.map((input, index) => (
+                                            <PrinterInput
+                                                key={index}
+                                                id = {input.listId}
+                                                quantity={input.quantity}
+                                                type={input.type}
+                                            />
+                                        ))}
+                                    </View>
                                 </DataTable.Cell>
                                 <DataTable.Cell>
                                     {output.output}
