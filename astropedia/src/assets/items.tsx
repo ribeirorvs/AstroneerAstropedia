@@ -9,11 +9,11 @@ export const ItemsList = [
     {
         id: 2,
         title: "exoChip",
-        icon: ""
+        icon: "exoChip"
     },
     {
         id: 3,
         title: "smallCanister",
-        icon: ""
+        icon: "canister"
     }
 ]
