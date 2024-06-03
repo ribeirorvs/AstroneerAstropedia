@@ -123,7 +123,7 @@ export const PrinterOutputList = [
         input: [
             {
                 id: 1,
-                listId: 12,
+                listId: 11,
                 quantity: 1,
                 type: FavoriteType.Resource
             }
@@ -631,7 +631,7 @@ export const PrinterOutputList = [
         input: [
             {
                 id: 20,
-                listId: 4,
+                listId: 20,
                 quantity: 1,
                 type: FavoriteType.Resource
             },
@@ -2026,7 +2026,7 @@ export const PrinterOutputList = [
             {
                 id: 2,
                 listId: 37,
-                quantity: 1,
+                quantity: 2,
                 type: FavoriteType.Resource
             },
         ],
@@ -3034,7 +3034,7 @@ export const PrinterOutputList = [
                 type: FavoriteType.Resource
             },
         ],
-        output: translate('sourceNanocarbonAlloy'),
+        output: translate('nanocarbonAlloy'),
         cost: '-'
     },
     {

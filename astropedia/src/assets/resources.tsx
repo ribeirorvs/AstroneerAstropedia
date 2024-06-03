@@ -953,9 +953,9 @@ export const ResourceList = [
         },
         {
             id: 3,
-            name: 'largePrinter',
-            icon: 'largePrinter',
-            link: '/printer/4'
+            name: 'mediumPrinter',
+            icon: 'mediumPrinter',
+            link: '/printer/3'
         },
         {
             id: 4,
@@ -1294,7 +1294,7 @@ export const ResourceList = [
             id: 3,
             useId: 1,
             name: 'mediumWindTurbine',
-            icon: 'generator',
+            icon: 'windTurbine',
             link: ''
         },
         {
@@ -1505,39 +1505,169 @@ export const ResourceList = [
     use: [
         {
             id: 1,
-            name: 'chemistryLab',
-            icon: 'chemistryLab',
-            link: '/printer/7'
+            name: 'backpackPrinter',
+            icon: 'backpackPrinter',
+            link: '/printer/1'
+        },
+        {
+            id: 2,
+            name: 'smallPrinter',
+            icon: 'smallPrinter',
+            link: '/printer/2'
+        },
+        {
+            id: 3,
+            name: 'mediumPrinter',
+            icon: 'mediumPrinter',
+            link: '/printer/3'
+        },
+        {
+            id: 4,
+            name: 'largePrinter',
+            icon: 'largePrinter',
+            link: '/printer/4'
         }
     ],
     sub1: [
         {
             id: 1,
             useId: 1,
-            name: 'plastic',
-            icon: 'plastic',
-            link: '/resource/37'
+            name: 'drillMod1',
+            icon: 'augment',
+            link: ''
         },
         {
             id: 2,
             useId: 1,
-            name: 'tungstenCarbide',
-            icon: 'tungstenCarbide',
+            name: 'smallWindTurbine',
+            icon: 'windTurbine',
             link: '/resource/42'
         },
         {
             id: 3,
-            useId: 1,
-            name: 'explosivePowder',
-            icon: 'explosivePowder',
-            link: '/resource/33'
+            useId: 2,
+            name: 'oxygenator',
+            icon: 'oxygenator',
+            link: ''
         },
         {
             id: 4,
-            useId: 1,
-            name: 'steel',
-            icon: 'steel',
-            link: '/resource/40'
+            useId: 2,
+            name: 'mediumWindTurbine',
+            icon: 'windTurbine',
+            link: ''
+        },
+        {
+            id: 5,
+            useId: 2,
+            name: 'tallPlatform',
+            icon: 'platform',
+            link: ''
+        },
+        {
+            id: 6,
+            useId: 2,
+            name: 'tallStorage',
+            icon: 'storage',
+            link: ''
+        },
+        {
+            id: 7,
+            useId: 2,
+            name: 'drillStrength1',
+            icon: 'drill',
+            link: ''
+        },
+        {
+            id: 8,
+            useId: 3,
+            name: 'chemistryLab',
+            icon: 'chemistryLab',
+            link: '/printer/7'
+        },
+        {
+            id: 9,
+            useId: 3,
+            name: 'exoRequestPlatform',
+            icon: 'tradePlatform',
+            link: ''
+        },
+        {
+            id: 10,
+            useId: 3,
+            name: 'largeWindTurbine',
+            icon: 'windTurbine',
+            link: ''
+        },
+        {
+            id: 11,
+            useId: 3,
+            name: 'largePlatformC',
+            icon: 'platform',
+            link: ''
+        },
+        {
+            id: 12,
+            useId: 3,
+            name: 'largeCurvedPlatform',
+            icon: 'platform',
+            link: ''
+        },
+        {
+            id: 13,
+            useId: 3,
+            name: 'largeStorage',
+            icon: 'storage',
+            link: ''
+        },
+        {
+            id: 14,
+            useId: 4,
+            name: 'xlWindTurbine',
+            icon: 'windTurbine',
+            link: ''
+        },
+        {
+            id: 15,
+            useId: 4,
+            name: 'extraLargePlatformA',
+            icon: 'platform',
+            link: ''
+        },
+        {
+            id: 16,
+            useId: 4,
+            name: 'extraLargeCurvedPlatform',
+            icon: 'platform',
+            link: ''
+        },
+        {
+            id: 17,
+            useId: 4,
+            name: 'extraLargeStorage',
+            icon: 'storage',
+            link: ''
+        },
+        {
+            id: 18,
+            useId: 4,
+            name: 'landingPad',
+            icon: 'landingPad',
+            link: ''
+        },
+        {
+            id: 19,
+            useId: 4,
+            name: 'mediumShuttle',
+            icon: 'shuttle',
+            link: ''
+        },
+        {
+            id: 20,
+            useId: 4,
+            name: 'largeShuttle',
+            icon: 'shuttle',
+            link: ''
         }
     ],
     sub2: [],
@@ -1808,23 +1938,30 @@ export const ResourceList = [
             name: 'atmosphericCondenser',
             icon: 'atmosphericCondenser',
             link: '/printer/8'
-        },
+        },,
         {
             id: 8,
+            useId: 3,
+            name: 'largeResourceCaniester',
+            icon: 'canister',
+            link: ''
+        },
+        {
+            id: 9,
             useId: 3,
             name: 'largeSolarPanel',
             icon: 'solar',
             link: ''
         },
         {
-            id: 9,
+            id: 10,
             useId: 3,
             name: 'largeWindTurbine',
             icon: 'windTurbine',
             link: ''
         },
         {
-            id: 10,
+            id: 11,
             useId: 4,
             name: 'solarArray',
             icon: 'solar',
@@ -2888,18 +3025,92 @@ export const ResourceList = [
     use: [
         {
             id: 1,
-            name: 'chemistryLab',
-            icon: 'chemistryLab',
-            link: '/printer/7'
+            name: 'backpackPrinter',
+            icon: 'backpackPrinter',
+            link: '/printer/1'
+        },
+        {
+            id: 2,
+            name: 'smallPrinter',
+            icon: 'smallPrinter',
+            link: '/printer/2'
+        },
+        {
+            id: 3,
+            name: 'mediumPrinter',
+            icon: 'mediumPrinter',
+            link: '/printer/3'
+        },
+        {
+            id: 4,
+            name: 'largePrinter',
+            icon: 'largePrinter',
+            link: '/printer/4'
         }
     ],
     sub1: [
         {
             id: 1,
             useId: 1,
-            name: 'explosivePowder',
-            icon: 'explosivePowder',
-            link: '/resource/33'
+            name: 'solidFuelJumpJet',
+            icon: 'thruster',
+            link: ''
+        },
+        {
+            id: 2,
+            useId: 2,
+            name: 'paver',
+            icon: 'paver',
+            link: ''
+        },
+        {
+            id: 3,
+            useId: 3,
+            name: 'largeWindTurbine',
+            icon: 'windTurbine',
+            link: ''
+        },
+        {
+            id: 4,
+            useId: 3,
+            name: 'largeSolarPanel',
+            icon: 'solar',
+            link: ''
+        },
+        {
+            id: 5,
+            useId: 3,
+            name: 'recreationalSphere',
+            icon: 'recreationalSphere',
+            link: ''
+        },
+        {
+            id: 6,
+            useId: 4,
+            name: 'mediumShuttle',
+            icon: 'shuttle',
+            link: ''
+        },
+        {
+            id: 7,
+            useId: 4,
+            name: 'largeRover',
+            icon: 'trailer',
+            link: ''
+        },
+        {
+            id: 8,
+            useId: 4,
+            name: 'xlWindTurbine',
+            icon: 'windTurbine',
+            link: ''
+        },
+        {
+            id: 9,
+            useId: 4,
+            name: 'solarArray',
+            icon: 'solar',
+            link: ''
         }
     ],
     sub2: [],
