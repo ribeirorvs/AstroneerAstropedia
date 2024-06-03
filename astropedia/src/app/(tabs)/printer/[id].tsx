@@ -15,11 +15,11 @@ export default function PrinterDetails() {
 
     return (
         <SafeAreaView style={layoutStyle.container} >
-            <ResourceTitle
-                id={printer?.id || 1}
-                type={FavoriteType.Printer}
-            />
             <ScrollView>
+                <ResourceTitle
+                    id={printer?.id || 1}
+                    type={FavoriteType.Printer}
+                />
                 <ContentTitle title={translate('sourceTitle')} />
                 <PrintableSource
                     id={printer?.id || 1}

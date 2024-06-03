@@ -18,11 +18,11 @@ export default function PlanetsDetails() {
     const atmosphericResources = planet?.atmosphericResources || [];
     return (
         <SafeAreaView style={layoutStyle.container} >
-            <ResourceTitle
-                id={planet?.id || 1}
-                type={FavoriteType.Planet}
-            />
-            <ScrollView style={layoutStyle.resourceContent} contentContainerStyle={{ alignItems: 'center' }} >
+            <ScrollView >
+                <ResourceTitle
+                    id={planet?.id || 1}
+                    type={FavoriteType.Planet}
+                />
                 <ContentTitle title={translate('planetDetails')} />
                 <PlanetDetails
                     id={planet?.id || 1}

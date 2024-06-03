@@ -99,12 +99,6 @@ export default function TabsLayout(){
                 }}
             />
             <Tabs.Screen 
-                name="resourcesDetails"
-                options={{
-                    href: null
-                }}
-            />
-            <Tabs.Screen 
                 name="planet/[id]"
                 options={{
                     href: null

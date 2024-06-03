@@ -32,11 +32,11 @@ export default function ResourcesDetails() {
     const sub5 = resource?.sub5 || [];
     return (
         <SafeAreaView style={layoutStyle.container} >
-            <ResourceTitle
-                id={resource?.id || 1}
-                type={FavoriteType.Resource}
-            />
             <ScrollView>
+                <ResourceTitle
+                    id={resource?.id || 1}
+                    type={FavoriteType.Resource}
+                />
                 <ContentTitle title={translate('sourceTitle')} />
                 {
                     hasResourceItem &&
@@ -112,7 +112,7 @@ export default function ResourcesDetails() {
                         {
                             use.map(item =>{
                                 return (<>
-                                    <ResourceItem name={translate(item.name)} icon={item.icon} />
+                                    <ResourceItem name={translate(item.name)} icon={item.icon} link={item.link} />
                                     {
                                         sub1
                                             .filter(subItem1 => subItem1.useId === item.id)
