@@ -1,10 +1,11 @@
 import { FavoriteType } from "./enums";
+import { ItemsList, ItemsListDataProps } from "./items";
 import { PlanetDataProps, PlanetList } from "./planets";
 import { PrinterDataProps, PrintersList } from "./printers";
 import { ResourceDataProps, ResourceList } from "./resources";
 
 //Define the types that has a list of items to be rendered in the app
-export type ListOptions = PlanetDataProps | ResourceDataProps | PrinterDataProps;
+export type ListOptions = PlanetDataProps | ResourceDataProps | PrinterDataProps | ItemsListDataProps;
 
 export function HandleList( type: FavoriteType, id: number) {
     if(type === FavoriteType.Planet){
@@ -16,5 +17,8 @@ export function HandleList( type: FavoriteType, id: number) {
     } else if(type === FavoriteType.Printer){
         const printer = PrintersList.find(printer => printer.id === id)
         return printer || null
+    } else if(type === FavoriteType.Item){
+        const item = ItemsList.find(item => item.id === id)
+        return item || null
     }
 }

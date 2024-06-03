@@ -38,11 +38,10 @@ export const PrinterOutputList = [
         input: [
             {
                 id: 1,
-                listId: 5,
+                listId: 3,
                 quantity: 1,
-                type: FavoriteType.Resource
+                type: FavoriteType.Item
             }
-            //translate('smallCanister') + ' (' + translate('full') + ')'
         ],
         output: translate('levelingBlock'),
         cost: '500 Bytes'
@@ -389,11 +388,10 @@ export const PrinterOutputList = [
         input: [
             {
                 id: 1,
-                listId: 4,
+                listId: 2,
                 quantity: 1,
-                type: FavoriteType.Resource
+                type: FavoriteType.Item
             }
-            //translate('exoChip')
         ],
         output: translate('smallCamera'),
         cost: '2.500 Bytes'
@@ -488,11 +486,10 @@ export const PrinterOutputList = [
         input: [
             {
                 id: 1,
-                listId: 4,
+                listId: 2,
                 quantity: 1,
-                type: FavoriteType.Resource
+                type: FavoriteType.Item
             }
-            //translate('exoChip')
         ],
         output: translate('hoverboard'),
         cost: 'Unloked via missions'
@@ -1087,11 +1084,10 @@ export const PrinterOutputList = [
             },
             {
                 id: 2,
-                listId: 4,
+                listId: 2,
                 quantity: 1,
-                type: FavoriteType.Resource
+                type: FavoriteType.Item
             }
-            //translate('rubber'), '\n', translate('exoChip')
         ],
         output: translate('winch'),
         cost: '3.750 Bytes'
@@ -1208,11 +1204,10 @@ export const PrinterOutputList = [
             },
             {
                 id: 2,
-                listId: 4,
+                listId: 2,
                 quantity: 1,
-                type: FavoriteType.Resource
+                type: FavoriteType.Item
             }
-            //translate('steel'), '\n', translate('exoChip')
         ],
         output: translate('hydrazineThruster'),
         cost: '3.750 Bytes'
@@ -1307,11 +1302,10 @@ export const PrinterOutputList = [
         input: [
             {
                 id: 1,
-                listId: 4,
+                listId: 1,
                 quantity: 1,
-                type: FavoriteType.Resource
+                type: FavoriteType.Item
             }
-            //translate('scrap')
         ],
         output: translate('automoton001'),
         cost: translate('event')
@@ -1322,11 +1316,10 @@ export const PrinterOutputList = [
         input: [
             {
                 id: 1,
-                listId: 4,
+                listId: 1,
                 quantity: 1,
-                type: FavoriteType.Resource
+                type: FavoriteType.Item
             }
-            //translate('scrap')
         ],
         output: translate('automoton002'),
         cost: translate('event')
@@ -1343,11 +1336,10 @@ export const PrinterOutputList = [
             },
             {
                 id: 2,
-                listId: 4,
+                listId: 1,
                 quantity: 1,
-                type: FavoriteType.Resource
+                type: FavoriteType.Item
             }
-            //translate('scrap')
         ],
         output: translate('cubicObject'),
         cost: translate('event')
@@ -1364,11 +1356,10 @@ export const PrinterOutputList = [
             },
             {
                 id: 2,
-                listId: 4,
+                listId: 1,
                 quantity: 1,
-                type: FavoriteType.Resource
+                type: FavoriteType.Item
             }
-            //translate('glass'), '\n', translate('scrap')
         ],
         output: translate('stellarObject'),
         cost: translate('event')
@@ -1385,11 +1376,10 @@ export const PrinterOutputList = [
             },
             {
                 id: 2,
-                listId: 4,
+                listId: 1,
                 quantity: 1,
-                type: FavoriteType.Resource
+                type: FavoriteType.Item
             }
-            //translate('astronium'), '\n', translate('scrap')
         ],
         output: translate('cosmigBauble'),
         cost: translate('event')
@@ -1558,11 +1548,10 @@ export const PrinterOutputList = [
             },
             {
                 id: 3,
-                listId: 21,
+                listId: 2,
                 quantity: 1,
-                type: FavoriteType.Resource
+                type: FavoriteType.Item
             },
-            //translate('exoChip'),
         ],
         output: translate('tradePlatform'),
         cost: '2.500 Bytes'
@@ -1585,11 +1574,10 @@ export const PrinterOutputList = [
             },
             {
                 id: 3,
-                listId: 12,
+                listId: 2,
                 quantity: 1,
-                type: FavoriteType.Resource
+                type: FavoriteType.Item
             },
-            //translate('exoChip')
         ],
         output: translate('largeShredder'),
         cost: '2.500 Bytes'
@@ -1984,11 +1972,10 @@ export const PrinterOutputList = [
             },
             {
                 id: 3,
-                listId: 39,
+                listId: 2,
                 quantity: 1,
-                type: FavoriteType.Resource
+                type: FavoriteType.Item
             },
-            //translate('exoChip'),
         ],
         output: translate('sourceVtol'),
         cost: 'Unlocked via mission'
@@ -2057,11 +2044,10 @@ export const PrinterOutputList = [
             },
             {
                 id: 4,
-                listId: 12,
+                listId: 2,
                 quantity: 1,
-                type: FavoriteType.Resource
+                type: FavoriteType.Item
             },
-            //translate('exoChip')
         ],
         output: translate('autoExtractor'),
         cost: '7.500 Bytes'
@@ -2084,11 +2070,10 @@ export const PrinterOutputList = [
             },
             {
                 id: 3,
-                listId: 12,
+                listId: 2,
                 quantity: 2,
-                type: FavoriteType.Resource
+                type: FavoriteType.Item
             },
-            //'2x ' + translate('exoChip')
         
         ],
         output: translate('extraLargeShredder'),
@@ -2458,11 +2443,10 @@ export const PrinterOutputList = [
             },
             {
                 id: 3,
-                listId: 24,
+                listId: 2,
                 quantity: 2,
-                type: FavoriteType.Resource
+                type: FavoriteType.Item
             },
-            //'2x ' + translate('exoChip')
         ],
         output: translate('largeRover'),
         cost: '5.000 Bytes'
@@ -2539,11 +2523,10 @@ export const PrinterOutputList = [
             },
             {
                 id: 3,
-                listId: 24,
+                listId: 2,
                 quantity: 2,
-                type: FavoriteType.Resource
+                type: FavoriteType.Item
             },
-            //'2x ' + translate('exoChip')
         ],
         output: translate('largeShuttle'),
         cost: '5.000 Bytes'
@@ -2680,11 +2663,10 @@ export const PrinterOutputList = [
         input: [
             {
                 id: 1,
-                listId: 24,
+                listId: 3,
                 quantity: 2,
-                type: FavoriteType.Resource
+                type: FavoriteType.Item
             },
-            //'2x ' + translate('canister') + ' (Full)'
         ],
         output: '8x ' + translate('compound'),
         cost: '-'
@@ -2695,11 +2677,10 @@ export const PrinterOutputList = [
         input: [
             {
                 id: 1,
-                listId: 24,
+                listId: 3,
                 quantity: 2,
-                type: FavoriteType.Resource
+                type: FavoriteType.Item
             },
-            //'2x ' + translate('canister') + ' (Full)'
         ],
         output: '8x ' + translate('resin'),
         cost: '-'
@@ -2710,11 +2691,10 @@ export const PrinterOutputList = [
         input: [
             {
                 id: 1,
-                listId: 24,
+                listId: 3,
                 quantity: 2,
-                type: FavoriteType.Resource
+                type: FavoriteType.Item
             },
-            //'2x ' + translate('canister') + ' (Full)'
         ],
         output: '8x ' + translate('organic'),
         cost: '-'
@@ -2725,11 +2705,10 @@ export const PrinterOutputList = [
         input: [
             {
                 id: 1,
-                listId: 24,
+                listId: 3,
                 quantity: 2,
-                type: FavoriteType.Resource
+                type: FavoriteType.Item
             },
-            //'2x ' + translate('canister') + ' (Full)'
         ],
         output: '6x ' + translate('clay'),
         cost: '-'
@@ -2740,11 +2719,10 @@ export const PrinterOutputList = [
         input: [
             {
                 id: 1,
-                listId: 24,
+                listId: 3,
                 quantity: 2,
-                type: FavoriteType.Resource
+                type: FavoriteType.Item
             },
-            //'2x ' + translate('canister') + ' (Full)'
         ],
         output: '4x ' + translate('quartz'),
         cost: '-'
@@ -2755,11 +2733,10 @@ export const PrinterOutputList = [
         input: [
             {
                 id: 1,
-                listId: 24,
+                listId: 3,
                 quantity: 2,
-                type: FavoriteType.Resource
+                type: FavoriteType.Item
             },
-            //'2x ' + translate('canister') + ' (Full)'
         ],
         output: '2x ' + translate('graphite'),
         cost: '-'
@@ -2770,11 +2747,10 @@ export const PrinterOutputList = [
         input: [
             {
                 id: 1,
-                listId: 24,
+                listId: 3,
                 quantity: 2,
-                type: FavoriteType.Resource
+                type: FavoriteType.Item
             },
-            //'2x ' + translate('canister') + ' (Full)'
         ],
         output: translate('ammonium'),
         cost: '-'
@@ -3227,9 +3203,8 @@ export const PrinterOutputList = [
                 id: 1,
                 listId: 1,
                 quantity: 1,
-                type: FavoriteType.Planet
+                type: FavoriteType.Item
             },
-            //translate('scrap')
         ],
         output: '2x ' + translate('compound'),
         cost: '-'
@@ -3242,9 +3217,8 @@ export const PrinterOutputList = [
                 id: 1,
                 listId: 1,
                 quantity: 1,
-                type: FavoriteType.Planet
+                type: FavoriteType.Item
             },
-            //translate('scrap')
         ],
         output: '2x ' + translate('resin'),
         cost: '-'
@@ -3257,9 +3231,8 @@ export const PrinterOutputList = [
                 id: 1,
                 listId: 1,
                 quantity: 1,
-                type: FavoriteType.Planet
+                type: FavoriteType.Item
             },
-            //translate('scrap')
         ],
         output: '2x ' + translate('organic'),
         cost: '-'
@@ -3272,9 +3245,8 @@ export const PrinterOutputList = [
                 id: 1,
                 listId: 1,
                 quantity: 1,
-                type: FavoriteType.Planet
+                type: FavoriteType.Item
             },
-            //translate('scrap')
         ],
         output: '2x ' + translate('clay'),
         cost: '-'
@@ -3287,9 +3259,8 @@ export const PrinterOutputList = [
                 id: 1,
                 listId: 1,
                 quantity: 1,
-                type: FavoriteType.Planet
+                type: FavoriteType.Item
             },
-            //translate('scrap')
         ],
         output: '2x ' + translate('quartz'),
         cost: '-'
@@ -3302,9 +3273,8 @@ export const PrinterOutputList = [
                 id: 1,
                 listId: 1,
                 quantity: 1,
-                type: FavoriteType.Planet
+                type: FavoriteType.Item
             },
-            //translate('scrap')
         ],
         output: '2x ' + translate('graphite'),
         cost: '-'
@@ -3317,9 +3287,8 @@ export const PrinterOutputList = [
                 id: 1,
                 listId: 1,
                 quantity: 1,
-                type: FavoriteType.Planet
+                type: FavoriteType.Item
             },
-            //translate('scrap')
         ],
         output: '2x ' + translate('sphalerite'),
         cost: '-'
@@ -3332,9 +3301,8 @@ export const PrinterOutputList = [
                 id: 1,
                 listId: 1,
                 quantity: 1,
-                type: FavoriteType.Planet
+                type: FavoriteType.Item
             },
-            //translate('scrap')
         ],
         output: translate('ammonium'),
         cost: '-'
@@ -3347,9 +3315,8 @@ export const PrinterOutputList = [
                 id: 1,
                 listId: 1,
                 quantity: 1,
-                type: FavoriteType.Planet
+                type: FavoriteType.Item
             },
-            //translate('scrap')
         ],
         output: translate('laterite'),
         cost: '-'
@@ -3362,9 +3329,8 @@ export const PrinterOutputList = [
                 id: 1,
                 listId: 1,
                 quantity: 1,
-                type: FavoriteType.Planet
+                type: FavoriteType.Item
             },
-            //translate('scrap')
         ],
         output: translate('malachite'),
         cost: '-'
@@ -3377,9 +3343,8 @@ export const PrinterOutputList = [
                 id: 1,
                 listId: 1,
                 quantity: 3,
-                type: FavoriteType.Planet
+                type: FavoriteType.Item
             },
-            //translate('scrap')
         ],
         output: '2x ' + translate('wolframite'),
         cost: '-'
@@ -3392,9 +3357,8 @@ export const PrinterOutputList = [
                 id: 1,
                 listId: 1,
                 quantity: 3,
-                type: FavoriteType.Planet
+                type: FavoriteType.Item
             },
-            //translate('scrap')
         ],
         output: '2x ' + translate('hematite'),
         cost: '-'
@@ -3407,9 +3371,8 @@ export const PrinterOutputList = [
                 id: 1,
                 listId: 1,
                 quantity: 2,
-                type: FavoriteType.Planet
+                type: FavoriteType.Item
             },
-            //translate('scrap')
         ],
         output: translate('titanite'),
         cost: '-'
@@ -3422,9 +3385,8 @@ export const PrinterOutputList = [
                 id: 1,
                 listId: 1,
                 quantity: 2,
-                type: FavoriteType.Planet
+                type: FavoriteType.Item
             },
-            //translate('scrap')
         ],
         output: translate('lithium'),
         cost: '-'

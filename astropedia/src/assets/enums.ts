@@ -1,5 +1,6 @@
 export enum FavoriteType {
     Planet = "Planet",
     Resource = "Resource",
-    Printer = "Printer"
+    Printer = "Printer",
+    Item = "Item"
 }
