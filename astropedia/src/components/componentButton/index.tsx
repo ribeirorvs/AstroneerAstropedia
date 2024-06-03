@@ -18,7 +18,7 @@ export function ComponentButton({id, type}: ComponentButtonProps) {
     
     useEffect(() => {
         setList(HandleList(type, id));
-    },[]);
+    });
 
     return (
         <Link href={{
