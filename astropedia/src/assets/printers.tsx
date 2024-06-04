@@ -1,3 +1,5 @@
+import { FavoriteType } from "./enums";
+
 export type PrinterDataProps = (typeof PrintersList)[0];
 
 export const PrintersList = [
@@ -11,7 +13,15 @@ export const PrintersList = [
             {
                 id: 1,
                 craftAt: "-",
-                recipte: "-",
+                recipte: [
+                    {
+                        id: 1,
+                        listId: 0,
+                        type: null,
+                        title: "-",
+                        quantity: 1,
+                    }
+                ],
                 unlockCost: "-",
                 powerConsumption: "3 U/s"
             }
@@ -27,7 +37,15 @@ export const PrintersList = [
             {
                 id: 1,
                 craftAt: "backpackPrinter",
-                recipte: "compound",
+                recipte: [
+                    {
+                        id: 1,
+                        listId: 4,
+                        type: FavoriteType.Resource,
+                        title: "",
+                        quantity: 1,
+                    }
+                ],
                 unlockCost: "unlocked",
                 powerConsumption: "1 U/s"
             }
@@ -43,7 +61,15 @@ export const PrintersList = [
             {
                 id: 1,
                 craftAt: "smallPrinter",
-                recipte: '2x ' + 'compound',
+                recipte: [
+                    {
+                        id: 1,
+                        listId: 4,
+                        type: FavoriteType.Resource,
+                        title: "",
+                        quantity: 2,
+                    }
+                ],
                 unlockCost: "unlocked",
                 powerConsumption: "Unknow"
             }
@@ -59,7 +85,15 @@ export const PrintersList = [
             {
                 id: 1,
                 craftAt: "mediumPrinter",
-                recipte: '3x ' + 'compound',
+                recipte: [
+                    {
+                        id: 1,
+                        listId: 4,
+                        type: FavoriteType.Resource,
+                        title: "",
+                        quantity: 3,
+                    }
+                ],
                 unlockCost: "unlocked",
                 powerConsumption: "5 U/s"
             }
@@ -75,7 +109,22 @@ export const PrintersList = [
             {
                 id: 1,
                 craftAt: "mediumPrinter",
-                recipte: '2x ' + 'resin' + '\n' + 'compound',
+                recipte: [
+                    {
+                        id: 1,
+                        listId: 12,
+                        type: FavoriteType.Resource,
+                        title: "",
+                        quantity: 2,
+                    },
+                    {
+                        id: 2,
+                        listId: 4,
+                        type: FavoriteType.Resource,
+                        title: "compound",
+                        quantity: 1,
+                    }
+                ],
                 unlockCost: "250 Bytes",
                 powerConsumption: "5 U/s"
             }
@@ -91,7 +140,22 @@ export const PrintersList = [
             {
                 id: 1,
                 craftAt: "mediumPrinter",
-                recipte: '2x ' + 'compound' + '\n' + 'aluminum',
+                recipte: [
+                    {
+                        id: 1,
+                        listId: 4,
+                        type: FavoriteType.Resource,
+                        title: "",
+                        quantity: 2,
+                    },
+                    {
+                        id: 2,
+                        listId: 16,
+                        type: FavoriteType.Resource,
+                        title: "",
+                        quantity: 1,
+                    },
+                ],
                 unlockCost: "750 Bytes",
                 powerConsumption: "6 U/s"
             }
@@ -107,7 +171,30 @@ export const PrintersList = [
             {
                 id: 1,
                 craftAt: "mediumPrinter",
-                recipte: 'tungsten' + '\n' + 'glass' + '\n' + 'ceramic',
+                recipte: [
+                    {
+                        id: 1,
+                        listId: 23,
+                        type: FavoriteType.Resource,
+                        title: "",
+                        quantity: 1,
+                    },
+                    {
+                        id: 2,
+                        listId: 20,
+                        type: FavoriteType.Resource,
+                        title: "",
+                        quantity: 1,
+                    },
+                    {
+                        id: 3,
+                        listId: 18,
+                        type: FavoriteType.Resource,
+                        title: "",
+                        quantity: 1,
+                    }
+
+                ],
                 unlockCost: "1600 Bytes",
                 powerConsumption: "10 U/s"
             }
@@ -123,7 +210,29 @@ export const PrintersList = [
             {
                 id: 1,
                 craftAt: "mediumPrinter",
-                recipte: 'plastic' + '\n' + 'glass' + '\n' + 'iron',
+                recipte: [
+                    {
+                        id: 1,
+                        listId: 37,
+                        type: FavoriteType.Resource,
+                        title: "",
+                        quantity: 1,
+                    },
+                    {
+                        id: 2,
+                        listId: 20,
+                        type: FavoriteType.Resource,
+                        title: "",
+                        quantity: 1,
+                    },
+                    {
+                        id: 3,
+                        listId: 21,
+                        type: FavoriteType.Resource,
+                        title: "",
+                        quantity: 1,
+                    }
+                ],
                 unlockCost: "2200 Bytes",
                 powerConsumption: "10~40 U/s"
             }
@@ -139,7 +248,29 @@ export const PrintersList = [
             {
                 id: 2,
                 craftAt: "mediumPrinter",
-                recipte: 'exoChip' + '\n' + 'tungsten' + '\n' + 'iron',
+                recipte: [
+                    {
+                        id: 1,
+                        listId: 2,
+                        type: FavoriteType.Item,
+                        title: "",
+                        quantity: 1,
+                    },
+                    {
+                        id: 2,
+                        listId: 23,
+                        type: FavoriteType.Resource,
+                        title: "",
+                        quantity: 1,
+                    },
+                    {
+                        id: 3,
+                        listId: 21,
+                        type: FavoriteType.Resource,
+                        title: "",
+                        quantity: 1,
+                    }
+                ],
                 unlockCost: "2500 Bytes",
                 powerConsumption: "Unknow"
             }

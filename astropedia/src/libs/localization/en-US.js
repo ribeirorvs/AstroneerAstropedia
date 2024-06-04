@@ -263,5 +263,12 @@ export default {
         chemistryLab: 'Chemistry Lab',
         atmosphericCondenser: 'Atmospheric Condenser',
         tradePlatform: 'Trade Platform',
-        smeltingFurnace: 'Smelting Furnace'
+        smeltingFurnace: 'Smelting Furnace',
+
+        // Printers table
+        craftedAt: 'Crafted At',
+        recipe: 'Recipe',
+        unlockCost: 'Unlock Cost',
+        powerConsumption: 'Power Consumption',
+        '-': '-'
 }

@@ -37,7 +37,7 @@ export function PlanetResource({
                     style={planetResourceStyle.resourceIconImg}
                 />
                 <View style={planetResourceStyle.resourceDetails}>
-                    < Text style={planetResourceStyle.txtResourceName}>{resource.name} </Text>
+                    < Text style={planetResourceStyle.txtResourceName}>{translate(resource.name)} </Text>
                     {
                         !!resource.location &&
                         <View style={{flexDirection: 'row'}}>
