@@ -32,10 +32,13 @@ export default function PlanetsDetails() {
                     (<>
                         <ContentTitle title={translate('naturalResourcesTitle')} />
                         {
-                            naturalResources.map(resource => {
-                                return (<PlanetResource
-                                    resource={resource}
-                                />)
+                            naturalResources.map((resource, index) => {
+                                return (
+                                    <PlanetResource
+                                        key={index}
+                                        resource={resource}
+                                    />
+                                )
                             })
                         }
                     </>)
@@ -45,10 +48,13 @@ export default function PlanetsDetails() {
                 (<>
                     <ContentTitle title={translate('atmosphericResourcesTitle')} />
                     {
-                        atmosphericResources.map(resource => {
-                            return (<PlanetResource
-                                resource={resource}
-                            />)
+                        atmosphericResources.map((resource, index) => {
+                            return (
+                                <PlanetResource
+                                    key={index}
+                                    resource={resource}
+                                />
+                            )
                         })
                     }
                 </>)

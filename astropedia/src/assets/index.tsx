@@ -110,11 +110,14 @@ export const images = {
     nuggetSteel: require('../img/nuggetSteel.png'),
     nuggetTitaniumAlloy: require('../img/nuggetTitaniumAlloy.png'),
     nuggetTungstenCarbide: require('../img/nuggetTungstenCarbide.png'),
+    nuggetExoChip: require('../img/nuggetExoChip.png'),
+    nuggetScrap: require('../img/nuggetScrap.png'),
+    nuggetSmallCanister: require('../img/nuggetSmallCanister.png'),
+    nuggetSmallCanisterFull: require('../img/nuggetSmallCanisterFull.png'),
     soilCentrifuge: require('../img/soilCentrifuge.png'),
     tradePlatform: require('../img/tradePlatform.png'),
     smallPrinter: require('../img/smallPrinter.png'),
     chemistryLab: require('../img/chemistryLab.png'),
-    subItem: require('../img/subItem.png'),
     thruster: require('../img/thruster.png'),
     exoChip: require('../img/exoChip.png'),
     packager: require('../img/packager.png'),
@@ -166,5 +169,6 @@ export const images = {
     iconChemistryLab: require('../img/iconChemistryLab.png'),
     iconAthmospheticCondenserLab: require('../img/iconAthmospheticCondenserLab.png'),
     iconTradePlatform: require('../img/iconTradePlatform.png'),
-    probeScanner: require('../img/probeScanner.png')
+    probeScanner: require('../img/probeScanner.png'),
+    scrap: require('../img/scrap.png')
 }

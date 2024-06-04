@@ -15,8 +15,9 @@ export default function Resources() {
                 <FlatList
                     data={ResourceList}
                     keyExtractor={(item) => String(item.id)}
-                    renderItem={({ item }) => (
+                    renderItem={({ item, index }) => (
                         <ComponentButton
+                            key={index}
                             id={item.id}
                             type={FavoriteType.Resource}
                         />

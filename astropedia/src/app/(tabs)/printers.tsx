@@ -16,8 +16,9 @@ export default function Printers() {
                 <FlatList
                     data={PrintersList}
                     keyExtractor={(item) => String(item.id)}
-                    renderItem={({ item }) => (
+                    renderItem={({ item, index }) => (
                         <ComponentButton
+                            key={index}
                             id={item.id}
                             type={FavoriteType.Printer}
                         />

@@ -4,16 +4,19 @@ export const ItemsList = [
     {
         id: 1,
         title: "scrap",
-        icon: ""
+        nugget: "nuggetScrap",
+        link: ""
     },
     {
         id: 2,
         title: "exoChip",
-        icon: "exoChip"
+        nugget: "nuggetExoChip",
+        link: ""
     },
     {
         id: 3,
         title: "smallCanister",
-        icon: "canister"
+        nugget: "nuggetSmallCanisterFull",
+        link: ""
     }
 ]

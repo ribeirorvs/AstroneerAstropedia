@@ -15,8 +15,9 @@ export default function Planets(){
                 <FlatList
                     data={PlanetList}
                     keyExtractor={(item) => String(item.id)}
-                    renderItem={({ item }) => (
+                    renderItem={({ item, index }) => (
                         <ComponentButton
+                            key={index}
                             id={item.id}
                             type={FavoriteType.Planet}
                         />

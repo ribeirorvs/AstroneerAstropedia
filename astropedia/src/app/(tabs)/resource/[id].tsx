@@ -42,14 +42,20 @@ export default function ResourcesDetails() {
                     hasResourceItem &&
                     (<>
                         {
-                            resourceItem.map(item => {
+                            resourceItem.map((item, index) => {
                                 return (<>
-                                    <ResourceItem name={translate(item.name)} icon={item.icon} link={item.link} />
+                                    <ResourceItem 
+                                        key={index}
+                                        name={translate(item.name)}
+                                        icon={item.icon}
+                                        link={item.link}
+                                    />
                                     {
                                         resourceSub1
                                             .filter(resourceSubItem1 => resourceSubItem1.useId === item.id)
-                                            .map(filteredResourceSubItem1 => (<>
-                                                <ResourceSubItem1 
+                                            .map((filteredResourceSubItem1, index) => (<>
+                                                <ResourceSubItem1
+                                                    key={index} 
                                                     name={translate(filteredResourceSubItem1.name)}
                                                     icon={filteredResourceSubItem1.icon}
                                                     link={filteredResourceSubItem1.link}
@@ -57,8 +63,9 @@ export default function ResourcesDetails() {
                                                 {
                                                     resourceSub2
                                                         .filter(resourceSubItem2 => resourceSubItem2.useId === filteredResourceSubItem1.id)
-                                                        .map(filteredResourceSubItem2 => (<>
+                                                        .map((filteredResourceSubItem2, index) => (<>
                                                             <ResourceSubItem2
+                                                                key={index}
                                                                 name={translate(filteredResourceSubItem2.name)}
                                                                 icon={filteredResourceSubItem2.icon}
                                                                 link={filteredResourceSubItem2.link}
@@ -66,8 +73,9 @@ export default function ResourcesDetails() {
                                                             {
                                                                 resourceSub3
                                                                 .filter(resourceSubItem3 => resourceSubItem3.useId === filteredResourceSubItem2.id)
-                                                                .map(filteredResourceSubItem3 => (<>
+                                                                .map((filteredResourceSubItem3, index) => (<>
                                                                     <ResourceSubItem3
+                                                                        key={index}
                                                                         name={translate(filteredResourceSubItem3.name)}
                                                                         icon={filteredResourceSubItem3.icon}
                                                                         link={filteredResourceSubItem3.link}
@@ -75,8 +83,9 @@ export default function ResourcesDetails() {
                                                                     {
                                                                         resourceSub4
                                                                         .filter(resourceSubItem4 => resourceSubItem4.useId === filteredResourceSubItem3.id)
-                                                                        .map(filteredResourceSubItem4 => (<>
+                                                                        .map((filteredResourceSubItem4, index) => (<>
                                                                             <ResourceSubItem4
+                                                                                key={index}
                                                                                 name={translate(filteredResourceSubItem4.name)}
                                                                                 icon={filteredResourceSubItem4.icon}
                                                                                 link={filteredResourceSubItem4.link}
@@ -84,8 +93,9 @@ export default function ResourcesDetails() {
                                                                             {
                                                                                 resourceSub5
                                                                                 .filter(resourceSubItem5 => resourceSubItem5.useId === filteredResourceSubItem4.id)
-                                                                                .map(filteredResourceSubItem5 => (
+                                                                                .map((filteredResourceSubItem5, index) => (
                                                                                     <ResourceSubItem5
+                                                                                        key={index}
                                                                                         name={translate(filteredResourceSubItem5.name)}
                                                                                         icon={filteredResourceSubItem5.icon}
                                                                                         link={filteredResourceSubItem5.link}
@@ -110,14 +120,24 @@ export default function ResourcesDetails() {
                     hasUse &&
                     (<>
                         {
-                            use.map(item =>{
+                            use.map((item, index) =>{
                                 return (<>
-                                    <ResourceItem name={translate(item.name)} icon={item.icon} link={item.link} />
+                                    <ResourceItem 
+                                        key={index}
+                                        name={translate(item.name)} 
+                                        icon={item.icon} 
+                                        link={item.link}
+                                    />
                                     {
                                         sub1
                                             .filter(subItem1 => subItem1.useId === item.id)
-                                            .map(filteredSubItem1 => (
-                                                <ResourceSubItem1 name={translate(filteredSubItem1.name)} icon={filteredSubItem1.icon} link={filteredSubItem1.link}/>
+                                            .map((filteredSubItem1, index) => (
+                                                <ResourceSubItem1
+                                                    key={index}
+                                                    name={translate(filteredSubItem1.name)}
+                                                    icon={filteredSubItem1.icon}
+                                                    link={filteredSubItem1.link}
+                                                />
                                             ))
                                     }
                                 </>)
