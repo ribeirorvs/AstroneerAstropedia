@@ -83,7 +83,7 @@ export default function TabsLayout(){
             <Tabs.Screen 
                 name="setting"
                 options={{
-                    title: translate("Setting"),
+                    title: translate("settings"),
                     tabBarIcon: ({size, color}) => (
                         <MaterialIcons
                             name="settings"
