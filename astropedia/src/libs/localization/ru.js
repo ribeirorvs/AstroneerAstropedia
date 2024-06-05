@@ -35,6 +35,7 @@ export default {
     sourceTitle: "Источник",
     usesTitle: "Использование",
     printers: "Принтеры",
+    settings: "Настройки",
 
     //Planet's names
     sylva: "Сильва",

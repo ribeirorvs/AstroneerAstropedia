@@ -4,6 +4,7 @@ import { Image } from "react-native";
 import { images } from "@/assets";
 import { Header } from "@/components/header";
 import colors from "@/styles/colors";
+import { translate } from "@/libs/localization";
 
 
 export default function TabsLayout(){
@@ -21,7 +22,7 @@ export default function TabsLayout(){
             <Tabs.Screen 
                 name="planets"
                 options={{
-                    title: "Planets",
+                    title: translate("planetsTitle"),
                     tabBarIcon: ({size, color}) => (
                         <Image 
                             source={images["sylva"]}
@@ -37,7 +38,7 @@ export default function TabsLayout(){
             <Tabs.Screen 
                 name="resources"
                 options={{
-                    title: "Resources",
+                    title: translate("resourcesTitle"),
                     tabBarIcon: ({size, color}) => (
                         <Image 
                             source={images["compound"]}
@@ -53,7 +54,7 @@ export default function TabsLayout(){
             <Tabs.Screen 
                 name="printers"
                 options={{
-                    title: "Printers",
+                    title: translate("printers"),
                     tabBarIcon: ({size, color}) => (
                         <Image 
                             source={images["backpackPrinter"]}
@@ -69,7 +70,7 @@ export default function TabsLayout(){
             <Tabs.Screen 
                 name="favorites"
                 options={{
-                    title: "Favorites",
+                    title: translate("favoritesTitle"),
                     tabBarIcon: ({size, color}) => (
                         <MaterialIcons
                             name="star"
@@ -82,7 +83,7 @@ export default function TabsLayout(){
             <Tabs.Screen 
                 name="setting"
                 options={{
-                    title: "Setting",
+                    title: translate("Setting"),
                     tabBarIcon: ({size, color}) => (
                         <MaterialIcons
                             name="settings"
