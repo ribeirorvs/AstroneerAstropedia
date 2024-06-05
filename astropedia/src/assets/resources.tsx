@@ -2076,7 +2076,7 @@ export const ResourceList = [
             useId: 2,
             name: 'tradePlatform',
             icon: 'tradePlatform',
-            link: '/printer/9'
+            link: ''
         },
         {
             id: 6,
@@ -5078,7 +5078,7 @@ export const ResourceList = [
             useId: 4,
             name: 'extraLargeShredder',
             icon: 'shredder',
-            link: '/resource/36'
+            link: ''
         },
         {
             id: 5,
