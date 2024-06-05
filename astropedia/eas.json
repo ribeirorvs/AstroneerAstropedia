@@ -18,7 +18,8 @@
     },
     "production": { 
       "android": {
-        "buildType": "app-bundle"
+        "buildType": "app-bundle",
+        "image": "latest"
       }
     }
   },
