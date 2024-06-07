@@ -10,7 +10,7 @@ import {
 //import { handleLocale } from '@/libs/localization';
 //import * as SplashScreen from 'expo-splash-screen';
 import AsyncStorage from '@react-native-async-storage/async-storage';
-import { router } from "expo-router";
+import { Slot, router } from "expo-router";
 import { Loading } from '@/components/loading';
 
 export default function index() {
@@ -40,8 +40,7 @@ export default function index() {
         //SplashScreen.hideAsync()
         return (
             <>
-                <Loading />
-                
+                <Slot />
             </>
         )
     }
