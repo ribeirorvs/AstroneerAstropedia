@@ -46,7 +46,7 @@ export default function index() {
             if (flow !== 'planets') {
                 await AsyncStorage.setItem(key, 'planets')
             } else {
-                router.replace("/(drawer)/(stack)/planets")
+                router.replace("/(stack)/planets")
             }
         }
         defineAppFlow();

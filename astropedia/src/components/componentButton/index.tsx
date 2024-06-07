@@ -22,7 +22,7 @@ export function ComponentButton({id, type}: ComponentButtonProps) {
 
     return (
         <Link href={{
-            pathname: list ? list.link : "/planet/1",
+            pathname: list ?  list.link : "/planet/1",
         }}  asChild>
             <TouchableOpacity
                 style={componentButtonStyle.component}
