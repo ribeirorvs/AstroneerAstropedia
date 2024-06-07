@@ -12,6 +12,7 @@ import {
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import { Slot, router } from "expo-router";
 import { Loading } from '@/components/loading';
+import { GestureHandlerRootView } from 'react-native-gesture-handler';
 
 export default function index() {
 
@@ -39,9 +40,9 @@ export default function index() {
     } else {
         //SplashScreen.hideAsync()
         return (
-            <>
+            <GestureHandlerRootView style={{ flex: 1 }}>
                 <Slot />
-            </>
+            </GestureHandlerRootView>
         )
     }
 }
