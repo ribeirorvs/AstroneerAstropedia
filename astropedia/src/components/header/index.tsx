@@ -9,6 +9,7 @@ import { images } from '@/assets';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import { Link } from 'expo-router';
 import { headerStyle } from './style';
+import { MenuButton } from '../menuButton';
 
 
 export function Header() {
@@ -37,9 +38,10 @@ export function Header() {
 
     return (
         <View  style={headerStyle.header}>
+            <MenuButton />
             <Link href="planets" asChild >
                 <TouchableOpacity
-                    activeOpacity={0.75}
+                    activeOpacity={0.70}
                 >
                     <View style={headerStyle.headerHome}>
                         <Image source={images[astroSuit]} style={headerStyle.player} />
