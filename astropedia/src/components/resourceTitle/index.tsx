@@ -58,7 +58,7 @@ export function ResourceTitle({
                     source={images[list ? list.nugget : "nuggetSylva"]}
                     style={resourceTitleStyle.resourceTitleImg}
                 />
-                <Text style={resourceTitleStyle.txtResourceTitle}>
+                <Text style={resourceTitleStyle.txtResourceTitle} numberOfLines={1} lineBreakMode='tail'>
                     {translate(list ? list.title : "Sylva")}
                 </Text>
             </View>

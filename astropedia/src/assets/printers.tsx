@@ -246,7 +246,7 @@ export const PrintersList = [
         nugget: 'iconTradePlatform',
         source: [
             {
-                id: 2,
+                id: 1,
                 craftAt: "mediumPrinter",
                 recipte: [
                     {
@@ -266,6 +266,37 @@ export const PrintersList = [
                     {
                         id: 3,
                         listId: 21,
+                        type: FavoriteType.Resource,
+                        title: "",
+                        quantity: 1,
+                    }
+                ],
+                unlockCost: "2500 Bytes",
+                powerConsumption: "Unknow"
+            }
+        ]
+    },
+    {
+        id: 10,
+        title: 'exoRequestPlatform',
+        icon: 'tradePlatform',
+        link: '/printer/10',
+        nugget: 'nuggetExoRequestPlatform',
+        source: [
+            {
+                id: 1,
+                craftAt: "mediumPrinter",
+                recipte: [
+                    {
+                        id: 1,
+                        listId: 12,
+                        type: FavoriteType.Resource,
+                        title: "",
+                        quantity: 2,
+                    },
+                    {
+                        id: 2,
+                        listId: 4,
                         type: FavoriteType.Resource,
                         title: "",
                         quantity: 1,

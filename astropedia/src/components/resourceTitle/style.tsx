@@ -17,10 +17,11 @@ export const resourceTitleStyle = StyleSheet.create({
         marginRight: 20
     },
     txtResourceTitle: {
-        fontSize: 20,
+        fontSize: 18,
         textTransform: 'uppercase',
         fontFamily: fonts.title,
         color: colors.blue,
+        maxWidth: '75%'
     },
     favIcon: {
         height: 25,
