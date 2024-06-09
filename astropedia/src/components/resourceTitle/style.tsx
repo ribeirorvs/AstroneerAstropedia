@@ -19,7 +19,7 @@ export const resourceTitleStyle = StyleSheet.create({
     txtResourceTitle: {
         fontSize: 20,
         textTransform: 'uppercase',
-        fontFamily: fonts.heading,
+        fontFamily: fonts.title,
         color: colors.blue,
     },
     favIcon: {

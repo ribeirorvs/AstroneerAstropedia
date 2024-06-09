@@ -6,7 +6,7 @@ export const titleStyle = StyleSheet.create({
     title: {
         fontSize: 40,
         textTransform: 'uppercase',
-        fontFamily: fonts.heading,
+        fontFamily: fonts.title,
         color: colors.blue,
         marginVertical: 15
     },

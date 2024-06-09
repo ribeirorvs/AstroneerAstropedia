@@ -21,7 +21,7 @@ function handleEmail(name: string, mail: string, message: string){
         mail = translate('email')
     }
     if(!message){
-        Alert.alert(translate('warningTitle'),translate('contactUsWarnning'))
+        Alert.alert(translate('warningTitle'),translate('warningMessage'))
         messageRef.current.focus()
     } else {
         message = message + translate('contactUsMessageFrom') + name

@@ -1,4 +1,5 @@
 export default {
-    heading: 'Roboto_400Regular',
+    title: 'Roboto_700Bold',
+    subtitle: 'Roboto_500Medium',
     text: 'Roboto_400Regular'
 };

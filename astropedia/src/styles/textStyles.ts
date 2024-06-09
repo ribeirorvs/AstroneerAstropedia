@@ -1,6 +1,5 @@
 import { StyleSheet } from 'react-native';
 import colors from './colors';
-import fonts from './fonts';
 import Fonts from './fonts'
 
 export const textStyle = StyleSheet.create({
@@ -8,7 +7,7 @@ export const textStyle = StyleSheet.create({
         color: colors.gold,
         fontSize: 40,
         textAlign: 'center',
-        fontFamily: Fonts.heading
+        fontFamily: Fonts.title
     },
     text: {
         color: colors.white,
@@ -17,7 +16,8 @@ export const textStyle = StyleSheet.create({
     },
     link: {
         color: colors.blue,
-        fontSize: 18
+        fontSize: 18,
+        fontFamily: Fonts.text
     },
     input: {
         borderBottomWidth: 1,
@@ -30,6 +30,7 @@ export const textStyle = StyleSheet.create({
     },
     contactInput: {
         fontSize: 18,
+        fontFamily: Fonts.text,
         color: colors.black,
         width: '80%'
     },

@@ -13,7 +13,7 @@ export const contentTitleStyle = StyleSheet.create({
     },
     txtContentTitle: {
         color: colors.white,
-        fontFamily: fonts.heading,
+        fontFamily: fonts.subtitle,
         fontSize: 18,
         textTransform: 'uppercase'
     },

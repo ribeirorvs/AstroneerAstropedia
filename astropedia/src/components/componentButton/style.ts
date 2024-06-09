@@ -10,7 +10,8 @@ export const componentButtonStyle = StyleSheet.create({
         flexDirection: 'row',
         width: '90%',
         height: 70,
-        marginVertical: 15
+        marginVertical: 15,
+        alignItems: 'center'
     },
     imgComponent: {
         height: 60,
@@ -18,11 +19,10 @@ export const componentButtonStyle = StyleSheet.create({
         marginHorizontal: 10
     },
     txtComponent: {
-        fontSize: 40,
-        fontFamily: fonts.heading,
+        fontSize: 18,
+        fontFamily: fonts.subtitle,
         color: colors.white,
         textTransform: 'uppercase',
-        paddingTop: 5,
-        maxWidth: "76%"
+        maxWidth: "80%",
     },
 });

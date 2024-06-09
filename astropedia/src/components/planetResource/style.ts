@@ -32,13 +32,13 @@ export const planetResourceStyle = StyleSheet.create({
     },
     txtResourceName: {
         color: colors.gold,
-        fontFamily: fonts.heading,
+        fontFamily: fonts.subtitle,
         fontSize: 18,
         textTransform: 'uppercase'
     },
     txtResourceDetails: {
         color: colors.black,
-        fontFamily: fonts.heading,
+        fontFamily: fonts.text,
         fontSize: 12,
         textTransform: 'uppercase'
     },
