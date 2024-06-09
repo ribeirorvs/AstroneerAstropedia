@@ -169,6 +169,7 @@ export const images = {
     iconChemistryLab: require('../img/iconChemistryLab.png'),
     iconAthmospheticCondenserLab: require('../img/iconAthmospheticCondenserLab.png'),
     iconTradePlatform: require('../img/iconTradePlatform.png'),
+    iconExoRequestPlatform: require('../img/iconExoRequestPlatform.png'),
     probeScanner: require('../img/probeScanner.png'),
     scrap: require('../img/scrap.png')
 }

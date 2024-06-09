@@ -280,5 +280,9 @@ export default {
         recipe: "Recipe",
         unlockCost: "Unlock Cost",
         powerConsumption: "Power Consumption",
-        "-": "-"
+        "-": "-",
+
+
+        //Railways
+        railway: "Railway"
 }

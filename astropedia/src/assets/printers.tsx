@@ -281,7 +281,7 @@ export const PrintersList = [
         title: 'exoRequestPlatform',
         icon: 'tradePlatform',
         link: '/printer/10',
-        nugget: 'nuggetExoRequestPlatform',
+        nugget: 'iconExoRequestPlatform',
         source: [
             {
                 id: 1,
