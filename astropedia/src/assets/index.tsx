@@ -171,5 +171,6 @@ export const images = {
     iconTradePlatform: require('../img/iconTradePlatform.png'),
     iconExoRequestPlatform: require('../img/iconExoRequestPlatform.png'),
     probeScanner: require('../img/probeScanner.png'),
-    scrap: require('../img/scrap.png')
+    scrap: require('../img/scrap.png'),
+    railEngine: require('../img/railEngine.png')
 }

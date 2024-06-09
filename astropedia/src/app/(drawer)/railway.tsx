@@ -1,5 +1,5 @@
 import { FavoriteType } from '@/assets/enums';
-import { ResourceList } from '@/assets/resources';
+import { RailwayList } from '@/assets/railways';
 import { ComponentButton } from '@/components/componentButton';
 import { Title } from '@/components/title';
 import { translate } from '@/libs/localization';
@@ -11,15 +11,15 @@ export default function Railway() {
         <SafeAreaView style={layoutStyle.container}>
             <View style={layoutStyle.content} >
 
-                <Title title={translate('resourcesTitle')} />
+                <Title title={translate('railway')} />
                 <FlatList
-                    data={ResourceList}
+                    data={RailwayList}
                     keyExtractor={(item) => String(item.id)}
                     renderItem={({ item, index }) => (
                         <ComponentButton
                             key={index}
                             id={item.id}
-                            type={FavoriteType.Resource}
+                            type={FavoriteType.Railway}
                         />
                     )}
                     style={layoutStyle.flatList}

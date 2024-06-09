@@ -100,11 +100,12 @@ export default function DrawerLayout(){
                 options={{
                     title: translate("railway"),
                     drawerIcon: ({size, color}) => (
-                        <MaterialIcons
-                            name="settings"
-                            size={size}
-                            color={color}
+                        <Image 
+                            source={images.railEngine}
                             style={{
+                                tintColor: color,
+                                width: size,
+                                height: size,
                                 marginRight: -25
                             }}
                         />
