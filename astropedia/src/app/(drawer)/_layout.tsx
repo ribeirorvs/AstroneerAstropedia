@@ -96,6 +96,22 @@ export default function DrawerLayout(){
                 }}
             />
             <Drawer.Screen
+                name="railway"
+                options={{
+                    title: translate("railway"),
+                    drawerIcon: ({size, color}) => (
+                        <MaterialIcons
+                            name="settings"
+                            size={size}
+                            color={color}
+                            style={{
+                                marginRight: -25
+                            }}
+                        />
+                    ),
+                }}
+            />
+            <Drawer.Screen
                 name="setting"
                 options={{
                     title: translate("settings"),
