@@ -19,7 +19,7 @@ export default function DrawerLayout(){
                     width: "75%",
                     paddingTop: 20
                 },
-                lazy: true,
+                //lazy: true,
                 drawerType: 'slide',
                 swipeEnabled: true,
                 drawerActiveTintColor: colors.blue,
@@ -148,6 +148,12 @@ export default function DrawerLayout(){
             />
             <Drawer.Screen
                 name="contactUs"
+                options={{
+                    drawerItemStyle: {display: 'none'}
+                }}
+            />
+            <Drawer.Screen
+                name="railway/[id]"
                 options={{
                     drawerItemStyle: {display: 'none'}
                 }}

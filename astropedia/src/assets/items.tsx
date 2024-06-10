@@ -5,18 +5,18 @@ export const ItemsList = [
         id: 1,
         title: "scrap",
         nugget: "nuggetScrap",
-        link: ""
+        link: "",
     },
     {
         id: 2,
         title: "exoChip",
         nugget: "nuggetExoChip",
-        link: ""
+        link: "",
     },
     {
         id: 3,
         title: "smallCanister",
         nugget: "nuggetSmallCanisterFull",
-        link: ""
+        link: "",
     }
 ]

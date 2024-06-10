@@ -1,33 +1,34 @@
 import { FavoriteType } from "@/assets/enums";
-import { PrintersList } from "@/assets/printers";
+import { RailwayList } from "@/assets/railways";
 import { ContentTitle } from "@/components/contentTitle";
-import { PrintableOutput } from "@/components/printableOutput";
 import { PrintableSource } from "@/components/printableSource";
 import { ResourceTitle } from "@/components/resourceTitle";
 import { translate } from "@/libs/localization";
 import { layoutStyle } from "@/styles/layoutStyles";
 import { useLocalSearchParams } from "expo-router";
-import { SafeAreaView, ScrollView, Text } from "react-native";
+import { SafeAreaView, ScrollView, Text, View } from "react-native";
+import { ItemsUse } from "@/components/itemsUse";
 
-export default function PrinterDetails() {
+export default function RailwayDetails() {
     const { id } = useLocalSearchParams();
-    const printer = PrintersList.find(printer => printer.id === Number(id));
+    const railway = RailwayList.find(railway => railway.id === Number(id));
 
     return (
         <SafeAreaView style={layoutStyle.container} >
             <ScrollView>
                 <ResourceTitle
-                    id={printer?.id || 1}
-                    type={FavoriteType.Printer}
+                    id={railway?.id || 1}
+                    type={FavoriteType.Railway}
                 />
                 <ContentTitle title={translate('sourceTitle')} />
                 <PrintableSource
-                    id={printer?.id || 1}
-                    type={FavoriteType.Printer}
+                    id={railway?.id || 1}
+                    type={FavoriteType.Railway}
                 />
-                <ContentTitle title={translate('printTitle')} />
-                <PrintableOutput
-                    id={printer?.id || 1}
+                <ContentTitle title={translate('details')} />
+                <ItemsUse
+                    id= {railway?.id || 1}
+                    type={FavoriteType.ItemDetails}
                 />
             </ScrollView>
         </SafeAreaView>

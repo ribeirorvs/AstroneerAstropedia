@@ -53,7 +53,7 @@ export const PlanetList = [
             name: "nitrogen",
             link: "/resource/29"
         }
-    ]
+    ],
 },
 {
     id: 2,
@@ -91,7 +91,7 @@ export const PlanetList = [
         }
     ],
     hasAtmosphericResources: false,
-    atmosphericResources: []
+    atmosphericResources: [],
 },
 {
     id: 3,
@@ -144,7 +144,7 @@ export const PlanetList = [
             name: "sulfur",
             link: "/resource/30"
         }
-    ]
+    ],
 },
 {
     id: 4,
@@ -204,7 +204,7 @@ export const PlanetList = [
             name: "argon",
             link: "/resource/25"
         }
-    ]
+    ],
 },
 {
     id: 5,
@@ -257,7 +257,7 @@ export const PlanetList = [
             name: "methane",
             link: "/resource/28"
         }
-    ]
+    ],
 },
 {
     id: 6,
@@ -303,7 +303,7 @@ export const PlanetList = [
             name: "argon",
             link: "/resource/25"
         }
-    ]
+    ],
 },
 {
     id: 7,

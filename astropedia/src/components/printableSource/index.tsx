@@ -1,18 +1,32 @@
-import { PrintersList } from "@/assets/printers"
 import { DataTable } from 'react-native-paper';
 import { printableSourceStyle } from "./style";
-import colors from "@/styles/colors";
 import { translate } from "@/libs/localization";
 import { View } from "react-native";
-import { PrinterInput } from "../printerInput";
 import { PrintableRecipte } from "../printableRecipte";
+import { FavoriteType } from "@/assets/enums";
+import { HandleList, ListOptions } from "@/assets/utils";
+import { useEffect, useState } from "react";
+import { PrintersList } from '@/assets/printers';
 
 type PrintableSourceProps = {
-    id: number
+    id: number,
+    type: FavoriteType
 }
 
-export function PrintableSource({id}: PrintableSourceProps) {
-    const sourceTable = PrintersList.find(printer => printer.id === id)?.source || [];
+export function PrintableSource({id, type}: PrintableSourceProps) {
+    const [list, setList] = useState<ListOptions | null>(null);
+
+    useEffect(() => {
+        setList(HandleList(type, id));
+    }, [type, id]);
+
+    let sourceTable = null;
+    if (list) {
+        sourceTable = list?.source;
+    } else {
+        return null;  
+    }
+
     const tableHead = ['craftedAt', 'recipe', 'unlockCost', 'powerConsumption']
     return (
             <DataTable

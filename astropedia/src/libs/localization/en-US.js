@@ -284,5 +284,10 @@ export default {
 
 
         //Railways
-        railway: "Railway"
+        railway: "Railway",
+        railEngine: "Rail Engine",
+        details: "Details",
+        railEngineDescriptionLine1: "Rail Engines are used to transport items and resources using Rail Cars. They stop at any Rail Stations that are set to stop any or automated Rail Engines.",
+        railEngineDescriptionLine2: "Rail Engines may be triggered to start moving by automation items, such as the Proximity Repeater and Button Repeater. Rail Engines and Rail Cars will start moving in the direction they last traveled in, unless at a dead-end, in which they will move in the opposite direction instead.",
+        railEngineDescriptionLine3: "2 Rail engines on front and back will make it go faster (works with C.O.L.E)"
 }
