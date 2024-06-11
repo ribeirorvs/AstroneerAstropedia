@@ -6,12 +6,12 @@ import { ItemDetailsStyle } from "./style";
 
 type ItemsTextProps = {
     id: number,
-    type: FavoriteType
+    type: FavoriteType,
+    source: string
 }
 
-export function ItemsUse({id, type}: ItemsTextProps) {
+export function ItemsUse({id, type, source}: ItemsTextProps) {
     const [list, setList] = useState<ListOptions | null>(null);
-
     useEffect(() => {
         setList(HandleList(type, id));
     }, [type, id]);
@@ -19,16 +19,19 @@ export function ItemsUse({id, type}: ItemsTextProps) {
     if(!list){
         return null
     }
+
     return (
         <View style={ItemDetailsStyle.detailsContainer}>
-            {list.useLines.map(item => (
+            {
+                list[source].map(item => (
                     <Text 
                         key={item.id} 
                         style={ItemDetailsStyle.detailsText}
                     >
                         {item.text}
                     </Text>
-            ))}
+                ))
+            }
         </View>
     );
 }
