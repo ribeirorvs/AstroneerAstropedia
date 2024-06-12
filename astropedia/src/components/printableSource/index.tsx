@@ -68,10 +68,10 @@ export function PrintableSource({id, type}: PrintableSourceProps) {
                                     }
                                 </View>
                             </DataTable.Cell>
-                            <DataTable.Cell>
+                            <DataTable.Cell numeric>
                                 {source.unlockCost}
                             </DataTable.Cell>
-                            <DataTable.Cell>
+                            <DataTable.Cell numeric>
                                 {source.powerConsumption}
                             </DataTable.Cell>
                         </DataTable.Row>
