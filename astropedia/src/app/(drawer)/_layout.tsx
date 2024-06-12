@@ -17,9 +17,8 @@ export default function DrawerLayout(){
                 drawerStyle: {
                     backgroundColor: colors.background,
                     width: "75%",
-                    paddingTop: 20
+                    paddingTop: 40
                 },
-                //lazy: true,
                 drawerType: 'slide',
                 swipeEnabled: true,
                 drawerActiveTintColor: colors.blue,
