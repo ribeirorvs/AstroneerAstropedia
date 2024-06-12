@@ -8,6 +8,7 @@ export const RailwayList = [
         title: 'railEngine',
         link: 'railway/1',
         icon: 'railEngine',
+        nugget: 'iconRailEngine',
         source: [
             {
                 id: 1,
@@ -45,6 +46,7 @@ export const RailwayList = [
         title: 'railCar',
         link: 'railway/2',
         icon: 'railEngine',
+        nugget: 'iconRailCar',
         source: [
             {
                 id: 1,
@@ -75,6 +77,7 @@ export const RailwayList = [
         title: 'railStation',
         link: 'railway/3',
         icon: 'railStation',
+        nugget: 'iconRailStation',
         source: [
             {
                 id: 1,
@@ -112,6 +115,7 @@ export const RailwayList = [
         title: 'railPost',
         link: 'railway/4',
         icon: 'railPost',
+        nugget: 'iconRailPost',
         source: [
             {
                 id: 1,
@@ -142,6 +146,7 @@ export const RailwayList = [
         title: 'railPostBundle',
         link: 'railway/5',
         icon: 'railPost',
+        nugget: 'iconRailPostBundle',
         source: [
             {
                 id: 1,
@@ -172,6 +177,7 @@ export const RailwayList = [
         title: 'tallRailPost',
         link: 'railway/6',
         icon: 'railPost',
+        nugget: 'iconTallRailPost',
         source: [
             {
                 id: 1,
@@ -202,6 +208,7 @@ export const RailwayList = [
         title: 'tallRailPostBundle',
         link: 'railway/7',
         icon: 'railPost',
+        nugget: 'iconTallRailPostBundle',
         source: [
             {
                 id: 1,
@@ -232,6 +239,7 @@ export const RailwayList = [
         title: 'railJunctions',
         link: 'railway/8',
         icon: 'railPost',
+        nugget: 'iconRailJunction',
         source: [
             {
                 id: 1,
@@ -255,6 +263,7 @@ export const RailwayList = [
         title: 'railJunctionsBundle',
         link: 'railway/9',
         icon: 'railPost',
+        nugget: 'iconRailJunctionBundle',
         source: [
             {
                 id: 1,
@@ -278,6 +287,7 @@ export const RailwayList = [
         title: 'cole',
         link: 'railway/10',
         icon: 'railEngine',
+        nugget: 'iconCole',
         source: [
             {
                 id: 1,
@@ -301,6 +311,7 @@ export const RailwayList = [
         title: 'sitePylon',
         link: 'railway/11',
         icon: 'railPost',
+        nugget: 'iconSitePylon',
         source: [
             {
                 id: 1,

@@ -170,7 +170,20 @@ export const images = {
     iconAthmospheticCondenserLab: require('../img/iconAthmospheticCondenserLab.png'),
     iconTradePlatform: require('../img/iconTradePlatform.png'),
     iconExoRequestPlatform: require('../img/iconExoRequestPlatform.png'),
+    iconRailEngine: require('../img/iconRailEngine.png'),
+    iconRailCar: require('../img/iconRailCar.png'),
+    iconRailStation: require('../img/iconRailStation.png'),
+    iconRailPost: require('../img/iconRailPost.png'),
+    iconRailPostBundle: require('../img/iconRailPostBundle.png'),
+    iconTallRailPost: require('../img/iconTallRailPost.png'),
+    iconTallRailPostBundle: require('../img/iconTallRailPostBundle.png'),
+    iconRailJunction: require('../img/iconRailJunction.png'),
+    iconRailJunctionBundle: require('../img/iconRailJunctionBundle.png'),
+    iconCole: require('../img/iconCole..png'),
+    iconSitePylon: require('../img/iconSitePylon.png'),
     probeScanner: require('../img/probeScanner.png'),
     scrap: require('../img/scrap.png'),
-    railEngine: require('../img/railEngine.png')
+    railEngine: require('../img/railEngine.png'),
+    railStation: require('../img/railStation.png'),
+    railPost: require('../img/railPost.png')
 }
