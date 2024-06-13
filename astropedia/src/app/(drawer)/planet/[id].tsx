@@ -14,8 +14,10 @@ export default function PlanetsDetails() {
     const planet = PlanetList.find(planet => planet.id === Number(id));
     const hasNaturalResources = planet ? planet.hasNaturalResources : false;
     const hasAtmosphericResources = planet ? planet.hasAtmosphericResources : false;
+    const hasFlora = planet ? planet.hasFlora : false;
     const naturalResources = planet?.naturalResources || [];
     const atmosphericResources = planet?.atmosphericResources || [];
+    const flora = planet?.flora || []
     return (
         <SafeAreaView style={layoutStyle.container} >
             <ScrollView >
@@ -45,19 +47,35 @@ export default function PlanetsDetails() {
                 }
                 {
                     hasAtmosphericResources && 
-                (<>
-                    <ContentTitle title={translate('atmosphericResourcesTitle')} />
-                    {
-                        atmosphericResources.map((resource, index) => {
-                            return (
-                                <PlanetResource
-                                    key={index}
-                                    resource={resource}
-                                />
-                            )
-                        })
-                    }
-                </>)
+                    (<>
+                        <ContentTitle title={translate('atmosphericResourcesTitle')} />
+                        {
+                            atmosphericResources.map((resource, index) => {
+                                return (
+                                    <PlanetResource
+                                        key={index}
+                                        resource={resource}
+                                    />
+                                )
+                            })
+                        }
+                    </>)
+                }
+                {
+                    hasFlora && 
+                    (<>
+                        <ContentTitle title={translate('flora')} />
+                        {
+                            flora.map((flora, index) => {
+                                return (
+                                    <PlanetResource
+                                        key={index}
+                                        resource={flora}
+                                    />
+                                )
+                            })
+                        }
+                    </>)
                 }
             </ScrollView>
         </SafeAreaView>

@@ -54,6 +54,49 @@ export const PlanetList = [
             link: "/resource/29"
         }
     ],
+    hasFlora: true,
+    flora: [
+        {
+            id: 1,
+            nugget: "bouncevine",
+            icon: "",
+            name: "bouncevine",
+            link: "/flora/1",
+            location: [
+                "mountainSlopes"
+            ]
+        },
+        {
+            id: 2,
+            nugget: "popcoral",
+            icon: "",
+            name: "popcoral",
+            link: "/flora/2",
+            location: [
+                "underground"
+            ]
+        },
+        {
+            id: 3,
+            nugget: "daggeroot",
+            icon: "",
+            name: "daggeroot",
+            link: "/flora/3",
+            location: [
+                "underground"
+            ]
+        },
+        {
+            id: 4,
+            nugget: "hissbine",
+            icon: "",
+            name: "hissbine",
+            link: "/flora/4",
+            location: [
+                "underground"
+            ]
+        }
+    ]
 },
 {
     id: 2,
@@ -92,6 +135,29 @@ export const PlanetList = [
     ],
     hasAtmosphericResources: false,
     atmosphericResources: [],
+    hasFlora: true,
+    flora: [
+        {
+            id: 1,
+            nugget: "daggeroot",
+            icon: "",
+            name: "daggeroot",
+            link: "/flora/3",
+            location: [
+                "surface"
+            ]
+        },
+        {
+            id: 2,
+            nugget: "popcoral",
+            icon: "",
+            name: "popcoral",
+            link: "/flora/2",
+            location: [
+                "surface"
+            ]
+        },
+    ]
 },
 {
     id: 3,
@@ -145,6 +211,8 @@ export const PlanetList = [
             link: "/resource/30"
         }
     ],
+    hasFlora: false,
+    flora: []
 },
 {
     id: 4,
@@ -205,6 +273,8 @@ export const PlanetList = [
             link: "/resource/25"
         }
     ],
+    hasFlora: false,
+    flora: []
 },
 {
     id: 5,
@@ -258,6 +328,49 @@ export const PlanetList = [
             link: "/resource/28"
         }
     ],
+    hasFlora: true,
+    flora: [
+        {
+            id: 1,
+            nugget: "popcoral",
+            icon: "",
+            name: "popcoral",
+            link: "/flora/2",
+            location: [
+                "surface"
+            ]
+        },
+        {
+            id: 2,
+            nugget: "lashleaf",
+            icon: "",
+            name: "lashleaf",
+            link: "/flora/5",
+            location: [
+                "surface"
+            ]
+        },
+        {
+            id: 3,
+            nugget: "cataplant",
+            icon: "",
+            name: "cataplant",
+            link: "/flora/6",
+            location: [
+                "surface"
+            ]
+        },
+        {
+            id: 4,
+            nugget: "thistlewhip",
+            icon: "",
+            name: "thistlewhip",
+            link: "/flora/7",
+            location: [
+                "surface"
+            ]
+        }
+    ]
 },
 {
     id: 6,
@@ -304,6 +417,19 @@ export const PlanetList = [
             link: "/resource/25"
         }
     ],
+    hasFlora: true,
+    flora: [
+        {
+            id: 1,
+            nugget: "popcoral",
+            icon: "",
+            name: "popcoral",
+            link: "/flora/2",
+            location: [
+                "underground"
+            ]
+        }
+    ]
 },
 {
     id: 7,
@@ -349,6 +475,42 @@ export const PlanetList = [
             icon: "sulfur",
             name: "sulfur",
             link: "/resource/30"
+        }
+    ],
+    hasFlora: true,
+    flora: [
+        {
+            id: 1,
+            nugget: "attacti",
+            icon: "",
+            name: "attacti",
+            link: "/flora/8",
+            location: [
+                "surface",
+                "underground"
+            ]
+        },
+        {
+            id: 1,
+            nugget: "spewflowers",
+            icon: "",
+            name: "spewflowers",
+            link: "/flora/9",
+            location: [
+                "surface",
+                "underground"
+            ]
+        },
+        {
+            id: 1,
+            nugget: "wheezeweeds",
+            icon: "",
+            name: "wheezeweeds",
+            link: "/flora/10",
+            location: [
+                "surface",
+                "underground"
+            ]
         }
     ]
 }]

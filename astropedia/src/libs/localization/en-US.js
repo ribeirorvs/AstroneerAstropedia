@@ -367,6 +367,20 @@ export default {
 
         //Flora
         flora: "Flora",
+        bouncevine: "Bouncevine",
+        mountainSlopes: "Mountain Slopes",
+        popcoral: "Popcoral",
+        daggeroot: "Daggeroot",
+        hissbine: "Hissbine",
+        surface: "Surface",
+        lashleaf: "Lashleaf",
+        cataplant: "cataplant",
+        thistlewhip: "Thistlewhip",
+        attacti: "attacti",
+        spewflowers: "Spewflowers",
+        wheezeweeds: "Wheezeweeds",
+        underground: "Underground",
+
 
         //Missions
         missions: "Missions",
