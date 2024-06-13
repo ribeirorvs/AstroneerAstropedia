@@ -1,9 +1,9 @@
 {
   "expo": {
-    "name": "Astropedia",
-    "slug": "astropedia",
-    "scheme": "astropedia",
-    "version": "1.30.25",
+    "name": "AstroGuide",
+    "slug": "astroguide",
+    "scheme": "astroguide",
+    "version": "2.0.5",
     "orientation": "default",
     "icon": "./assets/icon.png",
     "splash": {
@@ -25,8 +25,8 @@
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#FFFFFF"
       },
-      "package": "com.middlewaredev.astropedia",
-      "versionCode": 4,
+      "package": "com.middlewaredev.astroguide",
+      "versionCode": 5,
       "permissions": []
     },
     "web": {
