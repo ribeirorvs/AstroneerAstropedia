@@ -364,4 +364,10 @@ export default {
         sitePylonUseLine2: "Site Pylons will connect rail lines to any other pylon, Rail Post, Tall Rail Post, or Rail Junction. They are best used with Junctions, as the Site Pylons are a dead-end.",
         sitePylonUseLine3: "Site Pylons may be picked up and moved for better placement of rails. The Packager can be used on it for better transportation.",
 
+
+        //Flora
+        flora: "Flora",
+
+        //Missions
+        missions: "Missions",
 }
