@@ -215,5 +215,6 @@ export const images = {
     noxiousSpewflower: require('../img/noxiousSpewflower.png'),
     noxiousSpewflowerSeed: require('../img/noxiousSpewflowerSeed.png'),
     boomalloon: require('../img/boomalloon.png'),
-    boomalloonSeed: require('../img/boomalloonSeed.png')
+    boomalloonSeed: require('../img/boomalloonSeed.png'),
+    flora: require('../img/flora.png')
 }

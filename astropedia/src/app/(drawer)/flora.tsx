@@ -19,7 +19,7 @@ export default function Flora() {
                         <ComponentButton
                             key={index}
                             id={item.id}
-                            type={FavoriteType.Railway}
+                            type={FavoriteType.Flora}
                         />
                     )}
                     style={layoutStyle.flatList}

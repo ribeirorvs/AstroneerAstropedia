@@ -417,7 +417,7 @@ export const PlanetList = [
             link: "/resource/25"
         }
     ],
-    hasFlora: true,
+    hasFlora: false,
     flora: [
         {
             id: 1,

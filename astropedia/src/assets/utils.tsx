@@ -1,4 +1,5 @@
 import { FavoriteType } from "./enums";
+import { FloraDataProps, FloraList } from "./flora";
 import { ItemDetailsList, ItemDetailsListDataProps } from "./itemDetails";
 import { ItemsList, ItemsListDataProps } from "./items";
 import { PlanetDataProps, PlanetList } from "./planets";
@@ -13,7 +14,8 @@ export type ListOptions =
     PrinterDataProps | 
     ItemsListDataProps |
     RailwayDataProps |
-    ItemDetailsListDataProps
+    ItemDetailsListDataProps |
+    FloraDataProps
 ;
 
 export function HandleList( type: FavoriteType, id: number) {
@@ -30,6 +32,8 @@ export function HandleList( type: FavoriteType, id: number) {
             return RailwayList.find(railway => railway.id === id) || null;
         case FavoriteType.ItemDetails:
             return ItemDetailsList.find(itemDetail => itemDetail.id === id) || null;
+        case FavoriteType.Flora:
+            return FloraList.find(flora => flora.id === id) || null;
         default:
             return null;
     }

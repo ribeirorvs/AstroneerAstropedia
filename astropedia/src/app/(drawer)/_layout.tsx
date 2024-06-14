@@ -117,7 +117,7 @@ export default function DrawerLayout(){
                     title: translate("flora"),
                     drawerIcon: ({size, color}) => (
                         <Image 
-                            source={images.railEngine}
+                            source={images.flora}
                             style={{
                                 tintColor: color,
                                 width: size,
@@ -170,6 +170,12 @@ export default function DrawerLayout(){
             />
             <Drawer.Screen
                 name="railway/[id]"
+                options={{
+                    drawerItemStyle: {display: 'none'}
+                }}
+            />
+            <Drawer.Screen
+                name="flora/[id]"
                 options={{
                     drawerItemStyle: {display: 'none'}
                 }}

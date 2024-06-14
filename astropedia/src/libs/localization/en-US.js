@@ -400,7 +400,15 @@ export default {
         spinelilySeed: "Spinelily Seed",
         noxiousSpewflowerSeed: "Noxious Spewflower Seed",
         boomalloonSeed: "Boomalloon Seed",
-
+        bouncevineDescription: "Bouncevines are a green plant with red vines, found on the surface of Sylva. When stepped on, the player will get launched up in the air. Since they mostly are found in the mountainous biome, the player could be launched high enough to be killed by fall damage.",
+        popcoralDescription: "Popcoral can be found in abundance in caves and are mostly harmless. Upon digging with the Terrain Tool at their base they will explode. This explosion can be fatal if a player is standing too near, but they can be safely dug up from a distance.",
+        daggerootDescription: "Daggeroot are a white plant with red spots, found mostly on Desolo, on the surface of Atrox and in the mantle layer of Sylva, and pose a danger to the player. Getting too close to the Daggeroot will cause them to release dangerous spikes around them which could kill the player in 2 hits.",
+        hissbineDescription: "Hissbines are flora that generates underground on all planets. If the player gets too close, it will spray a cloud of acid at the player. There are three varieties: Normal, Vibrant, and Dull. The acid clouds from these varieties deal different amounts of damage, with Normal Hissbines being the least deadly, and Dull being the most dangerous. More difficult planets have more dangerous Hissbines.",
+        leashleafDescription: "Lashleaves are flora with two leaves with a pink tongue-like leaf in the middle, found on Vesania and Novus. When the player steps on one, it will launch them into the air. Domestic Lashleaves will rotate 90 degrees counter-clockwise when they are finished growing.",
+        volatileCataplantDescription1: "Cataplants are flora that has an arm with a red orb.",
+        volatileCataplantDescription2: "If the player gets in range, it will begin tossing the red orb at the player. After a couple of seconds the orb will then explode. The Cataplant will continue throwing orbs until the player moves away or is dead. Such orbs sometimes will clip through the terrain or deflect off slopes, rendering the player safe from the attack. ",
+        volatileCataplantDescription3: "Volatile Cataplants can be found on Atrox and in groups of three on Glacio. If you are killed by the Volatile Cataplants, there is a chance some of your items are destroyed.",
+        volatileCataplantDescription4: "Volatile Cataplants can be tricked into destroying themselves.",
         //Missions
         missions: "Missions",
 }
