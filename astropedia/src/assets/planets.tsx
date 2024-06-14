@@ -59,7 +59,7 @@ export const PlanetList = [
         {
             id: 1,
             nugget: "bouncevine",
-            icon: "",
+            icon: "bouncevineSeed",
             name: "bouncevine",
             link: "/flora/1",
             location: [
@@ -69,7 +69,7 @@ export const PlanetList = [
         {
             id: 2,
             nugget: "popcoral",
-            icon: "",
+            icon: "popcoralSeed",
             name: "popcoral",
             link: "/flora/2",
             location: [
@@ -79,7 +79,7 @@ export const PlanetList = [
         {
             id: 3,
             nugget: "daggeroot",
-            icon: "",
+            icon: "daggerootSeed",
             name: "daggeroot",
             link: "/flora/3",
             location: [
@@ -89,7 +89,7 @@ export const PlanetList = [
         {
             id: 4,
             nugget: "hissbine",
-            icon: "",
+            icon: "hissbineSeed",
             name: "hissbine",
             link: "/flora/4",
             location: [
@@ -140,7 +140,7 @@ export const PlanetList = [
         {
             id: 1,
             nugget: "daggeroot",
-            icon: "",
+            icon: "daggerootSeed",
             name: "daggeroot",
             link: "/flora/3",
             location: [
@@ -150,7 +150,7 @@ export const PlanetList = [
         {
             id: 2,
             nugget: "popcoral",
-            icon: "",
+            icon: "popcoralSeed",
             name: "popcoral",
             link: "/flora/2",
             location: [
@@ -333,7 +333,7 @@ export const PlanetList = [
         {
             id: 1,
             nugget: "popcoral",
-            icon: "",
+            icon: "popcoralSeed",
             name: "popcoral",
             link: "/flora/2",
             location: [
@@ -343,7 +343,7 @@ export const PlanetList = [
         {
             id: 2,
             nugget: "lashleaf",
-            icon: "",
+            icon: "lashleafSeed",
             name: "lashleaf",
             link: "/flora/5",
             location: [
@@ -352,9 +352,9 @@ export const PlanetList = [
         },
         {
             id: 3,
-            nugget: "cataplant",
-            icon: "",
-            name: "cataplant",
+            nugget: "volatileCataplant",
+            icon: "volatileCataplantSeed",
+            name: "volatileCataplant",
             link: "/flora/6",
             location: [
                 "surface"
@@ -363,7 +363,7 @@ export const PlanetList = [
         {
             id: 4,
             nugget: "thistlewhip",
-            icon: "",
+            icon: "thistlewhipSeed",
             name: "thistlewhip",
             link: "/flora/7",
             location: [
@@ -422,7 +422,7 @@ export const PlanetList = [
         {
             id: 1,
             nugget: "popcoral",
-            icon: "",
+            icon: "popcoralSeed",
             name: "popcoral",
             link: "/flora/2",
             location: [
@@ -481,9 +481,9 @@ export const PlanetList = [
     flora: [
         {
             id: 1,
-            nugget: "attacti",
-            icon: "",
-            name: "attacti",
+            nugget: "volatileAttactus",
+            icon: "volatileAttactusSeed",
+            name: "volatileAttactus",
             link: "/flora/8",
             location: [
                 "surface",
@@ -492,9 +492,9 @@ export const PlanetList = [
         },
         {
             id: 1,
-            nugget: "spewflowers",
-            icon: "",
-            name: "spewflowers",
+            nugget: "noxiousSpewflower",
+            icon: "noxiousSpewflowerSeed",
+            name: "noxiousSpewflower",
             link: "/flora/9",
             location: [
                 "surface",
@@ -504,7 +504,7 @@ export const PlanetList = [
         {
             id: 1,
             nugget: "wheezeweeds",
-            icon: "",
+            icon: "wheezeweedsSeed",
             name: "wheezeweeds",
             link: "/flora/10",
             location: [
