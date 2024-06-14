@@ -13,7 +13,7 @@ export type PlanetResourceProps = {
     resource: {
         id: number,
         nugget: string,
-        icon: string,
+        icon?: string,
         name: string,
         link: string,
         location?: string[]
@@ -32,10 +32,12 @@ export function PlanetResource({
                     source={images[resource.nugget]}
                     style={planetResourceStyle.nugget}
                 />
-                <Image
-                    source={images[resource.icon]}
-                    style={planetResourceStyle.resourceIconImg}
-                />
+                { resource.icon &&
+                    <Image
+                        source={images[resource.icon]}
+                        style={planetResourceStyle.resourceIconImg}
+                    />
+                }
                 <View style={planetResourceStyle.resourceDetails}>
                     < Text style={planetResourceStyle.txtResourceName}>{translate(resource.name)} </Text>
                     {

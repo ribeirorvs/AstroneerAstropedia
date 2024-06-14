@@ -4,5 +4,6 @@ export enum FavoriteType {
     Printer = "Printer",
     Item = "Item",
     Railway = "Railway",
-    ItemDetails = "ItemDetails"
+    ItemDetails = "ItemDetails",
+    Flora = "Flora"
 }

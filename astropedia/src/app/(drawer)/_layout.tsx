@@ -112,6 +112,23 @@ export default function DrawerLayout(){
                 }}
             />
             <Drawer.Screen
+                name="flora"
+                options={{
+                    title: translate("flora"),
+                    drawerIcon: ({size, color}) => (
+                        <Image 
+                            source={images.railEngine}
+                            style={{
+                                tintColor: color,
+                                width: size,
+                                height: size,
+                                marginRight: -25
+                            }}
+                        />
+                    ),
+                }}
+            />
+            <Drawer.Screen
                 name="setting"
                 options={{
                     title: translate("settings"),
