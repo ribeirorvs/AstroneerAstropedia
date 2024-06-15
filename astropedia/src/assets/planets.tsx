@@ -31,10 +31,6 @@ export const PlanetList = [
             icon: "malachite",
             name: "malachite",
             link: "/resource/9",
-            location: [
-                "caveLayer",
-                "mantleLayer"
-            ]
         }
     ],
     hasAtmosphericResources: true,
@@ -64,36 +60,6 @@ export const PlanetList = [
             link: "/flora/1",
             location: [
                 "mountainSlopes"
-            ]
-        },
-        {
-            id: 2,
-            nugget: "popcoral",
-            icon: "popcoralSeed",
-            name: "popcoral",
-            link: "/flora/2",
-            location: [
-                "underground"
-            ]
-        },
-        {
-            id: 3,
-            nugget: "daggeroot",
-            icon: "daggerootSeed",
-            name: "daggeroot",
-            link: "/flora/3",
-            location: [
-                "underground"
-            ]
-        },
-        {
-            id: 4,
-            nugget: "hissbine",
-            icon: "hissbineSeed",
-            name: "hissbine",
-            link: "/flora/4",
-            location: [
-                "underground"
             ]
         }
     ]
@@ -135,29 +101,8 @@ export const PlanetList = [
     ],
     hasAtmosphericResources: false,
     atmosphericResources: [],
-    hasFlora: true,
-    flora: [
-        {
-            id: 1,
-            nugget: "daggeroot",
-            icon: "daggerootSeed",
-            name: "daggeroot",
-            link: "/flora/3",
-            location: [
-                "surface"
-            ]
-        },
-        {
-            id: 2,
-            nugget: "popcoral",
-            icon: "popcoralSeed",
-            name: "popcoral",
-            link: "/flora/2",
-            location: [
-                "surface"
-            ]
-        },
-    ]
+    hasFlora: false,
+    flora: []
 },
 {
     id: 3,
@@ -211,8 +156,30 @@ export const PlanetList = [
             link: "/resource/30"
         }
     ],
-    hasFlora: false,
-    flora: []
+    hasFlora: true,
+    flora: [
+        {
+            id: 1,
+            nugget: "wheezeweeds",
+            icon: "wheezeweedsSeed",
+            name: "wheezeweeds",
+            link: "/flora/10",
+        },
+        {
+            id: 2,
+            nugget: "spinyAttactus",
+            icon: "spinyAttactusSeed",
+            name: "spinyAttactus",
+            link: "/flora/12",
+        },
+        {
+            id: 3,
+            nugget: "spinelily",
+            icon: "spinelilySeed",
+            name: "spinelily",
+            link: "/flora/13",
+        }
+    ]
 },
 {
     id: 4,
@@ -273,8 +240,30 @@ export const PlanetList = [
             link: "/resource/25"
         }
     ],
-    hasFlora: false,
-    flora: []
+    hasFlora: true,
+    flora: [
+        {
+            id: 1,
+            nugget: "lashleaf",
+            icon: "lashleafSeed",
+            name: "lashleaf",
+            link: "/flora/5",
+        },
+        {
+            id: 2,
+            nugget: "thistlewhip",
+            icon: "thistlewhipSeed",
+            name: "thistlewhip",
+            link: "/flora/7",
+        },
+        {
+            id: 3,
+            nugget: "noxiousCataplant",
+            icon: "noxiousCataplantSeed",
+            name: "noxiousCataplant",
+            link: "/flora/11",
+        }
+    ]
 },
 {
     id: 5,
@@ -332,43 +321,24 @@ export const PlanetList = [
     flora: [
         {
             id: 1,
-            nugget: "popcoral",
-            icon: "popcoralSeed",
-            name: "popcoral",
-            link: "/flora/2",
-            location: [
-                "surface"
-            ]
-        },
-        {
-            id: 2,
             nugget: "lashleaf",
             icon: "lashleafSeed",
             name: "lashleaf",
             link: "/flora/5",
-            location: [
-                "surface"
-            ]
         },
         {
-            id: 3,
-            nugget: "volatileCataplant",
-            icon: "volatileCataplantSeed",
-            name: "volatileCataplant",
-            link: "/flora/6",
-            location: [
-                "surface"
-            ]
-        },
-        {
-            id: 4,
+            id: 2,
             nugget: "thistlewhip",
             icon: "thistlewhipSeed",
             name: "thistlewhip",
             link: "/flora/7",
-            location: [
-                "surface"
-            ]
+        },
+        {
+            id: 3,
+            nugget: "noxiousCataplant",
+            icon: "noxiousCataplantSeed",
+            name: "noxiousCataplant",
+            link: "/flora/11",
         }
     ]
 },
@@ -417,17 +387,21 @@ export const PlanetList = [
             link: "/resource/25"
         }
     ],
-    hasFlora: false,
+    hasFlora: true,
     flora: [
         {
             id: 1,
-            nugget: "popcoral",
-            icon: "popcoralSeed",
-            name: "popcoral",
-            link: "/flora/2",
-            location: [
-                "underground"
-            ]
+            nugget: "volatileCataplant",
+            icon: "volatileCataplantSeed",
+            name: "volatileCataplant",
+            link: "/flora/6",
+        },
+        {
+            id: 2,
+            nugget: "boomalloon",
+            icon: "boomalloonSeed",
+            name: "boomalloon",
+            link: "/flora/15",
         }
     ]
 },
@@ -481,36 +455,45 @@ export const PlanetList = [
     flora: [
         {
             id: 1,
+            nugget: "volatileCataplant",
+            icon: "volatileCataplantSeed",
+            name: "volatileCataplant",
+            link: "/flora/6",
+        },
+        {
+            id: 2,
             nugget: "volatileAttactus",
             icon: "volatileAttactusSeed",
             name: "volatileAttactus",
             link: "/flora/8",
-            location: [
-                "surface",
-                "underground"
-            ]
         },
         {
-            id: 1,
-            nugget: "noxiousSpewflower",
-            icon: "noxiousSpewflowerSeed",
-            name: "noxiousSpewflower",
+            id: 3,
+            nugget: "elegantSpewflower",
+            icon: "elegantSpewflowerSeed",
+            name: "elegantSpewflower",
             link: "/flora/9",
-            location: [
-                "surface",
-                "underground"
-            ]
         },
         {
-            id: 1,
+            id: 4,
             nugget: "wheezeweeds",
             icon: "wheezeweedsSeed",
             name: "wheezeweeds",
             link: "/flora/10",
-            location: [
-                "surface",
-                "underground"
-            ]
+        },
+        {
+            id: 5,
+            nugget: "spinelily",
+            icon: "spinelilySeed",
+            name: "spinelily",
+            link: "/flora/13",
+        },
+        {
+            id: 6,
+            nugget: "noxiousSpewflower",
+            icon: "noxiousSpewflowerSeed",
+            name: "noxiousSpewflower",
+            link: "/flora/14",
         }
     ]
 }]
